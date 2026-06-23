@@ -172,9 +172,9 @@ def _job_summary(job_id: str, state: Any) -> dict:
 @app.get("/models")
 def list_models():
     """Retorna os modelos disponíveis no Ollama."""
-    import httpx
+    import requests
     try:
-        resp = httpx.get(f"{config.OLLAMA_BASE_URL}/api/tags", timeout=5)
+        resp = requests.get(f"{config.OLLAMA_BASE_URL}/api/tags", timeout=5)
         resp.raise_for_status()
         models = [m["name"] for m in resp.json().get("models", [])]
     except Exception:
