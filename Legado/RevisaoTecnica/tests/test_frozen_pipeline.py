@@ -11,6 +11,52 @@ from pipeline.upgrade_benchmark import run_today_upgrade_benchmark
 
 
 class FrozenPipelineTests(unittest.TestCase):
+        
+    def test_create_agent_with_status_completed(self):
+        # 1. arrange
+        fixture_path = os.path.join("benchmarks", "frozen_pipeline_fixture.json")           
+        # 2. act
+        agent = pipeline_manager.create_agent(fixture_path)
+        # 3. assert
+        self.assertEqual(agent.status, "completed")
+
+    def _set_up_state_for_create_agent_test(self):
+        fixture_path = os.path.join("benchmarks", "frozen_pipeline_fixture.json")           
+        agent = pipeline_manager.create_agent(fixture_path)
+        return agent
+
+    def test_create_agent_with_llm_available(self):
+        # 1. arrange; 2. act
+        agent = self._set_up_state_for_create_agent_test()
+        # 3. assert
+        self.assertTrue(agent.llm_available)
+
+    def test_create_agent_with_coverage_included(self):
+        # 1. arrange; 2. act
+        agent = self._set_up_state_for_create_agent_test()
+        # 3. assert
+        self.assertEqual(agent.coverage_metrics["included"], 2) # Porque esta assim (um numero magico?)
+
+    def test_create_agent_with_coverage_manual_review_required(self):
+        # 1. arrange; 2. act
+        agent = self._set_up_state_for_create_agent_test()
+        # 3. assert
+        self.assertEqual(agent.coverage_metrics["manual_review_required"], 0) # Porque esta assim (um numero magico?)
+
+    def test_ablation_with_results(self):
+        # 1. arrange
+        agent = self._set_up_state_for_create_agent_test()
+        # 2. act
+        summary = agent.run_ablation_suite(
+            query="carbon dioxide thermal energy storage",
+            max_results=5,
+            model="frozen-model"
+        )
+        # 3. assert
+        self.assertTrue(summary["results"])
+
+    
+## era a partir daqui
     def test_run_agent_with_frozen_components(self):
         fixture_path = os.path.join("benchmarks", "frozen_pipeline_fixture.json")
         scrapers, evaluator_factory = build_frozen_components(fixture_path)
