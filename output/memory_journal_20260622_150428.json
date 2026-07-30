@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2026-06-22T15:04:32",
+    "stage": "setup",
+    "event": "llm_check",
+    "detail": "Verificação de disponibilidade do Ollama concluída.",
+    "payload": {
+      "llm_available": false,
+      "model": "gemma3:27b"
+    }
+  },
+  {
+    "timestamp": "2026-06-22T15:04:43",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "GooglePatents retornou patentes.",
+    "payload": {
+      "source": "GooglePatents",
+      "count": 3,
+      "diagnostics": []
+    }
+  },
+  {
+    "timestamp": "2026-06-22T15:05:56",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "Patentscope retornou patentes.",
+    "payload": {
+      "source": "Patentscope",
+      "count": 10,
+      "diagnostics": []
+    }
+  },
+  {
+    "timestamp": "2026-06-22T15:05:56",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "EPO retornou patentes.",
+    "payload": {
+      "source": "EPO",
+      "count": 0,
+      "diagnostics": [
+        {
+          "kind": "config_missing",
+          "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-06-22T15:05:56",
+    "stage": "synthesis",
+    "event": "llm_unavailable",
+    "detail": "Síntese temática desativada porque o LLM não está disponível.",
+    "payload": {}
+  },
+  {
+    "timestamp": "2026-06-22T15:05:56",
+    "stage": "writer",
+    "event": "context_prepared",
+    "detail": "Contexto compartilhado preparado para o writer.",
+    "payload": {
+      "top_patents": 0,
+      "route_summary": {
+        "unrouted": 13
+      }
+    }
+  },
+  {
+    "timestamp": "2026-06-22T15:05:56",
+    "stage": "finalization",
+    "event": "report_generated",
+    "detail": "Relatórios finais gerados com sucesso.",
+    "payload": {
+      "markdown": "output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.md",
+      "json": "output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.json"
+    }
+  }
+]

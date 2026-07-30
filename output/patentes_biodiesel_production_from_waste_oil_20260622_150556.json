@@ -1,0 +1,2418 @@
+{
+  "metadata": {
+    "query": "biodiesel production from waste oil",
+    "timestamp": "2026-06-22T15:05:56.091937",
+    "total_patents": 13,
+    "model": "gemma3:27b",
+    "average_relevance": 0,
+    "run_state": {
+      "query": "biodiesel production from waste oil",
+      "max_results": 10,
+      "model": "gemma3:27b",
+      "output_dir": "output",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "config_snapshot": {
+        "pipeline_version": "1.1",
+        "timestamp": "2026-06-22T15:04:28",
+        "query": "biodiesel production from waste oil",
+        "max_results": 10,
+        "model": "gemma3:27b",
+        "output_dir": "output",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "thresholds": {
+          "include": 7.0,
+          "review": 4.5,
+          "manual_review_limit": 20
+        },
+        "runtime": {
+          "ollama_base_url": "http://localhost:11434",
+          "ollama_timeout": 600
+        },
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ]
+      },
+      "snapshot_hash": "9ac57d29ee662d5da0298e19811ad1b5acea6324a7c29163bc42875c8f23b43b",
+      "protocol": {
+        "version": "1.0",
+        "query": "biodiesel production from waste oil",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 10
+        },
+        "model": "gemma3:27b"
+      },
+      "writing_context": {
+        "protocol": {
+          "version": "1.0",
+          "query": "biodiesel production from waste oil",
+          "sources": [
+            "Google Patents",
+            "Patentscope"
+          ],
+          "stages": [
+            "identification",
+            "deduplication",
+            "screening",
+            "manual_review",
+            "full_extraction",
+            "synthesis"
+          ],
+          "criteria": {
+            "include": [
+              "Alinhamento claro com a query ou seus sinônimos técnicos.",
+              "Documento com título, resumo ou snippet suficientes para análise.",
+              "Potencial técnico relevante para o domínio pesquisado."
+            ],
+            "exclude": [
+              "Documentos sem relação técnica com a query.",
+              "Duplicatas de outra fonte ou publicação equivalente.",
+              "Registro sem metadados mínimos para avaliação."
+            ]
+          },
+          "thresholds": {
+            "include_score": 7.0,
+            "review_score": 4.5,
+            "max_items_for_manual_review": 20
+          },
+          "limits": {
+            "max_results": 10
+          },
+          "model": "gemma3:27b"
+        },
+        "coverage_metrics": {
+          "raw_scraped": 13,
+          "unique_patents": 13,
+          "duplicates_removed": 0,
+          "screened": 0,
+          "included": 0,
+          "review": 13,
+          "excluded": 0,
+          "manual_review_required": 13,
+          "manual_review_deferred": 0,
+          "full_extractions": 0,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 13,
+          "llm_total_failures": 0
+        },
+        "top_patents": [],
+        "thematic_clusters": {
+          "clusters": [],
+          "total_clusters": 0
+        },
+        "route_summary": {
+          "unrouted": 13
+        },
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "snapshot_hash": "9ac57d29ee662d5da0298e19811ad1b5acea6324a7c29163bc42875c8f23b43b"
+      },
+      "memory_sidecar": {
+        "run_id": "20260622_150428",
+        "max_items_per_slot": 5,
+        "slots": {
+          "writer": [
+            {
+              "top_patents": [],
+              "route_summary": {
+                "unrouted": 13
+              }
+            }
+          ]
+        },
+        "journal": [
+          {
+            "timestamp": "2026-06-22T15:04:32",
+            "stage": "setup",
+            "event": "llm_check",
+            "detail": "Verificação de disponibilidade do Ollama concluída.",
+            "payload": {
+              "llm_available": false,
+              "model": "gemma3:27b"
+            }
+          },
+          {
+            "timestamp": "2026-06-22T15:04:43",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "GooglePatents retornou patentes.",
+            "payload": {
+              "source": "GooglePatents",
+              "count": 3,
+              "diagnostics": []
+            }
+          },
+          {
+            "timestamp": "2026-06-22T15:05:56",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "Patentscope retornou patentes.",
+            "payload": {
+              "source": "Patentscope",
+              "count": 10,
+              "diagnostics": []
+            }
+          },
+          {
+            "timestamp": "2026-06-22T15:05:56",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "EPO retornou patentes.",
+            "payload": {
+              "source": "EPO",
+              "count": 0,
+              "diagnostics": [
+                {
+                  "kind": "config_missing",
+                  "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+                  "url": ""
+                }
+              ]
+            }
+          },
+          {
+            "timestamp": "2026-06-22T15:05:56",
+            "stage": "synthesis",
+            "event": "llm_unavailable",
+            "detail": "Síntese temática desativada porque o LLM não está disponível.",
+            "payload": {}
+          },
+          {
+            "timestamp": "2026-06-22T15:05:56",
+            "stage": "writer",
+            "event": "context_prepared",
+            "detail": "Contexto compartilhado preparado para o writer.",
+            "payload": {
+              "top_patents": 0,
+              "route_summary": {
+                "unrouted": 13
+              }
+            }
+          },
+          {
+            "timestamp": "2026-06-22T15:05:56",
+            "stage": "finalization",
+            "event": "report_generated",
+            "detail": "Relatórios finais gerados com sucesso.",
+            "payload": {
+              "markdown": "output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.md",
+              "json": "output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.json"
+            }
+          }
+        ]
+      },
+      "memory_journal": [
+        {
+          "timestamp": "2026-06-22T15:04:32",
+          "stage": "setup",
+          "event": "llm_check",
+          "detail": "Verificação de disponibilidade do Ollama concluída.",
+          "payload": {
+            "llm_available": false,
+            "model": "gemma3:27b"
+          }
+        },
+        {
+          "timestamp": "2026-06-22T15:04:43",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "GooglePatents retornou patentes.",
+          "payload": {
+            "source": "GooglePatents",
+            "count": 3,
+            "diagnostics": []
+          }
+        },
+        {
+          "timestamp": "2026-06-22T15:05:56",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "Patentscope retornou patentes.",
+          "payload": {
+            "source": "Patentscope",
+            "count": 10,
+            "diagnostics": []
+          }
+        },
+        {
+          "timestamp": "2026-06-22T15:05:56",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "EPO retornou patentes.",
+          "payload": {
+            "source": "EPO",
+            "count": 0,
+            "diagnostics": [
+              {
+                "kind": "config_missing",
+                "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-06-22T15:05:56",
+          "stage": "synthesis",
+          "event": "llm_unavailable",
+          "detail": "Síntese temática desativada porque o LLM não está disponível.",
+          "payload": {}
+        },
+        {
+          "timestamp": "2026-06-22T15:05:56",
+          "stage": "writer",
+          "event": "context_prepared",
+          "detail": "Contexto compartilhado preparado para o writer.",
+          "payload": {
+            "top_patents": 0,
+            "route_summary": {
+              "unrouted": 13
+            }
+          }
+        },
+        {
+          "timestamp": "2026-06-22T15:05:56",
+          "stage": "finalization",
+          "event": "report_generated",
+          "detail": "Relatórios finais gerados com sucesso.",
+          "payload": {
+            "markdown": "output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.md",
+            "json": "output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.json"
+          }
+        }
+      ],
+      "stage_metrics": [
+        {
+          "stage": "setup",
+          "status": "degraded",
+          "duration_seconds": 4.094,
+          "items_processed": 1,
+          "detail": "Verificação do modelo Ollama"
+        },
+        {
+          "stage": "search",
+          "status": "ok",
+          "duration_seconds": 83.169,
+          "items_processed": 13,
+          "detail": "13 patentes únicas após dedupe"
+        },
+        {
+          "stage": "screening",
+          "status": "skipped",
+          "duration_seconds": 0.0,
+          "items_processed": 13,
+          "detail": "LLM indisponível"
+        },
+        {
+          "stage": "comparative_analysis",
+          "status": "skipped",
+          "duration_seconds": 0.0,
+          "items_processed": 13,
+          "detail": "LLM indisponível para síntese comparativa"
+        },
+        {
+          "stage": "whitespace_analysis",
+          "status": "skipped",
+          "duration_seconds": 0.0,
+          "items_processed": 0,
+          "detail": "Whitespace analysis sem corpus elegível"
+        },
+        {
+          "stage": "reporting",
+          "status": "ok",
+          "duration_seconds": 0.005,
+          "items_processed": 13,
+          "detail": "Relatórios Markdown e JSON"
+        },
+        {
+          "stage": "finalization",
+          "status": "ok",
+          "duration_seconds": 0.002,
+          "items_processed": 8,
+          "detail": "Persistência de artefatos e estado"
+        }
+      ],
+      "llm_cache_stats": {
+        "hits": 0,
+        "misses": 0,
+        "entries": 0
+      },
+      "llm_telemetry": {
+        "degraded": false,
+        "total_failures": 0,
+        "consecutive_failures": 0,
+        "recent_errors": [],
+        "operations": {}
+      },
+      "observability_metrics": {
+        "routes": {
+          "unrouted": {
+            "count": 13,
+            "include": 0,
+            "review": 13,
+            "exclude": 0,
+            "llm_errors": 13
+          }
+        },
+        "sources": {
+          "EPO": {
+            "raw_results": 0,
+            "duration_seconds": 0.001,
+            "diagnostic_counts": {
+              "config_missing": 1
+            }
+          },
+          "GooglePatents": {
+            "raw_results": 3,
+            "duration_seconds": 10.785,
+            "diagnostic_counts": {}
+          },
+          "Patentscope": {
+            "raw_results": 10,
+            "duration_seconds": 72.331,
+            "diagnostic_counts": {}
+          }
+        },
+        "failures": {
+          "run_errors": 0,
+          "records_with_llm_error": 13,
+          "llm_total_failures": 0,
+          "llm_by_operation": {},
+          "scraper_diagnostics_by_kind": {
+            "config_missing": 1
+          }
+        }
+      },
+      "run_id": "20260622_150428",
+      "started_at": "2026-06-22T15:04:28",
+      "finished_at": "2026-06-22T15:05:56",
+      "status": "completed",
+      "current_stage": "reporting",
+      "screened_count": 0,
+      "llm_available": false,
+      "patents": [
+        {
+          "record_id": "rec_843a5e5b5bcc",
+          "family_id": "family:9f7f63e8c4766cc7d8a5ba72da6b2ded7840a624",
+          "title": "Energy efficient biodiesel production from natural or industrial waste oil",
+          "patent_id": "WO2021204610A1",
+          "abstract": "AbstractA method of producing fatty acid alkyl ester from an organic oil source containing at least one free fatty acid, wherein the vegetable and/or animal waste oil has an acid number of at least 30 mg KOH/g and wherein the method comprises the steps of a) reacting the oil source with glycerol at a temperature, which is at least 110Â°C and does not exceed 180Â°C during the reaction, in the presence of a catalyst comprising at least methane sulfonic acid or the homo anhydride thereof; and b) acidic transesterification at a temperature, which is at least 110Â°C and does not exceed 160Â°C during the reaction of the reaction product from step a) with an alkanol; and c) isolating the fatty acid alkyl ester from the reaction product of step b).",
+          "inventors": [
+            "Paul Klingelhoefer",
+            "Michael Schier"
+          ],
+          "assignee": "BASF SE",
+          "filing_date": "2021-03-30",
+          "publication_date": "2021-10-14",
+          "url": "https://patents.google.com/patent/WO2021204610A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_d9d249fb229f",
+          "family_id": "family:9c80bced7734dac8b56806b672c704d27ef1ccd5",
+          "title": "Catalyst and method for biodiesel production from unrefined low-grade oil and crude aqueous alcohols",
+          "patent_id": "US10654789B2",
+          "abstract": "AbstractA catalyst for catalyzing transesterification of esters or esterification of fatty acids, the catalyst is selected from the group consisting of manganese (II) glycerolate, cobalt (II) glycerolate, iron (II) glycerolate, and any combination thereof. A method for transesterification reaction, includes: a) providing a catalyst, wherein the catalyst is selected from the group consisting of manganese (II) glycerolate, cobalt (II) glycerolate, iron (II) glycerolate, and any combination thereof; b) adding the catalyst, one or more alcohols, and a composition comprising one or more esters to a reactor to form a reaction mixture; and c) stirring while heating the reaction mixture for reaction to form transesterification products.",
+          "inventors": [
+            "Ka-fu YUNG",
+            "Wing-Tak Wong",
+            "Tsz-lung KWONG",
+            "Pak-chung LAU"
+          ],
+          "assignee": "Shenzhen Research Institute HKPU",
+          "filing_date": "2018-03-14",
+          "publication_date": "2020-05-19",
+          "url": "https://patents.google.com/patent/US10654789B2/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_2353676b5091",
+          "family_id": "family:fb0bd6fa2a96e966affb0f917cd5a309e0c2500d",
+          "title": "System and process of biodiesel production",
+          "patent_id": "US20100166620A1",
+          "abstract": "AbstractA system and process for continuous production of fatty acid methyl esters (FAME) from the fatty acid triglycerides of waste oil via transesterification in the presence of a reusable sugar-based catalyst. The system and process incorporates re-cycling and re-use of waste bi-product streams to result in a near-zero emissions, with a 97% product yield mix consisting of almost pure biodiesel and a very small percentage of impurities including glycerol.",
+          "inventors": [
+            "Stephanie Marie Gurski",
+            "Anam Kazim",
+            "Hoi Ki Cheung",
+            "Amani Obeid"
+          ],
+          "assignee": "Individual",
+          "filing_date": "2009-11-18",
+          "publication_date": "2010-07-01",
+          "url": "https://patents.google.com/patent/US20100166620A1/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_144c9b1aab19",
+          "family_id": "family:f33b9e37239c92f79f70cdabd765c47fc4ba1e9f",
+          "title": "Apparatus and method for bio-fuel\nproduction",
+          "patent_id": "20080250700",
+          "abstract": "(EN)An apparatus for theproductionof a bio-fuel or a bio-fuel additivefromplant-derivedoils, animal fats or a mixture thereof, suitable for use in a diesel engine is disclosed. The apparatus comprises a porous membrane for separating a reaction mixturefroma permeate, the reaction mixture comprising an alcohol, a feedstock comprising plant-derivedoils, animal fats or mixture thereof, and a catalyst for converting said feedstock to a bio-fuel or a bio-fuel additive, wherein said porous membrane is substantially impermeable to the feedstock and substantially permeable to said bio-fuel or bio-fuel additive. A method using said porous membrane in theproductionof a bio-fuel or a bio-fuel additive is also disclosed.",
+          "inventors": [
+            "Tremblay André Yves",
+            "Dubé Marc Arnold"
+          ],
+          "assignee": "The University of Ottawa",
+          "filing_date": "27.02.2006",
+          "publication_date": "16.10.2008",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US42660468&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_dc8508d79339",
+          "family_id": "family:8384d9b0795bc70e5855cb25c3727c3f34b05f55",
+          "title": "Acidic methanol stripping process that reduces sulfur content of\nbiodiesel\nfrom\nwaste\ngreases",
+          "patent_id": "20160257908",
+          "abstract": "(EN)The present invention provides a method of producing fatty acid alkyl estersfroma lipid, comprising steps of introducing a gas comprising vapor of an alcohol selectedfrommethanol, ethanol, 1-propanol, iso-propanol and butanols, into the lipid in a form of bubbles to enable the bubbles to pass through the lipid and be dischargedfromthe lipid. Theproductmay then be subjected to a transesterification process catalyzed by a base catalyst. The present invention is robust with low quality feedstocks thus significantly reduceproductioncost forbiodiesel.",
+          "inventors": [
+            "Richard Allan Cairncross",
+            "Megan Elizabeth Hums",
+            "Colin James Stacy"
+          ],
+          "assignee": "Drexel University\nEnvironmental Fuel Research, LLC",
+          "filing_date": "20.04.2015",
+          "publication_date": "08.09.2016",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US177602065&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_4f75f5840fbe",
+          "family_id": "family:f2cf49060a6d9fec68e2264d35720f2f7f0ab82e",
+          "title": "METHOD FOR\nBIODIESEL\nPRODUCTION\nFROM\nTHE FATS AND\nOILS\n(FR)\nPROCÉDÉ DE PRODUCTION DE BIODIESEL À PARTIR DE MATIÈRES GRASSES",
+          "patent_id": "WO/2009/089802",
+          "abstract": "(EN)The method lies in reesterification of fats andoilsunder alkali conditions and subsequent separation of thebiodieselphasefromthe glycerin phase. An organic base or a mixture of organic bases is used for the creation of alkali conditions and as catalysts for alcoholysis. A suitable organic base, or bases, is an amine with boiling point at normal pressure up to 200°C, or a mixture of such amines with tetramethylammonium hydroxide. It particularly concerns aminesfromthe group containing isopropylamine, diisopropylamine, diethylamine, n-butylamine and cyclohexylamine. Inwasteoilsand fats containing free fatty acids, especially when the content of free fatty acids exceeds the limit value of acid number, esterification of these acids can be applied with the use of an organic base or a mixture of organic bases.(FR)Le procédé de l'invention se rapporte à la réestérification de matières grasses dans des conditions alcalines, et à la séparation subséquente de la phase biodiesel de la phase glycérine. Une base organique, ou un mélange de bases organiques, est utilisé pour la création de conditions alcalines et comme catalyseur d'alcoolyse. Une base (ou des bases) organique appropriée est une amine dont le point d'ébullition à pression normale peut atteindre 200°C, ou un mélange de telles amines avec un hydroxyde de tétraméthylammonium. L’invention concerne particulièrement des amines du groupe constitué par isopropylamine, diisopropylamine, diéthylamine, n-butylamine et cyclohexylamine. Dans des matières grasses contenant des acides gras libres, en particulier lorsque la teneur en acides gras libres dépasse la valeur limite de l'indice d'acidité, l'estérification de ces acides peut être réalisée par l'utilisation d'une base organique ou d'un mélange de bases organiques.",
+          "inventors": [
+            "KOLOMAZNÍK, Karel",
+            "KLEIN, Karel",
+            "VASEK, Vladimír",
+            "JANÁCOVÁ, Dagmar",
+            "JELÍNEK, Milos",
+            "UHLÍROVÁ, Michaela",
+            "MYNARÍK, Alois"
+          ],
+          "assignee": "TOMAS BATA UNIVERSITY IN ZLÍN\n[CZ]/[CZ]\n(AllExceptUS)\nKOLOMAZNÍK, Karel\n[CZ]/[CZ](UsOnly)\nKLEIN, Karel\n[CZ]/[CZ](UsOnly)\nVASEK, Vladimír\n[CZ]/[CZ](UsOnly)\nJANÁCOVÁ, Dagmar\n[CZ]/[CZ](UsOnly)\nJELÍNEK, Milos\n[CZ]/[CZ](UsOnly)\nUHLÍROVÁ, Michaela\n[CZ]/[CZ](UsOnly)\nMYNARÍK, Alois\n[CZ]/[CZ](UsOnly)",
+          "filing_date": "13.01.2009",
+          "publication_date": "23.07.2009",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2009089802&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_0175c5309d24",
+          "family_id": "family:d94fce9ee371be199037a86835cb57b9d636bfbe",
+          "title": "System and process of\nbiodiesel\nproduction",
+          "patent_id": "20100166620",
+          "abstract": "(EN)A system and process for continuousproductionof fatty acid methyl esters (FAME)fromthe fatty acid triglycerides ofwasteoilvia transesterification in the presence of a reusable sugar-based catalyst. The system and process incorporates re-cycling and re-use ofwasteby-productstreams to result in a near-zero emissions, with a 97%productyield mix consisting of almost purebiodieseland a very small percentage of impurities including glycerol.",
+          "inventors": [
+            "Gurski Stephanie Marie",
+            "Kazim Anam",
+            "Cheung Hoi Ki",
+            "Obeid Amani"
+          ],
+          "assignee": "Gurski Stephanie Marie\nKazim Anam\nCheung Hoi Ki\nObeid Amani",
+          "filing_date": "18.11.2009",
+          "publication_date": "01.07.2010",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US43774737&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_ff8144cbafdf",
+          "family_id": "family:5cfc1988b763afd697e5baad812761abf34668fe",
+          "title": "SYSTEM AND PROCESS OF\nBIODIESEL\nPRODUCTION\n(FR)\nINSTALLATION ET PROCEDE DE PRODUCTION DE BIODIESEL",
+          "patent_id": "2703599",
+          "abstract": "(EN)A system and process for continuousproductionof fatty acid methyl esters(FAME)fromthe fatty acid triglycerides ofwasteoilvia transesterificationin thepresence of a reusable sugar-based catalyst. The system and processincorporatesre-cycling and re-use ofwastebi-productstreams to result in a near-zeroemissions, witha 97%productyield mix consisting of almost purebiodieseland a very smallpercentage of impurities including glycerol.",
+          "inventors": [],
+          "assignee": "GURSKI, STEPHANIE MARIE\nKAZIM, ANAM\nCHEUNG, HOI KI\nOBEID, AMANI",
+          "filing_date": "",
+          "publication_date": "18.05.2011",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA94496673&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_3279aa5dd01e",
+          "family_id": "family:69434200c71201f2f71cc08f5ab86a40d13c538a",
+          "title": "A METHOD OF PRODUCING\nBIODIESEL\n(FR)\nPROCÉDÉ DE PRÉPARATION DE BIODIESEL",
+          "patent_id": "WO/2017/192029",
+          "abstract": "(EN)The present invention relates a method forbiodieselproductionfromwasteoilcomprising the steps of mixingwasteoiland alcohol; and performing transesterification in a reactor comprising a combination of a high speed mixer operating at 1000 to 5000 rpm and a sonic mixer operating at 1.5 to 2.4 MHz wherein the mixture is passed through a plurality of reactors connected in series.(FR)La présente invention concerne un procédé de production de biodiesel à partir d'huile usée comprenant les étapes consistant à mélanger de l'huile usée et de l'alcool; et à effectuer une transestérification dans un réacteur comprenant une combinaison d'un mélangeur à grande vitesse fonctionnant à 1000 à 5000 tr/min et d'un mélangeur sonique fonctionnant à 1,5 à 2,4 MHz, le mélange étant passé à travers une pluralité de réacteurs reliés en série.",
+          "inventors": [
+            "BIN KU HAMID, Ku Halim"
+          ],
+          "assignee": "UNIVERSITI TEKNOLOGI MARA\n[MY]/[MY]",
+          "filing_date": "31.05.2017",
+          "publication_date": "09.11.2017",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2017192029&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_33a6eb761b0a",
+          "family_id": "family:26e396f5f517903eafd6c9627138c1fa90a29f00",
+          "title": "APPARATUS AND METHOD FOR BIO-FUEL\nPRODUCTION\n(FR)\nAPPAREIL ET PROCEDE POUR LA PRODUCTION DE BIOCOMBUSTIBLE",
+          "patent_id": "WO/2006/089429",
+          "abstract": "(EN)An apparatus for theproductionof a bio-fuel or a bio-fuel additivefromplant-derivedoils, animal fats or a mixture thereof, suitable for use in a diesel engine is disclosed. The apparatus comprises a porous membrane for separating a reaction mixturefroma permeate, the reaction mixture comprising an alcohol, a feedstock comprising plant-derivedoils, animal fats or mixture thereof, and a catalyst for converting said feedstock to a bio-fuel or a bio-fuel additive, wherein said porous membrane is substantially impermeable to the feedstock and substantially permeable to said bio-fuel or bio-fuel additive. A method using said porous membrane in theproductionof a bio-fuel or a bio-fuel additive is also disclosed(FR)L'invention concerne un appareil pour la production d'un biocombustible ou d'un adjuvant de biocombustible issu d'huiles végétales, de graisses animales ou de leurs mélanges, approprié pour être utilisé dans un moteur diesel. L'appareil comprend une membrane poreuse destinée à séparer un mélange réactionnel d'un perméat, le mélange réactionnel comprenant un alcool, une charge comprenant des huiles végétales, des graisses animales ou leurs mélanges et un catalyseur pour convertir ladite charge en un biocombustible ou un adjuvant de biocombustible, ladite membrane poreuse étant sensiblement imperméable à la charge et sensiblement perméable audit biocombustible ou adjuvant de biocombustible. L'invention concerne également un procédé utilisant ladite membrane poreuse pour la production d'un biocombustible ou d'un adjuvant de biocombustible.",
+          "inventors": [
+            "TREMBLAY, André Yves",
+            "DUBÉ, Marc Arnold"
+          ],
+          "assignee": "UNIVERSITY OF OTTAWA\n[CA]/[CA]\n(AllExceptUS)\nTREMBLAY, André Yves\n[CA]/[CA](UsOnly)\nDUBÉ, Marc Arnold\n[CA]/[CA](UsOnly)",
+          "filing_date": "27.02.2006",
+          "publication_date": "31.08.2006",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2006089429&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_f3efddf0f846",
+          "family_id": "family:49d70c138922be24511357b8b151bb6b4b881437",
+          "title": "APPARATUS AND METHOD FOR BIO-FUEL\nPRODUCTION\n(FR)\nAPPAREIL ET PROCEDE POUR LA PRODUCTION DE BIOCOMBUSTIBLE",
+          "patent_id": "2599499",
+          "abstract": "(EN)An apparatus for theproductionof a bio-fuel or a bio-fuel additivefromplant-derivedoils, animal fats or a mixture thereof, suitable for use in adiesel engine is disclosed. The apparatus comprises a porous membrane forseparating a reaction mixturefroma permeate, the reaction mixture comprisingan alcohol, a feedstock comprising plant-derivedoils, animal fats or mixturethereof, and a catalyst for converting said feedstock to a bio-fuel or a bio-fuel additive, wherein said porous membrane is substantially impermeable tothe feedstock and substantially permeable to said bio-fuel or bio-fueladditive. A method using said porous membrane in theproductionof a bio-fuelor a bio-fuel additive is also disclosed",
+          "inventors": [],
+          "assignee": "UNIVERSITY OF OTTAWA",
+          "filing_date": "",
+          "publication_date": "31.08.2006",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA94292010&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_698403409d1d",
+          "family_id": "family:1314563b37c124086c37827a918f204596aceb70",
+          "title": "METHODS AND CATALYSTS FOR MAKING\nBIODIESEL\nFROM\nTHE TRANSESTERIFICATION AND ESTERIFICATION OF UNREFINED\nOILS\n(FR)\nPROCEDES ET CATALYSEURS POUR FABRIQUER UN BIODIESEL, PAR TRANSESTERIFICATION ET ESTERIFICATION D'HUILES NON RAFFINEES",
+          "patent_id": "2724970",
+          "abstract": "(EN)A method of forming abiodieselproductand a heterogeneous catalyst system  used to form saidproductthat has a high tolerance  for the presence of water and free fatty  acids (FFA) in theoilfeedstock is disclosed.  This catalyst system may simultaneously catalyze    both the esterification of FAA and the  transesterification of triglycerides present in theoilfeedstock. The catalyst system according to  one aspect of the present disclosure represents a  class of zinc and lanthanum oxide heterogeneous  catalysts that include different ratios of zinc oxide  to lanthanum oxides (Zn:La ratio) rangingfromabout 10:0 to 0:10. The Zn:La ratio in the  catalyst is believed to have an effect on the number  and reactivity of Lewis acid and base sites, as  well as the transesterification of glycehdes, the  esterification of fatty acids, and the hydrolysis of  glycehdes andbiodiesel.",
+          "inventors": [
+            "YAN, SHULI",
+            "SALLEY, STEVEN O.",
+            "NG, K. Y. SIMON"
+          ],
+          "assignee": "WAYNE STATE UNIVERSITY",
+          "filing_date": "19.05.2009",
+          "publication_date": "26.11.2009",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA94503297&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        },
+        {
+          "record_id": "rec_8e80f3d89661",
+          "family_id": "family:cb8f0aacd7fe7c0eec8aefb4a757cd37492633c4",
+          "title": "METHODS AND CATALYSTS FOR MAKING\nBIODIESEL\nFROM\nTHE TRANSESTERIFICATION AND ESTERIFICATION OF UNREFINED\nOILS\n(FR)\nPROCÉDÉS ET CATALYSEURS POUR FABRIQUER UN BIODIESEL, PAR TRANSESTÉRIFICATION ET ESTÉRIFICATION D'HUILES NON RAFFINÉES",
+          "patent_id": "WO/2009/143159",
+          "abstract": "(EN)A method of forming abiodieselproductand a heterogeneous catalyst system used to form saidproductthat has a high tolerance for the presence of water and free fatty acids (FFA) in theoilfeedstock is disclosed. This catalyst system may simultaneously catalyze both the esterification of FAA and the transesterification of triglycerides present in theoilfeedstock. The catalyst system according to one aspect of the present disclosure represents a class of zinc and lanthanum oxide heterogeneous catalysts that include different ratios of zinc oxide to lanthanum oxides (Zn:La ratio) rangingfromabout 10:0 to 0:10. The Zn:La ratio in the catalyst is believed to have an effect on the number and reactivity of Lewis acid and base sites, as well as the transesterification of glycehdes, the esterification of fatty acids, and the hydrolysis of glycehdes andbiodiesel.(FR)L'invention porte sur un procédé de formation d'un produit biodiesel et sur un système catalyseur hétérogène utilisé pour former ledit produit, qui a une grande tolérance à la présence d'eau et d'acides gras libres (FFA) dans l'huile de charge. Le système catalyseur peut simultanément catalyser tant l'estérification des FFA que la transestérification des triglycérides présents dans l'huile de charge. Le système catalyseur selon un aspect de la présente invention représente une classe de catalyseurs hétérogènes à l'oxyde de zinc et de lanthane, qui présentent différents rapports de l'oxyde de zinc aux oxydes de lanthane (rapport Zn:La), compris entre environ 10:0 et 0:10. On pense que le rapport Zn:La du catalyseur a un effet sur le nombre et la réactivité des sites d'acides et de bases de Lewis, ainsi que sur la transestérification des glycérides, l'estérification des acides gras et l'hydrolyse des glycérides et du biodiesel.",
+          "inventors": [
+            "YAN, Shuli",
+            "SALLEY, Steven, O.",
+            "NG, K.Y., Simon"
+          ],
+          "assignee": "WAYNE STATE UNIVERSITY\n[US]/[US]\n(AllExceptUS)\nYAN, Shuli\n[CN]/[US](UsOnly)\nSALLEY, Steven, O.\n[US]/[US](UsOnly)\nNG, K.Y., Simon\n[US]/[US](UsOnly)",
+          "filing_date": "19.05.2009",
+          "publication_date": "26.11.2009",
+          "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2009143159&_cid=P11-MQPIZB-03010-1",
+          "snippet": "",
+          "source": "Patentscope"
+        }
+      ],
+      "evaluations": [
+        {
+          "record_id": "rec_843a5e5b5bcc",
+          "patent_id": "WO2021204610A1",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_d9d249fb229f",
+          "patent_id": "US10654789B2",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_2353676b5091",
+          "patent_id": "US20100166620A1",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_144c9b1aab19",
+          "patent_id": "20080250700",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_dc8508d79339",
+          "patent_id": "20160257908",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_4f75f5840fbe",
+          "patent_id": "WO/2009/089802",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_0175c5309d24",
+          "patent_id": "20100166620",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_ff8144cbafdf",
+          "patent_id": "2703599",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_3279aa5dd01e",
+          "patent_id": "WO/2017/192029",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_33a6eb761b0a",
+          "patent_id": "WO/2006/089429",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_f3efddf0f846",
+          "patent_id": "2599499",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_698403409d1d",
+          "patent_id": "2724970",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_8e80f3d89661",
+          "patent_id": "WO/2009/143159",
+          "analysis_route": "",
+          "route_reason": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "screening_reason": "LLM indisponível.",
+          "evidence_snippets": [],
+          "thematic_cluster": "",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "",
+          "innovation_level": "",
+          "co2_role": "",
+          "storage_role": "",
+          "system_boundary": "",
+          "cycle_type": "",
+          "heat_source_sink": "",
+          "claim_focus": "",
+          "exclusion_category": "",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.0,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": true,
+          "llm_error": "LLM indisponível."
+        }
+      ],
+      "patents_by_source": {
+        "GooglePatents": 3,
+        "Patentscope": 10,
+        "EPO": 0
+      },
+      "scraper_diagnostics": {
+        "GooglePatents": [],
+        "Patentscope": [],
+        "EPO": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      },
+      "coverage_metrics": {
+        "raw_scraped": 13,
+        "unique_patents": 13,
+        "duplicates_removed": 0,
+        "screened": 0,
+        "included": 0,
+        "review": 13,
+        "excluded": 0,
+        "manual_review_required": 13,
+        "manual_review_deferred": 0,
+        "full_extractions": 0,
+        "missing_abstract": 0,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 13,
+        "llm_total_failures": 0
+      },
+      "manual_review_queue": [
+        {
+          "record_id": "rec_3279aa5dd01e",
+          "patent_id": "WO/2017/192029",
+          "family_id": "family:69434200c71201f2f71cc08f5ab86a40d13c538a",
+          "title": "A METHOD OF PRODUCING\nBIODIESEL\n(FR)\nPROCÉDÉ DE PRÉPARATION DE BIODIESEL",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_33a6eb761b0a",
+          "patent_id": "WO/2006/089429",
+          "family_id": "family:26e396f5f517903eafd6c9627138c1fa90a29f00",
+          "title": "APPARATUS AND METHOD FOR BIO-FUEL\nPRODUCTION\n(FR)\nAPPAREIL ET PROCEDE POUR LA PRODUCTION DE BIOCOMBUSTIBLE",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_f3efddf0f846",
+          "patent_id": "2599499",
+          "family_id": "family:49d70c138922be24511357b8b151bb6b4b881437",
+          "title": "APPARATUS AND METHOD FOR BIO-FUEL\nPRODUCTION\n(FR)\nAPPAREIL ET PROCEDE POUR LA PRODUCTION DE BIOCOMBUSTIBLE",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_dc8508d79339",
+          "patent_id": "20160257908",
+          "family_id": "family:8384d9b0795bc70e5855cb25c3727c3f34b05f55",
+          "title": "Acidic methanol stripping process that reduces sulfur content of\nbiodiesel\nfrom\nwaste\ngreases",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_144c9b1aab19",
+          "patent_id": "20080250700",
+          "family_id": "family:f33b9e37239c92f79f70cdabd765c47fc4ba1e9f",
+          "title": "Apparatus and method for bio-fuel\nproduction",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_d9d249fb229f",
+          "patent_id": "US10654789B2",
+          "family_id": "family:9c80bced7734dac8b56806b672c704d27ef1ccd5",
+          "title": "Catalyst and method for biodiesel production from unrefined low-grade oil and crude aqueous alcohols",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_843a5e5b5bcc",
+          "patent_id": "WO2021204610A1",
+          "family_id": "family:9f7f63e8c4766cc7d8a5ba72da6b2ded7840a624",
+          "title": "Energy efficient biodiesel production from natural or industrial waste oil",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_4f75f5840fbe",
+          "patent_id": "WO/2009/089802",
+          "family_id": "family:f2cf49060a6d9fec68e2264d35720f2f7f0ab82e",
+          "title": "METHOD FOR\nBIODIESEL\nPRODUCTION\nFROM\nTHE FATS AND\nOILS\n(FR)\nPROCÉDÉ DE PRODUCTION DE BIODIESEL À PARTIR DE MATIÈRES GRASSES",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_698403409d1d",
+          "patent_id": "2724970",
+          "family_id": "family:1314563b37c124086c37827a918f204596aceb70",
+          "title": "METHODS AND CATALYSTS FOR MAKING\nBIODIESEL\nFROM\nTHE TRANSESTERIFICATION AND ESTERIFICATION OF UNREFINED\nOILS\n(FR)\nPROCEDES ET CATALYSEURS POUR FABRIQUER UN BIODIESEL, PAR TRANSESTERIFICATION ET ESTERIFICATION D'HUILES NON RAFFINEES",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_8e80f3d89661",
+          "patent_id": "WO/2009/143159",
+          "family_id": "family:cb8f0aacd7fe7c0eec8aefb4a757cd37492633c4",
+          "title": "METHODS AND CATALYSTS FOR MAKING\nBIODIESEL\nFROM\nTHE TRANSESTERIFICATION AND ESTERIFICATION OF UNREFINED\nOILS\n(FR)\nPROCÉDÉS ET CATALYSEURS POUR FABRIQUER UN BIODIESEL, PAR TRANSESTÉRIFICATION ET ESTÉRIFICATION D'HUILES NON RAFFINÉES",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_ff8144cbafdf",
+          "patent_id": "2703599",
+          "family_id": "family:5cfc1988b763afd697e5baad812761abf34668fe",
+          "title": "SYSTEM AND PROCESS OF\nBIODIESEL\nPRODUCTION\n(FR)\nINSTALLATION ET PROCEDE DE PRODUCTION DE BIODIESEL",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_0175c5309d24",
+          "patent_id": "20100166620",
+          "family_id": "family:d94fce9ee371be199037a86835cb57b9d636bfbe",
+          "title": "System and process of\nbiodiesel\nproduction",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        },
+        {
+          "record_id": "rec_2353676b5091",
+          "patent_id": "US20100166620A1",
+          "family_id": "family:fb0bd6fa2a96e966affb0f917cd5a309e0c2500d",
+          "title": "System and process of biodiesel production",
+          "reason": "LLM indisponível.",
+          "route": "",
+          "screening_score": 0.0,
+          "screening_decision": "review",
+          "llm_error": "LLM indisponível."
+        }
+      ],
+      "prisma_flow": {
+        "flow": {
+          "identification": {
+            "raw_records": 13,
+            "unique_records": 13,
+            "duplicates_removed": 0
+          },
+          "screening": {
+            "screened": 0,
+            "included": 0,
+            "review": 13,
+            "excluded": 0
+          },
+          "eligibility": {
+            "full_extractions": 0,
+            "manual_review_required": 13,
+            "manual_review_deferred": 0
+          },
+          "coverage": {
+            "missing_abstract": 0,
+            "missing_id": 0
+          },
+          "synthesis": {
+            "analyzed_records": 0,
+            "comparative_analysis_generated": false
+          }
+        },
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "version": "1.0"
+      },
+      "thematic_clusters": {
+        "clusters": [],
+        "total_clusters": 0
+      },
+      "whitespace_analysis": {
+        "status": "no_input",
+        "query": "biodiesel production from waste oil",
+        "corpus_summary": {
+          "considered_patents": 13,
+          "selected_patents": 0,
+          "core": 0,
+          "frontier": 0,
+          "adjacent": 0
+        },
+        "coverage_matrix": [],
+        "axes": {},
+        "whitespace_candidates": [],
+        "markdown_summary": ""
+      },
+      "scraper_durations": {
+        "GooglePatents": 10.785,
+        "Patentscope": 72.331,
+        "EPO": 0.001
+      },
+      "evaluation_duration_seconds": 0.0,
+      "rerank_duration_seconds": 0.0,
+      "comparative_analysis_duration_seconds": 0.0,
+      "total_duration_seconds": 87.277,
+      "comparative_analysis": "",
+      "output_paths": {
+        "markdown": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.md",
+        "json": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\patentes_biodiesel_production_from_waste_oil_20260622_150556.json",
+        "state": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\run_state_20260622_150428.json",
+        "prisma": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\prisma_flow_20260622_150428.json",
+        "snapshot": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\config_snapshot_20260622_150428.json",
+        "whitespace_json": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\whitespace_analysis_20260622_150428.json",
+        "memory_journal": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\memory_journal_20260622_150428.json",
+        "memory_sidecar": "C:\\projetos\\Legado\\SistemaDePatentes\\legado\\RevisaoTecnica\\output\\memory_sidecar_20260622_150428.json"
+      },
+      "errors": []
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "writing_context": {
+      "protocol": {
+        "version": "1.0",
+        "query": "biodiesel production from waste oil",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 10
+        },
+        "model": "gemma3:27b"
+      },
+      "coverage_metrics": {
+        "raw_scraped": 13,
+        "unique_patents": 13,
+        "duplicates_removed": 0,
+        "screened": 0,
+        "included": 0,
+        "review": 13,
+        "excluded": 0,
+        "manual_review_required": 13,
+        "manual_review_deferred": 0,
+        "full_extractions": 0,
+        "missing_abstract": 0,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 13,
+        "llm_total_failures": 0
+      },
+      "top_patents": [],
+      "thematic_clusters": {
+        "clusters": [],
+        "total_clusters": 0
+      },
+      "route_summary": {
+        "unrouted": 13
+      },
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "snapshot_hash": "9ac57d29ee662d5da0298e19811ad1b5acea6324a7c29163bc42875c8f23b43b"
+    },
+    "stage_metrics": [
+      {
+        "stage": "setup",
+        "status": "degraded",
+        "duration_seconds": 4.094,
+        "items_processed": 1,
+        "detail": "Verificação do modelo Ollama"
+      },
+      {
+        "stage": "search",
+        "status": "ok",
+        "duration_seconds": 83.169,
+        "items_processed": 13,
+        "detail": "13 patentes únicas após dedupe"
+      },
+      {
+        "stage": "screening",
+        "status": "skipped",
+        "duration_seconds": 0.0,
+        "items_processed": 13,
+        "detail": "LLM indisponível"
+      },
+      {
+        "stage": "comparative_analysis",
+        "status": "skipped",
+        "duration_seconds": 0.0,
+        "items_processed": 13,
+        "detail": "LLM indisponível para síntese comparativa"
+      },
+      {
+        "stage": "whitespace_analysis",
+        "status": "skipped",
+        "duration_seconds": 0.0,
+        "items_processed": 0,
+        "detail": "Whitespace analysis sem corpus elegível"
+      },
+      {
+        "stage": "reporting",
+        "status": "ok",
+        "duration_seconds": 0.005,
+        "items_processed": 13,
+        "detail": "Relatórios Markdown e JSON"
+      },
+      {
+        "stage": "finalization",
+        "status": "ok",
+        "duration_seconds": 0.002,
+        "items_processed": 8,
+        "detail": "Persistência de artefatos e estado"
+      }
+    ],
+    "llm_cache_stats": {
+      "hits": 0,
+      "misses": 0,
+      "entries": 0
+    },
+    "llm_telemetry": {
+      "degraded": false,
+      "total_failures": 0,
+      "consecutive_failures": 0,
+      "recent_errors": [],
+      "operations": {}
+    },
+    "observability_metrics": {
+      "routes": {
+        "unrouted": {
+          "count": 13,
+          "include": 0,
+          "review": 13,
+          "exclude": 0,
+          "llm_errors": 13
+        }
+      },
+      "sources": {
+        "EPO": {
+          "raw_results": 0,
+          "duration_seconds": 0.001,
+          "diagnostic_counts": {
+            "config_missing": 1
+          }
+        },
+        "GooglePatents": {
+          "raw_results": 3,
+          "duration_seconds": 10.785,
+          "diagnostic_counts": {}
+        },
+        "Patentscope": {
+          "raw_results": 10,
+          "duration_seconds": 72.331,
+          "diagnostic_counts": {}
+        }
+      },
+      "failures": {
+        "run_errors": 0,
+        "records_with_llm_error": 13,
+        "llm_total_failures": 0,
+        "llm_by_operation": {},
+        "scraper_diagnostics_by_kind": {
+          "config_missing": 1
+        }
+      }
+    },
+    "whitespace_analysis": {
+      "status": "no_input",
+      "query": "biodiesel production from waste oil",
+      "corpus_summary": {
+        "considered_patents": 13,
+        "selected_patents": 0,
+        "core": 0,
+        "frontier": 0,
+        "adjacent": 0
+      },
+      "coverage_matrix": [],
+      "axes": {},
+      "whitespace_candidates": [],
+      "markdown_summary": ""
+    },
+    "scraper_diagnostics": {
+      "GooglePatents": [],
+      "Patentscope": [],
+      "EPO": [
+        {
+          "kind": "config_missing",
+          "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+          "url": ""
+        }
+      ]
+    },
+    "prisma_flow": {
+      "flow": {
+        "identification": {
+          "raw_records": 13,
+          "unique_records": 13,
+          "duplicates_removed": 0
+        },
+        "screening": {
+          "screened": 0,
+          "included": 0,
+          "review": 13,
+          "excluded": 0
+        },
+        "eligibility": {
+          "full_extractions": 0,
+          "manual_review_required": 13,
+          "manual_review_deferred": 0
+        },
+        "coverage": {
+          "missing_abstract": 0,
+          "missing_id": 0
+        },
+        "synthesis": {
+          "analyzed_records": 0,
+          "comparative_analysis_generated": false
+        }
+      },
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "version": "1.0"
+    },
+    "thematic_clusters": {
+      "clusters": [],
+      "total_clusters": 0
+    },
+    "config_snapshot": {
+      "pipeline_version": "1.1",
+      "timestamp": "2026-06-22T15:04:28",
+      "query": "biodiesel production from waste oil",
+      "max_results": 10,
+      "model": "gemma3:27b",
+      "output_dir": "output",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "thresholds": {
+        "include": 7.0,
+        "review": 4.5,
+        "manual_review_limit": 20
+      },
+      "runtime": {
+        "ollama_base_url": "http://localhost:11434",
+        "ollama_timeout": 600
+      },
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ]
+    },
+    "snapshot_hash": "9ac57d29ee662d5da0298e19811ad1b5acea6324a7c29163bc42875c8f23b43b",
+    "draft_status": {
+      "status": "blocked",
+      "warnings": [
+        "Conteúdo insuficiente para um rascunho completo."
+      ],
+      "substantive_patents": 0
+    }
+  },
+  "results": [
+    {
+      "patent": {
+        "record_id": "rec_843a5e5b5bcc",
+        "family_id": "family:9f7f63e8c4766cc7d8a5ba72da6b2ded7840a624",
+        "title": "Energy efficient biodiesel production from natural or industrial waste oil",
+        "patent_id": "WO2021204610A1",
+        "abstract": "AbstractA method of producing fatty acid alkyl ester from an organic oil source containing at least one free fatty acid, wherein the vegetable and/or animal waste oil has an acid number of at least 30 mg KOH/g and wherein the method comprises the steps of a) reacting the oil source with glycerol at a temperature, which is at least 110Â°C and does not exceed 180Â°C during the reaction, in the presence of a catalyst comprising at least methane sulfonic acid or the homo anhydride thereof; and b) acidic transesterification at a temperature, which is at least 110Â°C and does not exceed 160Â°C during the reaction of the reaction product from step a) with an alkanol; and c) isolating the fatty acid alkyl ester from the reaction product of step b).",
+        "inventors": [
+          "Paul Klingelhoefer",
+          "Michael Schier"
+        ],
+        "assignee": "BASF SE",
+        "filing_date": "2021-03-30",
+        "publication_date": "2021-10-14",
+        "url": "https://patents.google.com/patent/WO2021204610A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_843a5e5b5bcc",
+        "patent_id": "WO2021204610A1",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_d9d249fb229f",
+        "family_id": "family:9c80bced7734dac8b56806b672c704d27ef1ccd5",
+        "title": "Catalyst and method for biodiesel production from unrefined low-grade oil and crude aqueous alcohols",
+        "patent_id": "US10654789B2",
+        "abstract": "AbstractA catalyst for catalyzing transesterification of esters or esterification of fatty acids, the catalyst is selected from the group consisting of manganese (II) glycerolate, cobalt (II) glycerolate, iron (II) glycerolate, and any combination thereof. A method for transesterification reaction, includes: a) providing a catalyst, wherein the catalyst is selected from the group consisting of manganese (II) glycerolate, cobalt (II) glycerolate, iron (II) glycerolate, and any combination thereof; b) adding the catalyst, one or more alcohols, and a composition comprising one or more esters to a reactor to form a reaction mixture; and c) stirring while heating the reaction mixture for reaction to form transesterification products.",
+        "inventors": [
+          "Ka-fu YUNG",
+          "Wing-Tak Wong",
+          "Tsz-lung KWONG",
+          "Pak-chung LAU"
+        ],
+        "assignee": "Shenzhen Research Institute HKPU",
+        "filing_date": "2018-03-14",
+        "publication_date": "2020-05-19",
+        "url": "https://patents.google.com/patent/US10654789B2/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_d9d249fb229f",
+        "patent_id": "US10654789B2",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_2353676b5091",
+        "family_id": "family:fb0bd6fa2a96e966affb0f917cd5a309e0c2500d",
+        "title": "System and process of biodiesel production",
+        "patent_id": "US20100166620A1",
+        "abstract": "AbstractA system and process for continuous production of fatty acid methyl esters (FAME) from the fatty acid triglycerides of waste oil via transesterification in the presence of a reusable sugar-based catalyst. The system and process incorporates re-cycling and re-use of waste bi-product streams to result in a near-zero emissions, with a 97% product yield mix consisting of almost pure biodiesel and a very small percentage of impurities including glycerol.",
+        "inventors": [
+          "Stephanie Marie Gurski",
+          "Anam Kazim",
+          "Hoi Ki Cheung",
+          "Amani Obeid"
+        ],
+        "assignee": "Individual",
+        "filing_date": "2009-11-18",
+        "publication_date": "2010-07-01",
+        "url": "https://patents.google.com/patent/US20100166620A1/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_2353676b5091",
+        "patent_id": "US20100166620A1",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_144c9b1aab19",
+        "family_id": "family:f33b9e37239c92f79f70cdabd765c47fc4ba1e9f",
+        "title": "Apparatus and method for bio-fuel\nproduction",
+        "patent_id": "20080250700",
+        "abstract": "(EN)An apparatus for theproductionof a bio-fuel or a bio-fuel additivefromplant-derivedoils, animal fats or a mixture thereof, suitable for use in a diesel engine is disclosed. The apparatus comprises a porous membrane for separating a reaction mixturefroma permeate, the reaction mixture comprising an alcohol, a feedstock comprising plant-derivedoils, animal fats or mixture thereof, and a catalyst for converting said feedstock to a bio-fuel or a bio-fuel additive, wherein said porous membrane is substantially impermeable to the feedstock and substantially permeable to said bio-fuel or bio-fuel additive. A method using said porous membrane in theproductionof a bio-fuel or a bio-fuel additive is also disclosed.",
+        "inventors": [
+          "Tremblay André Yves",
+          "Dubé Marc Arnold"
+        ],
+        "assignee": "The University of Ottawa",
+        "filing_date": "27.02.2006",
+        "publication_date": "16.10.2008",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US42660468&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_144c9b1aab19",
+        "patent_id": "20080250700",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_dc8508d79339",
+        "family_id": "family:8384d9b0795bc70e5855cb25c3727c3f34b05f55",
+        "title": "Acidic methanol stripping process that reduces sulfur content of\nbiodiesel\nfrom\nwaste\ngreases",
+        "patent_id": "20160257908",
+        "abstract": "(EN)The present invention provides a method of producing fatty acid alkyl estersfroma lipid, comprising steps of introducing a gas comprising vapor of an alcohol selectedfrommethanol, ethanol, 1-propanol, iso-propanol and butanols, into the lipid in a form of bubbles to enable the bubbles to pass through the lipid and be dischargedfromthe lipid. Theproductmay then be subjected to a transesterification process catalyzed by a base catalyst. The present invention is robust with low quality feedstocks thus significantly reduceproductioncost forbiodiesel.",
+        "inventors": [
+          "Richard Allan Cairncross",
+          "Megan Elizabeth Hums",
+          "Colin James Stacy"
+        ],
+        "assignee": "Drexel University\nEnvironmental Fuel Research, LLC",
+        "filing_date": "20.04.2015",
+        "publication_date": "08.09.2016",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US177602065&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_dc8508d79339",
+        "patent_id": "20160257908",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_4f75f5840fbe",
+        "family_id": "family:f2cf49060a6d9fec68e2264d35720f2f7f0ab82e",
+        "title": "METHOD FOR\nBIODIESEL\nPRODUCTION\nFROM\nTHE FATS AND\nOILS\n(FR)\nPROCÉDÉ DE PRODUCTION DE BIODIESEL À PARTIR DE MATIÈRES GRASSES",
+        "patent_id": "WO/2009/089802",
+        "abstract": "(EN)The method lies in reesterification of fats andoilsunder alkali conditions and subsequent separation of thebiodieselphasefromthe glycerin phase. An organic base or a mixture of organic bases is used for the creation of alkali conditions and as catalysts for alcoholysis. A suitable organic base, or bases, is an amine with boiling point at normal pressure up to 200°C, or a mixture of such amines with tetramethylammonium hydroxide. It particularly concerns aminesfromthe group containing isopropylamine, diisopropylamine, diethylamine, n-butylamine and cyclohexylamine. Inwasteoilsand fats containing free fatty acids, especially when the content of free fatty acids exceeds the limit value of acid number, esterification of these acids can be applied with the use of an organic base or a mixture of organic bases.(FR)Le procédé de l'invention se rapporte à la réestérification de matières grasses dans des conditions alcalines, et à la séparation subséquente de la phase biodiesel de la phase glycérine. Une base organique, ou un mélange de bases organiques, est utilisé pour la création de conditions alcalines et comme catalyseur d'alcoolyse. Une base (ou des bases) organique appropriée est une amine dont le point d'ébullition à pression normale peut atteindre 200°C, ou un mélange de telles amines avec un hydroxyde de tétraméthylammonium. L’invention concerne particulièrement des amines du groupe constitué par isopropylamine, diisopropylamine, diéthylamine, n-butylamine et cyclohexylamine. Dans des matières grasses contenant des acides gras libres, en particulier lorsque la teneur en acides gras libres dépasse la valeur limite de l'indice d'acidité, l'estérification de ces acides peut être réalisée par l'utilisation d'une base organique ou d'un mélange de bases organiques.",
+        "inventors": [
+          "KOLOMAZNÍK, Karel",
+          "KLEIN, Karel",
+          "VASEK, Vladimír",
+          "JANÁCOVÁ, Dagmar",
+          "JELÍNEK, Milos",
+          "UHLÍROVÁ, Michaela",
+          "MYNARÍK, Alois"
+        ],
+        "assignee": "TOMAS BATA UNIVERSITY IN ZLÍN\n[CZ]/[CZ]\n(AllExceptUS)\nKOLOMAZNÍK, Karel\n[CZ]/[CZ](UsOnly)\nKLEIN, Karel\n[CZ]/[CZ](UsOnly)\nVASEK, Vladimír\n[CZ]/[CZ](UsOnly)\nJANÁCOVÁ, Dagmar\n[CZ]/[CZ](UsOnly)\nJELÍNEK, Milos\n[CZ]/[CZ](UsOnly)\nUHLÍROVÁ, Michaela\n[CZ]/[CZ](UsOnly)\nMYNARÍK, Alois\n[CZ]/[CZ](UsOnly)",
+        "filing_date": "13.01.2009",
+        "publication_date": "23.07.2009",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2009089802&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_4f75f5840fbe",
+        "patent_id": "WO/2009/089802",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_0175c5309d24",
+        "family_id": "family:d94fce9ee371be199037a86835cb57b9d636bfbe",
+        "title": "System and process of\nbiodiesel\nproduction",
+        "patent_id": "20100166620",
+        "abstract": "(EN)A system and process for continuousproductionof fatty acid methyl esters (FAME)fromthe fatty acid triglycerides ofwasteoilvia transesterification in the presence of a reusable sugar-based catalyst. The system and process incorporates re-cycling and re-use ofwasteby-productstreams to result in a near-zero emissions, with a 97%productyield mix consisting of almost purebiodieseland a very small percentage of impurities including glycerol.",
+        "inventors": [
+          "Gurski Stephanie Marie",
+          "Kazim Anam",
+          "Cheung Hoi Ki",
+          "Obeid Amani"
+        ],
+        "assignee": "Gurski Stephanie Marie\nKazim Anam\nCheung Hoi Ki\nObeid Amani",
+        "filing_date": "18.11.2009",
+        "publication_date": "01.07.2010",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US43774737&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_0175c5309d24",
+        "patent_id": "20100166620",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_ff8144cbafdf",
+        "family_id": "family:5cfc1988b763afd697e5baad812761abf34668fe",
+        "title": "SYSTEM AND PROCESS OF\nBIODIESEL\nPRODUCTION\n(FR)\nINSTALLATION ET PROCEDE DE PRODUCTION DE BIODIESEL",
+        "patent_id": "2703599",
+        "abstract": "(EN)A system and process for continuousproductionof fatty acid methyl esters(FAME)fromthe fatty acid triglycerides ofwasteoilvia transesterificationin thepresence of a reusable sugar-based catalyst. The system and processincorporatesre-cycling and re-use ofwastebi-productstreams to result in a near-zeroemissions, witha 97%productyield mix consisting of almost purebiodieseland a very smallpercentage of impurities including glycerol.",
+        "inventors": [],
+        "assignee": "GURSKI, STEPHANIE MARIE\nKAZIM, ANAM\nCHEUNG, HOI KI\nOBEID, AMANI",
+        "filing_date": "",
+        "publication_date": "18.05.2011",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA94496673&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_ff8144cbafdf",
+        "patent_id": "2703599",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_3279aa5dd01e",
+        "family_id": "family:69434200c71201f2f71cc08f5ab86a40d13c538a",
+        "title": "A METHOD OF PRODUCING\nBIODIESEL\n(FR)\nPROCÉDÉ DE PRÉPARATION DE BIODIESEL",
+        "patent_id": "WO/2017/192029",
+        "abstract": "(EN)The present invention relates a method forbiodieselproductionfromwasteoilcomprising the steps of mixingwasteoiland alcohol; and performing transesterification in a reactor comprising a combination of a high speed mixer operating at 1000 to 5000 rpm and a sonic mixer operating at 1.5 to 2.4 MHz wherein the mixture is passed through a plurality of reactors connected in series.(FR)La présente invention concerne un procédé de production de biodiesel à partir d'huile usée comprenant les étapes consistant à mélanger de l'huile usée et de l'alcool; et à effectuer une transestérification dans un réacteur comprenant une combinaison d'un mélangeur à grande vitesse fonctionnant à 1000 à 5000 tr/min et d'un mélangeur sonique fonctionnant à 1,5 à 2,4 MHz, le mélange étant passé à travers une pluralité de réacteurs reliés en série.",
+        "inventors": [
+          "BIN KU HAMID, Ku Halim"
+        ],
+        "assignee": "UNIVERSITI TEKNOLOGI MARA\n[MY]/[MY]",
+        "filing_date": "31.05.2017",
+        "publication_date": "09.11.2017",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2017192029&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_3279aa5dd01e",
+        "patent_id": "WO/2017/192029",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_33a6eb761b0a",
+        "family_id": "family:26e396f5f517903eafd6c9627138c1fa90a29f00",
+        "title": "APPARATUS AND METHOD FOR BIO-FUEL\nPRODUCTION\n(FR)\nAPPAREIL ET PROCEDE POUR LA PRODUCTION DE BIOCOMBUSTIBLE",
+        "patent_id": "WO/2006/089429",
+        "abstract": "(EN)An apparatus for theproductionof a bio-fuel or a bio-fuel additivefromplant-derivedoils, animal fats or a mixture thereof, suitable for use in a diesel engine is disclosed. The apparatus comprises a porous membrane for separating a reaction mixturefroma permeate, the reaction mixture comprising an alcohol, a feedstock comprising plant-derivedoils, animal fats or mixture thereof, and a catalyst for converting said feedstock to a bio-fuel or a bio-fuel additive, wherein said porous membrane is substantially impermeable to the feedstock and substantially permeable to said bio-fuel or bio-fuel additive. A method using said porous membrane in theproductionof a bio-fuel or a bio-fuel additive is also disclosed(FR)L'invention concerne un appareil pour la production d'un biocombustible ou d'un adjuvant de biocombustible issu d'huiles végétales, de graisses animales ou de leurs mélanges, approprié pour être utilisé dans un moteur diesel. L'appareil comprend une membrane poreuse destinée à séparer un mélange réactionnel d'un perméat, le mélange réactionnel comprenant un alcool, une charge comprenant des huiles végétales, des graisses animales ou leurs mélanges et un catalyseur pour convertir ladite charge en un biocombustible ou un adjuvant de biocombustible, ladite membrane poreuse étant sensiblement imperméable à la charge et sensiblement perméable audit biocombustible ou adjuvant de biocombustible. L'invention concerne également un procédé utilisant ladite membrane poreuse pour la production d'un biocombustible ou d'un adjuvant de biocombustible.",
+        "inventors": [
+          "TREMBLAY, André Yves",
+          "DUBÉ, Marc Arnold"
+        ],
+        "assignee": "UNIVERSITY OF OTTAWA\n[CA]/[CA]\n(AllExceptUS)\nTREMBLAY, André Yves\n[CA]/[CA](UsOnly)\nDUBÉ, Marc Arnold\n[CA]/[CA](UsOnly)",
+        "filing_date": "27.02.2006",
+        "publication_date": "31.08.2006",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2006089429&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_33a6eb761b0a",
+        "patent_id": "WO/2006/089429",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_f3efddf0f846",
+        "family_id": "family:49d70c138922be24511357b8b151bb6b4b881437",
+        "title": "APPARATUS AND METHOD FOR BIO-FUEL\nPRODUCTION\n(FR)\nAPPAREIL ET PROCEDE POUR LA PRODUCTION DE BIOCOMBUSTIBLE",
+        "patent_id": "2599499",
+        "abstract": "(EN)An apparatus for theproductionof a bio-fuel or a bio-fuel additivefromplant-derivedoils, animal fats or a mixture thereof, suitable for use in adiesel engine is disclosed. The apparatus comprises a porous membrane forseparating a reaction mixturefroma permeate, the reaction mixture comprisingan alcohol, a feedstock comprising plant-derivedoils, animal fats or mixturethereof, and a catalyst for converting said feedstock to a bio-fuel or a bio-fuel additive, wherein said porous membrane is substantially impermeable tothe feedstock and substantially permeable to said bio-fuel or bio-fueladditive. A method using said porous membrane in theproductionof a bio-fuelor a bio-fuel additive is also disclosed",
+        "inventors": [],
+        "assignee": "UNIVERSITY OF OTTAWA",
+        "filing_date": "",
+        "publication_date": "31.08.2006",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA94292010&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_f3efddf0f846",
+        "patent_id": "2599499",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_698403409d1d",
+        "family_id": "family:1314563b37c124086c37827a918f204596aceb70",
+        "title": "METHODS AND CATALYSTS FOR MAKING\nBIODIESEL\nFROM\nTHE TRANSESTERIFICATION AND ESTERIFICATION OF UNREFINED\nOILS\n(FR)\nPROCEDES ET CATALYSEURS POUR FABRIQUER UN BIODIESEL, PAR TRANSESTERIFICATION ET ESTERIFICATION D'HUILES NON RAFFINEES",
+        "patent_id": "2724970",
+        "abstract": "(EN)A method of forming abiodieselproductand a heterogeneous catalyst system  used to form saidproductthat has a high tolerance  for the presence of water and free fatty  acids (FFA) in theoilfeedstock is disclosed.  This catalyst system may simultaneously catalyze    both the esterification of FAA and the  transesterification of triglycerides present in theoilfeedstock. The catalyst system according to  one aspect of the present disclosure represents a  class of zinc and lanthanum oxide heterogeneous  catalysts that include different ratios of zinc oxide  to lanthanum oxides (Zn:La ratio) rangingfromabout 10:0 to 0:10. The Zn:La ratio in the  catalyst is believed to have an effect on the number  and reactivity of Lewis acid and base sites, as  well as the transesterification of glycehdes, the  esterification of fatty acids, and the hydrolysis of  glycehdes andbiodiesel.",
+        "inventors": [
+          "YAN, SHULI",
+          "SALLEY, STEVEN O.",
+          "NG, K. Y. SIMON"
+        ],
+        "assignee": "WAYNE STATE UNIVERSITY",
+        "filing_date": "19.05.2009",
+        "publication_date": "26.11.2009",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA94503297&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_698403409d1d",
+        "patent_id": "2724970",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_8e80f3d89661",
+        "family_id": "family:cb8f0aacd7fe7c0eec8aefb4a757cd37492633c4",
+        "title": "METHODS AND CATALYSTS FOR MAKING\nBIODIESEL\nFROM\nTHE TRANSESTERIFICATION AND ESTERIFICATION OF UNREFINED\nOILS\n(FR)\nPROCÉDÉS ET CATALYSEURS POUR FABRIQUER UN BIODIESEL, PAR TRANSESTÉRIFICATION ET ESTÉRIFICATION D'HUILES NON RAFFINÉES",
+        "patent_id": "WO/2009/143159",
+        "abstract": "(EN)A method of forming abiodieselproductand a heterogeneous catalyst system used to form saidproductthat has a high tolerance for the presence of water and free fatty acids (FFA) in theoilfeedstock is disclosed. This catalyst system may simultaneously catalyze both the esterification of FAA and the transesterification of triglycerides present in theoilfeedstock. The catalyst system according to one aspect of the present disclosure represents a class of zinc and lanthanum oxide heterogeneous catalysts that include different ratios of zinc oxide to lanthanum oxides (Zn:La ratio) rangingfromabout 10:0 to 0:10. The Zn:La ratio in the catalyst is believed to have an effect on the number and reactivity of Lewis acid and base sites, as well as the transesterification of glycehdes, the esterification of fatty acids, and the hydrolysis of glycehdes andbiodiesel.(FR)L'invention porte sur un procédé de formation d'un produit biodiesel et sur un système catalyseur hétérogène utilisé pour former ledit produit, qui a une grande tolérance à la présence d'eau et d'acides gras libres (FFA) dans l'huile de charge. Le système catalyseur peut simultanément catalyser tant l'estérification des FFA que la transestérification des triglycérides présents dans l'huile de charge. Le système catalyseur selon un aspect de la présente invention représente une classe de catalyseurs hétérogènes à l'oxyde de zinc et de lanthane, qui présentent différents rapports de l'oxyde de zinc aux oxydes de lanthane (rapport Zn:La), compris entre environ 10:0 et 0:10. On pense que le rapport Zn:La du catalyseur a un effet sur le nombre et la réactivité des sites d'acides et de bases de Lewis, ainsi que sur la transestérification des glycérides, l'estérification des acides gras et l'hydrolyse des glycérides et du biodiesel.",
+        "inventors": [
+          "YAN, Shuli",
+          "SALLEY, Steven, O.",
+          "NG, K.Y., Simon"
+        ],
+        "assignee": "WAYNE STATE UNIVERSITY\n[US]/[US]\n(AllExceptUS)\nYAN, Shuli\n[CN]/[US](UsOnly)\nSALLEY, Steven, O.\n[US]/[US](UsOnly)\nNG, K.Y., Simon\n[US]/[US](UsOnly)",
+        "filing_date": "19.05.2009",
+        "publication_date": "26.11.2009",
+        "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2009143159&_cid=P11-MQPIZB-03010-1",
+        "snippet": "",
+        "source": "Patentscope"
+      },
+      "evaluation": {
+        "record_id": "rec_8e80f3d89661",
+        "patent_id": "WO/2009/143159",
+        "analysis_route": "",
+        "route_reason": "",
+        "screening_score": 0.0,
+        "screening_decision": "review",
+        "screening_reason": "LLM indisponível.",
+        "evidence_snippets": [],
+        "thematic_cluster": "",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "",
+        "innovation_level": "",
+        "co2_role": "",
+        "storage_role": "",
+        "system_boundary": "",
+        "cycle_type": "",
+        "heat_source_sink": "",
+        "claim_focus": "",
+        "exclusion_category": "",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.0,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": true,
+        "llm_error": "LLM indisponível."
+      }
+    }
+  ],
+  "comparative_analysis": "",
+  "whitespace_analysis": {
+    "status": "no_input",
+    "query": "biodiesel production from waste oil",
+    "corpus_summary": {
+      "considered_patents": 13,
+      "selected_patents": 0,
+      "core": 0,
+      "frontier": 0,
+      "adjacent": 0
+    },
+    "coverage_matrix": [],
+    "axes": {},
+    "whitespace_candidates": [],
+    "markdown_summary": ""
+  }
+}
