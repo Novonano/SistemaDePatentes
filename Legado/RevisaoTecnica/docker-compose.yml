@@ -1,0 +1,54 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    networks:
+      - revisao_net
+
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-gemma3:4b}
+      OLLAMA_TIMEOUT: ${OLLAMA_TIMEOUT:-600}
+      OUTPUT_DIR: /app/output
+    volumes:
+      - ./output:/app/output
+      - ./benchmarks:/app/benchmarks:ro
+    networks:
+      - revisao_net
+
+  streamlit:
+    build: .
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - app
+    environment:
+      API_BASE_URL: http://app:8000
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-gemma3:4b}
+      OUTPUT_DIR: /app/output
+    volumes:
+      - ./output:/app/output
+    networks:
+      - revisao_net
+
+volumes:
+  ollama_models:
+
+networks:
+  revisao_net:
+    driver: bridge

@@ -1,8 +1,3 @@
-"""Testes dos observers concretos (Fase 1) e do EventBus (Fase 0).
-
-Estilo unittest (sem pytest), alinhado a tests/test_frozen_pipeline.py.
-"""
-
 from __future__ import annotations
 
 import logging
