@@ -712,24 +712,22 @@ class TestRunStateIntegration(unittest.TestCase):
     
     def test_run_state_backward_compatibility(self):
         """Verifica compatibilidade com código antigo."""
-        # Código antigo pode criar RunState com status e current_stage
+        # Código antigo pode tentar ler status e current_stage
         state = RunState(
             query="test",
             max_results=10,
             model="test-model",
             output_dir="/tmp",
-            status="running",
-            current_stage="search",
         )
         
-        # Deve funcionar normalmente
-        self.assertEqual(state.status, "running")
-        self.assertEqual(state.current_stage, "search")
+        # status e current_stage são properties que delegam para a máquina
+        self.assertEqual(state.status, "idle")
+        self.assertEqual(state.current_stage, "idle")
         
         # to_dict() deve funcionar
         result = state.to_dict()
-        self.assertEqual(result["status"], "running")
-        self.assertEqual(result["current_stage"], "search")
+        self.assertEqual(result["status"], "idle")
+        self.assertEqual(result["current_stage"], "idle")
     
     def test_run_state_happy_path(self):
         """Verifica caminho completo do pipeline."""

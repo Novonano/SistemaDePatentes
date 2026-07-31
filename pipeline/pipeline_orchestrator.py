@@ -60,6 +60,7 @@ from pipeline.memory import MemorySidecar
 from pipeline.protocol import build_review_protocol
 from pipeline.router import ThemeRouter
 from pipeline.state import RunState
+from pipeline.state_machine import Stage
 from report.generator import ReportGenerator
 from scraper.base import BaseScraper
 from scraper.epo import EPOScraper
@@ -218,7 +219,7 @@ class PipelineOrchestrator:
     # ------------------------------------------------------------------
     def _setup(self) -> None:
         state = self.state
-        state.current_stage = "setup"
+        state.transition_to(Stage.SETUP)
         self.emit_stage("setup", "Verificando conexão com Ollama", model=state.model)
 
         setup_start = time.perf_counter()
@@ -262,7 +263,7 @@ class PipelineOrchestrator:
         query = self.query
         max_results = self.max_results
 
-        state.current_stage = "search"
+        state.transition_to(Stage.SEARCH)
         self.emit_stage(
             "search",
             "Buscando patentes",
@@ -377,7 +378,7 @@ class PipelineOrchestrator:
             max_results=self.max_results,
             recommendation="Tente termos diferentes ou mais genéricos.",
         )
-        state.status = "no_results"
+        state.transition_to(Stage.NO_RESULTS)
         state.finished_at = datetime.now().isoformat(timespec="seconds")
         state.coverage_metrics = {
             "raw_scraped": raw_total,
@@ -458,7 +459,7 @@ class PipelineOrchestrator:
         llm_screening_failures = 0
         llm_circuit_open_logged = False
         screening_start = time.perf_counter()
-        state.current_stage = "screening"
+        state.transition_to(Stage.SCREENING)
         if state.llm_available:
             self.emit_stage(
                 "screening",
@@ -775,7 +776,7 @@ class PipelineOrchestrator:
         query = self.query
         pipeline_features = self.features
 
-        state.current_stage = "comparative_analysis"
+        state.transition_to(Stage.COMPARATIVE_ANALYSIS)
         synthesis_start = time.perf_counter()
         comparative_status = "disabled_or_skipped"
         comparative_detail = "Síntese comparativa"
@@ -907,7 +908,7 @@ class PipelineOrchestrator:
         query = self.query
         pipeline_features = self.features
 
-        state.current_stage = "whitespace_analysis"
+        state.transition_to(Stage.WHITESPACE_ANALYSIS)
         whitespace_start = time.perf_counter()
         whitespace_status = "skipped"
         whitespace_detail = "Whitespace analysis indisponível"
@@ -972,7 +973,7 @@ class PipelineOrchestrator:
         query = self.query
         output_dir = self.output_dir
 
-        state.current_stage = "reporting"
+        state.transition_to(Stage.REPORTING)
         self.emit_stage("reporting", "Gerando relatórios", output_dir=output_dir)
 
         report_start = time.perf_counter()
@@ -1022,7 +1023,7 @@ class PipelineOrchestrator:
         query = self.query
         pipeline_features = self.features
 
-        state.status = "completed"
+        state.transition_to(Stage.DONE)
         state.finished_at = datetime.now().isoformat(timespec="seconds")
         state.total_duration_seconds = round(time.perf_counter() - self.start_time, 3)
         finalize_start = time.perf_counter()
