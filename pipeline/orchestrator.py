@@ -633,17 +633,17 @@ def run_agent(
     state_sink: Callable | None = None,
     observers: "List[Observer] | None" = None,
 ) -> RunState:
-    """Fachada fina que delega para ``PipelineOrchestrator`` (Fase 3).
+    """Fachada fina que delega para ``PipelineOrchestrator``.
 
     Mantem a assinatura historica para todos os callers (api, main, ablation,
     upgrade_benchmark, test_frozen_pipeline). A implementacao real dos
     estagios vive em ``pipeline.pipeline_orchestrator``.
 
-    ``observers`` (Fase 4) permite injetar observers customizados no barramento
+    ``observers`` permite injetar observers customizados no barramento
     da execucao. Quando ``None``, apenas o conjunto default e usado; quando
     fornecido, os observers extras sao inscritos apos os default.
 
-    Fase 5 (inversao de dependencia): a fachada atua como composition root e
+    A fachada atua como composition root e
     monta o conjunto de observers via ``build_default_observers``, repassando
     um ``observers_builder`` ao ``PipelineOrchestrator``. A classe deixa de
     conhecer a fabrica concreta.

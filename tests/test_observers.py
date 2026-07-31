@@ -1,4 +1,4 @@
-"""Testes dos observers concretos (Fase 1) e do EventBus (Fase 0).
+"""Testes dos observers concretos e do EventBus.
 
 Estilo unittest (sem pytest), alinhado a tests/test_frozen_pipeline.py.
 """

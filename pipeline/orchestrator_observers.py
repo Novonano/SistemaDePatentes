@@ -1,12 +1,12 @@
 """
-Observadores concretos do pipeline (Fase 1 da migracao para Observer).
+Observadores concretos do pipeline.
 
 Cada observer aqui e um wrapper fino sobre um helper existente no modulo
 ``pipeline.orchestrator``. Nada substitui o comportamento original: apenas
 reendereca side-effects por meio de eventos, mantendo compatibilidade total.
 
 Os helpers permanecem definidos em ``orchestrator.py`` e sao injetados nos
-observers (via callable ou logger). Em Fase 2, ``run_agent`` instanciara um
+observers (via callable ou logger).``run_agent`` instanciara um
 ``EventBus`` e o conjunto default destes observers.
 """
 
@@ -173,7 +173,7 @@ def build_default_observers(
 
     ``include_memory``/``include_persistence`` permitem excluir
     ``MemoryObserver``/``PersistenceObserver`` durante a migracao incremental
-    (Fase 2), quando ``memory.append``/``store.save`` continuam sendo chamados
+    quando ``memory.append``/``store.save`` continuam sendo chamados
     explicitamente pelo orquestrador para preservar paridade 1:1.
     """
     observers = [
