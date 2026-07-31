@@ -1,0 +1,94 @@
+{
+  "run_id": "20260723_125955",
+  "max_items_per_slot": 5,
+  "slots": {
+    "writer": [
+      {
+        "top_patents": [],
+        "route_summary": {
+          "unrouted": 20
+        }
+      }
+    ]
+  },
+  "journal": [
+    {
+      "timestamp": "2026-07-23T13:00:25",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": false,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:00:51",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 10,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 10,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "EPO retornou patentes.",
+      "payload": {
+        "source": "EPO",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "synthesis",
+      "event": "llm_unavailable",
+      "detail": "Síntese temática desativada porque o LLM não está disponível.",
+      "payload": {}
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 0,
+        "route_summary": {
+          "unrouted": 20
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.md",
+        "json": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.json"
+      }
+    }
+  ]
+}

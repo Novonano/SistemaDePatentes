@@ -1,0 +1,1965 @@
+{
+  "query": "LIG sensor dopamine tears ",
+  "max_results": 10,
+  "model": "gemma3:4b",
+  "output_dir": "/app/output",
+  "feature_flags": {
+    "require_evidence": true,
+    "enable_thematic_clusters": true,
+    "enable_structural_roles": true,
+    "enable_screening_rerank": true,
+    "enable_prisma": true,
+    "enable_snapshot": true,
+    "enable_comparative_analysis": true,
+    "enable_whitespace_analysis": true,
+    "enable_manual_review_queue": true
+  },
+  "config_snapshot": {
+    "pipeline_version": "1.1",
+    "timestamp": "2026-07-23T12:59:55",
+    "query": "LIG sensor dopamine tears ",
+    "max_results": 10,
+    "model": "gemma3:4b",
+    "output_dir": "/app/output",
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "thresholds": {
+      "include": 7.0,
+      "review": 4.5,
+      "manual_review_limit": 20
+    },
+    "runtime": {
+      "ollama_base_url": "http://ollama:11434",
+      "ollama_timeout": 600
+    },
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ]
+  },
+  "snapshot_hash": "24dfe8c4f1ce4007d20c08a6b9a9e5e051fc257c2b079b6f5dfef503823ef3a7",
+  "protocol": {
+    "version": "1.0",
+    "query": "LIG sensor dopamine tears ",
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ],
+    "stages": [
+      "identification",
+      "deduplication",
+      "screening",
+      "manual_review",
+      "full_extraction",
+      "synthesis"
+    ],
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "limits": {
+      "max_results": 10
+    },
+    "model": "gemma3:4b"
+  },
+  "writing_context": {
+    "protocol": {
+      "version": "1.0",
+      "query": "LIG sensor dopamine tears ",
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ],
+      "stages": [
+        "identification",
+        "deduplication",
+        "screening",
+        "manual_review",
+        "full_extraction",
+        "synthesis"
+      ],
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "limits": {
+        "max_results": 10
+      },
+      "model": "gemma3:4b"
+    },
+    "coverage_metrics": {
+      "raw_scraped": 20,
+      "unique_patents": 20,
+      "duplicates_removed": 0,
+      "screened": 0,
+      "included": 0,
+      "review": 20,
+      "excluded": 0,
+      "manual_review_required": 20,
+      "manual_review_deferred": 0,
+      "full_extractions": 0,
+      "missing_abstract": 0,
+      "missing_id": 1,
+      "records_with_content_identity": 0,
+      "records_with_fallback_identity": 0,
+      "family_duplicates_removed": 0,
+      "llm_screening_failures": 20,
+      "llm_total_failures": 0
+    },
+    "top_patents": [],
+    "thematic_clusters": {
+      "clusters": [],
+      "total_clusters": 0
+    },
+    "route_summary": {
+      "unrouted": 20
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "snapshot_hash": "24dfe8c4f1ce4007d20c08a6b9a9e5e051fc257c2b079b6f5dfef503823ef3a7"
+  },
+  "memory_sidecar": {
+    "run_id": "20260723_125955",
+    "max_items_per_slot": 5,
+    "slots": {
+      "writer": [
+        {
+          "top_patents": [],
+          "route_summary": {
+            "unrouted": 20
+          }
+        }
+      ]
+    },
+    "journal": [
+      {
+        "timestamp": "2026-07-23T13:00:25",
+        "stage": "setup",
+        "event": "llm_check",
+        "detail": "Verificação de disponibilidade do Ollama concluída.",
+        "payload": {
+          "llm_available": false,
+          "model": "gemma3:4b"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:00:51",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "GooglePatents retornou patentes.",
+        "payload": {
+          "source": "GooglePatents",
+          "count": 10,
+          "diagnostics": []
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:29",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "Patentscope retornou patentes.",
+        "payload": {
+          "source": "Patentscope",
+          "count": 10,
+          "diagnostics": []
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:29",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "EPO retornou patentes.",
+        "payload": {
+          "source": "EPO",
+          "count": 0,
+          "diagnostics": [
+            {
+              "kind": "config_missing",
+              "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+              "url": ""
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:29",
+        "stage": "synthesis",
+        "event": "llm_unavailable",
+        "detail": "Síntese temática desativada porque o LLM não está disponível.",
+        "payload": {}
+      },
+      {
+        "timestamp": "2026-07-23T13:02:29",
+        "stage": "writer",
+        "event": "context_prepared",
+        "detail": "Contexto compartilhado preparado para o writer.",
+        "payload": {
+          "top_patents": 0,
+          "route_summary": {
+            "unrouted": 20
+          }
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:29",
+        "stage": "finalization",
+        "event": "report_generated",
+        "detail": "Relatórios finais gerados com sucesso.",
+        "payload": {
+          "markdown": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.md",
+          "json": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.json"
+        }
+      }
+    ]
+  },
+  "memory_journal": [
+    {
+      "timestamp": "2026-07-23T13:00:25",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": false,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:00:51",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 10,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 10,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "EPO retornou patentes.",
+      "payload": {
+        "source": "EPO",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "synthesis",
+      "event": "llm_unavailable",
+      "detail": "Síntese temática desativada porque o LLM não está disponível.",
+      "payload": {}
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 0,
+        "route_summary": {
+          "unrouted": 20
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:29",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.md",
+        "json": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.json"
+      }
+    }
+  ],
+  "stage_metrics": [
+    {
+      "stage": "setup",
+      "status": "degraded",
+      "duration_seconds": 30.022,
+      "items_processed": 1,
+      "detail": "Verificação do modelo Ollama"
+    },
+    {
+      "stage": "search",
+      "status": "ok",
+      "duration_seconds": 123.492,
+      "items_processed": 20,
+      "detail": "20 patentes únicas após dedupe"
+    },
+    {
+      "stage": "screening",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "items_processed": 20,
+      "detail": "LLM indisponível"
+    },
+    {
+      "stage": "comparative_analysis",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "items_processed": 20,
+      "detail": "LLM indisponível para síntese comparativa"
+    },
+    {
+      "stage": "whitespace_analysis",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "items_processed": 0,
+      "detail": "Whitespace analysis sem corpus elegível"
+    },
+    {
+      "stage": "reporting",
+      "status": "ok",
+      "duration_seconds": 0.002,
+      "items_processed": 20,
+      "detail": "Relatórios Markdown e JSON"
+    },
+    {
+      "stage": "finalization",
+      "status": "ok",
+      "duration_seconds": 0.0,
+      "items_processed": 8,
+      "detail": "Persistência de artefatos e estado"
+    }
+  ],
+  "llm_cache_stats": {
+    "hits": 0,
+    "misses": 0,
+    "entries": 158
+  },
+  "llm_telemetry": {
+    "degraded": false,
+    "total_failures": 0,
+    "consecutive_failures": 0,
+    "recent_errors": [],
+    "operations": {
+      "healthcheck": {
+        "calls": 1,
+        "successes": 0,
+        "failures": 1,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 35,
+        "response_chars": 0,
+        "total_duration_seconds": 30.019,
+        "max_duration_seconds": 30.019,
+        "average_duration_seconds": 30.019
+      }
+    }
+  },
+  "observability_metrics": {
+    "routes": {
+      "unrouted": {
+        "count": 20,
+        "include": 0,
+        "review": 20,
+        "exclude": 0,
+        "llm_errors": 20
+      }
+    },
+    "sources": {
+      "EPO": {
+        "raw_results": 0,
+        "duration_seconds": 0.0,
+        "diagnostic_counts": {
+          "config_missing": 1
+        }
+      },
+      "GooglePatents": {
+        "raw_results": 10,
+        "duration_seconds": 25.859,
+        "diagnostic_counts": {}
+      },
+      "Patentscope": {
+        "raw_results": 10,
+        "duration_seconds": 97.626,
+        "diagnostic_counts": {}
+      }
+    },
+    "failures": {
+      "run_errors": 0,
+      "records_with_llm_error": 20,
+      "llm_total_failures": 0,
+      "llm_by_operation": {
+        "healthcheck": {
+          "calls": 1,
+          "failures": 1,
+          "retries": 0,
+          "degraded_skips": 0
+        }
+      },
+      "scraper_diagnostics_by_kind": {
+        "config_missing": 1
+      }
+    }
+  },
+  "run_id": "20260723_125955",
+  "started_at": "2026-07-23T12:59:55",
+  "finished_at": "2026-07-23T13:02:29",
+  "status": "completed",
+  "current_stage": "reporting",
+  "screened_count": 0,
+  "llm_available": false,
+  "patents": [
+    {
+      "record_id": "rec_4ca678fd8fa5",
+      "family_id": "family:d24729ce9fef0fce765d6e926e2d5156ddad985f",
+      "title": "Laser-induced graphene electrochemical immunosensors",
+      "patent_id": "WO2021222250A1",
+      "abstract": "AbstractApparatus and methods of fabrication and use of a highly sensitive and label-free laser-induced graphene (LIG) electrode (10) functionalized with biorecognition agents (e.g. antibodies) (18) to electrochemically quantify a target species (e.g. foodborne pathogen Salmonella enterica serovar Typhimurium). In one example, the LIG electrodes are produced by laser induction on polyimide film (12) in ambient conditions, and circumvent need for high-temperature, vacuum environment, and metal seed catalysts commonly associated with graphene-based electrodes fabricated via chemical vapor deposition processes. After functionalization, the LIG biosensors detect a target species across a wide linear range with a low detection limit, and quick response time without need for sample pre-concentration or redox labeling. These LIG immunosensors displayed high selectivity by non-significant response to other bacteria strains, and demonstrate LIG-based electrodes can be used for electrochemical biosensing and immunosensing. One example for rapid, low-cost pathogen detection in food processing facilities before contaminated foods reach the consumer.",
+      "inventors": [
+        "Jonathan CLAUSSEN",
+        "Carmen L. GOMES",
+        "Raquel Rainier Alves Soares",
+        "Robert Hjort",
+        "Cicero Cardoso Pola"
+      ],
+      "assignee": "Iowa State University Research Foundation Inc ISURF",
+      "filing_date": "2021-04-27",
+      "publication_date": "2021-11-04",
+      "url": "https://patents.google.com/patent/WO2021222250A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_a3b380e21bf9",
+      "family_id": "family:d06f01b66c4c64b70eec8ad17dc782113136186b",
+      "title": "Electrochemical sensor for dopamine detection and preparation method and application thereof",
+      "patent_id": "CN115165998A",
+      "abstract": "AbstractThe invention discloses an electrochemical sensor for dopamine detection and a preparation method and application thereof, and particularly relates to the field of biomolecule detection. Coating graphene oxide with an amphiphilic surfactant to form an organic soluble graphene oxide compound, dissolving the compound in an organic solvent to prepare an organic solution with a certain concentration, pouring the prepared organic solution on ITO glass under a high humidity condition, obtaining a graphene compound porous membrane on the ITO glass after the organic solvent and water are completely volatilized, and carrying out electrochemical reduction on the membrane under a certain condition to prepare a reduced graphene oxide porous membrane, wherein the reduced graphene oxide porous membrane and the ITO glass jointly form an electrochemical sensor which can be used for detecting dopamine. The invention provides an electrochemical sensor for dopamine detection, which is simple, convenient, nontoxic, cheap, rapid and sensitive.",
+      "inventors": [
+        "é©¬è±ä¸",
+        "å»å­ç»´"
+      ],
+      "assignee": "Harbin University of Science and Technology",
+      "filing_date": "2022-07-26",
+      "publication_date": "2022-10-11",
+      "url": "https://patents.google.com/patent/CN115165998A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_1292a0df852d",
+      "family_id": "family:fbba63a1e5637bd969f56bdfd23c63261a93c4fd",
+      "title": "A kind of Dopamine Sensor and its preparation and application based on sulfonated graphene supported palladium",
+      "patent_id": "CN108918618A",
+      "abstract": "AbstractThe invention belongs to electrochemical sensor technology field, a kind of Dopamine Sensor based on sulfonated graphene supported palladium and its preparation and application are disclosed.The sensor is formed by reference electrode, to the working electrode after electrode and modification, working electrode after the modification is by working electrode and is solidificated in the material identification film of working electrode surface and forms, wherein, the material identification film mainly loads palladium composite material by sulfonated graphene and perfluorinated sulfonic resin is prepared.Sensor of the invention has good selectivity, reproducibility and stability, and electrode catalyst performance is good, can accurately be detected to dopamine, strong antijamming capabilityï¼There is wider detection range, lower detection limit simultaneously.Method of the invention is simple, at low cost.Prepared sensor is for detecting dopamine.",
+      "inventors": [
+        "æ´éè±",
+        "èç±å "
+      ],
+      "assignee": "South China University of Technology SCUT",
+      "filing_date": "2018-08-30",
+      "publication_date": "2018-11-30",
+      "url": "https://patents.google.com/patent/CN108918618A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_fde35625d301",
+      "family_id": "family:2fc43e8bf3c68fc5eb614261128db0c0187d9325",
+      "title": "A kind of Dopamine Sensor and its preparation and application based on nitrogen-doped graphene",
+      "patent_id": "CN108872343A",
+      "abstract": "AbstractThe invention belongs to electrochemical sensor technology field, a kind of Dopamine Sensor based on nitrogen-doped graphene and its preparation and application are disclosed.The sensor is formed by reference electrode, to the working electrode after electrode and modification, working electrode after modification is by working electrode and is solidificated in the material identification film of working electrode surface and forms, wherein, the material identification film is mainly prepared by nitrogen-doped graphene composite material with perfluorinated sulfonic resin.The invention also discloses the preparation methods of sensor.Sensor of the invention has good selectivity, reproducibility and stability, can accurately be detected to dopamine, strong antijamming capabilityï¼There is wider detection range, lower detection limit simultaneously.Method of the invention is simple, at low cost.Prepared sensor is for detecting dopamine.",
+      "inventors": [
+        "é»å½©å¼¯",
+        "æ´éè±",
+        "æè·çª",
+        "çé¯ç«¥"
+      ],
+      "assignee": "South China University of Technology SCUT",
+      "filing_date": "2018-08-30",
+      "publication_date": "2018-11-23",
+      "url": "https://patents.google.com/patent/CN108872343A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_ca020593ddd1",
+      "family_id": "family:39c565e5b73ad5eb3482fec5e5e754183534c0a6",
+      "title": "Method for detecting dopamine with high selectivity based on electrochemical sensor",
+      "patent_id": "CN112479186A",
+      "abstract": "AbstractThe invention discloses a method for detecting dopamine with high selectivity based on an electrochemical sensor, and relates to the technical field of electrochemical sensors. The electrochemical sensor used in the detection method specifically comprises the following steps: the working electrode, the basement electrode is a glassy carbon electrode, and the compound of NP-NiOsGe/three-dimensional graphene is modified on the surface; the counter electrode is a platinum wire; the reference electrode is a saturated calomel electrode. The electrochemical sensor prepared based on the invention has the advantages of high detection sensitivity, good reproducibility and stability, low detection limit and wide linear detection range, and can realize the specific detection of dopamine.",
+      "inventors": [
+        "èµµé¡º",
+        "è·¯å®½"
+      ],
+      "assignee": "Jiaxing Juetuo Technology Co ltd",
+      "filing_date": "2020-12-03",
+      "publication_date": "2021-03-12",
+      "url": "https://patents.google.com/patent/CN112479186A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_d461537cff92",
+      "family_id": "family:625dadd06407ab0cc9e4554f09c66e1ad80aa288",
+      "title": "Electrochemiluminescence sensor based on methionine-gold nanocluster",
+      "patent_id": "CN105241868A",
+      "abstract": "AbstractTranslated fromChineseæ¬åæå¬å¼ä¸ç§<b>åºäºç²ç¡«æ°¨é¸</b><b>-</b><b>éçº³ç±³å¢ç°ççµè´åå­¦ååä¼ æå¨</b>ï¼å¶æ¯ä»¥ç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°ææä¸ºååä½ï¼è¿ç¡«é¸æ ¹ç¦»å­ä¸ºå±ååºåï¼å°ç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°ä¿®é¥°å¨ç»ç¢³çµæä¸ï¼è¿è¡çµåå­¦ååæµè¯ï¼å¹¶å®ç°å¯¹å¤å·´èºçæ£æµãè¯¥ä¼ æå¨å¯¹å¯¹å¤å·´èºæ£æµççº¿æ§èå´ä¸º0.1~4ï¼Î¼mol/Lå4~25ï¼Î¼mol/Lï¼æ£æµéä¸º0.032ï¼Î¼mol/Lãæ¬åææå¾å°çç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°å¶å¤æ¹æ³ç»¿è²ç¯ä¿ï¼æä½ç®ä¾¿å¿«æ·ï¼éç°æ§å¥½ï¼å¶å¤çç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°çç©ç¸å®¹æ§å¥½ï¼å¹¶å·æè¾å¥½ççµè´åå­¦ååæ§è½ãThe invention discloses an electrochemiluminescence sensor based on <b>methionine</b><b>-</b><b>gold nanocluster</b>, which is based on methionine The protected gold nanocluster material is a luminescent body, and the persulfate ion is a co-reactant. The methionine-protected gold nanocluster is modified on the glassy carbon electrode, and the electrochemiluminescence test is performed, and the detection of dopamine is realized. . The linear range of the sensor for dopamine detection is 0.1~4? Î¼mol/L and 4~25? Î¼mol/L, the detection limit is 0.032? Î¼mol/L. The preparation method of the methionine-protected gold nanoclusters obtained in the present invention is green and environmentally friendly, and the operation is simple and quick, and the reproducibility is good. The prepared methionine-protected gold nanoclusters have good biocompatibility, and have relatively Good electrochemiluminescent properties.",
+      "inventors": [
+        "å½­è±è",
+        "éä¼",
+        "éè±ªå",
+        "ç®ç¾ä¸½",
+        "åç±æ"
+      ],
+      "assignee": "Fujian Medical University",
+      "filing_date": "2015-09-18",
+      "publication_date": "2016-01-13",
+      "url": "https://patents.google.com/patent/CN105241868A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_daeced5ae557",
+      "family_id": "family:47efa98f8f27f477b45b45f6046adf7c2a5ff0e9",
+      "title": "Preparation method and product and application of electrochemical sensor for dopamine detection",
+      "patent_id": "CN110006970A",
+      "abstract": "AbstractTranslated fromChineseæ¬åææä¾ä¸ç§ç¨äºå¤å·´èºæ£æµççµåå­¦ä¼ æå¨çå¶å¤æ¹æ³åå¶äº§åååºç¨ï¼æè¿°çä¼ æå¨åæ¬ï¼çµæåºä½ãä¿®é¥°å±åçº³ç±³ç²å­ï¼å¶ä¸­æè¿°ççµæåºä½ä¸ºç»ç¢³æè´¨ççµæåºä½ï¼æè¿°çåå­¦ä¿®é¥°å±ä¸ºæº´éèå±ï¼çº³ç±³ç²å­ä¸ºIrO2âPtï¼è¯¥çµåå­¦ä¼ æå¨è½å¤å®ç°å¯¹å¤å·´èºçå³æ¶æ£æµãè¯¥ä¼ æå¨æ¯åºäºå°çº³ç±³ææ¯ãçµåå­¦åæææ¯åä¼ æå¨å¶å¤ææ¯ç¸ç»åï¼å¼åäºæ°åçç¨äºæ£æµçç©æ ·åä¸­å¤å·´èºççµåå­¦ä¼ æå¨ãæä¾ä¸ç§å¿«éãçµæãç®ä¾¿çç¨äºå¤å·´èºæ£æµççµåå­¦ä¼ æå¨ãThe invention provides a preparation method, product and application of an electrochemical sensor for dopamine detection. The sensor comprises: an electrode substrate, a modified layer and nanoparticles, wherein the electrode substrate is an electrode substrate made of glassy carbon material The chemical modification layer is a bromophenol blue layer; the nanoparticle is IrO2-Pt, and the electrochemical sensor can realize instant detection of dopamine. The sensor is based on the combination of nanotechnology, electrochemical analysis technology and sensor preparation technology to develop a new electrochemical sensor for detecting dopamine in biological samples. A fast, sensitive and simple electrochemical sensor for dopamine detection is provided.",
+      "inventors": [
+        "ä½ä¸¹å",
+        "çä¸¹",
+        "èç¾è±",
+        "å¢é",
+        "éå½©è¹"
+      ],
+      "assignee": "Shanghai National Engineering Research Center for Nanotechnology Co Ltd",
+      "filing_date": "2019-05-10",
+      "publication_date": "2019-07-12",
+      "url": "https://patents.google.com/patent/CN110006970A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_179b3a7db28d",
+      "family_id": "family:cbc7a43368bbf29f5c3d10f7800ab72437e8c5dd",
+      "title": "Working electrode for dopamine electrochemical sensor, dopamine electrochemical sensor and application thereof",
+      "patent_id": "CN119246633A",
+      "abstract": "AbstractTranslated fromChineseæ¬åææ¶åä¸ç§å¤å·´èºçµåå­¦ä¼ æå¨ç¨å·¥ä½çµæãå¤å·´èºçµåå­¦ä¼ æå¨åå¶åºç¨ï¼å±äºçµåå­¦ä¼ æå¨ææ¯é¢åãæ¬åæçå¤å·´èºçµåå­¦ä¼ æå¨ç¨å·¥ä½çµæåæ¬çµæåºåºåä¿®é¥°å¨çµæåºåºè¡¨é¢çç¼ºé·åäºç¡«åé¼ï¼æè¿°ç¼ºé·åäºç¡«åé¼ä¸ºç¡«ç©ºä½ç¼ºé·çäºç¡«åé¼ãç±æè¿°å·¥ä½çµææå»ºçå¤å·´èºçµåå­¦ä¼ æå¨ï¼è½å¢å¼ºæ£æµæ¶å¯¹å¤å·´èºçéæ©æ§ï¼è½å¤æ¾èå°æå¶æåè¡é¸åå°¿é¸ççµåå­¦æ°§åï¼éå¯¹æ§å°è§£å³äºå¤å·´èºæ£æµè¿ç¨ä¸­çä¿¡å·å¹²æ°é®é¢ãThe present invention relates to a working electrode for a dopamine electrochemical sensor, a dopamine electrochemical sensor and its application, and belongs to the technical field of electrochemical sensors. The working electrode for the dopamine electrochemical sensor of the present invention comprises an electrode substrate and defective molybdenum disulfide modified on the surface of the electrode substrate; the defective molybdenum disulfide is molybdenum disulfide with sulfur vacancy defects. The dopamine electrochemical sensor constructed by the working electrode can enhance the selectivity of dopamine during detection, can significantly inhibit the electrochemical oxidation of ascorbic acid and uric acid, and specifically solves the signal interference problem in the dopamine detection process.",
+      "inventors": [
+        "å§¬åæ³¢",
+        "çå¶ç",
+        "èå¦®",
+        "å¼ å¯ä¸",
+        "æ´å½ç§",
+        "èæ­¦",
+        "å²æ¸ç§",
+        "æ¨æ",
+        "ä½ä¿æ±",
+        "å±å±"
+      ],
+      "assignee": "Henan Xinqiao Tobacco Technology Service Co ltd",
+      "filing_date": "2024-08-19",
+      "publication_date": "2025-01-03",
+      "url": "https://patents.google.com/patent/CN119246633A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_64b3458c1dde",
+      "family_id": "family:019a4516008afce24815f687642c6dab2e5f0c9a",
+      "title": "Dopamine chemical sensor",
+      "patent_id": "",
+      "abstract": "AbstractTranslated fromChineseä¸ç¨®å¤å·´èºåå­¸ææ¸¬å¨ï¼åæ¬ææ¬é«ãéé ­ãå·¥ä½é»æ¥µãåèé»æ¥µä»¥åå°é»æ¥µçµæï¼æ¬é«å§é¨æå¸éçï¼èéé ­ç¸å°æ¬é«çµåèæå¸ï¼çµåæéé ­ä¸ç«¯æ¥è§¸å¸éçï¼èå·¥ä½é»æ¥µãåèé»æ¥µä»¥åå°é»æ¥µè¨­ç½®æ¼æ¬é«èè©²å¸éçæ¥è§¸ï¼è©²å·¥ä½é»æ¥µåæ¬æç»çç¢³é»æ¥µ(GCEï¼glass carbon electrode)ä»¥åçµåæ¼ç»çç¢³é»æ¥µä¹ä¸éå¥ç±³ç¢³çºç¶­(Au-CNF)ï¼æçºä¸ç¨®å·æé«éæåº¦çåå­¸ç©è³ªææ¸¬å¨å·ï¼å¿«éæºç¢ºæª¢æ¸¬å¤å·´èºãA dopamine chemical sensor includes a body, a needle, a working electrode, a reference electrode, and a counter electrode. The body has an adsorption sheet, and the needle is assembled and disassembled from the body. When the assembly is combined, the end of the needle contacts the adsorption sheet, and the working electrode, The reference electrode and the counter electrode are disposed on the body to contact the adsorption sheet. The working electrode includes a glass carbon electrode (GCE) and one of the glass carbon electrodes (Gnano carbon fiber (Au-CNF)). High-sensitivity chemical sensing device for fast and accurate detection of dopamine.",
+      "inventors": [
+        "ç¿äºæ´",
+        "å³ç³ä¹",
+        "çé»é"
+      ],
+      "assignee": "é¢ç²å¤§å­¸",
+      "filing_date": "2019-09-24",
+      "publication_date": "2020-02-11",
+      "url": "https://patents.google.com/patent/TWM590689U/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_bfa14d23f878",
+      "family_id": "family:429302c80fc82bb48c3297026895d4ded8e84279",
+      "title": "Laser-induced graphene electrodes adaptable for electrochemical sensing and catalysis",
+      "patent_id": "US20210332489A1",
+      "abstract": "AbstractApparatus and methods of fabrication and use of highly effective laser-induced graphene (LIG) electrodes including for electrochemical sensing and catalysis. One example is a sensitive and label-free laser-induced graphene (LIG) electrode functionalized for a specific application. One example of functionalization with antibodies, an enzyme, or an ionophore to electrochemically quantify a target species The LIG electrodes were produced by laser induction on film having a carbon precursor (e.g. polyimide) in ambient conditions, and hence circumvent the need for high-temperature, vacuum environment, and metal seed catalysts commonly associated with graphene-based electrodes fabricated via chemical vapor deposition processes. These results demonstrate how LIG-based electrodes can be used for electrochemical sensing in general. Other examples of applications include, but are not limited to, ion-sensing, pesticide monitoring and detection, and water splitting, using the LIG-based electrode(s) adapted for those purposes.",
+      "inventors": [
+        "Jonathan Claussen",
+        "Carmen L. Gomes",
+        "Raquel Rainier Alves Soares",
+        "Robert Hjort",
+        "Cicero Cardoso Pola"
+      ],
+      "assignee": "Iowa State University Research Foundation Inc ISURF",
+      "filing_date": "2021-04-27",
+      "publication_date": "2021-10-28",
+      "url": "https://patents.google.com/patent/US20210332489A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_ce6b4ec2085f",
+      "family_id": "family:e7763cceb03809b444551e588de12801f7a32ee4",
+      "title": "LASER-INDUCED GRAPHENE NON-ENZYMATIC GLUCOSE\nSENSORS\nFOR ON BODY MEASUREMENTS",
+      "patent_id": "20250120616",
+      "abstract": "(EN)Embodiments relate to a non-enzymatic glucosesensor. The non-enzymatic glucosesensorcomprises one or more electrodes, a microfluidic channel, and at least one inlet, wherein the at least one inlet is configured to deliver a fluid to a microfluidic channel and wherein the microfluidic channel is configured to transport the fluid to the one or more electrodes. At least one of the one or more electrodes is a laser-induced graphene electrode, wherein the laser-induced graphene electrode comprises one or more uniform coatings of metal.",
+      "inventors": [
+        "Huanyu Cheng"
+      ],
+      "assignee": "The Penn State Research Foundation",
+      "filing_date": "24.08.2022",
+      "publication_date": "17.04.2025",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US454142918&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_d9a330124ef1",
+      "family_id": "family:71df663b4369100fdab4ec9faa37fa65849ac65a",
+      "title": "LASER-INDUCED GRAPHENE NON-ENZYMATIC GLUCOSE\nSENSORS\nFOR ON BODY MEASUREMENTS\n(FR)\nCAPTEURS DE GLUCOSE NON ENZYMATIQUES AU GRAPHÈNE INDUIT PAR LASER POUR MESURES CORPORELLES",
+      "patent_id": "WO/2023/034705",
+      "abstract": "(EN)Embodiments relate to a non-enzymatic glucosesensor. The non-enzymatic glucosesensorcomprises one or more electrodes, a microfluidic channel, and at least one inlet, wherein the at least one inlet is configured to deliver a fluid to a microfluidic channel and wherein the microfluidic channel is configured to transport the fluid to the one or more electrodes. At least one of the one or more electrodes is a laser-induced graphene electrode, wherein the laser-induced graphene electrode comprises one or more uniform coatings of metal.(FR)Des modes de réalisation concernent un capteur de glucose non enzymatique. Le capteur de glucose non enzymatique comprend une ou plusieurs électrodes, un canal microfluidique, et au moins une entrée, l'au moins une entrée étant conçue pour distribuer un fluide à un canal microfluidique et le canal microfluidique étant conçu pour transporter le fluide vers la ou les électrodes. Au moins l'une des électrodes est une électrode en graphène induit par laser, l'électrode en graphène induit par laser comprenant un ou plusieurs revêtements uniformes de métal.",
+      "inventors": [
+        "CHENG, Huanyu"
+      ],
+      "assignee": "THE PENN STATE RESEARCH FOUNDATION\n[US]/[US]",
+      "filing_date": "24.08.2022",
+      "publication_date": "09.03.2023",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2023034705&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_523dc554e6aa",
+      "family_id": "family:f8ea6a6aa6ef0d8b5d5d6c230f9f7ed3667b7f91",
+      "title": "NASAL AND OPHTHALMIC DELIVERY OF AQUEOUS CORTICOSTEROID SOLUTIONS\n(FR)\nADMINISTRATION NASALE ET OPHTALMIQUE DE SOLUTIONS AQUEUSES DE CORTICOSTEROIDES",
+      "patent_id": "2728386",
+      "abstract": "(EN)The present invention is directed to methods of treating nasal and/or  ophthalmic diseases, symptoms, or disorders  that are therapeutically responsive to corticosteroid therapy by delivering  aqueous solution formulations comprising a corticosteroid to nasal and ophthalmic tissues. The invention is also directed  to methods, systems, devices, and compositions for  delivering aqueous solution formulations comprising a corticosteroid and an  antihistamine to nasal and ophthalmic tissues watering eyes(FR)La présente invention concerne des procédés de traitement de maladies, symptômes ou troubles nasaux et/ou ophtalmiques qui réagissent d'un point de vue thérapeutique au traitement par corticostéroïdes administrés aux tissus nasaux et ophtalmiques sous forme de formulations de solution aqueuse contenant un corticostéroïde. L'invention porte aussi sur des procédés, des systèmes, des dispositifs et des compositions permettant d'administrer des formulations de solution aqueuse contenant un corticostéroïde et un antihistaminique à des tissus nasaux et ophtalmiques.",
+      "inventors": [
+        "JAMES D. PIPKIN",
+        "RUPERT O. ZIMMERER",
+        "JOHN M. SIEBERT"
+      ],
+      "assignee": "CYDEX PHARMACEUTICALS, INC.",
+      "filing_date": "30.06.2008",
+      "publication_date": "31.12.2008",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA94506488&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_f38e10ba5b6d",
+      "family_id": "family:d18e2075a4c8490a06d9cbd94cabaa60b4da8a3a",
+      "title": "Neuartige Genunterbrechung, dazugehörige Zusammensetzungen und Verfahren\n(EN)\nNovel gene disruptions, compositions and methods relating thereto\n(FR)\nNouvelles ruptures génétiques, compositions et procédés associés à celles-ci",
+      "patent_id": "2002714",
+      "abstract": "(EN)The present invention relates to transgenic animals, as well as compositions and methods relating to the characterization of gene function. Specifically, the present invention provides transgenic mice comprising disruptions in PRO218, PRO228, PRO271, PRO273, PRO295, PRO302, PRO305, PRO326, PRO386, PRO655, PRO162, PRO788, PRO792, PRO940, PRO941, PRO1004, PRO1012, PRO1016, PRO474, PRO5238, PRO1069 PRO1111, PRO1113, PRO1130, PRO1195, PRO1271, PRO1865, PRO1879, PRO3446, PRO3543, PRO4329, PRO4352, PRO5733, PRO9859, PRO9864, PRO9904, PRO9907, PRO10013, PRO90948, PRO28694, PRO16089, PRO19563, PRO19675, PRO20084, PRO21434, PRO50332, PRO38465 or PRO346 genes. Such in vivo studies and characterizations may provide valuable identification and discovery of therapeutics and/or treatments useful in the prevention, amelioration or correction of diseases or dysfunctions associated with gene disruptions such as neurological disorders; cardiovascular, endothelial or angiogenic disorders; eye abnormalities; immunological disorders; oncological disorders; bone metabolic abnormalities or disorders; lipid metabolic disorders; or developmental abnormalities.",
+      "inventors": [
+        "BYERS-HORNER ALLISON ANNE",
+        "COMBS KATHERIN",
+        "DESAUVAGE FREDERIC",
+        "FAN LIANGFEN",
+        "FILVAROFF ELLEN",
+        "IRVING BRYAN",
+        "JUNUTULA JAGATH REDDY",
+        "MASSEY ERIN MARIE",
+        "MCLAIN DINA REBECCA",
+        "MINZE LAURIE JEANNETTE",
+        "MONTGOMERY CHARLES A",
+        "PAYNE BOBBY JOE",
+        "PHILLIPS HEIDI",
+        "RANGEL CAROLINA",
+        "SHI ZHENG-ZHENG",
+        "SPARKS MARY JEAN",
+        "STALA JOY",
+        "TOWNSEND TERESA GAIL",
+        "VOGEL PETER",
+        "WILLIS-SEVAUX TRACY ELLEN"
+      ],
+      "assignee": "GENENTECH INC\nLEXICON PHARMACEUTICALS INC",
+      "filing_date": "16.11.2006",
+      "publication_date": "17.12.2008",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=EP15030162&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_4873e210a0a6",
+      "family_id": "family:c236cefdf1f7bcf8ddbdd7a0fe07a6d701d0e681",
+      "title": "Novel Gene Disruptions, Compositions and Methods Relating Thereto",
+      "patent_id": "20090293137",
+      "abstract": "(EN)The present invention relates to transgenic animals, as well as compositions and methods relating to the characterization of gene function. Specifically, the present invention provides transgenic mice comprising disruptions in PRO218, PRO228, PRO271, PRO273, PRO295, PRO302, PRO305, PRO326, PRO386, PRO655, PRO162, PRO788, PRO792, PRO940, PRO941, PRO1004, PRO1012, PRO 1016, PRO474, PRO5238, PRO1069, PRO1111, PRO1113, PRO1130, PRO1195, PRO1271, PRO1865, PRO1879, PRO3446, PRO3543, PRO4329, PRO4352, PRO5733, PRO9859, PRO9864, PRO9904, PRO9907, PRO10013, PRO90948, PRO28694, PRO16089, PRO19563, PRO19675, PRO20084, PRO21434, PRO50332, PRO38465 or PRO346 genes. Such in vivo studies and characterizations may provide valuable identification and discovery of therapeutics and/or treatments useful in the prevention, amelioration or correction of diseases or dysfunctions associated with gene disruptions such as neurological disorders; cardiovascular, endothelial or angiogenic disorders; eye abnormalities; immunological disorders; oncological disorders; bone metabolic abnormalities or disorders; lipid metabolic disorders; or developmental abnormalities.",
+      "inventors": [
+        "Combs Katherin E.",
+        "de Sauvage Frederic J.",
+        "Fan Liangfen",
+        "Filvaroff Ellen",
+        "Horner Allison A. B.",
+        "Irving Bryan",
+        "Juntula Jagath Reddy",
+        "Massey Erin Marie",
+        "McLain Dina Rebecca",
+        "Minze Laurie Jeanette",
+        "Montgomery Charles",
+        "Payne Bobby Joe",
+        "Philips Heidi",
+        "Rangel Carolina",
+        "Sevaux Tracy E. W.",
+        "Shi Zheng-Zheng",
+        "Sparks Mary Jean",
+        "Stala Joy Anne",
+        "Townsend Teresa G.",
+        "Vogel Peter"
+      ],
+      "assignee": "Genentech, Inc.",
+      "filing_date": "16.11.2006",
+      "publication_date": "26.11.2009",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US42902953&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_4b6228965ee5",
+      "family_id": "family:db464802277ee5afca547677303b6c3258ef1421",
+      "title": "Novel gene disruptions, compositions and methods relating thereto",
+      "patent_id": "2006335053",
+      "abstract": "(EN)The present invention relates to transgenic animals, as well as compositions and methods relating to the characterization of gene function. Specifically, the present invention provides transgenic mice comprising disruptions in PRO218, PRO228, PRO271, PRO273, PRO295, PRO302, PRO305, PRO326, PRO386, PRO655, PRO162, PRO788, PRO792, PRO940, PRO941, PRO1004, PRO1012, PRO1016, PRO474, PRO5238, PRO1069, PRO1111, PRO1113, PRO1130, PRO1195, PRO1271, PRO1865, PRO1879, PRO3446, PRO3543, PRO4329, PRO4352, PRO5733, PRO9859, PRO9864, PRO9904, PRO9907, PRO10013, PRO90948, PRO28694, PRO16089, PRO19563, PRO19675, PRO20084, PRO21434, PRO50332, PRO38465 or PRO346 genes. Such in vivo studies and characterizations may provide valuable identification and discovery of therapeutics and/or treatments useful in the prevention, amelioration or correction of diseases or dysfunctions associated with gene disruptions such as neurological disorders; cardiovascular, endothelial or angiogenic disorders; eye abnormalities; immunological disorders; oncological disorders; bone metabolic abnormalities or disorders; lipid metabolic disorders; or developmental abnormalities.",
+      "inventors": [
+        "Combs, Katherin E.",
+        "Desauvage, Frederic",
+        "Fan, Liangfen",
+        "Filvaroff, Ellen",
+        "Horner, Allison Anne Byers",
+        "Irving, Bryan",
+        "Junutula, Jagath Reddy",
+        "Massey, Erin Marie",
+        "McLain, Dina Rebecca",
+        "Minze, Laurie Jeanette",
+        "Montgomery, Charles A.",
+        "Payne, Bobby Joe",
+        "Phillips, Heidi",
+        "Rangel, Carolina",
+        "Sevaux, Tracy Ellen Willis",
+        "Shi, Zheng-zheng",
+        "Sparks, Mary Jean",
+        "Stala, Joy Anne",
+        "Townsend, Teresa Gail",
+        "Vogel, Peter"
+      ],
+      "assignee": "Genentech, Inc.\nLexicon Pharmaceuticals, Inc.",
+      "filing_date": "16.11.2006",
+      "publication_date": "15.05.2008",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=AU181395466&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_4eda793a65f1",
+      "family_id": "family:9febc3497a8f389587ece109495b4fde6ab7ecd6",
+      "title": "NOVEL GENE DISRUPTIONS, COMPOSITIONS AND METHODS RELATING THERETO\n(FR)\nNOUVELLES DISSOCIATIONS DE GÈNES, COMPOSITIONS ET PROCÉDÉS LES CONCERNANT",
+      "patent_id": "WO/2007/081608",
+      "abstract": "(EN)The present invention relates to transgenic animals, as well as compositions and methods relating to the characterization of gene function. Specifically, the present invention provides transgenic mice comprising disruptions in PRO218, PRO228, PRO271, PRO273, PRO295, PRO302, PRO305, PRO326, PRO386, PRO655, PRO162, PRO788, PRO792, PRO940, PRO941, PRO1004, PRO1012, PRO1016, PRO474, PRO5238, PRO1069, PRO1111, PRO1113, PRO1130, PRO1195, PRO1271, PRO1865, PRO1879, PRO3446, PRO3543, PRO4329, PRO4352, PRO5733, PRO9859, PRO9864, PRO9904, PRO9907, PRO10013, PRO90948, PRO28694, PRO16089, PRO19563, PRO19675, PRO20084, PRO21434, PRO50332, PRO38465 or PRO346 genes. Such in vivo studies and characterizations may provide valuable identification and discovery of therapeutics and/or treatments useful in the prevention, amelioration or correction of diseases or dysfunctions associated with gene disruptions such as neurological disorders; cardiovascular, endothelial or angiogenic disorders; eye abnormalities; immunological disorders; oncological disorders; bone metabolic abnormalities or disorders; lipid metabolic disorders; or developmental abnormalities.(FR)La présente invention concerne des animaux transgéniques, ainsi que des compositions et des procédés concernant la caractérisation de la fonction génique. Spécifiquement, la présente invention concerne une souris transgénique comprenant des dissociations des gènes PRO218, PRO228, PRO271, PRO273, PRO295, PRO302, PRO305, PRO326, PRO386, PRO655, PRO162, PRO788, PRO792, PRO940, PRO941, PRO1004, PRO1012, PRO1016, PRO474, PRO5238, PRO1069, PRO1111, PRO1113, PRO1130, PRO1195, PRO1271, PRO1865, PRO1879, PRO3446, PRO3543, PRO4329, PRO4352, PRO5733, PRO9859, PRO9864, PRO9904, PRO9907, PRO10013, PRO90948, PRO28694, PRO16089, PRO19563, PRO19675, PRO20084, PRO21434, PRO50332, PRO38465 ou PRO346. Ces études et ces caractérisationsin vivopermettent d'identifier et de découvrir des agents thérapeutiques et/ou des traitements de valeur utiles dans la prévention, l'amélioration ou la correction de maladies ou de dysfonctions associées à des dissociations de gènes, par exemple les troubles neurologiques ; les troubles cardiovasculaires, endothéliaux ou angiogènes ; les anomalies oculaires ; les troubles immunologiques ; les troubles oncologiques ; les anomalies ou les troubles du métabolisme osseux ; les troubles du métabolisme des lipides ; ou les anomalies développementales.",
+      "inventors": [
+        "HORNER, Allison, Anne, Byers",
+        "COMBS, Katherin, E.",
+        "DESAUVAGE, Frederic",
+        "FAN, Liangfen",
+        "FILVAROFF, Ellen",
+        "IRVING, Bryan",
+        "JUNUTULA, Jagath Reddy",
+        "MASSEY, Erin Marie",
+        "MCLAIN, Dina Rebecca",
+        "MINZE, Laurie Jeanette",
+        "MONTGOMERY, Charles, A.",
+        "PAYNE, Bobby Joe",
+        "PHILLIPS, Heidi",
+        "RANGEL, Carolina",
+        "SHI, Zheng-zheng",
+        "SPARKS, Mary Jean",
+        "STALA, Joy, Anne",
+        "TOWNSEND, Teresa Gail",
+        "VOGEL, Peter",
+        "SEVAUX, Tracy Ellen Willis"
+      ],
+      "assignee": "GENENTECH, INC.\n[US]/[US]\n(AllExceptUS)\nLEXICON PHARMACEUTICALS, INC.\n[US]/[US]\n(AllExceptUS)\nHORNER, Allison, Anne, Byers\n[US]/[US](UsOnly)\nCOMBS, Katherin, E.\n[US]/[US](UsOnly)\nDESAUVAGE, Frederic\n[BE]/[US](UsOnly)\nFAN, Liangfen\n[US]/[US](UsOnly)\nFILVAROFF, Ellen\n[US]/[US](UsOnly)\nIRVING, Bryan\n[US]/[US](UsOnly)\nJUNUTULA, Jagath Reddy\n[IN]/[US](UsOnly)\nMASSEY, Erin Marie\n[US]/[US](UsOnly)\nMCLAIN, Dina Rebecca\n[US]/[US](UsOnly)\nMINZE, Laurie Jeanette\n[US]/[US](UsOnly)\nMONTGOMERY, Charles, A.\n[US]/[US](UsOnly)\nPAYNE, Bobby Joe\n[US]/[US](UsOnly)\nPHILLIPS, Heidi\n[US]/[US](UsOnly)\nRANGEL, Carolina\n[US]/[US](UsOnly)\nSHI, Zheng-zheng\n[CN]/[US](UsOnly)\nSPARKS, Mary Jean\n[US]/[US](UsOnly)\nSTALA, Joy, Anne\n[US]/[US](UsOnly)\nTOWNSEND, Teresa Gail\n[US]/[US](UsOnly)\nVOGEL, Peter\n[US]/[US](UsOnly)\nSEVAUX, Tracy Ellen Willis\n[US]/[US](UsOnly)",
+      "filing_date": "16.11.2006",
+      "publication_date": "19.07.2007",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2007081608&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_b4048237afc7",
+      "family_id": "family:7dc166045453313da483d34a1801ddc3f3b281d9",
+      "title": "NOVEL GENE DISRUPTIONS, COMPOSITIONS AND METHODS RELATING THERETO",
+      "patent_id": "20110182883",
+      "abstract": "(EN)The present invention relates to transgenic animals, as well as compositions and methods relating to the characterization of gene function. Specifically, the present invention provides transgenic mice comprising disruptions in PRO218, PRO228, PRO271, PRO273, PRO295, PRO302, PRO305, PRO326, PRO386, PRO655, PRO162, PRO788, PRO792, PRO940, PRO941, PRO1004, PRO1012, PRO1016, PRO474, PRO5238, PRO1069, PRO1111, PRO1113, PRO1130, PRO1195, PRO1271, PRO1865, PRO1879, PRO3446, PRO3543, PRO4329, PRO4352, PRO5733, PRO9859, PRO9864, PRO9904, PRO9907, PRO10013, PRO90948, PRO28694, PRO16089, PRO19563, PRO19675, PRO20084, PRO21434, PRO50332, PRO38465 or PRO346 genes. Such in vivo studies and characterizations may provide valuable identification and discovery of therapeutics and/or treatments useful in the prevention, amelioration or correction of diseases or dysfunctions associated with gene disruptions such as neurological disorders; cardiovascular, endothelial or angiogenic disorders; eye abnormalities; immunological disorders; oncological disorders; bone metabolic abnormalities or disorders; lipid metabolic disorders; or developmental abnormalities.",
+      "inventors": [
+        "Combs Katherin E.",
+        "de Sauvage Frederic",
+        "Fan Liangfen",
+        "Filvaroff Ellen",
+        "Horner Allison Anne Byers",
+        "Irving Bryan",
+        "Junutula Jagath Reddy",
+        "Massey Erin Marie",
+        "Mclain Dina Rebecca",
+        "Minze Laurie Jeanette",
+        "Montgomery Charles",
+        "Payne Bobby Joe",
+        "Phillips Heidi",
+        "Rangel Carolina",
+        "Sevaux Tracy Ellen Willis",
+        "Shi Zheng-Zheng",
+        "Sparks Mary Jean",
+        "Stala Joy Anne",
+        "Townsend Teresa Gail",
+        "Vogel Peter"
+      ],
+      "assignee": "Combs Katherin E.\nde Sauvage Frederic\nFan Liangfen\nFilvaroff Ellen\nHorner Allison Anne Byers\nIrving Bryan\nJunutula Jagath Reddy\nMassey Erin Marie\nMclain Dina Rebecca\nMinze Laurie Jeanette\nMontgomery Charles\nPayne Bobby Joe\nPhillips Heidi\nRangel Carolina\nSevaux Tracy Ellen Willis\nShi Zheng-Zheng\nSparks Mary Jean\nStala Joy Anne\nTownsend Teresa Gail\nVogel Peter",
+      "filing_date": "03.03.2011",
+      "publication_date": "28.07.2011",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US73308915&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_32c7781ba59f",
+      "family_id": "family:bcd7e108902e78ce64cd7d288a24e93b0da6e30e",
+      "title": "NMR SYSTEMS AND METHODS FOR THE RAPID DETECTION OF ANALYTES\n(FR)\nSYSTEMES DE RMN ET PROCEDES DE DETECTION RAPIDE D'ANALYTES",
+      "patent_id": "3155334",
+      "abstract": "(EN)This invention features systems and methods for the detection of analytes, and their use in the treatment and diagnosis of disease.",
+      "inventors": [
+        "AUDEH, MARK JOHN",
+        "BLANCO, MATTHEW",
+        "CHEPIN, JAMES FRANKLIN",
+        "DEMAS, VASILIKI",
+        "DHANDA, RAHUL",
+        "FRITZEMEIER, MARILYN LEE",
+        "KOH, ISAAC",
+        "KUMAR, SONIA",
+        "LOWERY, THOMAS JAY, JR.",
+        "MOZELESKI, BRIAN",
+        "NEELY, LORI ANNE",
+        "PLOURDE, DANIELLA LYNN",
+        "RITTERSHAUS, CHARLES WILLIAM",
+        "WELLMAN, PARRIS"
+      ],
+      "assignee": "T2 BIOSYSTEMS, INC.",
+      "filing_date": "",
+      "publication_date": "26.04.2012",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA358706215&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_c3d095483da3",
+      "family_id": "family:0f136cb1543b2a736955d64473ed4434370b47f7",
+      "title": "Methods and compositions for synthetic biomarkers",
+      "patent_id": "20210277474",
+      "abstract": "(EN)The present disclosure encompasses embodiments of nucleic acids comprising genetic elements which are useful for the detection of diseased cells.",
+      "inventors": [
+        "David Suhy",
+        "Paul Escarpe",
+        "Cyriac Roeding",
+        "Justin Lin",
+        "Alex Harwig",
+        "Shireen Rudina",
+        "Leland Harrison Hartwell"
+      ],
+      "assignee": "EARLI Inc.",
+      "filing_date": "31.03.2021",
+      "publication_date": "09.09.2021",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US335377510&_cid=P12-MRXIRX-71771-1",
+      "snippet": "",
+      "source": "Patentscope"
+    }
+  ],
+  "evaluations": [
+    {
+      "record_id": "rec_4ca678fd8fa5",
+      "patent_id": "WO2021222250A1",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_a3b380e21bf9",
+      "patent_id": "CN115165998A",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_1292a0df852d",
+      "patent_id": "CN108918618A",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_fde35625d301",
+      "patent_id": "CN108872343A",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_ca020593ddd1",
+      "patent_id": "CN112479186A",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_d461537cff92",
+      "patent_id": "CN105241868A",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_daeced5ae557",
+      "patent_id": "CN110006970A",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_179b3a7db28d",
+      "patent_id": "CN119246633A",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_64b3458c1dde",
+      "patent_id": "",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_bfa14d23f878",
+      "patent_id": "US20210332489A1",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_ce6b4ec2085f",
+      "patent_id": "20250120616",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_d9a330124ef1",
+      "patent_id": "WO/2023/034705",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_523dc554e6aa",
+      "patent_id": "2728386",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_f38e10ba5b6d",
+      "patent_id": "2002714",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_4873e210a0a6",
+      "patent_id": "20090293137",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_4b6228965ee5",
+      "patent_id": "2006335053",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_4eda793a65f1",
+      "patent_id": "WO/2007/081608",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_b4048237afc7",
+      "patent_id": "20110182883",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_32c7781ba59f",
+      "patent_id": "3155334",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_c3d095483da3",
+      "patent_id": "20210277474",
+      "analysis_route": "",
+      "route_reason": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "LLM indisponível.",
+      "evidence_snippets": [],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "LLM indisponível."
+    }
+  ],
+  "patents_by_source": {
+    "GooglePatents": 10,
+    "Patentscope": 10,
+    "EPO": 0
+  },
+  "scraper_diagnostics": {
+    "GooglePatents": [],
+    "Patentscope": [],
+    "EPO": [
+      {
+        "kind": "config_missing",
+        "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+        "url": ""
+      }
+    ]
+  },
+  "coverage_metrics": {
+    "raw_scraped": 20,
+    "unique_patents": 20,
+    "duplicates_removed": 0,
+    "screened": 0,
+    "included": 0,
+    "review": 20,
+    "excluded": 0,
+    "manual_review_required": 20,
+    "manual_review_deferred": 0,
+    "full_extractions": 0,
+    "missing_abstract": 0,
+    "missing_id": 1,
+    "records_with_content_identity": 0,
+    "records_with_fallback_identity": 0,
+    "family_duplicates_removed": 0,
+    "llm_screening_failures": 20,
+    "llm_total_failures": 0
+  },
+  "manual_review_queue": [
+    {
+      "record_id": "rec_fde35625d301",
+      "patent_id": "CN108872343A",
+      "family_id": "family:2fc43e8bf3c68fc5eb614261128db0c0187d9325",
+      "title": "A kind of Dopamine Sensor and its preparation and application based on nitrogen-doped graphene",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_1292a0df852d",
+      "patent_id": "CN108918618A",
+      "family_id": "family:fbba63a1e5637bd969f56bdfd23c63261a93c4fd",
+      "title": "A kind of Dopamine Sensor and its preparation and application based on sulfonated graphene supported palladium",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_64b3458c1dde",
+      "patent_id": "",
+      "family_id": "family:019a4516008afce24815f687642c6dab2e5f0c9a",
+      "title": "Dopamine chemical sensor",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_a3b380e21bf9",
+      "patent_id": "CN115165998A",
+      "family_id": "family:d06f01b66c4c64b70eec8ad17dc782113136186b",
+      "title": "Electrochemical sensor for dopamine detection and preparation method and application thereof",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_d461537cff92",
+      "patent_id": "CN105241868A",
+      "family_id": "family:625dadd06407ab0cc9e4554f09c66e1ad80aa288",
+      "title": "Electrochemiluminescence sensor based on methionine-gold nanocluster",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_ce6b4ec2085f",
+      "patent_id": "20250120616",
+      "family_id": "family:e7763cceb03809b444551e588de12801f7a32ee4",
+      "title": "LASER-INDUCED GRAPHENE NON-ENZYMATIC GLUCOSE\nSENSORS\nFOR ON BODY MEASUREMENTS",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_d9a330124ef1",
+      "patent_id": "WO/2023/034705",
+      "family_id": "family:71df663b4369100fdab4ec9faa37fa65849ac65a",
+      "title": "LASER-INDUCED GRAPHENE NON-ENZYMATIC GLUCOSE\nSENSORS\nFOR ON BODY MEASUREMENTS\n(FR)\nCAPTEURS DE GLUCOSE NON ENZYMATIQUES AU GRAPHÈNE INDUIT PAR LASER POUR MESURES CORPORELLES",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_4ca678fd8fa5",
+      "patent_id": "WO2021222250A1",
+      "family_id": "family:d24729ce9fef0fce765d6e926e2d5156ddad985f",
+      "title": "Laser-induced graphene electrochemical immunosensors",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_bfa14d23f878",
+      "patent_id": "US20210332489A1",
+      "family_id": "family:429302c80fc82bb48c3297026895d4ded8e84279",
+      "title": "Laser-induced graphene electrodes adaptable for electrochemical sensing and catalysis",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_ca020593ddd1",
+      "patent_id": "CN112479186A",
+      "family_id": "family:39c565e5b73ad5eb3482fec5e5e754183534c0a6",
+      "title": "Method for detecting dopamine with high selectivity based on electrochemical sensor",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_c3d095483da3",
+      "patent_id": "20210277474",
+      "family_id": "family:0f136cb1543b2a736955d64473ed4434370b47f7",
+      "title": "Methods and compositions for synthetic biomarkers",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_523dc554e6aa",
+      "patent_id": "2728386",
+      "family_id": "family:f8ea6a6aa6ef0d8b5d5d6c230f9f7ed3667b7f91",
+      "title": "NASAL AND OPHTHALMIC DELIVERY OF AQUEOUS CORTICOSTEROID SOLUTIONS\n(FR)\nADMINISTRATION NASALE ET OPHTALMIQUE DE SOLUTIONS AQUEUSES DE CORTICOSTEROIDES",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_32c7781ba59f",
+      "patent_id": "3155334",
+      "family_id": "family:bcd7e108902e78ce64cd7d288a24e93b0da6e30e",
+      "title": "NMR SYSTEMS AND METHODS FOR THE RAPID DETECTION OF ANALYTES\n(FR)\nSYSTEMES DE RMN ET PROCEDES DE DETECTION RAPIDE D'ANALYTES",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_b4048237afc7",
+      "patent_id": "20110182883",
+      "family_id": "family:7dc166045453313da483d34a1801ddc3f3b281d9",
+      "title": "NOVEL GENE DISRUPTIONS, COMPOSITIONS AND METHODS RELATING THERETO",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_4eda793a65f1",
+      "patent_id": "WO/2007/081608",
+      "family_id": "family:9febc3497a8f389587ece109495b4fde6ab7ecd6",
+      "title": "NOVEL GENE DISRUPTIONS, COMPOSITIONS AND METHODS RELATING THERETO\n(FR)\nNOUVELLES DISSOCIATIONS DE GÈNES, COMPOSITIONS ET PROCÉDÉS LES CONCERNANT",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_f38e10ba5b6d",
+      "patent_id": "2002714",
+      "family_id": "family:d18e2075a4c8490a06d9cbd94cabaa60b4da8a3a",
+      "title": "Neuartige Genunterbrechung, dazugehörige Zusammensetzungen und Verfahren\n(EN)\nNovel gene disruptions, compositions and methods relating thereto\n(FR)\nNouvelles ruptures génétiques, compositions et procédés associés à celles-ci",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_4873e210a0a6",
+      "patent_id": "20090293137",
+      "family_id": "family:c236cefdf1f7bcf8ddbdd7a0fe07a6d701d0e681",
+      "title": "Novel Gene Disruptions, Compositions and Methods Relating Thereto",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_4b6228965ee5",
+      "patent_id": "2006335053",
+      "family_id": "family:db464802277ee5afca547677303b6c3258ef1421",
+      "title": "Novel gene disruptions, compositions and methods relating thereto",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_daeced5ae557",
+      "patent_id": "CN110006970A",
+      "family_id": "family:47efa98f8f27f477b45b45f6046adf7c2a5ff0e9",
+      "title": "Preparation method and product and application of electrochemical sensor for dopamine detection",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    },
+    {
+      "record_id": "rec_179b3a7db28d",
+      "patent_id": "CN119246633A",
+      "family_id": "family:cbc7a43368bbf29f5c3d10f7800ab72437e8c5dd",
+      "title": "Working electrode for dopamine electrochemical sensor, dopamine electrochemical sensor and application thereof",
+      "reason": "LLM indisponível.",
+      "route": "",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "LLM indisponível."
+    }
+  ],
+  "prisma_flow": {
+    "flow": {
+      "identification": {
+        "raw_records": 20,
+        "unique_records": 20,
+        "duplicates_removed": 0
+      },
+      "screening": {
+        "screened": 0,
+        "included": 0,
+        "review": 20,
+        "excluded": 0
+      },
+      "eligibility": {
+        "full_extractions": 0,
+        "manual_review_required": 20,
+        "manual_review_deferred": 0
+      },
+      "coverage": {
+        "missing_abstract": 0,
+        "missing_id": 1
+      },
+      "synthesis": {
+        "analyzed_records": 0,
+        "comparative_analysis_generated": false
+      }
+    },
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "version": "1.0"
+  },
+  "thematic_clusters": {
+    "clusters": [],
+    "total_clusters": 0
+  },
+  "whitespace_analysis": {
+    "status": "no_input",
+    "query": "LIG sensor dopamine tears ",
+    "corpus_summary": {
+      "considered_patents": 20,
+      "selected_patents": 0,
+      "core": 0,
+      "frontier": 0,
+      "adjacent": 0
+    },
+    "coverage_matrix": [],
+    "axes": {},
+    "whitespace_candidates": [],
+    "markdown_summary": ""
+  },
+  "scraper_durations": {
+    "GooglePatents": 25.859,
+    "Patentscope": 97.626,
+    "EPO": 0.0
+  },
+  "evaluation_duration_seconds": 0.0,
+  "rerank_duration_seconds": 0.0,
+  "comparative_analysis_duration_seconds": 0.0,
+  "total_duration_seconds": 153.517,
+  "comparative_analysis": "",
+  "output_paths": {
+    "markdown": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.md",
+    "json": "/app/output/patentes_LIG_sensor_dopamine_tears__20260723_130229.json",
+    "state": "/app/output/run_state_20260723_125955.json",
+    "prisma": "/app/output/prisma_flow_20260723_125955.json",
+    "snapshot": "/app/output/config_snapshot_20260723_125955.json",
+    "whitespace_json": "/app/output/whitespace_analysis_20260723_125955.json",
+    "memory_journal": "/app/output/memory_journal_20260723_125955.json",
+    "memory_sidecar": "/app/output/memory_sidecar_20260723_125955.json"
+  },
+  "errors": []
+}

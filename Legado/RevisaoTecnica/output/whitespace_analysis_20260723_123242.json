@@ -1,0 +1,385 @@
+{
+  "status": "ok",
+  "query": "dopamine tears sensor",
+  "corpus_summary": {
+    "considered_patents": 20,
+    "selected_patents": 6,
+    "core": 0,
+    "frontier": 6,
+    "adjacent": 0
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "CN105241868A",
+      "record_id": "rec_d461537cff92",
+      "title": "Electrochemiluminescence sensor based on methionine-gold nanocluster",
+      "screening_decision": "review",
+      "screening_score": 5.3,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Biosensing, Eletroquímica, Nanotecnologia",
+      "thematic_cluster": "Detecção eletroluminescência de neurotransmissores",
+      "co2_role": "Co-reator (persulfato)",
+      "storage_role": "Não aplicável",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "Não aplicável",
+      "claim_focus": "Desenvolvimento de um sensor eletroluminescência para dopamina.",
+      "exclusion_category": "generic_tes"
+    },
+    {
+      "patent_id": "CN108872343A",
+      "record_id": "rec_fde35625d301",
+      "title": "A kind of Dopamine Sensor and its preparation and application based on nitrogen-doped graphene",
+      "screening_decision": "review",
+      "screening_score": 5.3,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Sensores eletroquímicos, materiais compósitos, grafeno dopado com nitrogênio",
+      "thematic_cluster": "Desenvolvimento de sensores químicos para a detecção de neurotransmissores.",
+      "co2_role": "Não especificado (o foco principal é na detecção de dopamina)",
+      "storage_role": "N/A",
+      "system_boundary": "Sensor individual",
+      "cycle_type": "Não claro (implícito em processos eletroquímicos)",
+      "heat_source_sink": "N/A",
+      "claim_focus": "Desenvolvimento e aplicação de um sensor de dopamina baseado em grafeno nitrogenado dopado.",
+      "exclusion_category": "cooling_only"
+    },
+    {
+      "patent_id": "CN112578011A",
+      "record_id": "rec_2056c5d6639a",
+      "title": "Sensor and detection method for detecting dopamine and uric acid",
+      "screening_decision": "review",
+      "screening_score": 5.3,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Eletroquímica, Sensores, Materiais 2D (MXene)",
+      "thematic_cluster": "Detecção Biomolecular Eletroquímica",
+      "co2_role": "não relevante (o CO2 não é o foco principal da invenção)",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "Sensor eletroquímico individual",
+      "cycle_type": "não especificado",
+      "heat_source_sink": "não relevante",
+      "claim_focus": "Construção e funcionalidade do sensor eletroquímico baseado em MXene-PPy.",
+      "exclusion_category": "low_alignment"
+    },
+    {
+      "patent_id": "CN116448850A",
+      "record_id": "rec_245e60bec916",
+      "title": "Detection device for dopamine in tear, preparation method and application",
+      "screening_decision": "review",
+      "screening_score": 7.4,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Eletroquímica, Sensores Biológicos, Gerenciamento Térmico",
+      "thematic_cluster": "Detecção Biomolecular com Eletrônica e Termodinâmica",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "não especificado, mas implica um sistema de controle térmico",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "low_alignment"
+    },
+    {
+      "patent_id": "CN1395094A",
+      "record_id": "rec_bc447a4191dd",
+      "title": "Electrochemical sensor for determining dopamine",
+      "screening_decision": "review",
+      "screening_score": 5.3,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Eletroquímica, Sensores Químicos, Química de Materiais",
+      "thematic_cluster": "Detecção Eletroquímica de Biomoléculas",
+      "co2_role": "not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_applicable",
+      "claim_focus": "Sensor eletroquímico para dopamina com filme sensível de Nafion e nanotubos de carbono.",
+      "exclusion_category": "low_alignment"
+    },
+    {
+      "patent_id": "JP5390399B2",
+      "record_id": "rec_f7a5c817a31a",
+      "title": "Ocular sensor for detection of analytes in tears",
+      "screening_decision": "review",
+      "screening_score": 4.8,
+      "relevance_score": 6.2,
+      "bucket": "frontier",
+      "technical_domain": "Biossensores Biomédicos e Química Analítica",
+      "thematic_cluster": "Detecção de Neurotransmissores em Líquidos Corporais",
+      "co2_role": "capture_process_stream",
+      "storage_role": "Não especificado no resumo.",
+      "system_boundary": "process_integration",
+      "cycle_type": "Não especificado no resumo, mas provavelmente envolve um ciclo de leitura e análise contínua.",
+      "heat_source_sink": "Não especificado no resumo.",
+      "claim_focus": "Detecção e quantificação da dopamina em lágrimas usando um sensor ocular.",
+      "exclusion_category": "generic_tes"
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "Co-reator (persulfato)": {
+        "core": [],
+        "frontier": [
+          "CN105241868A"
+        ],
+        "adjacent": []
+      },
+      "Não especificado (o foco principal é na detecção de dopamina)": {
+        "core": [],
+        "frontier": [
+          "CN108872343A"
+        ],
+        "adjacent": []
+      },
+      "não relevante (o CO2 não é o foco principal da invenção)": {
+        "core": [],
+        "frontier": [
+          "CN112578011A"
+        ],
+        "adjacent": []
+      },
+      "stored_thermodynamic_medium": {
+        "core": [],
+        "frontier": [
+          "CN116448850A"
+        ],
+        "adjacent": []
+      },
+      "not_central": {
+        "core": [],
+        "frontier": [
+          "CN1395094A"
+        ],
+        "adjacent": []
+      },
+      "capture_process_stream": {
+        "core": [],
+        "frontier": [
+          "JP5390399B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "storage_role": {
+      "Não aplicável": {
+        "core": [],
+        "frontier": [
+          "CN105241868A"
+        ],
+        "adjacent": []
+      },
+      "N/A": {
+        "core": [],
+        "frontier": [
+          "CN108872343A"
+        ],
+        "adjacent": []
+      },
+      "explicit_thermal_storage": {
+        "core": [],
+        "frontier": [
+          "CN112578011A",
+          "CN116448850A",
+          "CN1395094A"
+        ],
+        "adjacent": []
+      },
+      "Não especificado no resumo.": {
+        "core": [],
+        "frontier": [
+          "JP5390399B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "system_boundary": {
+      "process_integration": {
+        "core": [],
+        "frontier": [
+          "CN105241868A",
+          "CN1395094A",
+          "JP5390399B2"
+        ],
+        "adjacent": []
+      },
+      "Sensor individual": {
+        "core": [],
+        "frontier": [
+          "CN108872343A"
+        ],
+        "adjacent": []
+      },
+      "Sensor eletroquímico individual": {
+        "core": [],
+        "frontier": [
+          "CN112578011A"
+        ],
+        "adjacent": []
+      },
+      "cycle_or_transfer_subsystem": {
+        "core": [],
+        "frontier": [
+          "CN116448850A"
+        ],
+        "adjacent": []
+      }
+    },
+    "cycle_type": {
+      "not_clear": {
+        "core": [],
+        "frontier": [
+          "CN105241868A",
+          "CN1395094A"
+        ],
+        "adjacent": []
+      },
+      "Não claro (implícito em processos eletroquímicos)": {
+        "core": [],
+        "frontier": [
+          "CN108872343A"
+        ],
+        "adjacent": []
+      },
+      "não especificado": {
+        "core": [],
+        "frontier": [
+          "CN112578011A"
+        ],
+        "adjacent": []
+      },
+      "refrigeration_cycle": {
+        "core": [],
+        "frontier": [
+          "CN116448850A"
+        ],
+        "adjacent": []
+      },
+      "Não especificado no resumo, mas provavelmente envolve um ciclo de leitura e análise contínua.": {
+        "core": [],
+        "frontier": [
+          "JP5390399B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "heat_source_sink": {
+      "Não aplicável": {
+        "core": [],
+        "frontier": [
+          "CN105241868A"
+        ],
+        "adjacent": []
+      },
+      "N/A": {
+        "core": [],
+        "frontier": [
+          "CN108872343A"
+        ],
+        "adjacent": []
+      },
+      "não relevante": {
+        "core": [],
+        "frontier": [
+          "CN112578011A"
+        ],
+        "adjacent": []
+      },
+      "não especificado, mas implica um sistema de controle térmico": {
+        "core": [],
+        "frontier": [
+          "CN116448850A"
+        ],
+        "adjacent": []
+      },
+      "not_applicable": {
+        "core": [],
+        "frontier": [
+          "CN1395094A"
+        ],
+        "adjacent": []
+      },
+      "Não especificado no resumo.": {
+        "core": [],
+        "frontier": [
+          "JP5390399B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "claim_focus": {
+      "Desenvolvimento de um sensor eletroluminescência para dopamina.": {
+        "core": [],
+        "frontier": [
+          "CN105241868A"
+        ],
+        "adjacent": []
+      },
+      "Desenvolvimento e aplicação de um sensor de dopamina baseado em grafeno nitrogenado dopado.": {
+        "core": [],
+        "frontier": [
+          "CN108872343A"
+        ],
+        "adjacent": []
+      },
+      "Construção e funcionalidade do sensor eletroquímico baseado em MXene-PPy.": {
+        "core": [],
+        "frontier": [
+          "CN112578011A"
+        ],
+        "adjacent": []
+      },
+      "system_architecture": {
+        "core": [],
+        "frontier": [
+          "CN116448850A"
+        ],
+        "adjacent": []
+      },
+      "Sensor eletroquímico para dopamina com filme sensível de Nafion e nanotubos de carbono.": {
+        "core": [],
+        "frontier": [
+          "CN1395094A"
+        ],
+        "adjacent": []
+      },
+      "Detecção e quantificação da dopamina em lágrimas usando um sensor ocular.": {
+        "core": [],
+        "frontier": [
+          "JP5390399B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "exclusion_category": {
+      "generic_tes": {
+        "core": [],
+        "frontier": [
+          "CN105241868A",
+          "JP5390399B2"
+        ],
+        "adjacent": []
+      },
+      "cooling_only": {
+        "core": [],
+        "frontier": [
+          "CN108872343A"
+        ],
+        "adjacent": []
+      },
+      "low_alignment": {
+        "core": [],
+        "frontier": [
+          "CN112578011A",
+          "CN116448850A",
+          "CN1395094A"
+        ],
+        "adjacent": []
+      }
+    }
+  },
+  "whitespace_candidates": [],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN105241868A, CN108872343A, CN112578011A, CN116448850A]"
+}

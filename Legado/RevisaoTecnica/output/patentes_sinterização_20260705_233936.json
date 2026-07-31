@@ -1,0 +1,1876 @@
+{
+  "metadata": {
+    "query": "sinterização",
+    "timestamp": "2026-07-05T23:39:36.567804",
+    "total_patents": 4,
+    "model": "gemma3:4b",
+    "average_relevance": 0,
+    "run_state": {
+      "query": "sinterização",
+      "max_results": 4,
+      "model": "gemma3:4b",
+      "output_dir": "/app/output",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "config_snapshot": {
+        "pipeline_version": "1.1",
+        "timestamp": "2026-07-05T23:36:25",
+        "query": "sinterização",
+        "max_results": 4,
+        "model": "gemma3:4b",
+        "output_dir": "/app/output",
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "thresholds": {
+          "include": 7.0,
+          "review": 4.5,
+          "manual_review_limit": 20
+        },
+        "runtime": {
+          "ollama_base_url": "http://ollama:11434",
+          "ollama_timeout": 600
+        },
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ]
+      },
+      "snapshot_hash": "ff1b944a48525ae9e01dd2bb903dac54a72ec3e55d57daf28e755817b5371212",
+      "protocol": {
+        "version": "1.0",
+        "query": "sinterização",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 4
+        },
+        "model": "gemma3:4b"
+      },
+      "writing_context": {
+        "protocol": {
+          "version": "1.0",
+          "query": "sinterização",
+          "sources": [
+            "Google Patents",
+            "Patentscope"
+          ],
+          "stages": [
+            "identification",
+            "deduplication",
+            "screening",
+            "manual_review",
+            "full_extraction",
+            "synthesis"
+          ],
+          "criteria": {
+            "include": [
+              "Alinhamento claro com a query ou seus sinônimos técnicos.",
+              "Documento com título, resumo ou snippet suficientes para análise.",
+              "Potencial técnico relevante para o domínio pesquisado."
+            ],
+            "exclude": [
+              "Documentos sem relação técnica com a query.",
+              "Duplicatas de outra fonte ou publicação equivalente.",
+              "Registro sem metadados mínimos para avaliação."
+            ]
+          },
+          "thresholds": {
+            "include_score": 7.0,
+            "review_score": 4.5,
+            "max_items_for_manual_review": 20
+          },
+          "limits": {
+            "max_results": 4
+          },
+          "model": "gemma3:4b"
+        },
+        "coverage_metrics": {
+          "raw_scraped": 4,
+          "unique_patents": 4,
+          "duplicates_removed": 0,
+          "screened": 4,
+          "included": 0,
+          "review": 0,
+          "excluded": 4,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0,
+          "full_extractions": 0,
+          "missing_abstract": 0,
+          "missing_id": 2,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        },
+        "top_patents": [],
+        "thematic_clusters": {
+          "clusters": [],
+          "total_clusters": 0
+        },
+        "route_summary": {
+          "screen_only": 4
+        },
+        "feature_flags": {
+          "require_evidence": true,
+          "enable_thematic_clusters": true,
+          "enable_structural_roles": true,
+          "enable_screening_rerank": true,
+          "enable_prisma": true,
+          "enable_snapshot": true,
+          "enable_comparative_analysis": true,
+          "enable_whitespace_analysis": true,
+          "enable_manual_review_queue": true
+        },
+        "snapshot_hash": "ff1b944a48525ae9e01dd2bb903dac54a72ec3e55d57daf28e755817b5371212"
+      },
+      "memory_sidecar": {
+        "run_id": "20260705_233625",
+        "max_items_per_slot": 5,
+        "slots": {
+          "screening": [
+            {
+              "record_id": "rec_cf7740d73e52",
+              "patent_id": "",
+              "title": "mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para a fabricaÃ§Ã£o de ferro",
+              "route": "screen_only",
+              "score": 3.5
+            },
+            {
+              "record_id": "rec_0b3f39205925",
+              "patent_id": "",
+              "title": "Method for pretreatment of sintering material",
+              "route": "screen_only",
+              "score": 3.5
+            },
+            {
+              "record_id": "rec_f967a6d0dd68",
+              "patent_id": "BR112015015064B1",
+              "title": "MÃ©todo e sistema para controlar a quantidade de ar da caixa-de-ar do carrinho de sinterizaÃ§Ã£o.",
+              "route": "screen_only",
+              "score": 3.5
+            },
+            {
+              "record_id": "rec_c4b2c01f455e",
+              "patent_id": "WO2023035050A1",
+              "title": "QUEIMADOR DE BAIXA EMISSÃO DE NOx E MÃTODO OPERACIONAL PARA REDUÃÃO DE FORMAÃÃO DE NOx APLICADO EM PROCESSO DE SINTERIZAÃÃO E/OU ENDURECIMENTO DE PELOTAS DE MINÃRIO DE FERRO",
+              "route": "screen_only",
+              "score": 3.5
+            }
+          ],
+          "writer": [
+            {
+              "top_patents": [],
+              "route_summary": {
+                "screen_only": 4
+              }
+            }
+          ]
+        },
+        "journal": [
+          {
+            "timestamp": "2026-07-05T23:36:28",
+            "stage": "setup",
+            "event": "llm_check",
+            "detail": "Verificação de disponibilidade do Ollama concluída.",
+            "payload": {
+              "llm_available": true,
+              "model": "gemma3:4b"
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:36:39",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "GooglePatents retornou patentes.",
+            "payload": {
+              "source": "GooglePatents",
+              "count": 4,
+              "diagnostics": []
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:37:03",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "Patentscope retornou patentes.",
+            "payload": {
+              "source": "Patentscope",
+              "count": 0,
+              "diagnostics": [
+                {
+                  "kind": "jsf_empty_results",
+                  "detail": "Nenhum resultado em result.jsf para query: sinterização",
+                  "url": "https://patentscope.wipo.int/search/en/result.jsf"
+                },
+                {
+                  "kind": "detail_session_expired",
+                  "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                  "url": "https://patentscope.wipo.int/search/en/WO2025010416"
+                },
+                {
+                  "kind": "detail_session_expired",
+                  "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                  "url": "https://patentscope.wipo.int/search/en/WO2025227477"
+                },
+                {
+                  "kind": "detail_session_expired",
+                  "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                  "url": "https://patentscope.wipo.int/search/en/search.jsf"
+                },
+                {
+                  "kind": "detail_session_expired",
+                  "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                  "url": "https://patentscope.wipo.int/search/en/WO2025094690"
+                }
+              ]
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:37:03",
+            "stage": "identification",
+            "event": "scrape_completed",
+            "detail": "EPO retornou patentes.",
+            "payload": {
+              "source": "EPO",
+              "count": 0,
+              "diagnostics": [
+                {
+                  "kind": "config_missing",
+                  "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+                  "url": ""
+                }
+              ]
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:37:43",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "rec_cf7740d73e52 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_cf7740d73e52",
+              "patent_id": "",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:38:17",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "rec_0b3f39205925 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_0b3f39205925",
+              "patent_id": "",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:38:53",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "BR112015015064B1 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_f967a6d0dd68",
+              "patent_id": "BR112015015064B1",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "screening",
+            "event": "screening_completed",
+            "detail": "WO2023035050A1 roteada para screen_only.",
+            "payload": {
+              "record_id": "rec_c4b2c01f455e",
+              "patent_id": "WO2023035050A1",
+              "decision": "exclude",
+              "score": 3.5,
+              "route": {
+                "route": "screen_only",
+                "reason": "Patente excluída na triagem.",
+                "slot": "screening"
+              },
+              "llm_error": ""
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "rec_cf7740d73e52 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_cf7740d73e52",
+              "patent_id": "",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "rec_0b3f39205925 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_0b3f39205925",
+              "patent_id": "",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "BR112015015064B1 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_f967a6d0dd68",
+              "patent_id": "BR112015015064B1",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "extraction",
+            "event": "screening_only",
+            "detail": "WO2023035050A1 permaneceu apenas na triagem.",
+            "payload": {
+              "record_id": "rec_c4b2c01f455e",
+              "patent_id": "WO2023035050A1",
+              "route": "screen_only"
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "synthesis",
+            "event": "coverage_computed",
+            "detail": "Cobertura e seleção consolidadas após triagem.",
+            "payload": {
+              "raw_scraped": 4,
+              "unique_patents": 4,
+              "duplicates_removed": 0,
+              "screened": 4,
+              "included": 0,
+              "review": 0,
+              "excluded": 4,
+              "manual_review_required": 0,
+              "manual_review_deferred": 0,
+              "full_extractions": 0,
+              "missing_abstract": 0,
+              "missing_id": 2,
+              "records_with_content_identity": 0,
+              "records_with_fallback_identity": 0,
+              "family_duplicates_removed": 0,
+              "llm_screening_failures": 0,
+              "llm_total_failures": 0
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "synthesis",
+            "event": "comparative_analysis_skipped",
+            "detail": "Síntese comparativa pulada por falta de patentes elegíveis.",
+            "payload": {
+              "patents_compared": 0
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "writer",
+            "event": "context_prepared",
+            "detail": "Contexto compartilhado preparado para o writer.",
+            "payload": {
+              "top_patents": 0,
+              "route_summary": {
+                "screen_only": 4
+              }
+            }
+          },
+          {
+            "timestamp": "2026-07-05T23:39:36",
+            "stage": "finalization",
+            "event": "report_generated",
+            "detail": "Relatórios finais gerados com sucesso.",
+            "payload": {
+              "markdown": "/app/output/patentes_sinterização_20260705_233936.md",
+              "json": "/app/output/patentes_sinterização_20260705_233936.json"
+            }
+          }
+        ]
+      },
+      "memory_journal": [
+        {
+          "timestamp": "2026-07-05T23:36:28",
+          "stage": "setup",
+          "event": "llm_check",
+          "detail": "Verificação de disponibilidade do Ollama concluída.",
+          "payload": {
+            "llm_available": true,
+            "model": "gemma3:4b"
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:36:39",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "GooglePatents retornou patentes.",
+          "payload": {
+            "source": "GooglePatents",
+            "count": 4,
+            "diagnostics": []
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:37:03",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "Patentscope retornou patentes.",
+          "payload": {
+            "source": "Patentscope",
+            "count": 0,
+            "diagnostics": [
+              {
+                "kind": "jsf_empty_results",
+                "detail": "Nenhum resultado em result.jsf para query: sinterização",
+                "url": "https://patentscope.wipo.int/search/en/result.jsf"
+              },
+              {
+                "kind": "detail_session_expired",
+                "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                "url": "https://patentscope.wipo.int/search/en/WO2025010416"
+              },
+              {
+                "kind": "detail_session_expired",
+                "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                "url": "https://patentscope.wipo.int/search/en/WO2025227477"
+              },
+              {
+                "kind": "detail_session_expired",
+                "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                "url": "https://patentscope.wipo.int/search/en/search.jsf"
+              },
+              {
+                "kind": "detail_session_expired",
+                "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+                "url": "https://patentscope.wipo.int/search/en/WO2025094690"
+              }
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:37:03",
+          "stage": "identification",
+          "event": "scrape_completed",
+          "detail": "EPO retornou patentes.",
+          "payload": {
+            "source": "EPO",
+            "count": 0,
+            "diagnostics": [
+              {
+                "kind": "config_missing",
+                "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+                "url": ""
+              }
+            ]
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:37:43",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "rec_cf7740d73e52 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_cf7740d73e52",
+            "patent_id": "",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:38:17",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "rec_0b3f39205925 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_0b3f39205925",
+            "patent_id": "",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:38:53",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "BR112015015064B1 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_f967a6d0dd68",
+            "patent_id": "BR112015015064B1",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "screening",
+          "event": "screening_completed",
+          "detail": "WO2023035050A1 roteada para screen_only.",
+          "payload": {
+            "record_id": "rec_c4b2c01f455e",
+            "patent_id": "WO2023035050A1",
+            "decision": "exclude",
+            "score": 3.5,
+            "route": {
+              "route": "screen_only",
+              "reason": "Patente excluída na triagem.",
+              "slot": "screening"
+            },
+            "llm_error": ""
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "rec_cf7740d73e52 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_cf7740d73e52",
+            "patent_id": "",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "rec_0b3f39205925 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_0b3f39205925",
+            "patent_id": "",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "BR112015015064B1 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_f967a6d0dd68",
+            "patent_id": "BR112015015064B1",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "extraction",
+          "event": "screening_only",
+          "detail": "WO2023035050A1 permaneceu apenas na triagem.",
+          "payload": {
+            "record_id": "rec_c4b2c01f455e",
+            "patent_id": "WO2023035050A1",
+            "route": "screen_only"
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "synthesis",
+          "event": "coverage_computed",
+          "detail": "Cobertura e seleção consolidadas após triagem.",
+          "payload": {
+            "raw_scraped": 4,
+            "unique_patents": 4,
+            "duplicates_removed": 0,
+            "screened": 4,
+            "included": 0,
+            "review": 0,
+            "excluded": 4,
+            "manual_review_required": 0,
+            "manual_review_deferred": 0,
+            "full_extractions": 0,
+            "missing_abstract": 0,
+            "missing_id": 2,
+            "records_with_content_identity": 0,
+            "records_with_fallback_identity": 0,
+            "family_duplicates_removed": 0,
+            "llm_screening_failures": 0,
+            "llm_total_failures": 0
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "synthesis",
+          "event": "comparative_analysis_skipped",
+          "detail": "Síntese comparativa pulada por falta de patentes elegíveis.",
+          "payload": {
+            "patents_compared": 0
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "writer",
+          "event": "context_prepared",
+          "detail": "Contexto compartilhado preparado para o writer.",
+          "payload": {
+            "top_patents": 0,
+            "route_summary": {
+              "screen_only": 4
+            }
+          }
+        },
+        {
+          "timestamp": "2026-07-05T23:39:36",
+          "stage": "finalization",
+          "event": "report_generated",
+          "detail": "Relatórios finais gerados com sucesso.",
+          "payload": {
+            "markdown": "/app/output/patentes_sinterização_20260705_233936.md",
+            "json": "/app/output/patentes_sinterização_20260705_233936.json"
+          }
+        }
+      ],
+      "stage_metrics": [
+        {
+          "stage": "setup",
+          "status": "ok",
+          "duration_seconds": 3.722,
+          "items_processed": 1,
+          "detail": "Verificação do modelo Ollama"
+        },
+        {
+          "stage": "search",
+          "status": "ok",
+          "duration_seconds": 34.541,
+          "items_processed": 4,
+          "detail": "4 patentes únicas após dedupe"
+        },
+        {
+          "stage": "screening",
+          "status": "ok",
+          "duration_seconds": 153.284,
+          "items_processed": 4,
+          "detail": "0 incluídas, 0 revisão"
+        },
+        {
+          "stage": "comparative_analysis",
+          "status": "skipped",
+          "duration_seconds": 0.001,
+          "items_processed": 4,
+          "detail": "Nenhuma patente elegível para síntese comparativa"
+        },
+        {
+          "stage": "whitespace_analysis",
+          "status": "skipped",
+          "duration_seconds": 0.0,
+          "items_processed": 0,
+          "detail": "Whitespace analysis sem corpus elegível"
+        },
+        {
+          "stage": "reporting",
+          "status": "ok",
+          "duration_seconds": 0.001,
+          "items_processed": 4,
+          "detail": "Relatórios Markdown e JSON"
+        },
+        {
+          "stage": "finalization",
+          "status": "ok",
+          "duration_seconds": 0.0,
+          "items_processed": 8,
+          "detail": "Persistência de artefatos e estado"
+        }
+      ],
+      "llm_cache_stats": {
+        "hits": 0,
+        "misses": 4,
+        "entries": 108
+      },
+      "llm_telemetry": {
+        "degraded": false,
+        "total_failures": 0,
+        "consecutive_failures": 0,
+        "recent_errors": [],
+        "operations": {
+          "healthcheck": {
+            "calls": 1,
+            "successes": 1,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 35,
+            "response_chars": 15,
+            "total_duration_seconds": 3.72,
+            "max_duration_seconds": 3.72,
+            "average_duration_seconds": 3.72
+          },
+          "screening": {
+            "calls": 4,
+            "successes": 4,
+            "failures": 0,
+            "retries": 0,
+            "cache_hits": 0,
+            "degraded_skips": 0,
+            "prompt_chars": 16242,
+            "response_chars": 4449,
+            "total_duration_seconds": 153.282,
+            "max_duration_seconds": 43.043,
+            "average_duration_seconds": 38.321
+          }
+        }
+      },
+      "observability_metrics": {
+        "routes": {
+          "screen_only": {
+            "count": 4,
+            "include": 0,
+            "review": 0,
+            "exclude": 4,
+            "llm_errors": 0
+          }
+        },
+        "sources": {
+          "EPO": {
+            "raw_results": 0,
+            "duration_seconds": 0.0,
+            "diagnostic_counts": {
+              "config_missing": 1
+            }
+          },
+          "GooglePatents": {
+            "raw_results": 4,
+            "duration_seconds": 11.153,
+            "diagnostic_counts": {}
+          },
+          "Patentscope": {
+            "raw_results": 0,
+            "duration_seconds": 23.383,
+            "diagnostic_counts": {
+              "jsf_empty_results": 1,
+              "detail_session_expired": 4
+            }
+          }
+        },
+        "failures": {
+          "run_errors": 0,
+          "records_with_llm_error": 0,
+          "llm_total_failures": 0,
+          "llm_by_operation": {
+            "healthcheck": {
+              "calls": 1,
+              "failures": 0,
+              "retries": 0,
+              "degraded_skips": 0
+            },
+            "screening": {
+              "calls": 4,
+              "failures": 0,
+              "retries": 0,
+              "degraded_skips": 0
+            }
+          },
+          "scraper_diagnostics_by_kind": {
+            "jsf_empty_results": 1,
+            "detail_session_expired": 4,
+            "config_missing": 1
+          }
+        }
+      },
+      "run_id": "20260705_233625",
+      "started_at": "2026-07-05T23:36:25",
+      "finished_at": "2026-07-05T23:39:36",
+      "status": "completed",
+      "current_stage": "reporting",
+      "screened_count": 4,
+      "llm_available": true,
+      "patents": [
+        {
+          "record_id": "rec_cf7740d73e52",
+          "family_id": "family:80da79de91b6e207ea53445aac6a77dcaee25fd3",
+          "title": "mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para a fabricaÃ§Ã£o de ferro",
+          "patent_id": "",
+          "abstract": "Abstract\"mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para fabricar ferro\". Ã© um objeto da presente invenÃ§Ã£o fornecer um mÃ©todo de granulaÃ§Ã£o de matÃ©ria-prima para sinterizar, para a fabricaÃ§Ã£o de ferro, o qual Ã© eficazmente usado para granular matÃ©ria-prima para sinterizar, para a fabricaÃ§Ã£o de ferro, tal como finos de minÃ©rios de ferro, na fabricaÃ§Ã£o de minÃ©rio sinterizado que forma as matÃ©rias-primas para uma carga de alto-forno em um processo de produzir ferro gusa, e tornar possÃ­vel melhorar suficientemente a produtividade de uma mÃ¡quina de sinterizaÃ§Ã£o. a presente invenÃ§Ã£o Ã© dirigida a um mÃ©todo de granulaÃ§Ã£o de um material de sinterizaÃ§Ã£o para fabricar ferro contendo minÃ©rio de ferro em pÃ³, compreendendo um processo para realizar a granulaÃ§Ã£o por diluiÃ§Ã£o preliminar das partÃ­culas finas tendo um tamanho mÃ©dio de partÃ­cula de nÃ£o mais do que 200 <109>m em uma porÃ§Ã£o de um solvente ou um material de sinterizaÃ§Ã£o, e adiÃ§Ã£o do material resultante ao restante do material de sinterizaÃ§Ã£o, em que referida granulaÃ§Ã£o Ã© pelo menos um processo selecionado do grupo consistindo dos seguintes (1), (2) e (3): (1) um processo para realizar a granulaÃ§Ã£o, o qual compreende misturar referidas partÃ­culas finas com Ã¡gua, de modo a formar uma lama tendo uma viscosidade de 0,005 a 10 pa.s, e depois adicionar a lama ao material de sinterizaÃ§Ã£o, (2) um processo para realizar a granulaÃ§Ã£o, o qual compreende granular preliminarmente referidas partÃ­culas finas com 13 a 60 % em quantidade de massa de um material de sinterizaÃ§Ã£o compreendendo minÃ©rio de ferro como um componente essencial medido no estado seco, e depois adicionar referido produto granulado ao restante do material de sinterizaÃ§Ã£o, e (3) um processo para realizar a granulaÃ§Ã£o, o qual compreende misturar preliminarmente referidas partÃ­culas finas com 0,3 a 10 % em quantidade de massa do material de sinterizaÃ§Ã£o, medido no estado seco.",
+          "inventors": [
+            "Katsuyuki Kono",
+            "Kazuyuki Shinagawa",
+            "Keiichi Nakamoto",
+            "Satoru Miura",
+            "Takehiko Sato",
+            "Tsutomu Okada",
+            "Yohzoh Hosotani"
+          ],
+          "assignee": "Nippon Steel & Sumitomo Metal Corp",
+          "filing_date": "2003-08-21",
+          "publication_date": "2015-10-20",
+          "url": "https://patents.google.com/patent/BRPI0306141B1/pt",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_0b3f39205925",
+          "family_id": "family:cb54e04215eecec64625d892cce5e4bca28cdcec",
+          "title": "Method for pretreatment of sintering material",
+          "patent_id": "",
+          "abstract": "AbstractTranslated fromPortugueseMÃTODO PARA PRÃ-TRATAMENTO DE MATERIAL DE SINTERIZAÃÃ§O. A presente invenÃ§Ã£o refere-se a um mÃ©todo para prÃ©-tratamento de um material de sinterizaÃ§Ã£o usando como material pelo menos dois tipos de minÃ©rio de ferro contendo grÃ£os brutos e pÃ³ fino, usando-se um primeiro peletizador para fazer o pÃ³ fino aglutinar-se aos grÃ£os brutos formando grÃ£os de nÃºcleo de modo a produzir pelotas do tipo S, e usando-se um segundo peletizador para peletizar apenas pÃ³ fino ou principalmente pÃ³ fino para produzir pelotas do tipo P, cujo mÃ©todo de produÃ§Ã£o de pelotas do tipo S pelo ajuste da quantidade de pÃ³ fino fornecido ao mencionado primeiro peletizador de forma que a espessura mÃ©dia do aglomerado de pÃ³ fino para os grÃ£os de nÃºcleo se tornem 50 a 300 p~m e fornecendo-se o pÃ³ fino remanescente nÃ£o fornecido ao mencionado primeiro peletizador para o segundo peletizador.METHOD FOR PRETREATMENT OF SYNTERIZATION MATERIAL. The present invention relates to a method for pretreatment of a sintering material using as material at least two types of raw grain-containing iron ore and fine powder, using a first pelletizer to agglutinate the fine powder. to the raw grains forming core grains to produce type S pellets, and using a second pelletizer to pellet only fine powder or mainly fine powder to produce type P pellets, whose method of producing type S pellets by adjusting of the amount of fine powder supplied to said first pelletizer such that the average thickness of the fine grain agglomerate for the core grains becomes 50 to 300 m 2 and the remaining fine powder not supplied to said first pelletizer is provided. pelletizer.",
+          "inventors": [
+            "Kenichi Yakashiro",
+            "Takeshi Imai",
+            "Akira Gushima",
+            "Tsuneo Ikeda"
+          ],
+          "assignee": "Nippon Steel Corp",
+          "filing_date": "2005-11-11",
+          "publication_date": "2009-04-28",
+          "url": "https://patents.google.com/patent/BRPI0520278A2/en",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_f967a6d0dd68",
+          "family_id": "family:ac89d7389daa7a05624cdabcace413298e091cde",
+          "title": "MÃ©todo e sistema para controlar a quantidade de ar da caixa-de-ar do carrinho de sinterizaÃ§Ã£o.",
+          "patent_id": "BR112015015064B1",
+          "abstract": "Abstract\"mÃ©todo e sistema para controlar a quantidade de ar da caixa-de-ar do carrinho de sinterizaÃ§Ã£o\". mÃ©todo e um sistema para controlar a quantidade de ar de uma caixa-de-ar de um carrinho de sinterizaÃ§Ã£o. Ã© disposta uma vÃ¡lvula em cada caixa-de-ar do carrinho de sinterizaÃ§Ã£o. o mÃ©todo compreende: adquirir dados da quantidade de ar de uma caixa-de-ar especificada do carrinho de sinterizaÃ§Ã£o; ajustar um grau de abertura da vÃ¡lvula de outra caixa-de-ar de acordo com os dados da quantidade de ar da caixa-de-ar especificada e uma relaÃ§Ã£o entre a quantidade de ar de cada caixa-de-ar em uma base de dados e o grau de abertura de uma vÃ¡lvula correspondente, de modo a permitir que a quantidade de ar de outra caixa-de-ar seja consistente com a quantidade de ar da primeira caixa-de-ar especificada. pelo facto de a quantidade atual de ar na caixa-de-ar ser o mais consistente possÃ­vel com a quantidade de ar exigida e, por conseguinte, ser evitada a situaÃ§Ã£o de a proporÃ§Ã£o do ar efetivo na caixade-ar ser gradualmente reduzida, diminui-se fortemente o desperdÃ­cio de ar e obtÃªm-se fontes de poupanÃ§a de energia mais eficazes. graÃ§as ao mÃ©todo, a velocidade de sinterizaÃ§Ã£o vertical nÃ£o Ã© excessivamente alta e a quantidade invÃ¡lida de ar Ã© diminuÃ­da quando Ã© garantida a qualidade do minÃ©rio de sinterizaÃ§Ã£o.",
+          "inventors": [
+            "Lixin Yuan",
+            "Chao Sun",
+            "Yangquan Lu",
+            "Weijie SHEN",
+            "Pengshuang Gao"
+          ],
+          "assignee": "Zhongye Changtian International Engineering Co., Ltd.",
+          "filing_date": "2013-12-26",
+          "publication_date": "2019-07-09",
+          "url": "https://patents.google.com/patent/BR112015015064B1/pt",
+          "snippet": "",
+          "source": "Google Patents"
+        },
+        {
+          "record_id": "rec_c4b2c01f455e",
+          "family_id": "family:e49cddec852a1d3ba69aa1e26830a8a8c5fbb7ad",
+          "title": "QUEIMADOR DE BAIXA EMISSÃO DE NOx E MÃTODO OPERACIONAL PARA REDUÃÃO DE FORMAÃÃO DE NOx APLICADO EM PROCESSO DE SINTERIZAÃÃO E/OU ENDURECIMENTO DE PELOTAS DE MINÃRIO DE FERRO",
+          "patent_id": "WO2023035050A1",
+          "abstract": "AbstractQueimador (12) que utiliza o oxigÃªnio presente no fluxo descendente (18) de gases, composto por mistura de ar com produtos de combustÃ£o que circula atravÃ©s das zonas do forno de pelotizaÃ§Ã£o de minÃ©rio de ferro. O conjunto do queimador (12) inclui anel coletor (24) de combustÃ­vel equipado com aletas (26) montadas na parte interna do coletor, e tambÃ©m conta com uma pluralidade de aberturas (30) para descarga de gÃ¡s combustÃ­vel. Essas aberturas (30) compÃµem uma sequÃªncia de grupos (32) alinhado com cada aleta (26). O conjunto do queimador (12) Ã© inserido atravÃ©s da janela especial (16) e instalado onde o fluxo descendente (18) precisa ser aquecido, por exemplo, de partir de 850 a 1350Â°C. As aletas (26) defletem parte do fluxo descendente (18) e criam o efeito de rotaÃ§Ã£o nos gases no \"downcomer\" do forno. Os jatos de gÃ¡s combustÃ­vel descarregados a partir do anel de coletor (24) sÃ£o misturados com o fluxo de gases e queimam na corrente do fluxo descendente em redemoinho. A distribuiÃ§Ã£o uniforme do gÃ¡s combustÃ­vel em torno do perÃ­metro da passagem descendente junto com o efeito de redemoinho do fluxo descendente permite a mistura rÃ¡pida do gÃ¡s combustÃ­vel com o oxigÃªnio do fluxo descendente e por isso reduz, significativamente, a formaÃ§Ã£o de NOx na zona de combustÃ£o.",
+          "inventors": [
+            "David James Retallack"
+          ],
+          "assignee": "Fct Holdings Pty Ltd",
+          "filing_date": "2021-09-09",
+          "publication_date": "2023-03-16",
+          "url": "https://patents.google.com/patent/WO2023035050A1/pt",
+          "snippet": "",
+          "source": "Google Patents"
+        }
+      ],
+      "evaluations": [
+        {
+          "record_id": "rec_cf7740d73e52",
+          "patent_id": "",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente descreve um método de granulação para materiais de sinterização de ferro, que é diretamente relacionado à 'sinterização'. Embora não trate explicitamente de armazenamento térmico, o processo de granulação é um passo crucial na preparação de matérias-primas para a sinterização, uma técnica que envolve calor e transformação física. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "\"mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para fabricar ferro\"",
+            "âprocesso para realizar a granulaÃ§ão, o qual compreende misturar referidas partÃ­culas finas com Ãgua...â"
+          ],
+          "thematic_cluster": "Processos de Fabricação de Materiais Sólidos",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Metalurgia, Processamento de Materiais",
+          "innovation_level": "",
+          "co2_role": "co2_not_central",
+          "storage_role": "explicit_thermal_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "not_clear",
+          "heat_source_sink": "industrial_heat",
+          "claim_focus": "component_or_operation",
+          "exclusion_category": "generic_tes",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.59,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_0b3f39205925",
+          "patent_id": "",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente descreve um método para pré-tratamento de material de sinterização usando diferentes tipos de minério de ferro e peletização, o que se relaciona com a sinterização. No entanto, a descrição é genérica e carece de detalhes sobre a aplicação específica da 'sinterização' como foco principal. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "MÃTODO PARA PRÃ-TRATAMENTO DE UM MATERIAL DE SINTERIZAÃÇO...",
+            "usando como material pelo menos dois tipos de minÃ©rio de ferro..."
+          ],
+          "thematic_cluster": "Processamento de Materiais",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Metalurgia",
+          "innovation_level": "",
+          "co2_role": "co2_not_central",
+          "storage_role": "explicit_thermal_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "not_clear",
+          "heat_source_sink": "industrial_heat",
+          "claim_focus": "process_integration",
+          "exclusion_category": "generic_tes",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.56,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_f967a6d0dd68",
+          "patent_id": "BR112015015064B1",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente trata especificamente do controle da quantidade de ar em caixas-de-ar de um carrinho de sinterização, o que se alinha diretamente com a busca por 'sinterização'. No entanto, a complexidade do sistema e a necessidade de avaliação humana para entender completamente a implementação justificam uma classificação como 'review'. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "mÃ©todo e um sistema para controlar a quantidade de ar de uma caixa-de-ar...",
+            "graças ao mÃ©todo, a velocidade de sinterizaÃ§Ã£o vertical nÃ£© excessivamente alta..."
+          ],
+          "thematic_cluster": "Controle de Processos em Sinterização",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Processamento de Minérios / Sinterização",
+          "innovation_level": "",
+          "co2_role": "co2_not_central",
+          "storage_role": "implicit_or_support_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "not_clear",
+          "heat_source_sink": "industrial_heat",
+          "claim_focus": "component_or_operation",
+          "exclusion_category": "generic_tes",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.59,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": false,
+          "llm_error": ""
+        },
+        {
+          "record_id": "rec_c4b2c01f455e",
+          "patent_id": "WO2023035050A1",
+          "analysis_route": "screen_only",
+          "route_reason": "Patente excluída na triagem.",
+          "screening_score": 3.5,
+          "screening_decision": "exclude",
+          "screening_reason": "A patente descreve especificamente um queimador para fornos de pelotização de minério de ferro que utiliza oxigênio em uma corrente de gases para reduzir a formação de NOx durante a sinterização. A descrição detalha o design do queimador e seu funcionamento, alinhando-se diretamente com a busca por 'sinterização'. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+          "evidence_snippets": [
+            "O conjunto do queimador (12) é inserido atravÃ©s da janela especial (16) e instalado onde o fluxo descendente (18) precisa ser aquecido...",
+            "A distribuiÃ§Ã£o uniforme do gÃ¡s combustÃ­vel em torno do perÃ­metro da passagem descendente junto com o efeito de redemoinho do fluxo descendente permite a mistura rÃ¡pida do gÃ¡s combustÃ­vel com o oxigÃªnio do fluxo descendente e por isso reduz, significativamente, a formaÃ§Ã£o de NOx na zona de combustÃ£o."
+          ],
+          "thematic_cluster": "Processos de Sinterização com Combustão Controlada",
+          "relevance_score": 0.0,
+          "summary": "",
+          "key_findings": [],
+          "potential_applications": [],
+          "technical_domain": "Metalurgia / Processamento de Materiais",
+          "innovation_level": "",
+          "co2_role": "co2_not_central",
+          "storage_role": "explicit_thermal_storage",
+          "system_boundary": "process_integration",
+          "cycle_type": "power_or_work_cycle",
+          "heat_source_sink": "industrial_heat",
+          "claim_focus": "system_architecture",
+          "exclusion_category": "low_alignment",
+          "problem_statement": "",
+          "solution_summary": "",
+          "claimed_advantages": [],
+          "limitations": [],
+          "maturity_level": "",
+          "confidence": 0.66,
+          "rerank_applied": false,
+          "rerank_reason": "",
+          "manual_review_required": false,
+          "llm_error": ""
+        }
+      ],
+      "patents_by_source": {
+        "GooglePatents": 4,
+        "Patentscope": 0,
+        "EPO": 0
+      },
+      "scraper_diagnostics": {
+        "GooglePatents": [],
+        "Patentscope": [
+          {
+            "kind": "jsf_empty_results",
+            "detail": "Nenhum resultado em result.jsf para query: sinterização",
+            "url": "https://patentscope.wipo.int/search/en/result.jsf"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/WO2025010416"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/WO2025227477"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/search.jsf"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/WO2025094690"
+          }
+        ],
+        "EPO": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      },
+      "coverage_metrics": {
+        "raw_scraped": 4,
+        "unique_patents": 4,
+        "duplicates_removed": 0,
+        "screened": 4,
+        "included": 0,
+        "review": 0,
+        "excluded": 4,
+        "manual_review_required": 0,
+        "manual_review_deferred": 0,
+        "full_extractions": 0,
+        "missing_abstract": 0,
+        "missing_id": 2,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      },
+      "manual_review_queue": [],
+      "prisma_flow": {
+        "flow": {
+          "identification": {
+            "raw_records": 4,
+            "unique_records": 4,
+            "duplicates_removed": 0
+          },
+          "screening": {
+            "screened": 4,
+            "included": 0,
+            "review": 0,
+            "excluded": 4
+          },
+          "eligibility": {
+            "full_extractions": 0,
+            "manual_review_required": 0,
+            "manual_review_deferred": 0
+          },
+          "coverage": {
+            "missing_abstract": 0,
+            "missing_id": 2
+          },
+          "synthesis": {
+            "analyzed_records": 0,
+            "comparative_analysis_generated": false
+          }
+        },
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "version": "1.0"
+      },
+      "thematic_clusters": {
+        "clusters": [],
+        "total_clusters": 0
+      },
+      "whitespace_analysis": {
+        "status": "no_input",
+        "query": "sinterização",
+        "corpus_summary": {
+          "considered_patents": 4,
+          "selected_patents": 0,
+          "core": 0,
+          "frontier": 0,
+          "adjacent": 0
+        },
+        "coverage_matrix": [],
+        "axes": {},
+        "whitespace_candidates": [],
+        "markdown_summary": ""
+      },
+      "scraper_durations": {
+        "GooglePatents": 11.153,
+        "Patentscope": 23.383,
+        "EPO": 0.0
+      },
+      "evaluation_duration_seconds": 0.0,
+      "rerank_duration_seconds": 0.0,
+      "comparative_analysis_duration_seconds": 0.001,
+      "total_duration_seconds": 191.551,
+      "comparative_analysis": "⚠️ Nenhuma patente elegível para síntese comparativa e whitespace após a triagem.",
+      "output_paths": {
+        "markdown": "/app/output/patentes_sinterização_20260705_233936.md",
+        "json": "/app/output/patentes_sinterização_20260705_233936.json",
+        "state": "/app/output/run_state_20260705_233625.json",
+        "prisma": "/app/output/prisma_flow_20260705_233625.json",
+        "snapshot": "/app/output/config_snapshot_20260705_233625.json",
+        "whitespace_json": "/app/output/whitespace_analysis_20260705_233625.json",
+        "memory_journal": "/app/output/memory_journal_20260705_233625.json",
+        "memory_sidecar": "/app/output/memory_sidecar_20260705_233625.json"
+      },
+      "errors": []
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "writing_context": {
+      "protocol": {
+        "version": "1.0",
+        "query": "sinterização",
+        "sources": [
+          "Google Patents",
+          "Patentscope"
+        ],
+        "stages": [
+          "identification",
+          "deduplication",
+          "screening",
+          "manual_review",
+          "full_extraction",
+          "synthesis"
+        ],
+        "criteria": {
+          "include": [
+            "Alinhamento claro com a query ou seus sinônimos técnicos.",
+            "Documento com título, resumo ou snippet suficientes para análise.",
+            "Potencial técnico relevante para o domínio pesquisado."
+          ],
+          "exclude": [
+            "Documentos sem relação técnica com a query.",
+            "Duplicatas de outra fonte ou publicação equivalente.",
+            "Registro sem metadados mínimos para avaliação."
+          ]
+        },
+        "thresholds": {
+          "include_score": 7.0,
+          "review_score": 4.5,
+          "max_items_for_manual_review": 20
+        },
+        "limits": {
+          "max_results": 4
+        },
+        "model": "gemma3:4b"
+      },
+      "coverage_metrics": {
+        "raw_scraped": 4,
+        "unique_patents": 4,
+        "duplicates_removed": 0,
+        "screened": 4,
+        "included": 0,
+        "review": 0,
+        "excluded": 4,
+        "manual_review_required": 0,
+        "manual_review_deferred": 0,
+        "full_extractions": 0,
+        "missing_abstract": 0,
+        "missing_id": 2,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      },
+      "top_patents": [],
+      "thematic_clusters": {
+        "clusters": [],
+        "total_clusters": 0
+      },
+      "route_summary": {
+        "screen_only": 4
+      },
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "snapshot_hash": "ff1b944a48525ae9e01dd2bb903dac54a72ec3e55d57daf28e755817b5371212"
+    },
+    "stage_metrics": [
+      {
+        "stage": "setup",
+        "status": "ok",
+        "duration_seconds": 3.722,
+        "items_processed": 1,
+        "detail": "Verificação do modelo Ollama"
+      },
+      {
+        "stage": "search",
+        "status": "ok",
+        "duration_seconds": 34.541,
+        "items_processed": 4,
+        "detail": "4 patentes únicas após dedupe"
+      },
+      {
+        "stage": "screening",
+        "status": "ok",
+        "duration_seconds": 153.284,
+        "items_processed": 4,
+        "detail": "0 incluídas, 0 revisão"
+      },
+      {
+        "stage": "comparative_analysis",
+        "status": "skipped",
+        "duration_seconds": 0.001,
+        "items_processed": 4,
+        "detail": "Nenhuma patente elegível para síntese comparativa"
+      },
+      {
+        "stage": "whitespace_analysis",
+        "status": "skipped",
+        "duration_seconds": 0.0,
+        "items_processed": 0,
+        "detail": "Whitespace analysis sem corpus elegível"
+      },
+      {
+        "stage": "reporting",
+        "status": "ok",
+        "duration_seconds": 0.001,
+        "items_processed": 4,
+        "detail": "Relatórios Markdown e JSON"
+      },
+      {
+        "stage": "finalization",
+        "status": "ok",
+        "duration_seconds": 0.0,
+        "items_processed": 8,
+        "detail": "Persistência de artefatos e estado"
+      }
+    ],
+    "llm_cache_stats": {
+      "hits": 0,
+      "misses": 4,
+      "entries": 108
+    },
+    "llm_telemetry": {
+      "degraded": false,
+      "total_failures": 0,
+      "consecutive_failures": 0,
+      "recent_errors": [],
+      "operations": {
+        "healthcheck": {
+          "calls": 1,
+          "successes": 1,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 35,
+          "response_chars": 15,
+          "total_duration_seconds": 3.72,
+          "max_duration_seconds": 3.72,
+          "average_duration_seconds": 3.72
+        },
+        "screening": {
+          "calls": 4,
+          "successes": 4,
+          "failures": 0,
+          "retries": 0,
+          "cache_hits": 0,
+          "degraded_skips": 0,
+          "prompt_chars": 16242,
+          "response_chars": 4449,
+          "total_duration_seconds": 153.282,
+          "max_duration_seconds": 43.043,
+          "average_duration_seconds": 38.321
+        }
+      }
+    },
+    "observability_metrics": {
+      "routes": {
+        "screen_only": {
+          "count": 4,
+          "include": 0,
+          "review": 0,
+          "exclude": 4,
+          "llm_errors": 0
+        }
+      },
+      "sources": {
+        "EPO": {
+          "raw_results": 0,
+          "duration_seconds": 0.0,
+          "diagnostic_counts": {
+            "config_missing": 1
+          }
+        },
+        "GooglePatents": {
+          "raw_results": 4,
+          "duration_seconds": 11.153,
+          "diagnostic_counts": {}
+        },
+        "Patentscope": {
+          "raw_results": 0,
+          "duration_seconds": 23.383,
+          "diagnostic_counts": {
+            "jsf_empty_results": 1,
+            "detail_session_expired": 4
+          }
+        }
+      },
+      "failures": {
+        "run_errors": 0,
+        "records_with_llm_error": 0,
+        "llm_total_failures": 0,
+        "llm_by_operation": {
+          "healthcheck": {
+            "calls": 1,
+            "failures": 0,
+            "retries": 0,
+            "degraded_skips": 0
+          },
+          "screening": {
+            "calls": 4,
+            "failures": 0,
+            "retries": 0,
+            "degraded_skips": 0
+          }
+        },
+        "scraper_diagnostics_by_kind": {
+          "jsf_empty_results": 1,
+          "detail_session_expired": 4,
+          "config_missing": 1
+        }
+      }
+    },
+    "whitespace_analysis": {
+      "status": "no_input",
+      "query": "sinterização",
+      "corpus_summary": {
+        "considered_patents": 4,
+        "selected_patents": 0,
+        "core": 0,
+        "frontier": 0,
+        "adjacent": 0
+      },
+      "coverage_matrix": [],
+      "axes": {},
+      "whitespace_candidates": [],
+      "markdown_summary": ""
+    },
+    "scraper_diagnostics": {
+      "GooglePatents": [],
+      "Patentscope": [
+        {
+          "kind": "jsf_empty_results",
+          "detail": "Nenhum resultado em result.jsf para query: sinterização",
+          "url": "https://patentscope.wipo.int/search/en/result.jsf"
+        },
+        {
+          "kind": "detail_session_expired",
+          "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+          "url": "https://patentscope.wipo.int/search/en/WO2025010416"
+        },
+        {
+          "kind": "detail_session_expired",
+          "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+          "url": "https://patentscope.wipo.int/search/en/WO2025227477"
+        },
+        {
+          "kind": "detail_session_expired",
+          "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+          "url": "https://patentscope.wipo.int/search/en/search.jsf"
+        },
+        {
+          "kind": "detail_session_expired",
+          "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+          "url": "https://patentscope.wipo.int/search/en/WO2025094690"
+        }
+      ],
+      "EPO": [
+        {
+          "kind": "config_missing",
+          "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+          "url": ""
+        }
+      ]
+    },
+    "prisma_flow": {
+      "flow": {
+        "identification": {
+          "raw_records": 4,
+          "unique_records": 4,
+          "duplicates_removed": 0
+        },
+        "screening": {
+          "screened": 4,
+          "included": 0,
+          "review": 0,
+          "excluded": 4
+        },
+        "eligibility": {
+          "full_extractions": 0,
+          "manual_review_required": 0,
+          "manual_review_deferred": 0
+        },
+        "coverage": {
+          "missing_abstract": 0,
+          "missing_id": 2
+        },
+        "synthesis": {
+          "analyzed_records": 0,
+          "comparative_analysis_generated": false
+        }
+      },
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "version": "1.0"
+    },
+    "thematic_clusters": {
+      "clusters": [],
+      "total_clusters": 0
+    },
+    "config_snapshot": {
+      "pipeline_version": "1.1",
+      "timestamp": "2026-07-05T23:36:25",
+      "query": "sinterização",
+      "max_results": 4,
+      "model": "gemma3:4b",
+      "output_dir": "/app/output",
+      "feature_flags": {
+        "require_evidence": true,
+        "enable_thematic_clusters": true,
+        "enable_structural_roles": true,
+        "enable_screening_rerank": true,
+        "enable_prisma": true,
+        "enable_snapshot": true,
+        "enable_comparative_analysis": true,
+        "enable_whitespace_analysis": true,
+        "enable_manual_review_queue": true
+      },
+      "thresholds": {
+        "include": 7.0,
+        "review": 4.5,
+        "manual_review_limit": 20
+      },
+      "runtime": {
+        "ollama_base_url": "http://ollama:11434",
+        "ollama_timeout": 600
+      },
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ]
+    },
+    "snapshot_hash": "ff1b944a48525ae9e01dd2bb903dac54a72ec3e55d57daf28e755817b5371212",
+    "draft_status": {
+      "status": "blocked",
+      "warnings": [
+        "Conteúdo insuficiente para um rascunho completo."
+      ],
+      "substantive_patents": 0
+    }
+  },
+  "results": [
+    {
+      "patent": {
+        "record_id": "rec_cf7740d73e52",
+        "family_id": "family:80da79de91b6e207ea53445aac6a77dcaee25fd3",
+        "title": "mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para a fabricaÃ§Ã£o de ferro",
+        "patent_id": "",
+        "abstract": "Abstract\"mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para fabricar ferro\". Ã© um objeto da presente invenÃ§Ã£o fornecer um mÃ©todo de granulaÃ§Ã£o de matÃ©ria-prima para sinterizar, para a fabricaÃ§Ã£o de ferro, o qual Ã© eficazmente usado para granular matÃ©ria-prima para sinterizar, para a fabricaÃ§Ã£o de ferro, tal como finos de minÃ©rios de ferro, na fabricaÃ§Ã£o de minÃ©rio sinterizado que forma as matÃ©rias-primas para uma carga de alto-forno em um processo de produzir ferro gusa, e tornar possÃ­vel melhorar suficientemente a produtividade de uma mÃ¡quina de sinterizaÃ§Ã£o. a presente invenÃ§Ã£o Ã© dirigida a um mÃ©todo de granulaÃ§Ã£o de um material de sinterizaÃ§Ã£o para fabricar ferro contendo minÃ©rio de ferro em pÃ³, compreendendo um processo para realizar a granulaÃ§Ã£o por diluiÃ§Ã£o preliminar das partÃ­culas finas tendo um tamanho mÃ©dio de partÃ­cula de nÃ£o mais do que 200 <109>m em uma porÃ§Ã£o de um solvente ou um material de sinterizaÃ§Ã£o, e adiÃ§Ã£o do material resultante ao restante do material de sinterizaÃ§Ã£o, em que referida granulaÃ§Ã£o Ã© pelo menos um processo selecionado do grupo consistindo dos seguintes (1), (2) e (3): (1) um processo para realizar a granulaÃ§Ã£o, o qual compreende misturar referidas partÃ­culas finas com Ã¡gua, de modo a formar uma lama tendo uma viscosidade de 0,005 a 10 pa.s, e depois adicionar a lama ao material de sinterizaÃ§Ã£o, (2) um processo para realizar a granulaÃ§Ã£o, o qual compreende granular preliminarmente referidas partÃ­culas finas com 13 a 60 % em quantidade de massa de um material de sinterizaÃ§Ã£o compreendendo minÃ©rio de ferro como um componente essencial medido no estado seco, e depois adicionar referido produto granulado ao restante do material de sinterizaÃ§Ã£o, e (3) um processo para realizar a granulaÃ§Ã£o, o qual compreende misturar preliminarmente referidas partÃ­culas finas com 0,3 a 10 % em quantidade de massa do material de sinterizaÃ§Ã£o, medido no estado seco.",
+        "inventors": [
+          "Katsuyuki Kono",
+          "Kazuyuki Shinagawa",
+          "Keiichi Nakamoto",
+          "Satoru Miura",
+          "Takehiko Sato",
+          "Tsutomu Okada",
+          "Yohzoh Hosotani"
+        ],
+        "assignee": "Nippon Steel & Sumitomo Metal Corp",
+        "filing_date": "2003-08-21",
+        "publication_date": "2015-10-20",
+        "url": "https://patents.google.com/patent/BRPI0306141B1/pt",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_cf7740d73e52",
+        "patent_id": "",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente descreve um método de granulação para materiais de sinterização de ferro, que é diretamente relacionado à 'sinterização'. Embora não trate explicitamente de armazenamento térmico, o processo de granulação é um passo crucial na preparação de matérias-primas para a sinterização, uma técnica que envolve calor e transformação física. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "\"mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para fabricar ferro\"",
+          "âprocesso para realizar a granulaÃ§ão, o qual compreende misturar referidas partÃ­culas finas com Ãgua...â"
+        ],
+        "thematic_cluster": "Processos de Fabricação de Materiais Sólidos",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Metalurgia, Processamento de Materiais",
+        "innovation_level": "",
+        "co2_role": "co2_not_central",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "industrial_heat",
+        "claim_focus": "component_or_operation",
+        "exclusion_category": "generic_tes",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.59,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_0b3f39205925",
+        "family_id": "family:cb54e04215eecec64625d892cce5e4bca28cdcec",
+        "title": "Method for pretreatment of sintering material",
+        "patent_id": "",
+        "abstract": "AbstractTranslated fromPortugueseMÃTODO PARA PRÃ-TRATAMENTO DE MATERIAL DE SINTERIZAÃÃ§O. A presente invenÃ§Ã£o refere-se a um mÃ©todo para prÃ©-tratamento de um material de sinterizaÃ§Ã£o usando como material pelo menos dois tipos de minÃ©rio de ferro contendo grÃ£os brutos e pÃ³ fino, usando-se um primeiro peletizador para fazer o pÃ³ fino aglutinar-se aos grÃ£os brutos formando grÃ£os de nÃºcleo de modo a produzir pelotas do tipo S, e usando-se um segundo peletizador para peletizar apenas pÃ³ fino ou principalmente pÃ³ fino para produzir pelotas do tipo P, cujo mÃ©todo de produÃ§Ã£o de pelotas do tipo S pelo ajuste da quantidade de pÃ³ fino fornecido ao mencionado primeiro peletizador de forma que a espessura mÃ©dia do aglomerado de pÃ³ fino para os grÃ£os de nÃºcleo se tornem 50 a 300 p~m e fornecendo-se o pÃ³ fino remanescente nÃ£o fornecido ao mencionado primeiro peletizador para o segundo peletizador.METHOD FOR PRETREATMENT OF SYNTERIZATION MATERIAL. The present invention relates to a method for pretreatment of a sintering material using as material at least two types of raw grain-containing iron ore and fine powder, using a first pelletizer to agglutinate the fine powder. to the raw grains forming core grains to produce type S pellets, and using a second pelletizer to pellet only fine powder or mainly fine powder to produce type P pellets, whose method of producing type S pellets by adjusting of the amount of fine powder supplied to said first pelletizer such that the average thickness of the fine grain agglomerate for the core grains becomes 50 to 300 m 2 and the remaining fine powder not supplied to said first pelletizer is provided. pelletizer.",
+        "inventors": [
+          "Kenichi Yakashiro",
+          "Takeshi Imai",
+          "Akira Gushima",
+          "Tsuneo Ikeda"
+        ],
+        "assignee": "Nippon Steel Corp",
+        "filing_date": "2005-11-11",
+        "publication_date": "2009-04-28",
+        "url": "https://patents.google.com/patent/BRPI0520278A2/en",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_0b3f39205925",
+        "patent_id": "",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente descreve um método para pré-tratamento de material de sinterização usando diferentes tipos de minério de ferro e peletização, o que se relaciona com a sinterização. No entanto, a descrição é genérica e carece de detalhes sobre a aplicação específica da 'sinterização' como foco principal. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "MÃTODO PARA PRÃ-TRATAMENTO DE UM MATERIAL DE SINTERIZAÃÇO...",
+          "usando como material pelo menos dois tipos de minÃ©rio de ferro..."
+        ],
+        "thematic_cluster": "Processamento de Materiais",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Metalurgia",
+        "innovation_level": "",
+        "co2_role": "co2_not_central",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "industrial_heat",
+        "claim_focus": "process_integration",
+        "exclusion_category": "generic_tes",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.56,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_f967a6d0dd68",
+        "family_id": "family:ac89d7389daa7a05624cdabcace413298e091cde",
+        "title": "MÃ©todo e sistema para controlar a quantidade de ar da caixa-de-ar do carrinho de sinterizaÃ§Ã£o.",
+        "patent_id": "BR112015015064B1",
+        "abstract": "Abstract\"mÃ©todo e sistema para controlar a quantidade de ar da caixa-de-ar do carrinho de sinterizaÃ§Ã£o\". mÃ©todo e um sistema para controlar a quantidade de ar de uma caixa-de-ar de um carrinho de sinterizaÃ§Ã£o. Ã© disposta uma vÃ¡lvula em cada caixa-de-ar do carrinho de sinterizaÃ§Ã£o. o mÃ©todo compreende: adquirir dados da quantidade de ar de uma caixa-de-ar especificada do carrinho de sinterizaÃ§Ã£o; ajustar um grau de abertura da vÃ¡lvula de outra caixa-de-ar de acordo com os dados da quantidade de ar da caixa-de-ar especificada e uma relaÃ§Ã£o entre a quantidade de ar de cada caixa-de-ar em uma base de dados e o grau de abertura de uma vÃ¡lvula correspondente, de modo a permitir que a quantidade de ar de outra caixa-de-ar seja consistente com a quantidade de ar da primeira caixa-de-ar especificada. pelo facto de a quantidade atual de ar na caixa-de-ar ser o mais consistente possÃ­vel com a quantidade de ar exigida e, por conseguinte, ser evitada a situaÃ§Ã£o de a proporÃ§Ã£o do ar efetivo na caixade-ar ser gradualmente reduzida, diminui-se fortemente o desperdÃ­cio de ar e obtÃªm-se fontes de poupanÃ§a de energia mais eficazes. graÃ§as ao mÃ©todo, a velocidade de sinterizaÃ§Ã£o vertical nÃ£o Ã© excessivamente alta e a quantidade invÃ¡lida de ar Ã© diminuÃ­da quando Ã© garantida a qualidade do minÃ©rio de sinterizaÃ§Ã£o.",
+        "inventors": [
+          "Lixin Yuan",
+          "Chao Sun",
+          "Yangquan Lu",
+          "Weijie SHEN",
+          "Pengshuang Gao"
+        ],
+        "assignee": "Zhongye Changtian International Engineering Co., Ltd.",
+        "filing_date": "2013-12-26",
+        "publication_date": "2019-07-09",
+        "url": "https://patents.google.com/patent/BR112015015064B1/pt",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_f967a6d0dd68",
+        "patent_id": "BR112015015064B1",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente trata especificamente do controle da quantidade de ar em caixas-de-ar de um carrinho de sinterização, o que se alinha diretamente com a busca por 'sinterização'. No entanto, a complexidade do sistema e a necessidade de avaliação humana para entender completamente a implementação justificam uma classificação como 'review'. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "mÃ©todo e um sistema para controlar a quantidade de ar de uma caixa-de-ar...",
+          "graças ao mÃ©todo, a velocidade de sinterizaÃ§Ã£o vertical nÃ£© excessivamente alta..."
+        ],
+        "thematic_cluster": "Controle de Processos em Sinterização",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Processamento de Minérios / Sinterização",
+        "innovation_level": "",
+        "co2_role": "co2_not_central",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "industrial_heat",
+        "claim_focus": "component_or_operation",
+        "exclusion_category": "generic_tes",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.59,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    },
+    {
+      "patent": {
+        "record_id": "rec_c4b2c01f455e",
+        "family_id": "family:e49cddec852a1d3ba69aa1e26830a8a8c5fbb7ad",
+        "title": "QUEIMADOR DE BAIXA EMISSÃO DE NOx E MÃTODO OPERACIONAL PARA REDUÃÃO DE FORMAÃÃO DE NOx APLICADO EM PROCESSO DE SINTERIZAÃÃO E/OU ENDURECIMENTO DE PELOTAS DE MINÃRIO DE FERRO",
+        "patent_id": "WO2023035050A1",
+        "abstract": "AbstractQueimador (12) que utiliza o oxigÃªnio presente no fluxo descendente (18) de gases, composto por mistura de ar com produtos de combustÃ£o que circula atravÃ©s das zonas do forno de pelotizaÃ§Ã£o de minÃ©rio de ferro. O conjunto do queimador (12) inclui anel coletor (24) de combustÃ­vel equipado com aletas (26) montadas na parte interna do coletor, e tambÃ©m conta com uma pluralidade de aberturas (30) para descarga de gÃ¡s combustÃ­vel. Essas aberturas (30) compÃµem uma sequÃªncia de grupos (32) alinhado com cada aleta (26). O conjunto do queimador (12) Ã© inserido atravÃ©s da janela especial (16) e instalado onde o fluxo descendente (18) precisa ser aquecido, por exemplo, de partir de 850 a 1350Â°C. As aletas (26) defletem parte do fluxo descendente (18) e criam o efeito de rotaÃ§Ã£o nos gases no \"downcomer\" do forno. Os jatos de gÃ¡s combustÃ­vel descarregados a partir do anel de coletor (24) sÃ£o misturados com o fluxo de gases e queimam na corrente do fluxo descendente em redemoinho. A distribuiÃ§Ã£o uniforme do gÃ¡s combustÃ­vel em torno do perÃ­metro da passagem descendente junto com o efeito de redemoinho do fluxo descendente permite a mistura rÃ¡pida do gÃ¡s combustÃ­vel com o oxigÃªnio do fluxo descendente e por isso reduz, significativamente, a formaÃ§Ã£o de NOx na zona de combustÃ£o.",
+        "inventors": [
+          "David James Retallack"
+        ],
+        "assignee": "Fct Holdings Pty Ltd",
+        "filing_date": "2021-09-09",
+        "publication_date": "2023-03-16",
+        "url": "https://patents.google.com/patent/WO2023035050A1/pt",
+        "snippet": "",
+        "source": "Google Patents"
+      },
+      "evaluation": {
+        "record_id": "rec_c4b2c01f455e",
+        "patent_id": "WO2023035050A1",
+        "analysis_route": "screen_only",
+        "route_reason": "Patente excluída na triagem.",
+        "screening_score": 3.5,
+        "screening_decision": "exclude",
+        "screening_reason": "A patente descreve especificamente um queimador para fornos de pelotização de minério de ferro que utiliza oxigênio em uma corrente de gases para reduzir a formação de NOx durante a sinterização. A descrição detalha o design do queimador e seu funcionamento, alinhando-se diretamente com a busca por 'sinterização'. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+        "evidence_snippets": [
+          "O conjunto do queimador (12) é inserido atravÃ©s da janela especial (16) e instalado onde o fluxo descendente (18) precisa ser aquecido...",
+          "A distribuiÃ§Ã£o uniforme do gÃ¡s combustÃ­vel em torno do perÃ­metro da passagem descendente junto com o efeito de redemoinho do fluxo descendente permite a mistura rÃ¡pida do gÃ¡s combustÃ­vel com o oxigÃªnio do fluxo descendente e por isso reduz, significativamente, a formaÃ§Ã£o de NOx na zona de combustÃ£o."
+        ],
+        "thematic_cluster": "Processos de Sinterização com Combustão Controlada",
+        "relevance_score": 0.0,
+        "summary": "",
+        "key_findings": [],
+        "potential_applications": [],
+        "technical_domain": "Metalurgia / Processamento de Materiais",
+        "innovation_level": "",
+        "co2_role": "co2_not_central",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "power_or_work_cycle",
+        "heat_source_sink": "industrial_heat",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "low_alignment",
+        "problem_statement": "",
+        "solution_summary": "",
+        "claimed_advantages": [],
+        "limitations": [],
+        "maturity_level": "",
+        "confidence": 0.66,
+        "rerank_applied": false,
+        "rerank_reason": "",
+        "manual_review_required": false,
+        "llm_error": ""
+      }
+    }
+  ],
+  "comparative_analysis": "⚠️ Nenhuma patente elegível para síntese comparativa e whitespace após a triagem.",
+  "whitespace_analysis": {
+    "status": "no_input",
+    "query": "sinterização",
+    "corpus_summary": {
+      "considered_patents": 4,
+      "selected_patents": 0,
+      "core": 0,
+      "frontier": 0,
+      "adjacent": 0
+    },
+    "coverage_matrix": [],
+    "axes": {},
+    "whitespace_candidates": [],
+    "markdown_summary": ""
+  }
+}

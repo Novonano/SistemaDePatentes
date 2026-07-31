@@ -1,0 +1,2080 @@
+{
+  "query": "sintering carbon dioxide",
+  "max_results": 4,
+  "model": "gemma3:4b",
+  "output_dir": "/app/output",
+  "feature_flags": {
+    "require_evidence": true,
+    "enable_thematic_clusters": true,
+    "enable_structural_roles": true,
+    "enable_screening_rerank": true,
+    "enable_prisma": true,
+    "enable_snapshot": true,
+    "enable_comparative_analysis": true,
+    "enable_whitespace_analysis": true,
+    "enable_manual_review_queue": true
+  },
+  "config_snapshot": {
+    "pipeline_version": "1.1",
+    "timestamp": "2026-07-05T23:42:38",
+    "query": "sintering carbon dioxide",
+    "max_results": 4,
+    "model": "gemma3:4b",
+    "output_dir": "/app/output",
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "thresholds": {
+      "include": 7.0,
+      "review": 4.5,
+      "manual_review_limit": 20
+    },
+    "runtime": {
+      "ollama_base_url": "http://ollama:11434",
+      "ollama_timeout": 600
+    },
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ]
+  },
+  "snapshot_hash": "c61e1cdb0eaad0ae3121308b91efcc099f8cfbb30c6b8aba104af02497c3630c",
+  "protocol": {
+    "version": "1.0",
+    "query": "sintering carbon dioxide",
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ],
+    "stages": [
+      "identification",
+      "deduplication",
+      "screening",
+      "manual_review",
+      "full_extraction",
+      "synthesis"
+    ],
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "limits": {
+      "max_results": 4
+    },
+    "model": "gemma3:4b"
+  },
+  "writing_context": {
+    "protocol": {
+      "version": "1.0",
+      "query": "sintering carbon dioxide",
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ],
+      "stages": [
+        "identification",
+        "deduplication",
+        "screening",
+        "manual_review",
+        "full_extraction",
+        "synthesis"
+      ],
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "limits": {
+        "max_results": 4
+      },
+      "model": "gemma3:4b"
+    },
+    "coverage_metrics": {
+      "raw_scraped": 8,
+      "unique_patents": 8,
+      "duplicates_removed": 0,
+      "screened": 8,
+      "included": 0,
+      "review": 5,
+      "excluded": 3,
+      "manual_review_required": 5,
+      "manual_review_deferred": 0,
+      "full_extractions": 5,
+      "missing_abstract": 0,
+      "missing_id": 0,
+      "records_with_content_identity": 0,
+      "records_with_fallback_identity": 0,
+      "family_duplicates_removed": 0,
+      "llm_screening_failures": 1,
+      "llm_total_failures": 0
+    },
+    "top_patents": [],
+    "thematic_clusters": {
+      "clusters": [],
+      "total_clusters": 0
+    },
+    "route_summary": {
+      "manual_review": 5,
+      "screen_only": 3
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "snapshot_hash": "c61e1cdb0eaad0ae3121308b91efcc099f8cfbb30c6b8aba104af02497c3630c"
+  },
+  "memory_sidecar": {
+    "run_id": "20260705_234238",
+    "max_items_per_slot": 5,
+    "slots": {
+      "review": [
+        {
+          "record_id": "rec_8d21878ddc6f",
+          "patent_id": "JP6833123B1",
+          "title": "Manufacturing method of carbon dioxide adsorption sintered body",
+          "route": "manual_review",
+          "score": 7.2
+        },
+        {
+          "record_id": "rec_72a65e6eb3eb",
+          "patent_id": "CN113941247A",
+          "title": "System and method for capturing carbon dioxide in steel sintering flue gas",
+          "route": "manual_review",
+          "score": 7.7
+        },
+        {
+          "record_id": "rec_c324f3020aef",
+          "patent_id": "US3930787A",
+          "title": "Sintering furnace with hydrogen carbon dioxide atmosphere",
+          "route": "manual_review",
+          "score": 6.2
+        },
+        {
+          "record_id": "rec_56073152026b",
+          "patent_id": "1174314",
+          "title": "A Dispensing Device for Gases Under Pressure.",
+          "route": "manual_review",
+          "score": 0.0
+        },
+        {
+          "record_id": "rec_bbd3a7e262bb",
+          "patent_id": "910517",
+          "title": "Improvements in or relating to the production of\nsintered\nuranium\ndioxide",
+          "route": "manual_review",
+          "score": 6.4
+        }
+      ],
+      "screening": [
+        {
+          "record_id": "rec_37bf32607be4",
+          "patent_id": "WO2024117144A1",
+          "title": "Sintered ore production method",
+          "route": "screen_only",
+          "score": 3.5
+        },
+        {
+          "record_id": "rec_d7d21bdaf3a1",
+          "patent_id": "1171698",
+          "title": "Dispensing Device",
+          "route": "screen_only",
+          "score": 3.3
+        },
+        {
+          "record_id": "rec_e9a9df09739a",
+          "patent_id": "153069",
+          "title": "NOZZLE FOR PRESSURISING AND DISPENSING LIQUID FROM CAN",
+          "route": "screen_only",
+          "score": 3.5
+        }
+      ],
+      "writer": [
+        {
+          "top_patents": [],
+          "route_summary": {
+            "manual_review": 5,
+            "screen_only": 3
+          }
+        }
+      ]
+    },
+    "journal": [
+      {
+        "timestamp": "2026-07-05T23:42:39",
+        "stage": "setup",
+        "event": "llm_check",
+        "detail": "Verificação de disponibilidade do Ollama concluída.",
+        "payload": {
+          "llm_available": true,
+          "model": "gemma3:4b"
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:42:51",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "GooglePatents retornou patentes.",
+        "payload": {
+          "source": "GooglePatents",
+          "count": 4,
+          "diagnostics": []
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:43:20",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "Patentscope retornou patentes.",
+        "payload": {
+          "source": "Patentscope",
+          "count": 4,
+          "diagnostics": []
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:43:20",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "EPO retornou patentes.",
+        "payload": {
+          "source": "EPO",
+          "count": 0,
+          "diagnostics": [
+            {
+              "kind": "config_missing",
+              "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+              "url": ""
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:45:02",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "JP6833123B1 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_8d21878ddc6f",
+          "patent_id": "JP6833123B1",
+          "decision": "review",
+          "score": 7.2,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:46:06",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN113941247A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_72a65e6eb3eb",
+          "patent_id": "CN113941247A",
+          "decision": "review",
+          "score": 7.7,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:47:07",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US3930787A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_c324f3020aef",
+          "patent_id": "US3930787A",
+          "decision": "review",
+          "score": 6.2,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:47:41",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO2024117144A1 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_37bf32607be4",
+          "patent_id": "WO2024117144A1",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:48:21",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "1171698 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_d7d21bdaf3a1",
+          "patent_id": "1171698",
+          "decision": "exclude",
+          "score": 3.3,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:48:57",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "1174314 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_56073152026b",
+          "patent_id": "1174314",
+          "decision": "review",
+          "score": 0.0,
+          "route": {
+            "route": "manual_review",
+            "reason": "Falha do LLM; revisão humana necessária.",
+            "slot": "review"
+          },
+          "llm_error": "Resposta inválida ou não estruturada do modelo na triagem."
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:49:30",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "153069 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_e9a9df09739a",
+          "patent_id": "153069",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:50:46",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "910517 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_bbd3a7e262bb",
+          "patent_id": "910517",
+          "decision": "review",
+          "score": 6.4,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:52:16",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "JP6833123B1 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_8d21878ddc6f",
+          "patent_id": "JP6833123B1",
+          "route": "manual_review",
+          "confidence": 0.85
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:53:26",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN113941247A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_72a65e6eb3eb",
+          "patent_id": "CN113941247A",
+          "route": "manual_review",
+          "confidence": 0.8
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:54:23",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US3930787A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_c324f3020aef",
+          "patent_id": "US3930787A",
+          "route": "manual_review",
+          "confidence": 0.75
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:54:23",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO2024117144A1 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_37bf32607be4",
+          "patent_id": "WO2024117144A1",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:54:23",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "1171698 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_d7d21bdaf3a1",
+          "patent_id": "1171698",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:54:23",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "1174314 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_56073152026b",
+          "patent_id": "1174314",
+          "route": "manual_review",
+          "confidence": 0.0
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:54:23",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "153069 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_e9a9df09739a",
+          "patent_id": "153069",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:55:42",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "910517 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_bbd3a7e262bb",
+          "patent_id": "910517",
+          "route": "manual_review",
+          "confidence": 0.71
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:55:42",
+        "stage": "synthesis",
+        "event": "coverage_computed",
+        "detail": "Cobertura e seleção consolidadas após triagem.",
+        "payload": {
+          "raw_scraped": 8,
+          "unique_patents": 8,
+          "duplicates_removed": 0,
+          "screened": 8,
+          "included": 0,
+          "review": 5,
+          "excluded": 3,
+          "manual_review_required": 5,
+          "manual_review_deferred": 0,
+          "full_extractions": 5,
+          "missing_abstract": 0,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 1,
+          "llm_total_failures": 0
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:58:03",
+        "stage": "synthesis",
+        "event": "comparative_analysis_completed",
+        "detail": "Síntese comparativa gerada via Ollama.",
+        "payload": {
+          "patents_compared": 7
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:58:03",
+        "stage": "synthesis",
+        "event": "whitespace_analysis_completed",
+        "detail": "Matriz estruturada de whitespace gerada.",
+        "payload": {
+          "selected_patents": 4,
+          "candidates": 0
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:58:03",
+        "stage": "writer",
+        "event": "context_prepared",
+        "detail": "Contexto compartilhado preparado para o writer.",
+        "payload": {
+          "top_patents": 0,
+          "route_summary": {
+            "manual_review": 5,
+            "screen_only": 3
+          }
+        }
+      },
+      {
+        "timestamp": "2026-07-05T23:58:03",
+        "stage": "finalization",
+        "event": "report_generated",
+        "detail": "Relatórios finais gerados com sucesso.",
+        "payload": {
+          "markdown": "/app/output/patentes_sintering_carbon_dioxide_20260705_235803.md",
+          "json": "/app/output/patentes_sintering_carbon_dioxide_20260705_235803.json"
+        }
+      }
+    ]
+  },
+  "memory_journal": [
+    {
+      "timestamp": "2026-07-05T23:42:39",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": true,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:42:51",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 4,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:43:20",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 4,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:43:20",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "EPO retornou patentes.",
+      "payload": {
+        "source": "EPO",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:45:02",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "JP6833123B1 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_8d21878ddc6f",
+        "patent_id": "JP6833123B1",
+        "decision": "review",
+        "score": 7.2,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:46:06",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN113941247A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_72a65e6eb3eb",
+        "patent_id": "CN113941247A",
+        "decision": "review",
+        "score": 7.7,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:47:07",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US3930787A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_c324f3020aef",
+        "patent_id": "US3930787A",
+        "decision": "review",
+        "score": 6.2,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:47:41",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO2024117144A1 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_37bf32607be4",
+        "patent_id": "WO2024117144A1",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:48:21",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "1171698 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_d7d21bdaf3a1",
+        "patent_id": "1171698",
+        "decision": "exclude",
+        "score": 3.3,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:48:57",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "1174314 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_56073152026b",
+        "patent_id": "1174314",
+        "decision": "review",
+        "score": 0.0,
+        "route": {
+          "route": "manual_review",
+          "reason": "Falha do LLM; revisão humana necessária.",
+          "slot": "review"
+        },
+        "llm_error": "Resposta inválida ou não estruturada do modelo na triagem."
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:49:30",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "153069 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_e9a9df09739a",
+        "patent_id": "153069",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:50:46",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "910517 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_bbd3a7e262bb",
+        "patent_id": "910517",
+        "decision": "review",
+        "score": 6.4,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:52:16",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "JP6833123B1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_8d21878ddc6f",
+        "patent_id": "JP6833123B1",
+        "route": "manual_review",
+        "confidence": 0.85
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:53:26",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN113941247A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_72a65e6eb3eb",
+        "patent_id": "CN113941247A",
+        "route": "manual_review",
+        "confidence": 0.8
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:54:23",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US3930787A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_c324f3020aef",
+        "patent_id": "US3930787A",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:54:23",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO2024117144A1 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_37bf32607be4",
+        "patent_id": "WO2024117144A1",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:54:23",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "1171698 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_d7d21bdaf3a1",
+        "patent_id": "1171698",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:54:23",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "1174314 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_56073152026b",
+        "patent_id": "1174314",
+        "route": "manual_review",
+        "confidence": 0.0
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:54:23",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "153069 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_e9a9df09739a",
+        "patent_id": "153069",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:55:42",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "910517 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_bbd3a7e262bb",
+        "patent_id": "910517",
+        "route": "manual_review",
+        "confidence": 0.71
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:55:42",
+      "stage": "synthesis",
+      "event": "coverage_computed",
+      "detail": "Cobertura e seleção consolidadas após triagem.",
+      "payload": {
+        "raw_scraped": 8,
+        "unique_patents": 8,
+        "duplicates_removed": 0,
+        "screened": 8,
+        "included": 0,
+        "review": 5,
+        "excluded": 3,
+        "manual_review_required": 5,
+        "manual_review_deferred": 0,
+        "full_extractions": 5,
+        "missing_abstract": 0,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 1,
+        "llm_total_failures": 0
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:58:03",
+      "stage": "synthesis",
+      "event": "comparative_analysis_completed",
+      "detail": "Síntese comparativa gerada via Ollama.",
+      "payload": {
+        "patents_compared": 7
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:58:03",
+      "stage": "synthesis",
+      "event": "whitespace_analysis_completed",
+      "detail": "Matriz estruturada de whitespace gerada.",
+      "payload": {
+        "selected_patents": 4,
+        "candidates": 0
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:58:03",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 0,
+        "route_summary": {
+          "manual_review": 5,
+          "screen_only": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:58:03",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "/app/output/patentes_sintering_carbon_dioxide_20260705_235803.md",
+        "json": "/app/output/patentes_sintering_carbon_dioxide_20260705_235803.json"
+      }
+    }
+  ],
+  "stage_metrics": [
+    {
+      "stage": "setup",
+      "status": "ok",
+      "duration_seconds": 0.865,
+      "items_processed": 1,
+      "detail": "Verificação do modelo Ollama"
+    },
+    {
+      "stage": "search",
+      "status": "ok",
+      "duration_seconds": 41.198,
+      "items_processed": 8,
+      "detail": "8 patentes únicas após dedupe"
+    },
+    {
+      "stage": "screening",
+      "status": "degraded",
+      "duration_seconds": 741.511,
+      "items_processed": 8,
+      "detail": "0 incluídas, 5 revisão"
+    },
+    {
+      "stage": "comparative_analysis",
+      "status": "ok",
+      "duration_seconds": 140.98,
+      "items_processed": 8,
+      "detail": "Síntese comparativa gerada"
+    },
+    {
+      "stage": "whitespace_analysis",
+      "status": "ok",
+      "duration_seconds": 0.001,
+      "items_processed": 4,
+      "detail": "Whitespace analysis estruturada gerada"
+    },
+    {
+      "stage": "reporting",
+      "status": "ok",
+      "duration_seconds": 0.003,
+      "items_processed": 8,
+      "detail": "Relatórios Markdown e JSON"
+    },
+    {
+      "stage": "finalization",
+      "status": "ok",
+      "duration_seconds": 0.001,
+      "items_processed": 8,
+      "detail": "Persistência de artefatos e estado"
+    }
+  ],
+  "llm_cache_stats": {
+    "hits": 0,
+    "misses": 17,
+    "entries": 125
+  },
+  "llm_telemetry": {
+    "degraded": false,
+    "total_failures": 0,
+    "consecutive_failures": 0,
+    "recent_errors": [],
+    "operations": {
+      "healthcheck": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 35,
+        "response_chars": 15,
+        "total_duration_seconds": 0.863,
+        "max_duration_seconds": 0.863,
+        "average_duration_seconds": 0.863
+      },
+      "screening": {
+        "calls": 8,
+        "successes": 8,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 30012,
+        "response_chars": 9310,
+        "total_duration_seconds": 298.629,
+        "max_duration_seconds": 54.33,
+        "average_duration_seconds": 37.329
+      },
+      "rerank": {
+        "calls": 4,
+        "successes": 4,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 16648,
+        "response_chars": 4319,
+        "total_duration_seconds": 147.154,
+        "max_duration_seconds": 47.617,
+        "average_duration_seconds": 36.788
+      },
+      "evaluation": {
+        "calls": 4,
+        "successes": 4,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 16927,
+        "response_chars": 11972,
+        "total_duration_seconds": 295.721,
+        "max_duration_seconds": 89.669,
+        "average_duration_seconds": 73.93
+      },
+      "comparative": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 6517,
+        "response_chars": 5150,
+        "total_duration_seconds": 140.979,
+        "max_duration_seconds": 140.979,
+        "average_duration_seconds": 140.979
+      }
+    }
+  },
+  "observability_metrics": {
+    "routes": {
+      "manual_review": {
+        "count": 5,
+        "include": 0,
+        "review": 5,
+        "exclude": 0,
+        "llm_errors": 1
+      },
+      "screen_only": {
+        "count": 3,
+        "include": 0,
+        "review": 0,
+        "exclude": 3,
+        "llm_errors": 0
+      }
+    },
+    "sources": {
+      "EPO": {
+        "raw_results": 0,
+        "duration_seconds": 0.0,
+        "diagnostic_counts": {
+          "config_missing": 1
+        }
+      },
+      "GooglePatents": {
+        "raw_results": 4,
+        "duration_seconds": 11.979,
+        "diagnostic_counts": {}
+      },
+      "Patentscope": {
+        "raw_results": 4,
+        "duration_seconds": 29.213,
+        "diagnostic_counts": {}
+      }
+    },
+    "failures": {
+      "run_errors": 0,
+      "records_with_llm_error": 1,
+      "llm_total_failures": 0,
+      "llm_by_operation": {
+        "healthcheck": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "screening": {
+          "calls": 8,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "rerank": {
+          "calls": 4,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "evaluation": {
+          "calls": 4,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "comparative": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        }
+      },
+      "scraper_diagnostics_by_kind": {
+        "config_missing": 1
+      }
+    }
+  },
+  "run_id": "20260705_234238",
+  "started_at": "2026-07-05T23:42:38",
+  "finished_at": "2026-07-05T23:58:03",
+  "status": "completed",
+  "current_stage": "reporting",
+  "screened_count": 8,
+  "llm_available": true,
+  "patents": [
+    {
+      "record_id": "rec_8d21878ddc6f",
+      "family_id": "family:4cb528251905b42103c4bf03a86ce94516df5f97",
+      "title": "Manufacturing method of carbon dioxide adsorption sintered body",
+      "patent_id": "JP6833123B1",
+      "abstract": "AbstractTranslated fromJapaneseãèª²é¡ãè£½é æã«ãäºé¸åç­ç´ ãçºçããããã¨ããªããã¾ããçç¼æã¬ã¹ä¸­ã®äºé¸åç­ç´ ãä½æ¸ãããã¨ãå¯è½ãªäºé¸åç­ç´ å¸çç¼çµä½ã®è£½é æ¹æ³ãæä¾ããããè§£æ±ºææ®µãç³ç­ç°ã®ã¤ã°ã­ã¹éãèª¿æ´ããã¤ã°ã­ã¹éèª¿æ´å·¥ç¨ã¨ãç³ç­ç°ã«æ··åããï¼£ï½æºï¼ã³ã³ã¯ãªã¼ãç´ãéé¼ã¹ã©ã°ï¼ã®æ··åéãèª¿æ´ããï¼£ï½æºèª¿æ´å·¥ç¨ã¨ãã¤ã°ã­ã¹éèª¿æ´å·¥ç¨ã«ãã£ã¦ã¤ã°ã­ã¹éãèª¿æ´ãããç³ç­ç°åã³åè¨ã«ã«ã·ã¦ã æºèª¿æ´å·¥ç¨ã«ãã£ã¦æ··åéãèª¿æ´ãããã«ã«ã·ã¦ã æºãæ··åãããæ··åå·¥ç¨ã¨ãæ··åå·¥ç¨ã«ãã£ã¦æ··åãããæ··åç©ã«ãã¤ã¯ã­æ³¢ãç§å°ãã¦åè¨æ··åç©ãç¼çµæ¸©åº¦ä»¥ä¸ã«ææ¸©ããã¦ç¼çµãããææ¸©å·¥ç¨ã¨ãææ¸©å·¥ç¨ã«ãã£ã¦å¾ãããåè¨æ··åç©ã®ç¼çµä½ãéæ¸©ãããéç¨ã«ããã¦ãç¼çµä½ã«çç¼æã¬ã¹ãå¹ãè¾¼ãéæ¸©å·¥ç¨ã¨ããæããããé¸æå³ã å³ï¼PROBLEM TO BE SOLVED: To provide a method for producing a carbon dioxide adsorption sintered body which does not generate carbon dioxide during production and can reduce carbon dioxide in combustion exhaust gas. SOLUTION: An igross amount adjusting step for adjusting the igros amount of coal ash, a Ca source adjusting step for adjusting the mixing amount of a Ca source (concrete powder, steel slag) to be mixed with the coal ash, and an igros amount adjusting step A mixing step of mixing coal ash whose amount has been adjusted and a calcium source whose mixing amount has been adjusted by the calcium source adjusting step, and a mixing step where the mixed mixture is irradiated with microwaves to sinter the mixture above the sintering temperature. In the process of lowering the temperature of the sintered body of the mixture obtained by the raising temperature step, the temperature lowering step of blowing the combustion exhaust gas into the sintered body is included. [Selection diagram] Fig. 1",
+      "inventors": [
+        "å¥äº ä¸­æ¬",
+        "æ­å¹³ å±±ç°",
+        "ä½³å¥å­ å¼æ«",
+        "ç°ä¸­ãç­",
+        "ç­ ç°ä¸­",
+        "å°æ¨¹ å¤§æ¬",
+        "äº¬ä¸é æ¨«æ",
+        "è¤äºãéå¸",
+        "éå¸ è¤äº"
+      ],
+      "assignee": "Chugoku Electric Power Co Inc",
+      "filing_date": "2020-03-17",
+      "publication_date": "2021-02-24",
+      "url": "https://patents.google.com/patent/JP6833123B1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_72a65e6eb3eb",
+      "family_id": "family:41d760291c97b96c9594304c94533e2eb27dbd34",
+      "title": "System and method for capturing carbon dioxide in steel sintering flue gas",
+      "patent_id": "CN113941247A",
+      "abstract": "AbstractThe invention discloses a system and a method for capturing carbon dioxide in steel sintering flue gas. The system comprises: the device comprises a metallurgical production wastewater incoming pipeline, a sintering dedusting ash incoming pipeline, a slurry preparation unit, a flue gas absorption unit, a flue gas incoming pipeline, an emptying pipeline, a precipitation unit and a supernatant return pipeline; the flue gas absorption unit is provided with an evacuation port, a liquid inlet, a gas inlet and a liquid outlet; the metallurgical production wastewater input pipeline and the sintering dedusting ash incoming pipeline are respectively connected with the slurry preparation unit; an outlet of the slurry preparation unit is connected with a liquid inlet of the flue gas absorption unit, a liquid outlet of the flue gas absorption unit is connected with an inlet of the precipitation unit, an emptying port of the flue gas absorption unit is connected with the emptying pipeline, and a flue gas incoming pipeline is connected with a gas inlet of the flue gas absorption unit; the upper part of the settling unit is connected to the slurry preparation unit through the supernatant return line.",
+      "inventors": [
+        "è¡é¿é",
+        "æ±ç¹",
+        "çå»ºå",
+        "é±æè±",
+        "å´å²©",
+        "å¼ èºå³°",
+        "ä»»ä¹",
+        "å²å",
+        "å¾ç»§æ³"
+      ],
+      "assignee": "Capital Engineering & Research Inc Ltd",
+      "filing_date": "2021-11-19",
+      "publication_date": "2022-01-18",
+      "url": "https://patents.google.com/patent/CN113941247A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_c324f3020aef",
+      "family_id": "family:aeab2d9ac8bbbf180ceb1dfc388fec8bd15cb8b5",
+      "title": "Sintering furnace with hydrogen carbon dioxide atmosphere",
+      "patent_id": "US3930787A",
+      "abstract": "AbstractA heated furnace for sintering structures of uranium oxide containing composition being introduced to the furnace. The furnace receives an atmosphere comprising a mixture of hydrogen and carbon dioxide as initially introduced to the furnace, and this mixture reacts in the furnace to give the presence of water vapor and carbon monoxide.",
+      "inventors": [
+        "William R. DeHollander",
+        "Yogesh Nivas"
+      ],
+      "assignee": "General Electric Co",
+      "filing_date": "1974-03-11",
+      "publication_date": "1976-01-06",
+      "url": "https://patents.google.com/patent/US3930787A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_37bf32607be4",
+      "family_id": "family:a5200c7aa20ea6a27d8f045dea7533c16940024b",
+      "title": "Sintered ore production method",
+      "patent_id": "WO2024117144A1",
+      "abstract": "AbstractThis sintered ore production method is for producing sintered ore using a Dwight-Lloyd type sintering machine that progresses sintering through downward suction and that includes an ignition furnace that performs initial ignition and a reignition furnace that performs reignition and that is located apart from the ignition furnace by a predetermined interval on the downstream side thereof. In the method, as a coagulation agent for raw materials to be blended, a low-combustion carbon material having a combustion start temperature of higher than 550Â°C and a high-combustion carbon material having a combustion start temperature of not higher than 550Â°C are used, and, in the high-combustion carbon material, the proportion of particles having a size of 2.8 mm or greater is 30-80 mass%.",
+      "inventors": [
+        "å æ¾æ",
+        "ä¸æ­ çå±±",
+        "æ·³æ²» é·ç°",
+        "äº«å¤ª åé"
+      ],
+      "assignee": "Nippon Steel Corp",
+      "filing_date": "2023-11-28",
+      "publication_date": "2024-06-06",
+      "url": "https://patents.google.com/patent/WO2024117144A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_d7d21bdaf3a1",
+      "family_id": "family:f40c29cdabc9eb6718533449e3c8961483f91165",
+      "title": "Dispensing Device",
+      "patent_id": "1171698",
+      "abstract": "(EN)1, 171, 698. Dispensing liquids by gaseous pressure. DISTILLERS CO. (CARBONDIOXIDE) Ltd. April 11, 1968 (April 11, 1967], No.16511/67. Heading F1R. A dispenser of liquids from a container comprises a body provided with means for attaching the dispenser to the container, a sharp tube capable of piercing a hole in the lid of the container, a seal on the underside of the body surrounding the tube which when the dispenser is attached to the container forms a substantially gas-tight chamber around the tube, the chamber being in communication with the interior of the container via the hole in the lid, a supply ofcarbondioxideunder pressure with which the chamber is in communication via a non-return valve, and a delivery tube housed within the sharp tube which communicates with a dispensing tube projecting from the body of the device. After removal of a dip tube 8, a sharp tube 1 is forced into the lid of a beer can to form a hole. The dip tube 8 is then refitted and a screw thread 3 is screwed into the hole in the lid until a seal 43, which may be of silicone rubber, is in sealing engagement with the lid. A capsule 21 of high-pressurecarbondioxideis placed in a holder 20 and a cap 22 is screwed on, a pin 23 on the cap piercing the capsule. High-pressurecarbondioxidepasses through a pressure reducing valve, asinteredmetal filter 34, and a capillary tube 29 to a low-pressure chamber 25. The pressure reducing valve is formed by the engagement of the end of the capillary tube 29 with a polyurethane pad 30, the capillary tube being pressed against the pad by a piston 26 subjected to the pressure in the low-pressure chamber 25 and the opposing force of a spring 27. From the low-pressure chamber 25, the low-pressurecarbondioxidepasses via a duct 39, a duct (38) and a non-return valve (44) into the space between the seal 43 and the sharp tube 1 and thence into the beer can. On depression of a button 5 to the position shown, a bore 11 is brought adjacent a port 12 to allow beer, urged by thecarbondioxideto be delivered via the dip tube 8, bores 10, 11, port 12 and a dispensing tube 13. A relief valve (45) vents excessive pressure to atmosphere. Castellations 55 cooperate with pins (56) depending from the button 5 so that by rotating the button the dispenser can be locked into a non-dispensing state. Instead of a screw thread 3, spring members hooking over the rim of the can may be used. Alternatively, a bayonet-type joint may be used with cans provided with the necessary fitment. The pin 23 can be provided at the other end of the holder 20, projecting from the pad 30. Provision may be made for holding twocarbondioxidecapsules with interchangeable connections to the interior of the can. Thecarbondioxidesupply may be a large cylinder of liquidcarbondioxideunder pressure.",
+      "inventors": [
+        "MOLE WALTER ERNEST"
+      ],
+      "assignee": "DISTILLERS CO\nCARBON\nDIOXIDE",
+      "filing_date": "11.04.1967",
+      "publication_date": "26.11.1969",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=GB135354895&_cid=P21-MR8FS7-09117-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_56073152026b",
+      "family_id": "family:c6553ae6f938f4ff3b91fe1eb94d906b9949a390",
+      "title": "A Dispensing Device for Gases Under Pressure.",
+      "patent_id": "1174314",
+      "abstract": "(EN)1,174,314. Valves. DISTILLERS CO. (CARBONDIOXIDE) Ltd. 22 May, 1968 [25 May, 1967], No. 24270/67. Heading F2V. Universal dispensing device for supplyingcarbondioxideat suitable reduced pressures to various appliances such as, soda syphones, fire extinguishers, dinghies, life-rafts and tyre inflators from a container comprises a reducing valve 12, 14 operated by a diaphragm 13 exposed to pressure in an outlet chamber 13. A loading spring 17 for the diaphragm is adjustable by a screwed retainer 16 connected through a rack and pinion device to pins 31 slidable in an outlet connection 28 and adapted to form a bayonet connection with the appliance. The appliances are arranged so that connection can only be made when the device is adjusted to supply the gas at the required pressure. A trigger operated valve 25 is in series with the reducing valve. The latter comprises a capillary tube 12 connected to the diaphragm and passing through an 0-ring seal to engage a seat 14 carried in a porous plug 10. A piercing member 6 opens the container as the device is coupled. The setting is indicated on a plate 5. A relief valve 19 is included.",
+      "inventors": [
+        "GODFERY GORDON REGINALD"
+      ],
+      "assignee": "DISTILLERS CO\nCARBON\nDIOXIDE",
+      "filing_date": "25.05.1967",
+      "publication_date": "17.12.1969",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=GB135357801&_cid=P21-MR8FS7-09117-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_e9a9df09739a",
+      "family_id": "family:08f7bea9e7ba9897b7973352892807cd494fc3f7",
+      "title": "NOZZLE FOR PRESSURISING AND DISPENSING LIQUID FROM CAN",
+      "patent_id": "153069",
+      "abstract": "(EN)The dispensing device fitted to a sealed can of liquid has a cutting tube 1 with threads 3 through which passes a dispensing tube 8 along which liquid passes to outlet tube 13. Acarbondioxidecontainer 21 is contained in an outer casing 22 and when punctured by sharp device 23 the gas passes out through asinteredmetal filter 34 and tube 39 to a low pressure chamber 25. When the button 5 is depressed liquid passes out of the tubes and is replaced in the can bycarbondioxidethe pressure of which assists in the passage of liquid up and out of the tube.",
+      "inventors": [
+        "W E Mole"
+      ],
+      "assignee": "The Distillers Co. (\nCarbon\nDioxide\n) Ltd.",
+      "filing_date": "09.07.1968",
+      "publication_date": "16.04.1970",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=NZ178918854&_cid=P21-MR8FS7-09117-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_bbd3a7e262bb",
+      "family_id": "family:65272d16dba3149592d4866a190bc57eed8641c7",
+      "title": "Improvements in or relating to the production of\nsintered\nuranium\ndioxide",
+      "patent_id": "910517",
+      "abstract": "(EN)Asinteredbody of high density containing uraniumdioxideore as mixture thereof with, preferably 10-30% plutoniumdioxide, for use as a fuel element in a fast neutron reactor, is obtained by heating a compressed body of uraniumdioxide, or mixture thereof with plutoniumdioxide, to at least 1300 DEG C. in an atmosphere consisting ofcarbondioxide, or a mixture thereof withcarbonmonoxide.  If CO2 alone is used the maximumsinteringtemperature is 1550 DEG C.  The CO/CO2 volumetric ratio may range from 1:100 to 100:1.  The preferred range for a 10% PuO2, 90% UO2 being 1:100 to 1:10 and for a 30% PuO2 70% UO2 from 1:20 to 1:1, duringsinteringat 1400 DEG -1600 DEG C. Asinteredbody having a metal / oxygen atomic ratio 1,98 to 2.02:1 is produced by cooling in a reducing atmosphere, preferably a CO/CO2 atmosphere of volumetric composition range 1:10 to 100:1 although hydrogen or hydrogen containing water vapour may be used.  The density of thesinteredproduct, depends uponsinteringtime and attains a maximum value and diminishes thereafter.  Optimum times, determined by experiment, are between 3-6 hours.  Thus in Example 1 a mixture of 10% plutoniumdioxide90% uraniumdioxidewere ball milled and polybutyl methacrylate in toluene were added as a binder.  After drying the granules were double pressed into pellets, which were heated at 400 DEG C. then to 1500 DEG C. in a CO2 atmosphere, and maintained at 1500 DEG C. for 4 hours.  The resulting pellets had a theoretical density of 96% and had an oxygen/metal ratio of 2,14/1. Other examples refer to the use of CO/CO2 mixtures duringsinteringand H2 or H2 and water vapour during cooling.  Specification 881,883 is referred to.",
+      "inventors": [
+        "RUSSELL LEWIS ERIC",
+        "HARRISON JOHN DAVID LAWRENCE",
+        "BRETT NORMAN HARRY"
+      ],
+      "assignee": "ATOMIC ENERGY AUTHORITY UK",
+      "filing_date": "29.04.1960",
+      "publication_date": "14.11.1962",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=GB134822149&_cid=P21-MR8FS7-09117-1",
+      "snippet": "",
+      "source": "Patentscope"
+    }
+  ],
+  "evaluations": [
+    {
+      "record_id": "rec_8d21878ddc6f",
+      "patent_id": "JP6833123B1",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 7.2,
+      "screening_decision": "review",
+      "screening_reason": "While the patent focuses on sintering a carbon dioxide adsorption body using microwave irradiation and incorporating combustion exhaust gas, the inclusion of adjusting coal ash and calcium source quantities suggests an i",
+      "evidence_snippets": [
+        "\"To provide a method for producing a carbon dioxide adsorption sintered body...\"",
+        "\"blowing the combustion exhaust gas into the sintered body\""
+      ],
+      "thematic_cluster": "Sinterização e Adsorção de Dióxido de Carbono",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um método para fabricar um corpo de adsorção de dióxido de carbono sinterizado, utilizando irradiação por micro-ondas e gás de escape de combustão, com ajustes na quantidade de cinzas de carvão e fonte de cálcio. O processo envolve a mistura desses componentes, seguido pela sinterização por micro-ondas e posterior resfriamento com gás de escape para reduzir as emissões de CO2.",
+      "key_findings": [
+        "Ajuste da quantidade de cinzas de carvão e fonte de cálcio para otimizar o processo de sinterização.",
+        "Utilização da irradiação por micro-ondas como método de sinterização.",
+        "Incorporação do gás de escape de combustão para resfriamento e redução de emissões de CO2."
+      ],
+      "potential_applications": [
+        "Adsorção e armazenamento de dióxido de carbono em processos industriais.",
+        "Remoção de CO2 de fluxos de combustão.",
+        "Produção de materiais de adsorção de CO2 para aplicações ambientais."
+      ],
+      "technical_domain": "Ciência dos Materiais, Engenharia Química",
+      "innovation_level": "Incremental",
+      "co2_role": "capture_process_stream",
+      "storage_role": "Suporte/Armazenamento Implícito",
+      "system_boundary": "process_integration",
+      "cycle_type": "Não Claro (Implica um ciclo de adsorção-desorção)",
+      "heat_source_sink": "Combustão, Gás de Escape",
+      "claim_focus": "Método de Fabricação e Composição do Corpo de Adsorção Sinterizado",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "O problema abordado é a produção de corpos de adsorção de dióxido de carbono que minimizem a geração de CO2 durante o processo de sinterização, aproveitando o gás de escape de combustão.",
+      "solution_summary": "A solução proposta consiste em ajustar as quantidades de cinzas de carvão e fonte de cálcio na mistura, seguida pela sinterização por micro-ondas e resfriamento com gás de escape para controlar a temperatura e reduzir as emissões de CO2.",
+      "claimed_advantages": [
+        "Redução das emissões de dióxido de carbono durante o processo de fabricação.",
+        "Utilização eficiente de gás de escape de combustão.",
+        "Melhora nas propriedades do corpo de adsorção de dióxido de carbono sinterizado."
+      ],
+      "limitations": [
+        "A patente não detalha especificamente as condições de irradiação por micro-ondas ou a composição exata do gás de escape de combustão.",
+        "A eficácia da redução de emissões pode depender das características específicas do gás de escape e do material de suporte."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.85,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_72a65e6eb3eb",
+      "patent_id": "CN113941247A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 7.7,
+      "screening_decision": "review",
+      "screening_reason": "While the patent describes a system for CO2 capture from steel sintering flue gas, the focus is primarily on the system architecture and integration of various components rather than a detailed analysis of CO2 as a therm",
+      "evidence_snippets": [
+        "The system comprises a flue gas absorption unit…",
+        "the upper part of the settling unit is connected to the slurry preparation unit"
+      ],
+      "thematic_cluster": "Captura de CO2 de Fontes Industriais",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um sistema para capturar dióxido de carbono (CO2) dos gases de exaustão da sinterização do aço, utilizando uma combinação de água e resíduos de produção de metalurgia. O sistema inclui unidades para preparação de suspensão, absorção de gás e precipitação, visando a recuperação eficiente do CO2. A integração com o tratamento de águas residuais da produção de metalurgia é um aspecto chave.",
+      "key_findings": [
+        "O sistema integra o tratamento de águas residuais da produção de metalurgia com a captura de CO2, promovendo a utilização de recursos.",
+        "A arquitetura do sistema inclui unidades específicas para preparação de suspensão, absorção de gás e precipitação, otimizando a eficiência do processo.",
+        "O uso de uma linha de retorno de supernatant permite o controle da concentração do produto final."
+      ],
+      "potential_applications": [
+        "Siderúrgicas e fundições que utilizam processos de sinterização.",
+        "Plantas de produção de aço com foco em sustentabilidade.",
+        "Tecnologias de captura e utilização de carbono em outros processos industriais."
+      ],
+      "technical_domain": "Engenharia de Processos Industriais, Engenharia Metalúrgica, Captura e Utilização de Carbono",
+      "innovation_level": "Incremental",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "sintering_process",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "capture_process",
+      "problem_statement": "A sinterização do aço gera gases de exaustão contendo CO2 que representam um desperdício de recurso e um potencial emissor de gases de efeito estufa. A patente busca uma solução para capturar esse CO2 de forma eficiente.",
+      "solution_summary": "O sistema proposto utiliza um processo de absorção de gás com água, combinando-o com etapas de separação por precipitação para maximizar a captura e recuperação do CO2 dos gases de exaustão da sinterização.",
+      "claimed_advantages": [
+        "Captura eficiente de CO2 dos gases de exaustão da sinterização.",
+        "Integração com o tratamento de águas residuais, promovendo a sustentabilidade.",
+        "Potencial para reduzir as emissões de gases de efeito estufa."
+      ],
+      "limitations": [
+        "O documento não detalha a escala ou otimização do sistema para diferentes taxas de sinterização.",
+        "A eficiência da captura pode depender das características específicas dos gases de exaustão (composição, temperatura).",
+        "A patente foca na integração e arquitetura do sistema, sem fornecer detalhes sobre o desempenho operacional."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.8,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_c324f3020aef",
+      "patent_id": "US3930787A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 6.2,
+      "screening_decision": "review",
+      "screening_reason": "While the patent describes a furnace using CO2 in an atmosphere for sintering uranium oxide, the role of the CO2 is not clearly defined as a central thermodynamic medium or working fluid. The focus remains on the overall",
+      "evidence_snippets": [
+        "\"A heated furnace for sintering structures of uranium oxide containing composition being introduced to the furnace.\""
+      ],
+      "thematic_cluster": "Atmospheric Sintering of Oxides",
+      "relevance_score": 6.2,
+      "summary": "Esta patente descreve um forno para sinterização de óxido de urânio utilizando uma atmosfera de hidrogênio e dióxido de carbono, que produz água e monóxido de carbono como subprodutos. A principal questão é a utilização do CO2 como meio termodinâmico ou fluido de trabalho para o processo de sinterização, mas o papel exato do CO2 não é claramente definido.",
+      "key_findings": [
+        "O CO2 é introduzido na atmosfera do forno em conjunto com o hidrogênio.",
+        "A reação da mistura resulta na produção de água vapor e monóxido de carbono."
+      ],
+      "potential_applications": [
+        "Sinterização de materiais cerâmicos em ambientes controlados.",
+        "Processos de tratamento térmico onde a remoção de subprodutos é desejada."
+      ],
+      "technical_domain": "Materials Science, Thermal Processing",
+      "innovation_level": "Incremental",
+      "co2_role": "componente_da_atmosfera",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "forno (calor da reação)",
+      "claim_focus": "utilização de atmosfera reativa para sinterização",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "O problema abordado é a necessidade de um método para sinterizar estruturas de óxido de urânio em um forno, buscando otimizar as condições de atmosfera.",
+      "solution_summary": "A solução proposta envolve o uso de uma atmosfera contendo hidrogênio e dióxido de carbono dentro do forno, com a reação gerando água e monóxido de carbono. O CO2 atua como um componente da atmosfera.",
+      "claimed_advantages": [
+        "Utilização de uma atmosfera reativa para a sinterização.",
+        "Produção de subprodutos (água, monóxido de carbono) durante o processo."
+      ],
+      "limitations": [
+        "O papel do CO2 como meio termodinâmico não é explicitamente definido.",
+        "A patente foca na reação da atmosfera e não no controle preciso das condições de sinterização."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.75,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_37bf32607be4",
+      "patent_id": "WO2024117144A1",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um método de produção de minério sinterizado usando carbonos de combustão diferente e sucção descendente, o que se relaciona com o processo de sinterização do dióxido de carbono. No entanto, não menciona explicitamente a utilização do CO2 como meio de armazenamento térmico ou como parte de um ciclo termodinâmico. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "AbstractThis sintered ore production method is for producing sintered ore using a Dwight-Lloyd type sintering machine that progresses sintering through downward suction...",
+        "a low-combustion carbon material having a combustion start temperature of higher than 550Â°C and a high-combustion carbon material having a combustion start temperature of not higher than 550Â°C"
+      ],
+      "thematic_cluster": "Processos de Fabricação de Materiais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Metalurgia, Sinterização",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "process_integration",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.64,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_d7d21bdaf3a1",
+      "patent_id": "1171698",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.3,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um dispositivo dispensador que utiliza dióxido de carbono sob pressão para liberar líquidos, incluindo a utilização de um filtro sinterizado. Embora o 'sintering' esteja presente, o foco principal não é o processo de sintering em si para a redução da temperatura do CO2, mas sim o uso do CO2 como fluido de trabalho e meio de transferência. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "High-pressurecarbondioxidepasses through a pressure reducing valve, asinteredmetal filter 34...",
+        "After removal of a dip tube 8, a sharp tube 1 is forced into the lid..."
+      ],
+      "thematic_cluster": "Dispensação de fluidos com gases comprimidos",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Engenharia de Fluidos, Dispositivos Dispensadores",
+      "innovation_level": "",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "cooling_or_refrigeration",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.52,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_56073152026b",
+      "patent_id": "1174314",
+      "analysis_route": "manual_review",
+      "route_reason": "Falha do LLM; revisão humana necessária.",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "screening_reason": "Falha do LLM; revisão manual necessária.",
+      "evidence_snippets": [
+        "(EN)1,174,314. Valves. DISTILLERS CO. (CARBONDIOXIDE) Ltd. 22 May, 1968 [25 May, 1967], No. 24270/67. Heading F2V. Universal dispensing device for supplyingcarbondioxideat suitable reduced pressures to various appliances such as, soda sypho"
+      ],
+      "thematic_cluster": "",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "",
+      "innovation_level": "",
+      "co2_role": "",
+      "storage_role": "",
+      "system_boundary": "",
+      "cycle_type": "",
+      "heat_source_sink": "",
+      "claim_focus": "",
+      "exclusion_category": "",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.0,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": true,
+      "llm_error": "Resposta inválida ou não estruturada do modelo na triagem."
+    },
+    {
+      "record_id": "rec_e9a9df09739a",
+      "patent_id": "153069",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um dispositivo de dispensação que utiliza um filtro sinterizado de CO2 para liberar gás após a perfuração da lata. Embora o CO2 seja um componente chave do processo, a patente não se concentra na sinterização do CO2 em si, mas sim no uso de um filtro sinterado como parte de um sistema de dispensação. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "“Acarbondioxidecontainer 21 is contained in an outer casing 22 and when punctured by sharp device 23 the gas passes out through asinteredmetal filter 34…”"
+      ],
+      "thematic_cluster": "Dispositivos de Dispensação e Sinterização de Gases",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Engenharia Mecânica / Processamento de Materiais",
+      "innovation_level": "",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.56,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_bbd3a7e262bb",
+      "patent_id": "910517",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 6.4,
+      "screening_decision": "review",
+      "screening_reason": "A patente descreve a sinterização de óxidos de urânio e plutônio em atmosfera de CO2, indicando um papel potencial para o CO2 como meio termodinâmico. No entanto, o foco principal é na produção de combustível para reator",
+      "evidence_snippets": [
+        "\"Asinteredbody of high density containing uraniumdioxideore as mixture thereof...\"",
+        "The CO/CO2 volumetric ratio may range from 1:100 to 100:1."
+      ],
+      "thematic_cluster": "Sinterization of Oxide Fuels",
+      "relevance_score": 5.9,
+      "summary": "Esta patente descreve um processo de sinterização para produzir corpos de óxido de urânio misturado com plutônio, utilizando uma atmosfera de dióxido de carbono (CO2) como meio termodinâmico. A temperatura de sinterização é ajustada dependendo da proporção de CO2 e monóxido de carbono, visando obter alta densidade e controlar a relação oxigênio/metal no produto final. O processo envolve etapas de aquecimento em CO2 seguido por resfriamento em atmosfera redutora com CO2 ou hidrogênio.",
+      "key_findings": [
+        "A sinterização ocorre com sucesso em atmosferas de CO2, com a temperatura máxima dependendo da proporção de CO/CO2 utilizada (1:100 a 100:1).",
+        "O controle da relação oxigênio/metal no produto final é alcançado através da manipulação das condições de sinterização e resfriamento, utilizando atmosferas de CO/CO2 ou H2/H2O."
+      ],
+      "potential_applications": [
+        "Produção de combustível para reatores rápidos de nêutrons rápidos.",
+        "Desenvolvimento de novos materiais cerâmicos com propriedades específicas."
+      ],
+      "technical_domain": "Ceramic Materials & Nuclear Fuel Production",
+      "innovation_level": "Incremental",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "não_claro",
+      "heat_source_sink": "CO2 atmosphere",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "O problema técnico abordado é a necessidade de produzir corpos de óxido de urânio e plutônio sinterizados com densidade e composição desejadas para uso como combustível em reatores rápidos, otimizando o processo de sinterização.",
+      "solution_summary": "A solução proposta consiste em aquecer uma mistura de óxidos de urânio e plutônio sob uma atmosfera de CO2 (ou misturas de CO/CO2) a temperaturas entre 1300°C e 1600°C, ajustando as proporções para influenciar a densidade e a composição do produto sinterizado. O resfriamento subsequente é realizado em uma atmosfera redutora com CO2 ou hidrogênio.",
+      "claimed_advantages": [
+        "Produção de corpos de óxido de urânio e plutônio com alta densidade e composição controlada.",
+        "Utilização do CO2 como meio termodinâmico para o processo de sinterização."
+      ],
+      "limitations": [
+        "A temperatura máxima de sinterização é limitada pela presença de CO2, necessitando de misturas de CO/CO2 para atingir temperaturas mais elevadas.",
+        "O controle preciso da relação oxigênio/metal depende da otimização das condições experimentais."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.71,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    }
+  ],
+  "patents_by_source": {
+    "GooglePatents": 4,
+    "Patentscope": 4,
+    "EPO": 0
+  },
+  "scraper_diagnostics": {
+    "GooglePatents": [],
+    "Patentscope": [],
+    "EPO": [
+      {
+        "kind": "config_missing",
+        "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+        "url": ""
+      }
+    ]
+  },
+  "coverage_metrics": {
+    "raw_scraped": 8,
+    "unique_patents": 8,
+    "duplicates_removed": 0,
+    "screened": 8,
+    "included": 0,
+    "review": 5,
+    "excluded": 3,
+    "manual_review_required": 5,
+    "manual_review_deferred": 0,
+    "full_extractions": 5,
+    "missing_abstract": 0,
+    "missing_id": 0,
+    "records_with_content_identity": 0,
+    "records_with_fallback_identity": 0,
+    "family_duplicates_removed": 0,
+    "llm_screening_failures": 1,
+    "llm_total_failures": 0
+  },
+  "manual_review_queue": [
+    {
+      "record_id": "rec_56073152026b",
+      "patent_id": "1174314",
+      "family_id": "family:c6553ae6f938f4ff3b91fe1eb94d906b9949a390",
+      "title": "A Dispensing Device for Gases Under Pressure.",
+      "reason": "Falha do LLM; revisão humana necessária.",
+      "route": "manual_review",
+      "screening_score": 0.0,
+      "screening_decision": "review",
+      "llm_error": "Resposta inválida ou não estruturada do modelo na triagem."
+    },
+    {
+      "record_id": "rec_72a65e6eb3eb",
+      "patent_id": "CN113941247A",
+      "family_id": "family:41d760291c97b96c9594304c94533e2eb27dbd34",
+      "title": "System and method for capturing carbon dioxide in steel sintering flue gas",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 7.7,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_8d21878ddc6f",
+      "patent_id": "JP6833123B1",
+      "family_id": "family:4cb528251905b42103c4bf03a86ce94516df5f97",
+      "title": "Manufacturing method of carbon dioxide adsorption sintered body",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 7.2,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_bbd3a7e262bb",
+      "patent_id": "910517",
+      "family_id": "family:65272d16dba3149592d4866a190bc57eed8641c7",
+      "title": "Improvements in or relating to the production of\nsintered\nuranium\ndioxide",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 6.4,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_c324f3020aef",
+      "patent_id": "US3930787A",
+      "family_id": "family:aeab2d9ac8bbbf180ceb1dfc388fec8bd15cb8b5",
+      "title": "Sintering furnace with hydrogen carbon dioxide atmosphere",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 6.2,
+      "screening_decision": "review",
+      "llm_error": ""
+    }
+  ],
+  "prisma_flow": {
+    "flow": {
+      "identification": {
+        "raw_records": 8,
+        "unique_records": 8,
+        "duplicates_removed": 0
+      },
+      "screening": {
+        "screened": 8,
+        "included": 0,
+        "review": 5,
+        "excluded": 3
+      },
+      "eligibility": {
+        "full_extractions": 5,
+        "manual_review_required": 5,
+        "manual_review_deferred": 0
+      },
+      "coverage": {
+        "missing_abstract": 0,
+        "missing_id": 0
+      },
+      "synthesis": {
+        "analyzed_records": 5,
+        "comparative_analysis_generated": true
+      }
+    },
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "version": "1.0"
+  },
+  "thematic_clusters": {
+    "clusters": [],
+    "total_clusters": 0
+  },
+  "whitespace_analysis": {
+    "status": "ok",
+    "query": "sintering carbon dioxide",
+    "corpus_summary": {
+      "considered_patents": 8,
+      "selected_patents": 4,
+      "core": 0,
+      "frontier": 4,
+      "adjacent": 0
+    },
+    "coverage_matrix": [
+      {
+        "patent_id": "CN113941247A",
+        "record_id": "rec_72a65e6eb3eb",
+        "title": "System and method for capturing carbon dioxide in steel sintering flue gas",
+        "screening_decision": "review",
+        "screening_score": 7.7,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Engenharia de Processos Industriais, Engenharia Metalúrgica, Captura e Utilização de Carbono",
+        "thematic_cluster": "Captura de CO2 de Fontes Industriais",
+        "co2_role": "capture_process_stream",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "sintering_process",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "capture_process"
+      },
+      {
+        "patent_id": "JP6833123B1",
+        "record_id": "rec_8d21878ddc6f",
+        "title": "Manufacturing method of carbon dioxide adsorption sintered body",
+        "screening_decision": "review",
+        "screening_score": 7.2,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Ciência dos Materiais, Engenharia Química",
+        "thematic_cluster": "Sinterização e Adsorção de Dióxido de Carbono",
+        "co2_role": "capture_process_stream",
+        "storage_role": "Suporte/Armazenamento Implícito",
+        "system_boundary": "process_integration",
+        "cycle_type": "Não Claro (Implica um ciclo de adsorção-desorção)",
+        "heat_source_sink": "Combustão, Gás de Escape",
+        "claim_focus": "Método de Fabricação e Composição do Corpo de Adsorção Sinterizado",
+        "exclusion_category": "industrial_heat_adjacent"
+      },
+      {
+        "patent_id": "US3930787A",
+        "record_id": "rec_c324f3020aef",
+        "title": "Sintering furnace with hydrogen carbon dioxide atmosphere",
+        "screening_decision": "review",
+        "screening_score": 6.2,
+        "relevance_score": 6.2,
+        "bucket": "frontier",
+        "technical_domain": "Materials Science, Thermal Processing",
+        "thematic_cluster": "Atmospheric Sintering of Oxides",
+        "co2_role": "componente_da_atmosfera",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "forno (calor da reação)",
+        "claim_focus": "utilização de atmosfera reativa para sinterização",
+        "exclusion_category": "industrial_heat_adjacent"
+      },
+      {
+        "patent_id": "910517",
+        "record_id": "rec_bbd3a7e262bb",
+        "title": "Improvements in or relating to the production of\nsintered\nuranium\ndioxide",
+        "screening_decision": "review",
+        "screening_score": 6.4,
+        "relevance_score": 5.9,
+        "bucket": "frontier",
+        "technical_domain": "Ceramic Materials & Nuclear Fuel Production",
+        "thematic_cluster": "Sinterization of Oxide Fuels",
+        "co2_role": "stored_thermodynamic_medium",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "não_claro",
+        "heat_source_sink": "CO2 atmosphere",
+        "claim_focus": "component_or_operation",
+        "exclusion_category": "industrial_heat_adjacent"
+      }
+    ],
+    "axes": {
+      "co2_role": {
+        "capture_process_stream": {
+          "core": [],
+          "frontier": [
+            "CN113941247A",
+            "JP6833123B1"
+          ],
+          "adjacent": []
+        },
+        "componente_da_atmosfera": {
+          "core": [],
+          "frontier": [
+            "US3930787A"
+          ],
+          "adjacent": []
+        },
+        "stored_thermodynamic_medium": {
+          "core": [],
+          "frontier": [
+            "910517"
+          ],
+          "adjacent": []
+        }
+      },
+      "storage_role": {
+        "explicit_thermal_storage": {
+          "core": [],
+          "frontier": [
+            "CN113941247A"
+          ],
+          "adjacent": []
+        },
+        "Suporte/Armazenamento Implícito": {
+          "core": [],
+          "frontier": [
+            "JP6833123B1"
+          ],
+          "adjacent": []
+        },
+        "implicit_or_support_storage": {
+          "core": [],
+          "frontier": [
+            "US3930787A",
+            "910517"
+          ],
+          "adjacent": []
+        }
+      },
+      "system_boundary": {
+        "process_integration": {
+          "core": [],
+          "frontier": [
+            "CN113941247A",
+            "JP6833123B1",
+            "US3930787A",
+            "910517"
+          ],
+          "adjacent": []
+        }
+      },
+      "cycle_type": {
+        "not_clear": {
+          "core": [],
+          "frontier": [
+            "CN113941247A",
+            "US3930787A"
+          ],
+          "adjacent": []
+        },
+        "Não Claro (Implica um ciclo de adsorção-desorção)": {
+          "core": [],
+          "frontier": [
+            "JP6833123B1"
+          ],
+          "adjacent": []
+        },
+        "não_claro": {
+          "core": [],
+          "frontier": [
+            "910517"
+          ],
+          "adjacent": []
+        }
+      },
+      "heat_source_sink": {
+        "sintering_process": {
+          "core": [],
+          "frontier": [
+            "CN113941247A"
+          ],
+          "adjacent": []
+        },
+        "Combustão, Gás de Escape": {
+          "core": [],
+          "frontier": [
+            "JP6833123B1"
+          ],
+          "adjacent": []
+        },
+        "forno (calor da reação)": {
+          "core": [],
+          "frontier": [
+            "US3930787A"
+          ],
+          "adjacent": []
+        },
+        "CO2 atmosphere": {
+          "core": [],
+          "frontier": [
+            "910517"
+          ],
+          "adjacent": []
+        }
+      },
+      "claim_focus": {
+        "system_architecture": {
+          "core": [],
+          "frontier": [
+            "CN113941247A"
+          ],
+          "adjacent": []
+        },
+        "Método de Fabricação e Composição do Corpo de Adsorção Sinterizado": {
+          "core": [],
+          "frontier": [
+            "JP6833123B1"
+          ],
+          "adjacent": []
+        },
+        "utilização de atmosfera reativa para sinterização": {
+          "core": [],
+          "frontier": [
+            "US3930787A"
+          ],
+          "adjacent": []
+        },
+        "component_or_operation": {
+          "core": [],
+          "frontier": [
+            "910517"
+          ],
+          "adjacent": []
+        }
+      },
+      "exclusion_category": {
+        "capture_process": {
+          "core": [],
+          "frontier": [
+            "CN113941247A"
+          ],
+          "adjacent": []
+        },
+        "industrial_heat_adjacent": {
+          "core": [],
+          "frontier": [
+            "JP6833123B1",
+            "US3930787A",
+            "910517"
+          ],
+          "adjacent": []
+        }
+      }
+    },
+    "whitespace_candidates": [],
+    "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: 910517, CN113941247A, JP6833123B1, US3930787A]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN113941247A, JP6833123B1, US3930787A, 910517]"
+  },
+  "scraper_durations": {
+    "GooglePatents": 11.979,
+    "Patentscope": 29.213,
+    "EPO": 0.0
+  },
+  "evaluation_duration_seconds": 295.723,
+  "rerank_duration_seconds": 147.154,
+  "comparative_analysis_duration_seconds": 140.98,
+  "total_duration_seconds": 924.561,
+  "comparative_analysis": "### 1. Panorama Geral\n\n- O conjunto comparativo agrega 4 patente(s) e nao deve ser tratado como bloco homogeneo: ha um nucleo direto, fronteiras tecnicas em revisao e adjacencias uteis apenas para delimitar whitespace [IDs: CN113941247A, JP6833123B1, US3930787A, 910517]\n- O subgrupo mais diretamente alinhado ao núcleo da query é CN113941247A, com foco em armazenamento de CO2, compressão/expansão e controle termodinâmico do meio armazenado [IDs: CN113941247A]\n- CN113941247A, JP6833123B1, US3930787A, 910517 formam a fronteira tecnica: sao casos proximos do problema, mas ainda ambiguos quanto ao papel exato do CO2 no armazenamento ou na funcao arquitetural central [IDs: CN113941247A, JP6833123B1, US3930787A, 910517]\n- 910517 entram como adjacencia exploratoria: tratam CO2 principalmente como fluido de trabalho em transferencia termica ou distribuicao de energia, de modo que ajudam a delimitar combinacoes pouco cobertas sem virar evidencia de cobertura consolidada [IDs: 910517]\n\n## Análise Comparativa de Patentes: \"Sintering Carbon Dioxide\"\n\n### 2. Tendências Identificadas\n\nAs principais tendências tecnológicas observadas são:\n\n*   **Utilização do CO2 como Meio Termodinâmico:** A predominância da utilização do CO2 como um meio termodinâmico para controlar a temperatura e promover as reações de sinterização é uma tendência central [IDs: CN113941247A, JP6833123B1, US3930787A, 910517].\n*   **Integração com Outros Gases:** A combinação do CO2 com outros gases como hidrogênio para otimizar as condições de sinterização é uma área explorada [IDs: JP6833123B1, CN113941247A].\n*   **Controle da Atmosfera e Composição:** A manipulação precisa da composição da atmosfera (proporções de gases, adição de aditivos) para influenciar a cinética da sinterização é uma preocupação constante [IDs: JP6833123B1, CN113941247A, 910517].\n*   **Aplicação em Materiais Específicos:** A aplicação do método de sinterização com CO2 se concentra principalmente na produção de óxidos metálicos, especialmente para aplicações nucleares [IDs: CN113941247A, 910517].\n\n### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: 910517, CN113941247A, JP6833123B1, US3930787A]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN113941247A, JP6833123B1, US3930787A, 910517]\n\n### 4. Recomendações\n\n- Priorizar arquiteturas centradas em armazenamento explícito de CO2 e controle termodinâmico rigoroso [IDs: CN113941247A]\n\n### 5. Ranking Final\n\n1. **CN113941247A** — armazenamento termico explicito como parte central; score 6.5/10 [IDs: CN113941247A]\n2. **JP6833123B1** — alinhamento técnico sustentado pelas evidências extraídas; score 6.5/10 [IDs: JP6833123B1]\n3. **US3930787A** — armazenamento aparece mais como subsistema de apoio; score 6.2/10 [IDs: US3930787A]\n4. **910517** — CO2 aparece como meio termodinamico armazenado; armazenamento aparece mais como subsistema de apoio; score 5.9/10 [IDs: 910517]\n\n### 6. Mapa de Evidências por ID\n\n- **Atmospheric Sintering of Oxides** [IDs: US3930787A]\n- **Captura de CO2 de Fontes Industriais** [IDs: CN113941247A]\n- **Sinterization of Oxide Fuels** [IDs: 910517]\n- **Sinterização e Adsorção de Dióxido de Carbono** [IDs: JP6833123B1]\n\n### 7. Ranking por ID\n\n1. **CN113941247A** — score 6.5/10 [IDs: CN113941247A]\n2. **JP6833123B1** — score 6.5/10 [IDs: JP6833123B1]\n3. **US3930787A** — score 6.2/10 [IDs: US3930787A]\n4. **910517** — score 5.9/10 [IDs: 910517]",
+  "output_paths": {
+    "markdown": "/app/output/patentes_sintering_carbon_dioxide_20260705_235803.md",
+    "json": "/app/output/patentes_sintering_carbon_dioxide_20260705_235803.json",
+    "state": "/app/output/run_state_20260705_234238.json",
+    "prisma": "/app/output/prisma_flow_20260705_234238.json",
+    "snapshot": "/app/output/config_snapshot_20260705_234238.json",
+    "whitespace_json": "/app/output/whitespace_analysis_20260705_234238.json",
+    "memory_journal": "/app/output/memory_journal_20260705_234238.json",
+    "memory_sidecar": "/app/output/memory_sidecar_20260705_234238.json"
+  },
+  "errors": []
+}

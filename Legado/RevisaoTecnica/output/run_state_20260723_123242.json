@@ -1,0 +1,3651 @@
+{
+  "query": "dopamine tears sensor",
+  "max_results": 10,
+  "model": "gemma3:4b",
+  "output_dir": "/app/output",
+  "feature_flags": {
+    "require_evidence": true,
+    "enable_thematic_clusters": true,
+    "enable_structural_roles": true,
+    "enable_screening_rerank": true,
+    "enable_prisma": true,
+    "enable_snapshot": true,
+    "enable_comparative_analysis": true,
+    "enable_whitespace_analysis": true,
+    "enable_manual_review_queue": true
+  },
+  "config_snapshot": {
+    "pipeline_version": "1.1",
+    "timestamp": "2026-07-23T12:32:42",
+    "query": "dopamine tears sensor",
+    "max_results": 10,
+    "model": "gemma3:4b",
+    "output_dir": "/app/output",
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "thresholds": {
+      "include": 7.0,
+      "review": 4.5,
+      "manual_review_limit": 20
+    },
+    "runtime": {
+      "ollama_base_url": "http://ollama:11434",
+      "ollama_timeout": 600
+    },
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ]
+  },
+  "snapshot_hash": "4cd8a44d9f345026230bfb6941ecc1fa45d92ebd51614b6795fe2be86de24246",
+  "protocol": {
+    "version": "1.0",
+    "query": "dopamine tears sensor",
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ],
+    "stages": [
+      "identification",
+      "deduplication",
+      "screening",
+      "manual_review",
+      "full_extraction",
+      "synthesis"
+    ],
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "limits": {
+      "max_results": 10
+    },
+    "model": "gemma3:4b"
+  },
+  "writing_context": {
+    "protocol": {
+      "version": "1.0",
+      "query": "dopamine tears sensor",
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ],
+      "stages": [
+        "identification",
+        "deduplication",
+        "screening",
+        "manual_review",
+        "full_extraction",
+        "synthesis"
+      ],
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "limits": {
+        "max_results": 10
+      },
+      "model": "gemma3:4b"
+    },
+    "coverage_metrics": {
+      "raw_scraped": 20,
+      "unique_patents": 20,
+      "duplicates_removed": 0,
+      "screened": 20,
+      "included": 0,
+      "review": 6,
+      "excluded": 14,
+      "manual_review_required": 6,
+      "manual_review_deferred": 0,
+      "full_extractions": 6,
+      "missing_abstract": 2,
+      "missing_id": 0,
+      "records_with_content_identity": 0,
+      "records_with_fallback_identity": 0,
+      "family_duplicates_removed": 0,
+      "llm_screening_failures": 0,
+      "llm_total_failures": 0
+    },
+    "top_patents": [],
+    "thematic_clusters": {
+      "clusters": [],
+      "total_clusters": 0
+    },
+    "route_summary": {
+      "manual_review": 6,
+      "screen_only": 14
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "snapshot_hash": "4cd8a44d9f345026230bfb6941ecc1fa45d92ebd51614b6795fe2be86de24246"
+  },
+  "memory_sidecar": {
+    "run_id": "20260723_123242",
+    "max_items_per_slot": 5,
+    "slots": {
+      "review": [
+        {
+          "record_id": "rec_fde35625d301",
+          "patent_id": "CN108872343A",
+          "title": "A kind of Dopamine Sensor and its preparation and application based on nitrogen-doped graphene",
+          "route": "manual_review",
+          "score": 5.3
+        },
+        {
+          "record_id": "rec_bc447a4191dd",
+          "patent_id": "CN1395094A",
+          "title": "Electrochemical sensor for determining dopamine",
+          "route": "manual_review",
+          "score": 5.3
+        },
+        {
+          "record_id": "rec_2056c5d6639a",
+          "patent_id": "CN112578011A",
+          "title": "Sensor and detection method for detecting dopamine and uric acid",
+          "route": "manual_review",
+          "score": 5.3
+        },
+        {
+          "record_id": "rec_d461537cff92",
+          "patent_id": "CN105241868A",
+          "title": "Electrochemiluminescence sensor based on methionine-gold nanocluster",
+          "route": "manual_review",
+          "score": 5.3
+        },
+        {
+          "record_id": "rec_f7a5c817a31a",
+          "patent_id": "JP5390399B2",
+          "title": "Ocular sensor for detection of analytes in tears",
+          "route": "manual_review",
+          "score": 4.8
+        }
+      ],
+      "screening": [
+        {
+          "record_id": "rec_5987972a3b34",
+          "patent_id": "20130183243",
+          "title": "Methods and device for tuning multiplexed markers for disease assay",
+          "route": "screen_only",
+          "score": 3.3
+        },
+        {
+          "record_id": "rec_6e979406ac26",
+          "patent_id": "20240049994",
+          "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS",
+          "route": "screen_only",
+          "score": 3.5
+        },
+        {
+          "record_id": "rec_8698c1280543",
+          "patent_id": "3210742",
+          "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS\n(FR)\nCAPTEUR DE TRANSPIRATION DE BOUT DE DOIGT A TOUCHER UNIQUE ET TRAITEMENT DE DONNEES PERSONNALISEES POUR UNE PREDICTION FIABLE DE CONCENTRATIONS DE BIOMARQUEURS SANGUINS",
+          "route": "screen_only",
+          "score": 3.5
+        },
+        {
+          "record_id": "rec_1f9d24476e0b",
+          "patent_id": "WO/2022/170361",
+          "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS\n(FR)\nCAPTEUR DE TRANSPIRATION DE BOUT DE DOIGT À TOUCHER UNIQUE ET TRAITEMENT DE DONNÉES PERSONNALISÉES POUR UNE PRÉDICTION FIABLE DE CONCENTRATIONS DE BIOMARQUEURS SANGUINS",
+          "route": "screen_only",
+          "score": 3.5
+        },
+        {
+          "record_id": "rec_f1b878a245ec",
+          "patent_id": "2022216341",
+          "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS",
+          "route": "screen_only",
+          "score": 3.5
+        }
+      ],
+      "writer": [
+        {
+          "top_patents": [],
+          "route_summary": {
+            "manual_review": 6,
+            "screen_only": 14
+          }
+        }
+      ]
+    },
+    "journal": [
+      {
+        "timestamp": "2026-07-23T12:32:46",
+        "stage": "setup",
+        "event": "llm_check",
+        "detail": "Verificação de disponibilidade do Ollama concluída.",
+        "payload": {
+          "llm_available": true,
+          "model": "gemma3:4b"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:33:19",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "GooglePatents retornou patentes.",
+        "payload": {
+          "source": "GooglePatents",
+          "count": 10,
+          "diagnostics": [
+            {
+              "kind": "blocked_or_captcha",
+              "detail": "Sinal de bloqueio/CAPTCHA detectado na resposta.",
+              "url": "https://patents.google.com/patent/US20170173262A1/en"
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:34:29",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "Patentscope retornou patentes.",
+        "payload": {
+          "source": "Patentscope",
+          "count": 10,
+          "diagnostics": []
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:34:29",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "EPO retornou patentes.",
+        "payload": {
+          "source": "EPO",
+          "count": 0,
+          "diagnostics": [
+            {
+              "kind": "config_missing",
+              "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+              "url": ""
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:36:41",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN116448850A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_245e60bec916",
+          "patent_id": "CN116448850A",
+          "decision": "review",
+          "score": 7.4,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:37:08",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US7658119B2 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_1ae1a8298b15",
+          "patent_id": "US7658119B2",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:38:11",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN108872343A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_fde35625d301",
+          "patent_id": "CN108872343A",
+          "decision": "review",
+          "score": 5.3,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:39:30",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN1395094A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_bc447a4191dd",
+          "patent_id": "CN1395094A",
+          "decision": "review",
+          "score": 5.3,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:40:35",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN112578011A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_2056c5d6639a",
+          "patent_id": "CN112578011A",
+          "decision": "review",
+          "score": 5.3,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:42:04",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN105241868A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_d461537cff92",
+          "patent_id": "CN105241868A",
+          "decision": "review",
+          "score": 5.3,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:42:33",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US20170173262A1 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_9bf5a8b7dc60",
+          "patent_id": "US20170173262A1",
+          "decision": "exclude",
+          "score": 3.3,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:43:28",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "JP5390399B2 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_f7a5c817a31a",
+          "patent_id": "JP5390399B2",
+          "decision": "review",
+          "score": 4.8,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:44:01",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US20220273907A1 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_0ffcc4a2aadd",
+          "patent_id": "US20220273907A1",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:44:31",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US8265725B2 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_23898b43a5bc",
+          "patent_id": "US8265725B2",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:45:05",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2021/188084 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_059270d33d03",
+          "patent_id": "WO/2021/188084",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:45:34",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20150201837 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_f4a64eff2003",
+          "patent_id": "20150201837",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:46:08",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20180289326 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_016a4eafc1bc",
+          "patent_id": "20180289326",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:46:45",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2018/187693 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_bb170214473f",
+          "patent_id": "WO/2018/187693",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:47:23",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2012/009322 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_5792a83d7226",
+          "patent_id": "WO/2012/009322",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:47:55",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20130183243 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_5987972a3b34",
+          "patent_id": "20130183243",
+          "decision": "exclude",
+          "score": 3.3,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:48:28",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20240049994 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_6e979406ac26",
+          "patent_id": "20240049994",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:49:05",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "3210742 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_8698c1280543",
+          "patent_id": "3210742",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:50:22",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2022/170361 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_1f9d24476e0b",
+          "patent_id": "WO/2022/170361",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:50:58",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "2022216341 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_f1b878a245ec",
+          "patent_id": "2022216341",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:53:49",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN116448850A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_245e60bec916",
+          "patent_id": "CN116448850A",
+          "route": "manual_review",
+          "confidence": 0.71
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:53:49",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "US7658119B2 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_1ae1a8298b15",
+          "patent_id": "US7658119B2",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:54:55",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN108872343A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_fde35625d301",
+          "patent_id": "CN108872343A",
+          "route": "manual_review",
+          "confidence": 0.63
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:56:11",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN1395094A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_bc447a4191dd",
+          "patent_id": "CN1395094A",
+          "route": "manual_review",
+          "confidence": 0.63
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:57:18",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN112578011A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_2056c5d6639a",
+          "patent_id": "CN112578011A",
+          "route": "manual_review",
+          "confidence": 0.63
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:58:40",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN105241868A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_d461537cff92",
+          "patent_id": "CN105241868A",
+          "route": "manual_review",
+          "confidence": 0.59
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:58:40",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "US20170173262A1 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_9bf5a8b7dc60",
+          "patent_id": "US20170173262A1",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "JP5390399B2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_f7a5c817a31a",
+          "patent_id": "JP5390399B2",
+          "route": "manual_review",
+          "confidence": 0.63
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "US20220273907A1 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_0ffcc4a2aadd",
+          "patent_id": "US20220273907A1",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "US8265725B2 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_23898b43a5bc",
+          "patent_id": "US8265725B2",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2021/188084 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_059270d33d03",
+          "patent_id": "WO/2021/188084",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20150201837 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_f4a64eff2003",
+          "patent_id": "20150201837",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20180289326 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_016a4eafc1bc",
+          "patent_id": "20180289326",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2018/187693 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_bb170214473f",
+          "patent_id": "WO/2018/187693",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2012/009322 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_5792a83d7226",
+          "patent_id": "WO/2012/009322",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20130183243 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_5987972a3b34",
+          "patent_id": "20130183243",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20240049994 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_6e979406ac26",
+          "patent_id": "20240049994",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "3210742 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_8698c1280543",
+          "patent_id": "3210742",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2022/170361 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_1f9d24476e0b",
+          "patent_id": "WO/2022/170361",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "2022216341 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_f1b878a245ec",
+          "patent_id": "2022216341",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-23T12:59:35",
+        "stage": "synthesis",
+        "event": "coverage_computed",
+        "detail": "Cobertura e seleção consolidadas após triagem.",
+        "payload": {
+          "raw_scraped": 20,
+          "unique_patents": 20,
+          "duplicates_removed": 0,
+          "screened": 20,
+          "included": 0,
+          "review": 6,
+          "excluded": 14,
+          "manual_review_required": 6,
+          "manual_review_deferred": 0,
+          "full_extractions": 6,
+          "missing_abstract": 2,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:10",
+        "stage": "synthesis",
+        "event": "comparative_analysis_completed",
+        "detail": "Síntese comparativa gerada via Ollama.",
+        "payload": {
+          "patents_compared": 20
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:10",
+        "stage": "synthesis",
+        "event": "whitespace_analysis_completed",
+        "detail": "Matriz estruturada de whitespace gerada.",
+        "payload": {
+          "selected_patents": 6,
+          "candidates": 0
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:10",
+        "stage": "writer",
+        "event": "context_prepared",
+        "detail": "Contexto compartilhado preparado para o writer.",
+        "payload": {
+          "top_patents": 0,
+          "route_summary": {
+            "manual_review": 6,
+            "screen_only": 14
+          }
+        }
+      },
+      {
+        "timestamp": "2026-07-23T13:02:10",
+        "stage": "finalization",
+        "event": "report_generated",
+        "detail": "Relatórios finais gerados com sucesso.",
+        "payload": {
+          "markdown": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.md",
+          "json": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.json"
+        }
+      }
+    ]
+  },
+  "memory_journal": [
+    {
+      "timestamp": "2026-07-23T12:32:46",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": true,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:33:19",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 10,
+        "diagnostics": [
+          {
+            "kind": "blocked_or_captcha",
+            "detail": "Sinal de bloqueio/CAPTCHA detectado na resposta.",
+            "url": "https://patents.google.com/patent/US20170173262A1/en"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:34:29",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 10,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:34:29",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "EPO retornou patentes.",
+      "payload": {
+        "source": "EPO",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:36:41",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN116448850A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_245e60bec916",
+        "patent_id": "CN116448850A",
+        "decision": "review",
+        "score": 7.4,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:37:08",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US7658119B2 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_1ae1a8298b15",
+        "patent_id": "US7658119B2",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:38:11",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN108872343A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_fde35625d301",
+        "patent_id": "CN108872343A",
+        "decision": "review",
+        "score": 5.3,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:39:30",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN1395094A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_bc447a4191dd",
+        "patent_id": "CN1395094A",
+        "decision": "review",
+        "score": 5.3,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:40:35",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN112578011A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_2056c5d6639a",
+        "patent_id": "CN112578011A",
+        "decision": "review",
+        "score": 5.3,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:42:04",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN105241868A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_d461537cff92",
+        "patent_id": "CN105241868A",
+        "decision": "review",
+        "score": 5.3,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:42:33",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20170173262A1 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_9bf5a8b7dc60",
+        "patent_id": "US20170173262A1",
+        "decision": "exclude",
+        "score": 3.3,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:43:28",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "JP5390399B2 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_f7a5c817a31a",
+        "patent_id": "JP5390399B2",
+        "decision": "review",
+        "score": 4.8,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:44:01",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20220273907A1 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_0ffcc4a2aadd",
+        "patent_id": "US20220273907A1",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:44:31",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US8265725B2 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_23898b43a5bc",
+        "patent_id": "US8265725B2",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:45:05",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2021/188084 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_059270d33d03",
+        "patent_id": "WO/2021/188084",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:45:34",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20150201837 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_f4a64eff2003",
+        "patent_id": "20150201837",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:46:08",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20180289326 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_016a4eafc1bc",
+        "patent_id": "20180289326",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:46:45",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2018/187693 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_bb170214473f",
+        "patent_id": "WO/2018/187693",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:47:23",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2012/009322 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_5792a83d7226",
+        "patent_id": "WO/2012/009322",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:47:55",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20130183243 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_5987972a3b34",
+        "patent_id": "20130183243",
+        "decision": "exclude",
+        "score": 3.3,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:48:28",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20240049994 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_6e979406ac26",
+        "patent_id": "20240049994",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:49:05",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "3210742 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_8698c1280543",
+        "patent_id": "3210742",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:50:22",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2022/170361 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_1f9d24476e0b",
+        "patent_id": "WO/2022/170361",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:50:58",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "2022216341 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_f1b878a245ec",
+        "patent_id": "2022216341",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:53:49",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN116448850A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_245e60bec916",
+        "patent_id": "CN116448850A",
+        "route": "manual_review",
+        "confidence": 0.71
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:53:49",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US7658119B2 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_1ae1a8298b15",
+        "patent_id": "US7658119B2",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:54:55",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN108872343A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_fde35625d301",
+        "patent_id": "CN108872343A",
+        "route": "manual_review",
+        "confidence": 0.63
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:56:11",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN1395094A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_bc447a4191dd",
+        "patent_id": "CN1395094A",
+        "route": "manual_review",
+        "confidence": 0.63
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:57:18",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN112578011A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_2056c5d6639a",
+        "patent_id": "CN112578011A",
+        "route": "manual_review",
+        "confidence": 0.63
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:58:40",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN105241868A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_d461537cff92",
+        "patent_id": "CN105241868A",
+        "route": "manual_review",
+        "confidence": 0.59
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:58:40",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US20170173262A1 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_9bf5a8b7dc60",
+        "patent_id": "US20170173262A1",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "JP5390399B2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_f7a5c817a31a",
+        "patent_id": "JP5390399B2",
+        "route": "manual_review",
+        "confidence": 0.63
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US20220273907A1 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_0ffcc4a2aadd",
+        "patent_id": "US20220273907A1",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US8265725B2 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_23898b43a5bc",
+        "patent_id": "US8265725B2",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2021/188084 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_059270d33d03",
+        "patent_id": "WO/2021/188084",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20150201837 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_f4a64eff2003",
+        "patent_id": "20150201837",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20180289326 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_016a4eafc1bc",
+        "patent_id": "20180289326",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2018/187693 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_bb170214473f",
+        "patent_id": "WO/2018/187693",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2012/009322 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_5792a83d7226",
+        "patent_id": "WO/2012/009322",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20130183243 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_5987972a3b34",
+        "patent_id": "20130183243",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20240049994 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_6e979406ac26",
+        "patent_id": "20240049994",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "3210742 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_8698c1280543",
+        "patent_id": "3210742",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2022/170361 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_1f9d24476e0b",
+        "patent_id": "WO/2022/170361",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "2022216341 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_f1b878a245ec",
+        "patent_id": "2022216341",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-23T12:59:35",
+      "stage": "synthesis",
+      "event": "coverage_computed",
+      "detail": "Cobertura e seleção consolidadas após triagem.",
+      "payload": {
+        "raw_scraped": 20,
+        "unique_patents": 20,
+        "duplicates_removed": 0,
+        "screened": 20,
+        "included": 0,
+        "review": 6,
+        "excluded": 14,
+        "manual_review_required": 6,
+        "manual_review_deferred": 0,
+        "full_extractions": 6,
+        "missing_abstract": 2,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:10",
+      "stage": "synthesis",
+      "event": "comparative_analysis_completed",
+      "detail": "Síntese comparativa gerada via Ollama.",
+      "payload": {
+        "patents_compared": 20
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:10",
+      "stage": "synthesis",
+      "event": "whitespace_analysis_completed",
+      "detail": "Matriz estruturada de whitespace gerada.",
+      "payload": {
+        "selected_patents": 6,
+        "candidates": 0
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:10",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 0,
+        "route_summary": {
+          "manual_review": 6,
+          "screen_only": 14
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-23T13:02:10",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.md",
+        "json": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.json"
+      }
+    }
+  ],
+  "stage_metrics": [
+    {
+      "stage": "setup",
+      "status": "ok",
+      "duration_seconds": 4.215,
+      "items_processed": 1,
+      "detail": "Verificação do modelo Ollama"
+    },
+    {
+      "stage": "search",
+      "status": "ok",
+      "duration_seconds": 103.404,
+      "items_processed": 20,
+      "detail": "20 patentes únicas após dedupe"
+    },
+    {
+      "stage": "screening",
+      "status": "ok",
+      "duration_seconds": 1505.888,
+      "items_processed": 20,
+      "detail": "0 incluídas, 6 revisão"
+    },
+    {
+      "stage": "comparative_analysis",
+      "status": "ok",
+      "duration_seconds": 154.435,
+      "items_processed": 20,
+      "detail": "Síntese comparativa gerada"
+    },
+    {
+      "stage": "whitespace_analysis",
+      "status": "ok",
+      "duration_seconds": 0.002,
+      "items_processed": 6,
+      "detail": "Whitespace analysis estruturada gerada"
+    },
+    {
+      "stage": "reporting",
+      "status": "ok",
+      "duration_seconds": 0.004,
+      "items_processed": 20,
+      "detail": "Relatórios Markdown e JSON"
+    },
+    {
+      "stage": "finalization",
+      "status": "ok",
+      "duration_seconds": 0.001,
+      "items_processed": 8,
+      "detail": "Persistência de artefatos e estado"
+    }
+  ],
+  "llm_cache_stats": {
+    "hits": 0,
+    "misses": 34,
+    "entries": 159
+  },
+  "llm_telemetry": {
+    "degraded": false,
+    "total_failures": 0,
+    "consecutive_failures": 0,
+    "recent_errors": [],
+    "operations": {
+      "healthcheck": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 35,
+        "response_chars": 15,
+        "total_duration_seconds": 4.212,
+        "max_duration_seconds": 4.212,
+        "average_duration_seconds": 4.212
+      },
+      "screening": {
+        "calls": 20,
+        "successes": 20,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 69823,
+        "response_chars": 22697,
+        "total_duration_seconds": 724.189,
+        "max_duration_seconds": 87.244,
+        "average_duration_seconds": 36.209
+      },
+      "rerank": {
+        "calls": 7,
+        "successes": 7,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 28012,
+        "response_chars": 7678,
+        "total_duration_seconds": 264.087,
+        "max_duration_seconds": 44.969,
+        "average_duration_seconds": 37.727
+      },
+      "evaluation": {
+        "calls": 6,
+        "successes": 6,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 23752,
+        "response_chars": 18137,
+        "total_duration_seconds": 517.598,
+        "max_duration_seconds": 171.334,
+        "average_duration_seconds": 86.266
+      },
+      "comparative": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 9436,
+        "response_chars": 4641,
+        "total_duration_seconds": 154.431,
+        "max_duration_seconds": 154.431,
+        "average_duration_seconds": 154.431
+      }
+    }
+  },
+  "observability_metrics": {
+    "routes": {
+      "screen_only": {
+        "count": 14,
+        "include": 0,
+        "review": 0,
+        "exclude": 14,
+        "llm_errors": 0
+      },
+      "manual_review": {
+        "count": 6,
+        "include": 0,
+        "review": 6,
+        "exclude": 0,
+        "llm_errors": 0
+      }
+    },
+    "sources": {
+      "EPO": {
+        "raw_results": 0,
+        "duration_seconds": 0.0,
+        "diagnostic_counts": {
+          "config_missing": 1
+        }
+      },
+      "GooglePatents": {
+        "raw_results": 10,
+        "duration_seconds": 32.887,
+        "diagnostic_counts": {
+          "blocked_or_captcha": 1
+        }
+      },
+      "Patentscope": {
+        "raw_results": 10,
+        "duration_seconds": 70.507,
+        "diagnostic_counts": {}
+      }
+    },
+    "failures": {
+      "run_errors": 0,
+      "records_with_llm_error": 0,
+      "llm_total_failures": 0,
+      "llm_by_operation": {
+        "healthcheck": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "screening": {
+          "calls": 20,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "rerank": {
+          "calls": 7,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "evaluation": {
+          "calls": 6,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "comparative": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        }
+      },
+      "scraper_diagnostics_by_kind": {
+        "blocked_or_captcha": 1,
+        "config_missing": 1
+      }
+    }
+  },
+  "run_id": "20260723_123242",
+  "started_at": "2026-07-23T12:32:42",
+  "finished_at": "2026-07-23T13:02:10",
+  "status": "completed",
+  "current_stage": "reporting",
+  "screened_count": 20,
+  "llm_available": true,
+  "patents": [
+    {
+      "record_id": "rec_245e60bec916",
+      "family_id": "family:37bd14cf5a2babb42206f23f39cb49c4ac8259da",
+      "title": "Detection device for dopamine in tear, preparation method and application",
+      "patent_id": "CN116448850A",
+      "abstract": "AbstractTranslated fromChineseæ¬å¬å¼æåºäºä¸ç§æ³ªæ¶²ä¸­å¤å·´èºçæ£æµè£ç½®ï¼åæ¬ï¼çµåå­¦è¯ç(1)ï¼å¤å·´èºç¹å¼ææèè(2)ï¼è´è½½å¨çµåå­¦è¯çä¸ï¼ä»¥å¨çµåå­¦è¯çæ½å çµåçæåµä¸å¬åæè¿°æ³ªæ¶²ä¸­çå¤å·´èºåå­åçæ°§åååºä½¿å¤å·´èºåå­å¤±å»çµå­ï¼ä»èå¨çµåå­¦è¯çä¸­äº§çååºçµæµï¼ä»¥åå£³ä½(3)ï¼å£³ä½ä¸å½¢æéå­ï¼éå­éç¨äºä¸çµåå­¦è¯ç(1)ç»åå½¢æéç¨äºå®¹çº³æè¿°æ³ªæ¶²ççµè§£æ± ãæ¬å¬å¼è¿æåºäºä¸ç§æ³ªæ¶²ä¸­å¤å·´èºçæ£æµè£ç½®çæå»ºæ¹æ³ä»¥åå¯¹æ³ªæ¶²ä¸­å¤å·´èºå«éçæµéæ¹æ³ãThe disclosure proposes a detection device for dopamine in tears, comprising: an electrochemical chip (1), a dopamine-specific sensitive film (2), loaded on the electrochemical chip to catalyze the Oxidation reaction of dopamine molecules in tears causes dopamine molecules to lose electrons, thereby generating a corresponding current in the electrochemical chip, and a shell (3), forming a through hole on the shell, which is suitable for combining with the electrochemical chip (1) An electrolytic cell suitable for containing the tear fluid is formed. The present disclosure also proposes a method for constructing a detection device for dopamine in tears and a method for measuring the content of dopamine in tears.",
+      "inventors": [
+        "çè³è³",
+        "æ±å³°",
+        "é«æé",
+        "çé"
+      ],
+      "assignee": "Tianjin University",
+      "filing_date": "2023-04-21",
+      "publication_date": "2023-07-18",
+      "url": "https://patents.google.com/patent/CN116448850A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_1ae1a8298b15",
+      "family_id": "family:8fc49a262e5115e6fdb54e10736fdae0e9531f80",
+      "title": "Biomimetic tactile sensor",
+      "patent_id": "US7658119B2",
+      "abstract": "",
+      "inventors": [
+        "Gerald E. Loeb",
+        "Roland Johansson"
+      ],
+      "assignee": "University of Southern California USC",
+      "filing_date": "2007-03-28",
+      "publication_date": "2010-02-09",
+      "url": "https://patents.google.com/patent/US7658119B2/nl",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_fde35625d301",
+      "family_id": "family:2fc43e8bf3c68fc5eb614261128db0c0187d9325",
+      "title": "A kind of Dopamine Sensor and its preparation and application based on nitrogen-doped graphene",
+      "patent_id": "CN108872343A",
+      "abstract": "AbstractThe invention belongs to electrochemical sensor technology field, a kind of Dopamine Sensor based on nitrogen-doped graphene and its preparation and application are disclosed.The sensor is formed by reference electrode, to the working electrode after electrode and modification, working electrode after modification is by working electrode and is solidificated in the material identification film of working electrode surface and forms, wherein, the material identification film is mainly prepared by nitrogen-doped graphene composite material with perfluorinated sulfonic resin.The invention also discloses the preparation methods of sensor.Sensor of the invention has good selectivity, reproducibility and stability, can accurately be detected to dopamine, strong antijamming capabilityï¼There is wider detection range, lower detection limit simultaneously.Method of the invention is simple, at low cost.Prepared sensor is for detecting dopamine.",
+      "inventors": [
+        "é»å½©å¼¯",
+        "æ´éè±",
+        "æè·çª",
+        "çé¯ç«¥"
+      ],
+      "assignee": "South China University of Technology SCUT",
+      "filing_date": "2018-08-30",
+      "publication_date": "2018-11-23",
+      "url": "https://patents.google.com/patent/CN108872343A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_bc447a4191dd",
+      "family_id": "family:8bc9532b2ed16a9d7eabec4fa5596539a0c1ad82",
+      "title": "Electrochemical sensor for determining dopamine",
+      "patent_id": "CN1395094A",
+      "abstract": "AbstractTranslated fromChineseæ¬åææ¶åä¸ç§æµå®å¤å·´èºççµåå­¦ä¼ æå¨ï¼åæ¬ç»ç¢³çµæï¼ç»ç¢³çµæçè¡¨é¢æ¶è¦æç¢³çº³ç±³ç®¡ï¼é³ç¦»å­äº¤æ¢èåç©Nafionææèï¼æ¬åæä»¥é³ç¦»å­äº¤æ¢èåç©Nafionä¸ºåæ£åï¼å¯ä»¥å¾å®¹æå°å°æ§è´¨ååç¨³å®çç¢³çº³ç±³ç®¡åæ£å¨ä¹éä¸­ï¼ä»¥è¯¥åæ£æ¶²æ¶è¦å¨ç»ç¢³çµæè¡¨é¢å¶å¾çææèä¸ç»ç¢³çµæææççµåå­¦ä¼ æå¨æµå®å¤å·´èºä¸ä»éæ©æ§åçµæåº¦é«ï¼èä¸å¨é«æµåº¦æåè¡é¸åå°¿é¸å­å¨ä¸ï¼ä»å¯¹ä½æµåº¦çå¤å·´èºæéæ©æ§ååºãThe invention relates to an electrochemical sensor for measuring dopamine, which comprises a glassy carbon electrode, and the surface of the glassy carbon electrode is coated with a carbon nanotube-cation exchange polymer Nafion sensitive film. The invention uses the cation exchange polymer Nafion as a dispersant, which can It is easy to disperse carbon nanotubes with very stable properties in ethanol. The electrochemical sensor composed of a sensitive film and a glassy carbon electrode formed by coating the dispersion on the surface of a glassy carbon electrode is not only high in selectivity and sensitivity, but also high in sensitivity. And in the presence of high concentrations of ascorbic acid and uric acid, there is still a selective response to low concentrations of dopamine.",
+      "inventors": [
+        "è¡èæ°´",
+        "å´åº·åµ",
+        "å­å»¶ä¸"
+      ],
+      "assignee": "Wuhan University WHU",
+      "filing_date": "2002-07-18",
+      "publication_date": "2003-02-05",
+      "url": "https://patents.google.com/patent/CN1395094A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_2056c5d6639a",
+      "family_id": "family:b71646276671f9adf96c434a857d376f5e35e3b8",
+      "title": "Sensor and detection method for detecting dopamine and uric acid",
+      "patent_id": "CN112578011A",
+      "abstract": "AbstractThe invention discloses a sensor and a detection method for detecting dopamine and uric acid, wherein the sensor is prepared by the following method: 1) preparing MXene-PPy nano composite material; 2) and modifying the prepared MXene-PPy nano composite material on the surface of a substrate electrode to prepare the sensor. According to the invention, the PPy nanowire is subjected to in-situ oxidation polymerization on the surface of the MXene nanosheet of the two-dimensional material, so that large-scale preparation can be realized and the cost is low; the constructed composite material system has high catalytic activity, high conductivity and anti-interference capability, has large specific surface area, increases catalytic sites on the surface of an electrode, and is beneficial to sensing and detecting a target object; the electrochemical sensor constructed by the invention can still realize the independent or simultaneous identification and detection of dopamine and uric acid in the presence of ascorbic acid, achieves a wide detection range and a low detection limit for the sensing and detection of the dopamine and the uric acid, and simultaneously shows better electrochemical stability and reproducibility.",
+      "inventors": [
+        "è£æé£",
+        "å°¤å©æ¥",
+        "é¢ææ¼",
+        "èæé",
+        "æ¢è",
+        "å®çç",
+        "å¼ å¨",
+        "åé¦é¹"
+      ],
+      "assignee": "Jinan Guoke Medical Engineering Technology Development Co ltd",
+      "filing_date": "2020-12-08",
+      "publication_date": "2021-03-30",
+      "url": "https://patents.google.com/patent/CN112578011A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_d461537cff92",
+      "family_id": "family:625dadd06407ab0cc9e4554f09c66e1ad80aa288",
+      "title": "Electrochemiluminescence sensor based on methionine-gold nanocluster",
+      "patent_id": "CN105241868A",
+      "abstract": "AbstractTranslated fromChineseæ¬åæå¬å¼ä¸ç§<b>åºäºç²ç¡«æ°¨é¸</b><b>-</b><b>éçº³ç±³å¢ç°ççµè´åå­¦ååä¼ æå¨</b>ï¼å¶æ¯ä»¥ç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°ææä¸ºååä½ï¼è¿ç¡«é¸æ ¹ç¦»å­ä¸ºå±ååºåï¼å°ç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°ä¿®é¥°å¨ç»ç¢³çµæä¸ï¼è¿è¡çµåå­¦ååæµè¯ï¼å¹¶å®ç°å¯¹å¤å·´èºçæ£æµãè¯¥ä¼ æå¨å¯¹å¯¹å¤å·´èºæ£æµççº¿æ§èå´ä¸º0.1~4ï¼Î¼mol/Lå4~25ï¼Î¼mol/Lï¼æ£æµéä¸º0.032ï¼Î¼mol/Lãæ¬åææå¾å°çç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°å¶å¤æ¹æ³ç»¿è²ç¯ä¿ï¼æä½ç®ä¾¿å¿«æ·ï¼éç°æ§å¥½ï¼å¶å¤çç²ç¡«æ°¨é¸ä¿æ¤çéçº³ç±³å¢ç°çç©ç¸å®¹æ§å¥½ï¼å¹¶å·æè¾å¥½ççµè´åå­¦ååæ§è½ãThe invention discloses an electrochemiluminescence sensor based on <b>methionine</b><b>-</b><b>gold nanocluster</b>, which is based on methionine The protected gold nanocluster material is a luminescent body, and the persulfate ion is a co-reactant. The methionine-protected gold nanocluster is modified on the glassy carbon electrode, and the electrochemiluminescence test is performed, and the detection of dopamine is realized. . The linear range of the sensor for dopamine detection is 0.1~4? Î¼mol/L and 4~25? Î¼mol/L, the detection limit is 0.032? Î¼mol/L. The preparation method of the methionine-protected gold nanoclusters obtained in the present invention is green and environmentally friendly, and the operation is simple and quick, and the reproducibility is good. The prepared methionine-protected gold nanoclusters have good biocompatibility, and have relatively Good electrochemiluminescent properties.",
+      "inventors": [
+        "å½­è±è",
+        "éä¼",
+        "éè±ªå",
+        "ç®ç¾ä¸½",
+        "åç±æ"
+      ],
+      "assignee": "Fujian Medical University",
+      "filing_date": "2015-09-18",
+      "publication_date": "2016-01-13",
+      "url": "https://patents.google.com/patent/CN105241868A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_9bf5a8b7dc60",
+      "family_id": "family:a4a427bfa8d08de01240cd80d33877732f1a382b",
+      "title": "Medical systems, devices and methods",
+      "patent_id": "US20170173262A1",
+      "abstract": "AbstractThere is disclosed a medical system comprising one or more sensors associated with one or more actuators. Various embodiments describe sensors and/or actuators, logic circuits, user interfaces, association schemes, communication schemes, security schemes, cryptographic schemes, medical management rules, social mechanisms, energy management schemes, time and/or space schemes, body analytes and/or biomarkers, blood glucose and/or interstitial glucose sensors, drug delivery devices, continuous glucose monitoring devices, as well as flash glucose monitoring devices. Methods, software and other hardware aspects are described.",
+      "inventors": [
+        "FranÃ§ois Paul VELTZ"
+      ],
+      "assignee": "Individual",
+      "filing_date": "2017-03-01",
+      "publication_date": "2017-06-22",
+      "url": "https://patents.google.com/patent/US20170173262A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_f7a5c817a31a",
+      "family_id": "family:b95487efa9f6d97fd5a2860036dc2261267f7672",
+      "title": "Ocular sensor for detection of analytes in tears",
+      "patent_id": "JP5390399B2",
+      "abstract": "",
+      "inventors": [
+        "ãã¥ã©ã¼ï¼ã¢ãã"
+      ],
+      "assignee": "Eyesense AG",
+      "filing_date": "2008-01-14",
+      "publication_date": "2014-01-15",
+      "url": "https://patents.google.com/patent/JP5390399B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_0ffcc4a2aadd",
+      "family_id": "family:78804768499aefd6aad05557ccd7988e50d6f2f1",
+      "title": "Method and apparatus for neuroenhancement to enhance emotional response",
+      "patent_id": "US20220273907A1",
+      "abstract": "AbstractA method of transplanting a desired emotional state from a donor to a recipient, comprising determining an emotional state of the donor; recording neural correlates of the emotional state of the donor who is in the desired emotional state; analyzing neural correlates of the emotional state of the donor to decode at least one of a temporal and a spatial pattern corresponding to the desirable emotional state; converting said at least one of a temporal and a spatial pattern corresponding to the desirable emotional state into a neurostimulation pattern; storing the neurostimulation pattern in the nonvolatile memory; retrieving the neurostimulation pattern from the nonvolatile memory; stimulating the recipient's brain with at least one stimulus modulated with the neurostimulation pattern to induce the desired emotional state in the recipient.",
+      "inventors": [
+        "Alexander Poltorak"
+      ],
+      "assignee": "Neuroenhancement Lab LLC",
+      "filing_date": "2022-03-13",
+      "publication_date": "2022-09-01",
+      "url": "https://patents.google.com/patent/US20220273907A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_23898b43a5bc",
+      "family_id": "family:c371df53800cad7d64c9fa5bfabaf2bb449ff11f",
+      "title": "Signal processing for continuous analyte sensor",
+      "patent_id": "US8265725B2",
+      "abstract": "AbstractSystems and methods for dynamically and intelligently estimating analyte data from a continuous analyte sensor, including receiving a data stream, selecting one of a plurality of algorithms, and employing the selected algorithm to estimate analyte values. Additional data processing includes evaluating the selected estimative algorithms, analyzing a variation of the estimated analyte values based on statistical, clinical, or physiological parameters, comparing the estimated analyte values with corresponding measure analyte values, and providing output to a user. Estimation can be used to compensate for time lag, match sensor data with corresponding reference data, warn of upcoming clinical risk, replace erroneous sensor data signals, and provide more timely analyte information encourage proactive behavior and preempt clinical risk.",
+      "inventors": [
+        "James H. Brauker",
+        "Victoria E. Carr-Brendel",
+        "Paul V. Goode",
+        "Apurv Ullas Kamath",
+        "James Patrick Thrower",
+        "Ben Xavier"
+      ],
+      "assignee": "Dexcom Inc",
+      "filing_date": "2009-10-12",
+      "publication_date": "2012-09-11",
+      "url": "https://patents.google.com/patent/US8265725B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_059270d33d03",
+      "family_id": "family:70852e9679b13a08d988595e16764ca2f42c2a84",
+      "title": "A MEASUREMENT SYSTEM FOR\nTEAR\nCHEMICALS IN THE\nTEAR\nFOR DIAGNOSING DISEASES\n(FR)\nSYSTÈME DE MESURE DE PRODUITS CHIMIQUES LACRYMAUX DANS LA LARME POUR DIAGNOSTIQUER DES MALADIES",
+      "patent_id": "WO/2021/188084",
+      "abstract": "(EN)The measurement system (1) of the present invention comprises a detecting biosensor set (6) which changes colour according to the amount oftearchemicals, includingdopamine, glucose, ascorbate, lactate and proteins, present in thetear. When the measurement process is completed, the detecting biosensor set (6) is analyzed visually, and therefore the level of various chemicals in thetearsuch asdopaminecan be detected.(FR)Le système de mesure (1) de la présente invention comprend un ensemble de biocapteurs de détection (6) qui change de couleur en fonction de la quantité de produits chimiques lacrymaux, notamment la dopamine, le glucose, l'ascorbate, le lactate et les protéines, présents dans la larme. Lorsque le processus de mesure est achevé, l'ensemble de biocapteurs de détection (6) est analysé visuellement, et par conséquent le niveau de divers produits chimiques dans la larme telle que la dopamine peut être détecté.",
+      "inventors": [
+        "VARLIBAS, Figen",
+        "MOHSENI, Amin Tatabaei",
+        "ILBAY, Sultan",
+        "OYTUN, Faruk"
+      ],
+      "assignee": "VSY BIYOTEKNOLOJI VE ILAC SANAYI ANONIM SIRKETI\n[TR]/[TR]",
+      "filing_date": "16.03.2021",
+      "publication_date": "23.09.2021",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2021188084&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_f4a64eff2003",
+      "family_id": "family:ef5f1674a18e96f80a13e97bb22de46d80ff0d22",
+      "title": "Non-invasive health indicator monitoring system and using method thereof",
+      "patent_id": "20150201837",
+      "abstract": "(EN)The present invention relates to a non-invasive health indicator monitoring system including a sensing module, an electric power storage module, and a circuit module to collect health indicator information by contacting with a subject. In addition, the present invention also relates to a method for monitoring health indicator continuously by using the health indicator monitoring system.",
+      "inventors": [
+        "Yong Won Song",
+        "Su Youn Lee",
+        "Ji Yeon Lee",
+        "Jung Ah Lim",
+        "Ji Won Choi",
+        "Byung Ki Cheong",
+        "Jin Seok Kim",
+        "Ho Seong Jang",
+        "Hyun Jung Yi"
+      ],
+      "assignee": "KOREA INSTITUTE OF SCIENCE AND TECHNOLOGY",
+      "filing_date": "11.11.2014",
+      "publication_date": "23.07.2015",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US145058030&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_016a4eafc1bc",
+      "family_id": "family:195aeeac3c663a7723e714a2bf78ba6256be3b25",
+      "title": "Ocular devices and methods for the employment thereof",
+      "patent_id": "20180289326",
+      "abstract": "(EN)An ocular device is disclosed along with methods for the employment thereof. In one aspect, a device for placement into a lacrimal punctum or conjunctival sac of a person includes one or moresensormaterials responsive to one or more components of the chemical composition of the person'stears. Eachsensormaterial is configured to present atear-based color from a plurality oftear-based colors indicative of a medical condition of the person. In some embodiments, phenylboronic acid could be employed as asensormaterial(s). In some embodiments, material(s) emitting radiation when excited by other radiation could be employed as asensormaterial. In another aspect, methods for employing the ocular device are disclosed.",
+      "inventors": [
+        "Eugene Orloff",
+        "Paul V. Braun",
+        "Eleonora Orloff",
+        "Yang Fei"
+      ],
+      "assignee": "TearDX LLC",
+      "filing_date": "06.04.2018",
+      "publication_date": "11.10.2018",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US231562967&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_bb170214473f",
+      "family_id": "family:50b770679ec57c6e31cb9d44d9d21ec2f6b28a44",
+      "title": "OCULAR DEVICES AND METHODS FOR THE EMPLOYMENT THEREOF\n(FR)\nDISPOSITIFS OCULAIRES ET LEURS PROCÉDÉS D'UTILISATION",
+      "patent_id": "WO/2018/187693",
+      "abstract": "(EN)An ocular device is disclosed along with methods for the employment thereof. In one aspect, a device for placement into a lacrimal punctum or conjunctival sac of a person includes one or moresensormaterials responsive to one or more components of the chemical composition of the person'stears. Eachsensormaterial is configured to present atear-based color from a plurality oftear-based colors indicative of a medical condition of the person. In some embodiments, phenylboronic acid could be employed as asensormaterial(s). In some embodiments, material(s) emitting radiation when excited by other radiation could be employed as asensormaterial. In another aspect, methods for employing the ocular device are disclosed.(FR)L'invention concerne un dispositif oculaire et ses procédés d'utilisation. Selon un aspect, un dispositif destiné à être implanté dans le point lacrymal ou le sac conjonctival d'une personne comprend un ou plusieurs matériaux de capteur sensibles à un ou plusieurs composants de la composition chimique des larmes de ladite personne. Chaque matériau de capteur est conçu pour présenter une couleur basée sur les larmes parmi une pluralité de couleurs basées sur les larmes indiquant un état de santé de la personne. Dans certains modes de réalisation, l'acide phénylboronique pourrait être utilisé à titre de matériau(x) de capteur. Dans d'autres, un ou des matériaux émettant un rayonnement quand ils sont excités par un autre rayonnement pourraient être utilisés comme matériau(x) de capteur. Selon un autre aspect, des procédés d'utilisation du dispositif oculaire selon l'invention sont décrits.",
+      "inventors": [
+        "ORLOFF, Eugene",
+        "BRAUN, Paul, V.",
+        "ORLOFF, Eleonora",
+        "FEI, Yang"
+      ],
+      "assignee": "TEARDX LLC\n[US]/[US]",
+      "filing_date": "06.04.2018",
+      "publication_date": "11.10.2018",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018187693&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_5792a83d7226",
+      "family_id": "family:8e193223db61d5fd5b1c28377ed8834fb271448d",
+      "title": "METHODS AND DEVICE FOR TUNING MULTIPLEXED MARKERS FOR DISEASE ASSAY\n(FR)\nPROCÉDÉS ET DISPOSITIF DE RÉGLAGE DE MARQUEURS MULTIPLEXÉS POUR DOSAGE PATHOLOGIQUE",
+      "patent_id": "WO/2012/009322",
+      "abstract": "(EN)The present invention relates to a diagnostic device and methods of using the same for diagnostic assays for monitoring the presence of biological samples wherein the device allows for the determination of at least two assay components on onesensor. More specifically, the invention relates to a multi-marker electrochemical impedance spectroscopysensorcomprising a plurality of molecular recognition elements wherein thesensorcomprises multiple different molecular recognition element types that are tuned in a manner that alters the frequency of the molecular recognition element type such that it is at a detectably different frequency to the frequency of other molecular recognition element types on the samesensor.(FR)Cette invention concerne un dispositif de diagnostic et des procédés pour l'utiliser à des fins de dosages diagnostiques visant à surveiller la présence d'échantillons biologiques, ledit dispositif permettant de déterminer au moins deux composants à doser sur un seul capteur. Plus spécifiquement, l'invention concerne un capteur multi-marqueurs de spectroscopie d'impédance électrochimique comprenant une pluralité d'éléments de reconnaissance moléculaires, ledit capteur comprenant de multiples types d'éléments de reconnaissance moléculaires différents qui sont réglés d'une manière qui modifie la fréquence du type d'élément de reconnaissance moléculaire pour qu'il soit à une fréquence différente, sur le plan de la détection, de la fréquence des autres types d'éléments de reconnaissance moléculaires sur le même capteur.",
+      "inventors": [
+        "LA BELLE, Jeffrey",
+        "DEMIROK, Ugur"
+      ],
+      "assignee": "ARIZONA BOARD OF REGENTS, A BODY CORPORATE OF THE STATE OF ARIZONA, ACTING FOR AND ON BEHALF OF ARIZONA STATE UNIVERSITY\n[US]/[US]\n(AllExceptUS)\nLA BELLE, Jeffrey\n[US]/[US](UsOnly)\nDEMIROK, Ugur\n[US]/[US](UsOnly)",
+      "filing_date": "12.07.2011",
+      "publication_date": "19.01.2012",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2012009322&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_5987972a3b34",
+      "family_id": "family:6df81555ca82bf75d3299edda630de5611c09fe8",
+      "title": "Methods and device for tuning multiplexed markers for disease assay",
+      "patent_id": "20130183243",
+      "abstract": "(EN)The present invention relates to a diagnostic device and methods of using the same for diagnostic assays for monitoring the presence of biological samples wherein the device allows for the determination of at least two assay components on onesensor. More specifically, the invention relates to a multi-marker electrochemical impedance spectroscopysensorcomprising a plurality of molecular recognition elements wherein thesensorcomprises multiple different molecular recognition element types that are tuned in a manner that alters the frequency of the molecular recognition element type such that it is at a detectably different frequency to the frequency of other molecular recognition element types on the samesensor.",
+      "inventors": [
+        "Jeffrey LaBelle",
+        "Ugur Demirok"
+      ],
+      "assignee": "Jeffrey LaBelle\nARIZONA BOARD OF REGENTS ON BEHALF OF ARIZONA STATE UNIVERSITY\nUgur Demirok",
+      "filing_date": "12.07.2011",
+      "publication_date": "18.07.2013",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US86177550&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_6e979406ac26",
+      "family_id": "family:4b5571851c04698f0ee4815676cfadc724b8bc53",
+      "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS",
+      "patent_id": "20240049994",
+      "abstract": "(EN)Methods, systems, and devices are disclosed for collecting and transferring naturally-produced sweat containing an analyte to a biosensor and/or biofuel cell to estimate a concentration of the analyte corresponding to the analyte's concentration in blood and/or for producing electricity. In some aspects, a device includes a substrate, a plurality of electrodes disposed on the substrate and operable to detect an analyte in naturally-produced sweat of an individual, and a sweat permeation layer including a hydrogel, wherein the sweat permeation layer is in contact with the plurality of electrodes and configured to transfer the sweat containing the analyte through the sweat permeation layer to reach the plurality of electrodes for detection and/or energy harvesting.",
+      "inventors": [
+        "Lu Yin",
+        "Hazhir Teymourian",
+        "Joseph Wang",
+        "Juliane R. Sempionatto-Moreto",
+        "Jong-Min Moon"
+      ],
+      "assignee": "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA",
+      "filing_date": "07.02.2022",
+      "publication_date": "15.02.2024",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US422369809&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_8698c1280543",
+      "family_id": "family:ce553468cc09cc7eaa5ca311a4e0287f4bbb0d64",
+      "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS\n(FR)\nCAPTEUR DE TRANSPIRATION DE BOUT DE DOIGT A TOUCHER UNIQUE ET TRAITEMENT DE DONNEES PERSONNALISEES POUR UNE PREDICTION FIABLE DE CONCENTRATIONS DE BIOMARQUEURS SANGUINS",
+      "patent_id": "3210742",
+      "abstract": "(EN)Methods, systems, and devices are disclosed for collecting and transferring naturally-produced sweat containing an analyte to a biosensor and/or biofuel cell to estimate a concentration of the analyte corresponding to the analyte's concentration in blood and/or for producing electricity. In some aspects, a device includes a substrate, a plurality of electrodes disposed on the substrate and operable to detect an analyte in naturally-produced sweat of an individual, and a sweat permeation layer including a hydrogel, wherein the sweat permeation layer is in contact with the plurality of electrodes and configured to transfer the sweat containing the analyte through the sweat permeation layer to reach the plurality of electrodes for detection and/or energy harvesting.(FR)La divulgation concerne des procédés, des systèmes et des dispositifs permettant de collecter et de transférer de la transpiration produite naturellement contenant un analyte à un biocapteur et/ou à une pile à combustible en vue d'estimer une concentration de l'analyte correspondant à la concentration de l'analyte dans le sang et/ou de produire de l'électricité. Selon certains aspects, un dispositif comprenant un substrat, une pluralité d'électrodes disposées sur le substrat et pouvant être utilisées pour détecter un analyte dans la transpiration produite naturellement par un individu, ainsi qu'une couche de perméation à la transpiration comprenant un hydrogel, la couche de perméation à la transpiration étant en contact avec la pluralité d'électrodes et conçue pour transférer la transpiration contenant l'analyte à travers la couche de perméation à la transpiration pour atteindre la pluralité d'électrodes en vue de la détection et/ou de la collecte d'énergie.",
+      "inventors": [
+        "LU YIN",
+        "HAZHIR TEYMOURIAN",
+        "JOSEPH WANG",
+        "JULIANE R. SEMPIONATTO-MORETO",
+        "JONG-MIN MOON"
+      ],
+      "assignee": "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA",
+      "filing_date": "07.02.2022",
+      "publication_date": "11.08.2022",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=CA406582873&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_1f9d24476e0b",
+      "family_id": "family:5e2016c77cdc34d57f9ba1f2cd41f10abb14097c",
+      "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS\n(FR)\nCAPTEUR DE TRANSPIRATION DE BOUT DE DOIGT À TOUCHER UNIQUE ET TRAITEMENT DE DONNÉES PERSONNALISÉES POUR UNE PRÉDICTION FIABLE DE CONCENTRATIONS DE BIOMARQUEURS SANGUINS",
+      "patent_id": "WO/2022/170361",
+      "abstract": "(EN)Methods, systems, and devices are disclosed for collecting and transferring naturally-produced sweat containing an analyte to a biosensor and/or biofuel cell to estimate a concentration of the analyte corresponding to the analyte's concentration in blood and/or for producing electricity. In some aspects, a device includes a substrate, a plurality of electrodes disposed on the substrate and operable to detect an analyte in naturally-produced sweat of an individual, and a sweat permeation layer including a hydrogel, wherein the sweat permeation layer is in contact with the plurality of electrodes and configured to transfer the sweat containing the analyte through the sweat permeation layer to reach the plurality of electrodes for detection and/or energy harvesting.(FR)La divulgation concerne des procédés, des systèmes et des dispositifs permettant de collecter et de transférer de la transpiration produite naturellement contenant un analyte à un biocapteur et/ou à une pile à combustible en vue d'estimer une concentration de l'analyte correspondant à la concentration de l'analyte dans le sang et/ou de produire de l'électricité. Selon certains aspects, un dispositif comprenant un substrat, une pluralité d'électrodes disposées sur le substrat et pouvant être utilisées pour détecter un analyte dans la transpiration produite naturellement par un individu, ainsi qu'une couche de perméation à la transpiration comprenant un hydrogel, la couche de perméation à la transpiration étant en contact avec la pluralité d'électrodes et conçue pour transférer la transpiration contenant l'analyte à travers la couche de perméation à la transpiration pour atteindre la pluralité d'électrodes en vue de la détection et/ou de la collecte d'énergie.",
+      "inventors": [
+        "YIN, Lu",
+        "TEYMOURIAN, Hazhir",
+        "WANG, Joseph",
+        "SEMPIONATTO-MORETO, Juliane R.",
+        "MOON, Jong-Min"
+      ],
+      "assignee": "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA\n[US]/[US]",
+      "filing_date": "07.02.2022",
+      "publication_date": "11.08.2022",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2022170361&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_f1b878a245ec",
+      "family_id": "family:33ec0a8c33555d4cb33d45a62f51383357ef88fa",
+      "title": "ONE-TOUCH FINGERTIP SWEAT\nSENSOR\nAND PERSONALIZED DATA PROCESSING FOR RELIABLE PREDICTION OF BLOOD BIOMARKER CONCENTRATIONS",
+      "patent_id": "2022216341",
+      "abstract": "(EN)Methods, systems, and devices are disclosed for collecting and transferring naturally-produced sweat containing an analyte to a biosensor and/or biofuel cell to estimate a concentration of the analyte corresponding to the analyte's concentration in blood and/or for producing electricity. In some aspects, a device includes a substrate, a plurality of electrodes disposed on the substrate and operable to detect an analyte in naturally-produced sweat of an individual, and a sweat permeation layer including a hydrogel, wherein the sweat permeation layer is in contact with the plurality of electrodes and configured to transfer the sweat containing the analyte through the sweat permeation layer to reach the plurality of electrodes for detection and/or energy harvesting.",
+      "inventors": [
+        "MOON, Jong-Min",
+        "SEMPIONATTO-MORETO, Juliane R.",
+        "TEYMOURIAN, Hazhir",
+        "WANG, Joseph",
+        "YIN, Lu"
+      ],
+      "assignee": "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA",
+      "filing_date": "07.02.2022",
+      "publication_date": "11.08.2022",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=AU406509324&_cid=P10-MRXHSI-51243-1",
+      "snippet": "",
+      "source": "Patentscope"
+    }
+  ],
+  "evaluations": [
+    {
+      "record_id": "rec_245e60bec916",
+      "patent_id": "CN116448850A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 7.4,
+      "screening_decision": "review",
+      "screening_reason": "While the patent describes a dopamine detection device with electrochemical components, the core functionality – utilizing CO2 as a thermodynamic medium and incorporating thermal storage – isn't explicitly central to the",
+      "evidence_snippets": [
+        "\"an electrolytic cell suitable for containing the tear fluid is formed.\"",
+        "\"æ¬å¬å¼æåºäºä¸ç§æ³ªæ¶²ä¸­å¤å·´èºçæ£æµè£ç½\""
+      ],
+      "thematic_cluster": "Detecção Biomolecular com Eletrônica e Termodinâmica",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um dispositivo de detecção de dopamina em lágrimas que utiliza um chip eletroquímico e uma película sensível para catalisar a oxidação da dopamina, gerando corrente. O sistema inclui uma estrutura de invólucro com um orifício para acomodar o chip eletroquímico e um eletrólito contendo a amostra de lágrimas. A patente foca em um ciclo termodinâmico que envolve armazenamento térmico.",
+      "key_findings": [
+        "Utilização de um chip eletroquímico com uma película sensível para detectar dopamina através da oxidação.",
+        "Incorporação de um invólucro com um orifício para acomodar o chip eletroquímico e um eletrólito contendo a amostra de lágrimas."
+      ],
+      "potential_applications": [
+        "Diagnóstico médico para avaliar condições neurológicas e psiquiátricas.",
+        "Monitoramento de pacientes com doenças relacionadas ao estresse ou ansiedade.",
+        "Pesquisa em neurociência e desenvolvimento de novos tratamentos."
+      ],
+      "technical_domain": "Eletroquímica, Sensores Biológicos, Gerenciamento Térmico",
+      "innovation_level": "Significativa",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "não especificado, mas implica um sistema de controle térmico",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "A necessidade de um dispositivo portátil e preciso para detectar níveis de dopamina nas lágrimas, com potencial para aplicações médicas e diagnósticas.",
+      "solution_summary": "A solução proposta é um dispositivo de detecção que utiliza um chip eletroquímico e uma película sensível para quantificar a dopamina em amostras de lágrimas. O sistema incorpora armazenamento térmico para otimizar o processo de detecção.",
+      "claimed_advantages": [
+        "Detecção precisa e portátil de dopamina em lágrimas.",
+        "Utilização de armazenamento térmico para otimizar a reação de detecção."
+      ],
+      "limitations": [
+        "A patente não detalha especificamente o mecanismo exato do armazenamento térmico ou sua influência no desempenho da detecção.",
+        "O impacto da temperatura na estabilidade e sensibilidade dos componentes eletroquímicos pode ser um fator limitante."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.71,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:include->review",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_1ae1a8298b15",
+      "patent_id": "US7658119B2",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "O título 'Biomimetic tactile sensor' e a descrição de um sensor tátil biomimético podem se relacionar com a detecção de mudanças na superfície, o que poderia ser relevante para um 'dopamine tear sensor'. No entanto, falta o resumo/abstract para avaliar a relevância completa. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "Biomimetic tactile sensor"
+      ],
+      "thematic_cluster": "Detecção de Alterações Superficiais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Sensores Tácteis e Biomecânica",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.6,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_fde35625d301",
+      "patent_id": "CN108872343A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "screening_reason": "Embora a patente descreva um sensor de dopamina, a conexão com 'dopamine tears sensor' é fraca. O resumo foca na preparação e aplicação do sensor, mas não há menção explícita à captura ou utilização de CO2, nem ao armaze",
+      "evidence_snippets": [
+        "\"The sensor is formed by reference electrode...\"",
+        "\"The invention also discloses the preparation methods of sensor.\""
+      ],
+      "thematic_cluster": "Desenvolvimento de sensores químicos para a detecção de neurotransmissores.",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um sensor de dopamina baseado em grafeno nitrogenado dopado, utilizando uma membrana de identificação do eletrodo formada por este material composto com resina de perfluorosulfônica. O sensor apresenta boa seletividade, reprodutibilidade e estabilidade, permitindo a detecção precisa da dopamina com amplo alcance e baixo limite de detecção. Os métodos de preparação do sensor são simples e econômicos.",
+      "key_findings": [
+        "O sensor demonstra boa seletividade, reprodutibilidade e estabilidade na detecção de dopamina.",
+        "A membrana de identificação do eletrodo formada por grafeno nitrogenado dopado com resina de perfluorosulfônica melhora o desempenho do sensor."
+      ],
+      "potential_applications": [
+        "Monitoramento biológico de níveis de dopamina",
+        "Diagnóstico médico para doenças neurológicas e psiquiátricas",
+        "Análise ambiental de dopamina"
+      ],
+      "technical_domain": "Sensores eletroquímicos, materiais compósitos, grafeno dopado com nitrogênio",
+      "innovation_level": "Incremental",
+      "co2_role": "Não especificado (o foco principal é na detecção de dopamina)",
+      "storage_role": "N/A",
+      "system_boundary": "Sensor individual",
+      "cycle_type": "Não claro (implícito em processos eletroquímicos)",
+      "heat_source_sink": "N/A",
+      "claim_focus": "Desenvolvimento e aplicação de um sensor de dopamina baseado em grafeno nitrogenado dopado.",
+      "exclusion_category": "cooling_only",
+      "problem_statement": "A necessidade de um sensor de dopamina altamente sensível, seletivo e estável para aplicações em diversas áreas, como monitoramento biológico e diagnóstico médico.",
+      "solution_summary": "A patente apresenta um novo sensor de dopamina baseado em grafeno nitrogenado dopado, que oferece melhor desempenho em comparação com sensores existentes devido à sua alta área superficial, excelente condutividade elétrica e capacidade de detecção seletiva da dopamina.",
+      "claimed_advantages": [
+        "Alta sensibilidade e precisão na detecção de dopamina",
+        "Amplo alcance de detecção e baixo limite de detecção",
+        "Boa seletividade e estabilidade",
+        "Métodos de preparação simples e econômicos"
+      ],
+      "limitations": [
+        "O documento não detalha especificamente as condições operacionais ideais para o sensor (temperatura, pH, etc.).",
+        "A patente não aborda a escalabilidade da produção do material de grafeno nitrogenado dopado."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.63,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:include->review",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_bc447a4191dd",
+      "patent_id": "CN1395094A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "screening_reason": "A patente descreve um sensor eletroquímico para dopamina, mas a menção de Nafion e carbon nanotubes sugere uma aplicação em sensoriamento e análise química, não diretamente em sistemas de armazenamento ou captura de CO2.",
+      "evidence_snippets": [
+        "\"The invention relates to an electrochemical sensor for measuring dopamine...\"",
+        "The abstract mentions Nafion, a polymer used in sensors, not CO2 storage or capture."
+      ],
+      "thematic_cluster": "Detecção Eletroquímica de Biomoléculas",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um sensor eletroquímico para dopamina que utiliza uma membrana de Nafion com nanotubos de carbono para melhorar a dispersão e estabilidade do material sensível. O sensor demonstra alta seletividade e sensibilidade, especialmente em concentrações baixas de dopamina, mesmo na presença de interferentes como ácido ascórbico e ácido úrico.",
+      "key_findings": [
+        "O uso de Nafion como dispersante para carbon nanotubes resulta em um filme sensível estável e com alta capacidade de dispersão.",
+        "O sensor demonstra seletividade e sensibilidade à dopamina, mesmo na presença de altas concentrações de ácido ascórbico e ácido úrico."
+      ],
+      "potential_applications": [
+        "Monitoramento de níveis de dopamina em fluidos biológicos (sangue, urina).",
+        "Diagnóstico médico para doenças neurológicas.",
+        "Análise química e monitoramento ambiental."
+      ],
+      "technical_domain": "Eletroquímica, Sensores Químicos, Química de Materiais",
+      "innovation_level": "Incremental",
+      "co2_role": "not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_applicable",
+      "claim_focus": "Sensor eletroquímico para dopamina com filme sensível de Nafion e nanotubos de carbono.",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "O problema abordado é a necessidade de um sensor eletroquímico com alta seletividade e sensibilidade para a detecção de dopamina, especialmente em ambientes complexos com outras substâncias que podem interferir na medição.",
+      "solution_summary": "A solução proposta é um sensor eletroquímico que utiliza uma membrana de Nafion com nanotubos de carbono como filme sensível, otimizando a dispersão e estabilidade do material para melhorar o desempenho da detecção de dopamina.",
+      "claimed_advantages": [
+        "Alta seletividade e sensibilidade para a detecção de dopamina.",
+        "Estabilidade do filme sensível devido à dispersão otimizada dos nanotubos de carbono."
+      ],
+      "limitations": [
+        "O documento não detalha o desempenho em condições operacionais complexas ou em amostras biológicas reais.",
+        "A patente foca primariamente na detecção de dopamina e não aborda diretamente a captura ou armazenamento de CO2."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.63,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_2056c5d6639a",
+      "patent_id": "CN112578011A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "screening_reason": "While the patent describes a dopamine sensor, the core technology focuses on electrochemical detection rather than CO2 utilization or thermal storage as implied by the query 'dopamine tears sensor'. The mention of MXene-",
+      "evidence_snippets": [
+        "'The electrochemical sensor constructed by the invention can still realize the independent or simultaneous identification and detection of dopamine and uric acid...'"
+      ],
+      "thematic_cluster": "Detecção Biomolecular Eletroquímica",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um sensor eletroquímico para a detecção de dopamina e ácido úrico, utilizando um material composto MXene-PPy modificado em um eletrodo. O sensor apresenta alta atividade catalítica, condutividade e estabilidade, permitindo a identificação independente ou simultânea de dopamina e ácido úrico com baixo limite de detecção.",
+      "key_findings": [
+        "Utilização de MXene-PPy nano composite material para aumentar a área superficial e atividade catalítica.",
+        "Modificação do material em um eletrodo melhora a estabilidade e reprodutibilidade do sensor, permitindo a detecção simultânea de dopamina e ácido úrico."
+      ],
+      "potential_applications": [
+        "Diagnóstico médico, monitoramento de doenças neurológicas e metabólicas.",
+        "Análise ambiental, detecção de poluentes e biomarcadores."
+      ],
+      "technical_domain": "Eletroquímica, Sensores, Materiais 2D (MXene)",
+      "innovation_level": "Significativa",
+      "co2_role": "não relevante (o CO2 não é o foco principal da invenção)",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "Sensor eletroquímico individual",
+      "cycle_type": "não especificado",
+      "heat_source_sink": "não relevante",
+      "claim_focus": "Construção e funcionalidade do sensor eletroquímico baseado em MXene-PPy.",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "A necessidade de um sensor robusto e preciso para a detecção de dopamina e ácido úrico, especialmente em ambientes complexos com interferentes como ascorbato.",
+      "solution_summary": "A solução proposta é um sensor baseado em um material composto MXene-PPy que é modificado em um eletrodo, maximizando a área superficial e a atividade catalítica para uma detecção mais sensível e seletiva.",
+      "claimed_advantages": [
+        "Amplamente aplicável devido ao baixo custo de produção em larga escala.",
+        "Alta sensibilidade e especificidade na detecção de dopamina e ácido úrico, mesmo na presença de interferentes."
+      ],
+      "limitations": [
+        "O documento não especifica detalhes sobre a otimização do material ou as condições operacionais para diferentes aplicações.",
+        "A estabilidade do sensor em longo prazo e sua performance em amostras biológicas complexas não são totalmente abordadas."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.63,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_d461537cff92",
+      "patent_id": "CN105241868A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "screening_reason": "The patent describes a sensor for dopamine detection using gold nanoparticle clusters, which shares some technological proximity to 'dopamine tears sensors' focused on electrochemical detection. However, the core focus i",
+      "evidence_snippets": [
+        "\"The methionine-protected gold nanocluster is modified on the glassy carbon electrode, and the electrochemiluminescence test is performed...\"",
+        "\"The linear range of the sensor for dopamine detection is 0.1~4? Î¼mol/L and 4~25? Î¼mol/L\""
+      ],
+      "thematic_cluster": "Detecção eletroluminescência de neurotransmissores",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um sensor de eletroluminescência baseado em um cluster de nanopartículas ouro-metionina para detecção de dopamina. O sensor utiliza persulfato como co-reator e apresenta um intervalo linear de detecção de dopamina entre 0,1 e 4 µmol/L e um limite de detecção de 0,032 µmol/L. A patente foca na construção de um sensor eletroquímico para a detecção de dopamina.",
+      "key_findings": [
+        "O sensor apresenta um intervalo linear de detecção de dopamina entre 0,1 e 4 µmol/L e um limite de detecção de 0,032 µmol/L.",
+        "A metodologia para preparar os clusters de ouro-metionina é considerada verde e ambientalmente amigável."
+      ],
+      "potential_applications": [
+        "Diagnóstico médico (monitoramento de níveis de dopamina)",
+        "Pesquisa neurocientífica",
+        "Desenvolvimento de dispositivos portáteis para detecção de dopamina"
+      ],
+      "technical_domain": "Biosensing, Eletroquímica, Nanotecnologia",
+      "innovation_level": "Incremental",
+      "co2_role": "Co-reator (persulfato)",
+      "storage_role": "Não aplicável",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "Não aplicável",
+      "claim_focus": "Desenvolvimento de um sensor eletroluminescência para dopamina.",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "A necessidade de um método sensível e preciso para detectar dopamina, com potencial aplicação em biossensores.",
+      "solution_summary": "A patente propõe um sensor eletroluminescência que utiliza um cluster de nanopartículas ouro-metionina como elemento luminescente, acionado por persulfato, para a detecção de dopamina. A modificação do eletrodo com este material permite a detecção da dopamina através de um processo eletroquímico.",
+      "claimed_advantages": [
+        "Alta sensibilidade na detecção de dopamina",
+        "Metodologia de preparação simples, rápida e ecologicamente correta",
+        "Boa biocompatibilidade dos materiais utilizados"
+      ],
+      "limitations": [
+        "O intervalo linear de detecção pode ser restritivo para algumas aplicações.",
+        "A sensibilidade pode ser afetada por interferências em amostras biológicas complexas."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.59,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_9bf5a8b7dc60",
+      "patent_id": "US20170173262A1",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.3,
+      "screening_decision": "exclude",
+      "screening_reason": "O resumo menciona sensores associados a atuadores, e 'dopamine tears sensor' se refere a um tipo específico de sensor. A patente é ampla demais para ser imediatamente classificada como 'include', necessitando análise mais detalhada do que o sensor realmente mede e como ele é implementado. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "AbstractThere is disclosed a medical system comprising one or more sensors associated with one or more actuators."
+      ],
+      "thematic_cluster": "Sensores Biomédicos, Monitoramento Contínuo",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Medicina / Monitoramento Biológico",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.52,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_f7a5c817a31a",
+      "patent_id": "JP5390399B2",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 4.8,
+      "screening_decision": "review",
+      "screening_reason": "The patent title 'Ocular sensor for detection of analytes in tears' suggests a tear-based sensing system, aligning with the search query 'dopamine tears sensor'. However, without the abstract, it’s unclear if the system ",
+      "evidence_snippets": [
+        "'Ocular sensor for detection of analytes in tears' – Implies a system involving tear collection and analysis."
+      ],
+      "thematic_cluster": "Detecção de Neurotransmissores em Líquidos Corporais",
+      "relevance_score": 6.2,
+      "summary": "Esta patente descreve um sensor ocular para a detecção de analitos em lágrimas, especificamente focado na detecção de dopamina. O dispositivo utiliza um sistema de aquisição e análise de sinais para quantificar a concentração da dopamina nas lágrimas, potencialmente para fins diagnósticos ou monitoramento.",
+      "key_findings": [
+        "O sensor ocular é projetado para detectar analitos em lágrimas, com foco na dopamina.",
+        "O sistema incorpora componentes de aquisição e análise de sinais para quantificar a concentração do analito."
+      ],
+      "potential_applications": [
+        "Diagnóstico de doenças neurológicas relacionadas à dopamina.",
+        "Monitoramento em tempo real da resposta ao tratamento em pacientes com distúrbios da dopamina."
+      ],
+      "technical_domain": "Biossensores Biomédicos e Química Analítica",
+      "innovation_level": "Incremental",
+      "co2_role": "capture_process_stream",
+      "storage_role": "Não especificado no resumo.",
+      "system_boundary": "process_integration",
+      "cycle_type": "Não especificado no resumo, mas provavelmente envolve um ciclo de leitura e análise contínua.",
+      "heat_source_sink": "Não especificado no resumo.",
+      "claim_focus": "Detecção e quantificação da dopamina em lágrimas usando um sensor ocular.",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "A necessidade de uma metodologia precisa e não invasiva para medir os níveis de dopamina em lágrimas para diagnóstico médico ou pesquisa.",
+      "solution_summary": "O sensor ocular proposto utiliza um método de detecção baseado em sinais ópticos ou eletroquímicos, integrando componentes de aquisição de dados e processamento para determinar a concentração de dopamina nas lágrimas. O sistema é projetado para ser portátil e fácil de usar.",
+      "claimed_advantages": [
+        "Detecção não invasiva de dopamina nas lágrimas.",
+        "Potencial para aplicações diagnósticas e monitoramento em tempo real."
+      ],
+      "limitations": [
+        "A patente não fornece detalhes sobre a sensibilidade ou especificidade do sensor.",
+        "Dependência da precisão dos métodos de aquisição e análise de sinais."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.63,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_0ffcc4a2aadd",
+      "patent_id": "US20220273907A1",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um método de transferência de estados emocionais através de neuroestimulação, utilizando padrões neurais decodificados do 'donor'. Embora não mencione explicitamente um 'sensor' de 'dopamina', a ideia central de capturar e transferir um estado emocional específico é relevante para o termo de busca. A necessidade de analisar e converter padrões neurais em um padrão de neuroestimulação sugere uma abordagem que poderia ser relacionada ao monitoramento e manipulação de neurotransmissores, incluindo a dopamina. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "AbstractA method of transplanting a desired emotional state from a donor to a recipient..."
+      ],
+      "thematic_cluster": "Transferência de estados mentais, Modulação neural",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Neurociência, Neuroestimulação",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "process_integration",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.59,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_23898b43a5bc",
+      "patent_id": "US8265725B2",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "O resumo menciona ‘dynamically and intelligently estimating analyte data from a continuous analyte sensor’ e ‘compensate for time lag’, que se relaciona com o conceito de ‘dopamine tears’. No entanto, a patente não detalha um sensor específico para ‘dopamine tears’ e foca em algoritmos de processamento de sinais e estimativa de dados. Requer revisão para determinar a relevância completa. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "AbstractSystems and methods for dynamically and intelligently estimating analyte data from a continuous analyte sensor…"
+      ],
+      "thematic_cluster": "Estimativa de Dados de Analitos Contínuos",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Processamento de Sinais, Biossensores",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.64,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_059270d33d03",
+      "patent_id": "WO/2021/188084",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "O resumo menciona explicitamente a detecção de 'dopamine' em lágrimas usando um sensor biológico que muda de cor. Embora o sistema seja mais amplo, o foco na dopamina e no monitoramento de lágrimas se alinha com a busca. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "The measurement system (1) comprises a detecting biosensor set (6) which changes colour according to the amount of tearchemicals, includingdopamine...",
+        "When the measurement process is completed, the detecting biosensor set (6) is analyzed visually, and therefore the level of various chemicals in thetearsuch asdopaminecan be detected."
+      ],
+      "thematic_cluster": "Detecção química em fluidos corporais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Diagnóstico Médico / Biossensores",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.68,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_f4a64eff2003",
+      "patent_id": "20150201837",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "O resumo menciona um 'sensing module' para coletar informações de saúde, e a query é sobre um 'dopamine tears sensor'. Embora o resumo seja genérico sobre monitoramento de indicadores de saúde não invasivo, a menção de um módulo de detecção sugere uma possível conexão com a tecnologia específica que o usuário está procurando. Requer revisão para determinar se o sensor é realmente relevante. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "The present invention relates to a non-invasive health indicator monitoring system including a sensing module,..."
+      ],
+      "thematic_cluster": "Sensores e Monitoramento Biológico",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Monitoramento de Saúde",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.52,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_016a4eafc1bc",
+      "patent_id": "20180289326",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um dispositivo ocular que utiliza materiais sensíveis à composição das lágrimas, incluindo a detecção de 'tear-based color' indicativa de condições médicas. Isso se alinha diretamente com o termo de busca 'dopamine tears sensor', pois o sensor é projetado para detectar componentes químicos nas lágrimas. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "In one aspect, a device for placement into a lacrimal punctum or conjunctival sac of a person includes one or moresensormaterials responsive to one or more components of the chemical composition of the person'stears.",
+        "Eachsensormaterial is configured to present atear-based color from a plurality oftear-based colors indicative of a medical condition of the person."
+      ],
+      "thematic_cluster": "Detecção e Análise de Biomarcadores em Lágrimas",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Medicina Ocular / Diagnóstico Clínico",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.66,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_bb170214473f",
+      "patent_id": "WO/2018/187693",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um dispositivo ocular que utiliza materiais sensores responsivos à composição química das lágrimas, indicando uma condição médica. Isso corresponde diretamente ao termo de busca 'dopamine tears sensor' (sensor de lágrimas de dopamina), embora o documento mencione 'tear-based colors' e a possibilidade de usar ácido fenilborônico como material sensor. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "In one aspect, a device for placement into a lacrimal punctum or conjunctival sac of a person includes one or moresensormaterials responsive to one or more components of the chemical composition of the person'stears.",
+        "Eachsensormaterial is configured to present atear-based color from a plurality oftear-based colors indicative of a medical condition of the person."
+      ],
+      "thematic_cluster": "Detecção e Monitoramento de Biomarcadores em Lágrimas",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Biotecnologia, Dispositivos Médicos",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.63,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_5792a83d7226",
+      "patent_id": "WO/2012/009322",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sensor de 'dopamina lágrimas' que utiliza um sensor eletroquímico multi-marcador com elementos de reconhecimento molecular ajustados para detectar diferentes frequências. Embora relevante para a busca, necessita análise mais profunda para determinar o papel específico do sensor e sua relação com a detecção de 'lágrimas de dopamina'. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "The present invention relates to a diagnostic device and methods of using the same for diagnostic assays for monitoring the presence of biological samples wherein the device allows for the determination of at least two assay components on onesensor.",
+        "More specifically, the invention relates to a multi-marker electrochemical impedance spectroscopysensorcomprising a plurality of molecular recognition elements"
+      ],
+      "thematic_cluster": "Detecção Biomarcadores em Sistemas Eletroquímicos",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Eletroquímica, Biossensores, Diagnóstico Médico",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.59,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_5987972a3b34",
+      "patent_id": "20130183243",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.3,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sensor eletroquímico de impedância espectroscópica multi-marcador que ajusta a frequência dos elementos de reconhecimento molecular. Embora não mencione explicitamente 'dopamine tears', o conceito de monitorar múltiplos marcadores em um sensor sugere uma abordagem relacionada à detecção e análise de componentes biológicos, potencialmente incluindo dopamina, necessitando avaliação mais detalhada. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "The invention relates to a multi-marker electrochemical impedance spectroscopysensorcomprising a plurality of molecular recognition elements"
+      ],
+      "thematic_cluster": "Detecção de Biomarcadores em Sensores",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Sensores Eletroquímicos, Diagnóstico Médico",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "low_alignment",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.52,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_6e979406ac26",
+      "patent_id": "20240049994",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sensor de suor para estimar concentrações de biomarcadores no sangue, utilizando um substrato e eletrodos para detectar analitos em suor. Embora não mencione explicitamente 'dopamine tears', o conceito de monitoramento de componentes do sangue através da análise de suor é relevante para a busca. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "In some aspects, a device includes a substrate, a plurality of electrodes disposed on the substrate and operable to detect an analyte in naturally-produced sweat of an individual...",
+        "...sweat permeation layer including a hydrogel, wherein the sweat permeation layer is in contact with the plurality of electrodes..."
+      ],
+      "thematic_cluster": "Detecção e Análise de Analitos em Suor",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Biossensores, Monitoramento Biomédico",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.68,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_8698c1280543",
+      "patent_id": "3210742",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sensor de transpiração que coleta e transfere suor para um biocapacitor, o que se alinha com a busca por 'dopamine tears sensor'. No entanto, a descrição é ampla e necessita de avaliação mais detalhada para confirmar a relevância específica. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "In some aspects, a device includes a substrate, a plurality of electrodes disposed on the substrate and operable to detect an analyte in naturally-produced sweat of an individual...",
+        "a sweat permeation layer including a hydrogel, wherein the sweat permeation layer is in contact with the plurality of electrodes and configured to transfer the sweat containing the analyte through the sweat permeation layer..."
+      ],
+      "thematic_cluster": "Detecção de Biomarcadores em Suor",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Biossensores, Monitoramento Biomédico",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.68,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_1f9d24476e0b",
+      "patent_id": "WO/2022/170361",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sistema de coleta de suor para estimar biomarcadores sanguíneos, incluindo um sensor que pode ser interpretado como uma forma de 'dopamine tears'. Embora o foco principal seja a captura e transferên. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "\"Methods, systems, and devices are disclosed for collecting and transferring naturally-produced sweat...\"",
+        "The device includes a 'sweat permeation layer including a hydrogel, wherein the sweat permeation layer is in contact with the plurality of electrodes'"
+      ],
+      "thematic_cluster": "Monitoramento Biomarcador via Transpiração",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Biossensores e Bioenergia",
+      "innovation_level": "",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "cooling_or_refrigeration",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "cooling_only",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.68,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:review->exclude",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_f1b878a245ec",
+      "patent_id": "2022216341",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sensor de suor para biomarcadores sanguíneos, incluindo um sensor de gota e uma camada de permeabilidade ao suor. Embora relacionado à detecção de biomarcadores, o foco principal não é diretamente a medição de lágrimas com dopamina, embora possa ser usado em aplicações semelhantes. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "\"Methods, systems, and devices are disclosed for collecting and transferring naturally-produced sweat containing an analyte to a biosensor and/or biofuel cell...\"",
+        "A device includes a substrate, a plurality of electrodes disposed on the substrate and operable to detect an analyte in naturally-produced sweat"
+      ],
+      "thematic_cluster": "Detecção e análise de biomarcadores através de fluidos corporais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Biossensores, Monitoramento Biomédico",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.68,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    }
+  ],
+  "patents_by_source": {
+    "GooglePatents": 10,
+    "Patentscope": 10,
+    "EPO": 0
+  },
+  "scraper_diagnostics": {
+    "GooglePatents": [
+      {
+        "kind": "blocked_or_captcha",
+        "detail": "Sinal de bloqueio/CAPTCHA detectado na resposta.",
+        "url": "https://patents.google.com/patent/US20170173262A1/en"
+      }
+    ],
+    "Patentscope": [],
+    "EPO": [
+      {
+        "kind": "config_missing",
+        "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+        "url": ""
+      }
+    ]
+  },
+  "coverage_metrics": {
+    "raw_scraped": 20,
+    "unique_patents": 20,
+    "duplicates_removed": 0,
+    "screened": 20,
+    "included": 0,
+    "review": 6,
+    "excluded": 14,
+    "manual_review_required": 6,
+    "manual_review_deferred": 0,
+    "full_extractions": 6,
+    "missing_abstract": 2,
+    "missing_id": 0,
+    "records_with_content_identity": 0,
+    "records_with_fallback_identity": 0,
+    "family_duplicates_removed": 0,
+    "llm_screening_failures": 0,
+    "llm_total_failures": 0
+  },
+  "manual_review_queue": [
+    {
+      "record_id": "rec_245e60bec916",
+      "patent_id": "CN116448850A",
+      "family_id": "family:37bd14cf5a2babb42206f23f39cb49c4ac8259da",
+      "title": "Detection device for dopamine in tear, preparation method and application",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 7.4,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_fde35625d301",
+      "patent_id": "CN108872343A",
+      "family_id": "family:2fc43e8bf3c68fc5eb614261128db0c0187d9325",
+      "title": "A kind of Dopamine Sensor and its preparation and application based on nitrogen-doped graphene",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_bc447a4191dd",
+      "patent_id": "CN1395094A",
+      "family_id": "family:8bc9532b2ed16a9d7eabec4fa5596539a0c1ad82",
+      "title": "Electrochemical sensor for determining dopamine",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_d461537cff92",
+      "patent_id": "CN105241868A",
+      "family_id": "family:625dadd06407ab0cc9e4554f09c66e1ad80aa288",
+      "title": "Electrochemiluminescence sensor based on methionine-gold nanocluster",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_2056c5d6639a",
+      "patent_id": "CN112578011A",
+      "family_id": "family:b71646276671f9adf96c434a857d376f5e35e3b8",
+      "title": "Sensor and detection method for detecting dopamine and uric acid",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.3,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_f7a5c817a31a",
+      "patent_id": "JP5390399B2",
+      "family_id": "family:b95487efa9f6d97fd5a2860036dc2261267f7672",
+      "title": "Ocular sensor for detection of analytes in tears",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 4.8,
+      "screening_decision": "review",
+      "llm_error": ""
+    }
+  ],
+  "prisma_flow": {
+    "flow": {
+      "identification": {
+        "raw_records": 20,
+        "unique_records": 20,
+        "duplicates_removed": 0
+      },
+      "screening": {
+        "screened": 20,
+        "included": 0,
+        "review": 6,
+        "excluded": 14
+      },
+      "eligibility": {
+        "full_extractions": 6,
+        "manual_review_required": 6,
+        "manual_review_deferred": 0
+      },
+      "coverage": {
+        "missing_abstract": 2,
+        "missing_id": 0
+      },
+      "synthesis": {
+        "analyzed_records": 6,
+        "comparative_analysis_generated": true
+      }
+    },
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "version": "1.0"
+  },
+  "thematic_clusters": {
+    "clusters": [],
+    "total_clusters": 0
+  },
+  "whitespace_analysis": {
+    "status": "ok",
+    "query": "dopamine tears sensor",
+    "corpus_summary": {
+      "considered_patents": 20,
+      "selected_patents": 6,
+      "core": 0,
+      "frontier": 6,
+      "adjacent": 0
+    },
+    "coverage_matrix": [
+      {
+        "patent_id": "CN105241868A",
+        "record_id": "rec_d461537cff92",
+        "title": "Electrochemiluminescence sensor based on methionine-gold nanocluster",
+        "screening_decision": "review",
+        "screening_score": 5.3,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Biosensing, Eletroquímica, Nanotecnologia",
+        "thematic_cluster": "Detecção eletroluminescência de neurotransmissores",
+        "co2_role": "Co-reator (persulfato)",
+        "storage_role": "Não aplicável",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "Não aplicável",
+        "claim_focus": "Desenvolvimento de um sensor eletroluminescência para dopamina.",
+        "exclusion_category": "generic_tes"
+      },
+      {
+        "patent_id": "CN108872343A",
+        "record_id": "rec_fde35625d301",
+        "title": "A kind of Dopamine Sensor and its preparation and application based on nitrogen-doped graphene",
+        "screening_decision": "review",
+        "screening_score": 5.3,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Sensores eletroquímicos, materiais compósitos, grafeno dopado com nitrogênio",
+        "thematic_cluster": "Desenvolvimento de sensores químicos para a detecção de neurotransmissores.",
+        "co2_role": "Não especificado (o foco principal é na detecção de dopamina)",
+        "storage_role": "N/A",
+        "system_boundary": "Sensor individual",
+        "cycle_type": "Não claro (implícito em processos eletroquímicos)",
+        "heat_source_sink": "N/A",
+        "claim_focus": "Desenvolvimento e aplicação de um sensor de dopamina baseado em grafeno nitrogenado dopado.",
+        "exclusion_category": "cooling_only"
+      },
+      {
+        "patent_id": "CN112578011A",
+        "record_id": "rec_2056c5d6639a",
+        "title": "Sensor and detection method for detecting dopamine and uric acid",
+        "screening_decision": "review",
+        "screening_score": 5.3,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Eletroquímica, Sensores, Materiais 2D (MXene)",
+        "thematic_cluster": "Detecção Biomolecular Eletroquímica",
+        "co2_role": "não relevante (o CO2 não é o foco principal da invenção)",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "Sensor eletroquímico individual",
+        "cycle_type": "não especificado",
+        "heat_source_sink": "não relevante",
+        "claim_focus": "Construção e funcionalidade do sensor eletroquímico baseado em MXene-PPy.",
+        "exclusion_category": "low_alignment"
+      },
+      {
+        "patent_id": "CN116448850A",
+        "record_id": "rec_245e60bec916",
+        "title": "Detection device for dopamine in tear, preparation method and application",
+        "screening_decision": "review",
+        "screening_score": 7.4,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Eletroquímica, Sensores Biológicos, Gerenciamento Térmico",
+        "thematic_cluster": "Detecção Biomolecular com Eletrônica e Termodinâmica",
+        "co2_role": "stored_thermodynamic_medium",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "cycle_or_transfer_subsystem",
+        "cycle_type": "refrigeration_cycle",
+        "heat_source_sink": "não especificado, mas implica um sistema de controle térmico",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "low_alignment"
+      },
+      {
+        "patent_id": "CN1395094A",
+        "record_id": "rec_bc447a4191dd",
+        "title": "Electrochemical sensor for determining dopamine",
+        "screening_decision": "review",
+        "screening_score": 5.3,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Eletroquímica, Sensores Químicos, Química de Materiais",
+        "thematic_cluster": "Detecção Eletroquímica de Biomoléculas",
+        "co2_role": "not_central",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "not_applicable",
+        "claim_focus": "Sensor eletroquímico para dopamina com filme sensível de Nafion e nanotubos de carbono.",
+        "exclusion_category": "low_alignment"
+      },
+      {
+        "patent_id": "JP5390399B2",
+        "record_id": "rec_f7a5c817a31a",
+        "title": "Ocular sensor for detection of analytes in tears",
+        "screening_decision": "review",
+        "screening_score": 4.8,
+        "relevance_score": 6.2,
+        "bucket": "frontier",
+        "technical_domain": "Biossensores Biomédicos e Química Analítica",
+        "thematic_cluster": "Detecção de Neurotransmissores em Líquidos Corporais",
+        "co2_role": "capture_process_stream",
+        "storage_role": "Não especificado no resumo.",
+        "system_boundary": "process_integration",
+        "cycle_type": "Não especificado no resumo, mas provavelmente envolve um ciclo de leitura e análise contínua.",
+        "heat_source_sink": "Não especificado no resumo.",
+        "claim_focus": "Detecção e quantificação da dopamina em lágrimas usando um sensor ocular.",
+        "exclusion_category": "generic_tes"
+      }
+    ],
+    "axes": {
+      "co2_role": {
+        "Co-reator (persulfato)": {
+          "core": [],
+          "frontier": [
+            "CN105241868A"
+          ],
+          "adjacent": []
+        },
+        "Não especificado (o foco principal é na detecção de dopamina)": {
+          "core": [],
+          "frontier": [
+            "CN108872343A"
+          ],
+          "adjacent": []
+        },
+        "não relevante (o CO2 não é o foco principal da invenção)": {
+          "core": [],
+          "frontier": [
+            "CN112578011A"
+          ],
+          "adjacent": []
+        },
+        "stored_thermodynamic_medium": {
+          "core": [],
+          "frontier": [
+            "CN116448850A"
+          ],
+          "adjacent": []
+        },
+        "not_central": {
+          "core": [],
+          "frontier": [
+            "CN1395094A"
+          ],
+          "adjacent": []
+        },
+        "capture_process_stream": {
+          "core": [],
+          "frontier": [
+            "JP5390399B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "storage_role": {
+        "Não aplicável": {
+          "core": [],
+          "frontier": [
+            "CN105241868A"
+          ],
+          "adjacent": []
+        },
+        "N/A": {
+          "core": [],
+          "frontier": [
+            "CN108872343A"
+          ],
+          "adjacent": []
+        },
+        "explicit_thermal_storage": {
+          "core": [],
+          "frontier": [
+            "CN112578011A",
+            "CN116448850A",
+            "CN1395094A"
+          ],
+          "adjacent": []
+        },
+        "Não especificado no resumo.": {
+          "core": [],
+          "frontier": [
+            "JP5390399B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "system_boundary": {
+        "process_integration": {
+          "core": [],
+          "frontier": [
+            "CN105241868A",
+            "CN1395094A",
+            "JP5390399B2"
+          ],
+          "adjacent": []
+        },
+        "Sensor individual": {
+          "core": [],
+          "frontier": [
+            "CN108872343A"
+          ],
+          "adjacent": []
+        },
+        "Sensor eletroquímico individual": {
+          "core": [],
+          "frontier": [
+            "CN112578011A"
+          ],
+          "adjacent": []
+        },
+        "cycle_or_transfer_subsystem": {
+          "core": [],
+          "frontier": [
+            "CN116448850A"
+          ],
+          "adjacent": []
+        }
+      },
+      "cycle_type": {
+        "not_clear": {
+          "core": [],
+          "frontier": [
+            "CN105241868A",
+            "CN1395094A"
+          ],
+          "adjacent": []
+        },
+        "Não claro (implícito em processos eletroquímicos)": {
+          "core": [],
+          "frontier": [
+            "CN108872343A"
+          ],
+          "adjacent": []
+        },
+        "não especificado": {
+          "core": [],
+          "frontier": [
+            "CN112578011A"
+          ],
+          "adjacent": []
+        },
+        "refrigeration_cycle": {
+          "core": [],
+          "frontier": [
+            "CN116448850A"
+          ],
+          "adjacent": []
+        },
+        "Não especificado no resumo, mas provavelmente envolve um ciclo de leitura e análise contínua.": {
+          "core": [],
+          "frontier": [
+            "JP5390399B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "heat_source_sink": {
+        "Não aplicável": {
+          "core": [],
+          "frontier": [
+            "CN105241868A"
+          ],
+          "adjacent": []
+        },
+        "N/A": {
+          "core": [],
+          "frontier": [
+            "CN108872343A"
+          ],
+          "adjacent": []
+        },
+        "não relevante": {
+          "core": [],
+          "frontier": [
+            "CN112578011A"
+          ],
+          "adjacent": []
+        },
+        "não especificado, mas implica um sistema de controle térmico": {
+          "core": [],
+          "frontier": [
+            "CN116448850A"
+          ],
+          "adjacent": []
+        },
+        "not_applicable": {
+          "core": [],
+          "frontier": [
+            "CN1395094A"
+          ],
+          "adjacent": []
+        },
+        "Não especificado no resumo.": {
+          "core": [],
+          "frontier": [
+            "JP5390399B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "claim_focus": {
+        "Desenvolvimento de um sensor eletroluminescência para dopamina.": {
+          "core": [],
+          "frontier": [
+            "CN105241868A"
+          ],
+          "adjacent": []
+        },
+        "Desenvolvimento e aplicação de um sensor de dopamina baseado em grafeno nitrogenado dopado.": {
+          "core": [],
+          "frontier": [
+            "CN108872343A"
+          ],
+          "adjacent": []
+        },
+        "Construção e funcionalidade do sensor eletroquímico baseado em MXene-PPy.": {
+          "core": [],
+          "frontier": [
+            "CN112578011A"
+          ],
+          "adjacent": []
+        },
+        "system_architecture": {
+          "core": [],
+          "frontier": [
+            "CN116448850A"
+          ],
+          "adjacent": []
+        },
+        "Sensor eletroquímico para dopamina com filme sensível de Nafion e nanotubos de carbono.": {
+          "core": [],
+          "frontier": [
+            "CN1395094A"
+          ],
+          "adjacent": []
+        },
+        "Detecção e quantificação da dopamina em lágrimas usando um sensor ocular.": {
+          "core": [],
+          "frontier": [
+            "JP5390399B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "exclusion_category": {
+        "generic_tes": {
+          "core": [],
+          "frontier": [
+            "CN105241868A",
+            "JP5390399B2"
+          ],
+          "adjacent": []
+        },
+        "cooling_only": {
+          "core": [],
+          "frontier": [
+            "CN108872343A"
+          ],
+          "adjacent": []
+        },
+        "low_alignment": {
+          "core": [],
+          "frontier": [
+            "CN112578011A",
+            "CN116448850A",
+            "CN1395094A"
+          ],
+          "adjacent": []
+        }
+      }
+    },
+    "whitespace_candidates": [],
+    "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN105241868A, CN108872343A, CN112578011A, CN116448850A]"
+  },
+  "scraper_durations": {
+    "GooglePatents": 32.887,
+    "Patentscope": 70.507,
+    "EPO": 0.0
+  },
+  "evaluation_duration_seconds": 517.601,
+  "rerank_duration_seconds": 264.087,
+  "comparative_analysis_duration_seconds": 154.435,
+  "total_duration_seconds": 1767.951,
+  "comparative_analysis": "### 1. Panorama Geral\n\n- O conjunto comparativo agrega 6 patente(s) e nao deve ser tratado como bloco homogeneo: ha um nucleo direto, fronteiras tecnicas em revisao e adjacencias uteis apenas para delimitar whitespace [IDs: CN105241868A, CN108872343A, CN112578011A, CN116448850A, CN1395094A, JP5390399B2]\n- O subgrupo mais diretamente alinhado ao núcleo da query é CN105241868A, com foco em armazenamento de CO2, compressão/expansão e controle termodinâmico do meio armazenado [IDs: CN105241868A]\n- CN105241868A, CN108872343A, CN112578011A, CN116448850A, CN1395094A, JP5390399B2 formam a fronteira tecnica: sao casos proximos do problema, mas ainda ambiguos quanto ao papel exato do CO2 no armazenamento ou na funcao arquitetural central [IDs: CN105241868A, CN108872343A, CN112578011A, CN116448850A, CN1395094A, JP5390399B2]\n\n## Análise Comparativa de Patentes – “dopamine tears sensor”\n\n### 2. Tendências Identificadas\n\n*   **Eletroquímica como Técnica Predominante:** A grande maioria das patentes (CN105241868A, CN108872343A, CN112578011A, CN1395094A) utiliza a eletroquímica como método de detecção da dopamina, com foco em sensores eletrocrómicos e na otimização das membranas sensíveis. [IDs: CN105241868A, CN108872343A, CN112578011A, CN1395094A]\n*   **Materiais Avançados:** Há uma tendência crescente no uso de nanomateriais (CN105241868A), grafeno dopado com nitrogênio (CN108872343A) e MXenes (CN112578011A) para melhorar as propriedades dos sensores. [IDs: CN105241868A, CN108872343A, CN112578011A]\n*   **Integração de Termodinâmica:** Uma tendência emergente é a integração de elementos termodinâmicos e sistemas de armazenamento de calor para aumentar o potencial da detecção de dopamina. [IDs: CN116448850A, JP5390399B2]\n*   **Foco em Líquidos Corporais:** A maioria das patentes se concentra na detecção de dopamina em lágrimas (CN108872343A, CN116448850A, JP5390399B2), refletindo o interesse em aplicações biomédicas específicas. [IDs: CN108872343A, CN116448850A, JP5390399B2]\n\n### 3. Whitespaces e Oportunidades\n\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN105241868A, CN108872343A, CN112578011A, CN116448850A]\n\n### 4. Recomendações\n\n- Priorizar arquiteturas centradas em armazenamento explícito de CO2 e controle termodinâmico rigoroso [IDs: CN105241868A]\n\n### 5. Ranking Final\n\n1. **CN105241868A** — alinhamento técnico sustentado pelas evidências extraídas; score 6.5/10 [IDs: CN105241868A]\n2. **CN108872343A** — alinhamento técnico sustentado pelas evidências extraídas; score 6.5/10 [IDs: CN108872343A]\n3. **CN112578011A** — armazenamento termico explicito como parte central; score 6.5/10 [IDs: CN112578011A]\n4. **CN116448850A** — CO2 aparece como meio termodinamico armazenado; armazenamento termico explicito como parte central; score 6.5/10 [IDs: CN116448850A]\n5. **CN1395094A** — armazenamento termico explicito como parte central; score 6.5/10 [IDs: CN1395094A]\n6. **JP5390399B2** — alinhamento técnico sustentado pelas evidências extraídas; score 6.2/10 [IDs: JP5390399B2]\n\n### 6. Mapa de Evidências por ID\n\n- **Desenvolvimento de sensores químicos para a detecção de neurotransmissores.** [IDs: CN108872343A]\n- **Detecção Biomolecular Eletroquímica** [IDs: CN112578011A]\n- **Detecção Biomolecular com Eletrônica e Termodinâmica** [IDs: CN116448850A]\n- **Detecção Eletroquímica de Biomoléculas** [IDs: CN1395094A]\n- **Detecção de Neurotransmissores em Líquidos Corporais** [IDs: JP5390399B2]\n- **Detecção eletroluminescência de neurotransmissores** [IDs: CN105241868A]\n\n### 7. Ranking por ID\n\n1. **CN105241868A** — score 6.5/10 [IDs: CN105241868A]\n2. **CN108872343A** — score 6.5/10 [IDs: CN108872343A]\n3. **CN112578011A** — score 6.5/10 [IDs: CN112578011A]\n4. **CN116448850A** — score 6.5/10 [IDs: CN116448850A]\n5. **CN1395094A** — score 6.5/10 [IDs: CN1395094A]\n6. **JP5390399B2** — score 6.2/10 [IDs: JP5390399B2]",
+  "output_paths": {
+    "markdown": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.md",
+    "json": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.json",
+    "state": "/app/output/run_state_20260723_123242.json",
+    "prisma": "/app/output/prisma_flow_20260723_123242.json",
+    "snapshot": "/app/output/config_snapshot_20260723_123242.json",
+    "whitespace_json": "/app/output/whitespace_analysis_20260723_123242.json",
+    "memory_journal": "/app/output/memory_journal_20260723_123242.json",
+    "memory_sidecar": "/app/output/memory_sidecar_20260723_123242.json"
+  },
+  "errors": []
+}

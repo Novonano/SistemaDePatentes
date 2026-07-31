@@ -1,0 +1,251 @@
+{
+  "status": "ok",
+  "query": "sintering carbon dioxide",
+  "corpus_summary": {
+    "considered_patents": 8,
+    "selected_patents": 4,
+    "core": 0,
+    "frontier": 4,
+    "adjacent": 0
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "CN113941247A",
+      "record_id": "rec_72a65e6eb3eb",
+      "title": "System and method for capturing carbon dioxide in steel sintering flue gas",
+      "screening_decision": "review",
+      "screening_score": 7.7,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Engenharia de Processos Industriais, Engenharia Metalúrgica, Captura e Utilização de Carbono",
+      "thematic_cluster": "Captura de CO2 de Fontes Industriais",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "sintering_process",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "capture_process"
+    },
+    {
+      "patent_id": "JP6833123B1",
+      "record_id": "rec_8d21878ddc6f",
+      "title": "Manufacturing method of carbon dioxide adsorption sintered body",
+      "screening_decision": "review",
+      "screening_score": 7.2,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Ciência dos Materiais, Engenharia Química",
+      "thematic_cluster": "Sinterização e Adsorção de Dióxido de Carbono",
+      "co2_role": "capture_process_stream",
+      "storage_role": "Suporte/Armazenamento Implícito",
+      "system_boundary": "process_integration",
+      "cycle_type": "Não Claro (Implica um ciclo de adsorção-desorção)",
+      "heat_source_sink": "Combustão, Gás de Escape",
+      "claim_focus": "Método de Fabricação e Composição do Corpo de Adsorção Sinterizado",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "US3930787A",
+      "record_id": "rec_c324f3020aef",
+      "title": "Sintering furnace with hydrogen carbon dioxide atmosphere",
+      "screening_decision": "review",
+      "screening_score": 6.2,
+      "relevance_score": 6.2,
+      "bucket": "frontier",
+      "technical_domain": "Materials Science, Thermal Processing",
+      "thematic_cluster": "Atmospheric Sintering of Oxides",
+      "co2_role": "componente_da_atmosfera",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "forno (calor da reação)",
+      "claim_focus": "utilização de atmosfera reativa para sinterização",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "910517",
+      "record_id": "rec_bbd3a7e262bb",
+      "title": "Improvements in or relating to the production of\nsintered\nuranium\ndioxide",
+      "screening_decision": "review",
+      "screening_score": 6.4,
+      "relevance_score": 5.9,
+      "bucket": "frontier",
+      "technical_domain": "Ceramic Materials & Nuclear Fuel Production",
+      "thematic_cluster": "Sinterization of Oxide Fuels",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "não_claro",
+      "heat_source_sink": "CO2 atmosphere",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "industrial_heat_adjacent"
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "capture_process_stream": {
+        "core": [],
+        "frontier": [
+          "CN113941247A",
+          "JP6833123B1"
+        ],
+        "adjacent": []
+      },
+      "componente_da_atmosfera": {
+        "core": [],
+        "frontier": [
+          "US3930787A"
+        ],
+        "adjacent": []
+      },
+      "stored_thermodynamic_medium": {
+        "core": [],
+        "frontier": [
+          "910517"
+        ],
+        "adjacent": []
+      }
+    },
+    "storage_role": {
+      "explicit_thermal_storage": {
+        "core": [],
+        "frontier": [
+          "CN113941247A"
+        ],
+        "adjacent": []
+      },
+      "Suporte/Armazenamento Implícito": {
+        "core": [],
+        "frontier": [
+          "JP6833123B1"
+        ],
+        "adjacent": []
+      },
+      "implicit_or_support_storage": {
+        "core": [],
+        "frontier": [
+          "US3930787A",
+          "910517"
+        ],
+        "adjacent": []
+      }
+    },
+    "system_boundary": {
+      "process_integration": {
+        "core": [],
+        "frontier": [
+          "CN113941247A",
+          "JP6833123B1",
+          "US3930787A",
+          "910517"
+        ],
+        "adjacent": []
+      }
+    },
+    "cycle_type": {
+      "not_clear": {
+        "core": [],
+        "frontier": [
+          "CN113941247A",
+          "US3930787A"
+        ],
+        "adjacent": []
+      },
+      "Não Claro (Implica um ciclo de adsorção-desorção)": {
+        "core": [],
+        "frontier": [
+          "JP6833123B1"
+        ],
+        "adjacent": []
+      },
+      "não_claro": {
+        "core": [],
+        "frontier": [
+          "910517"
+        ],
+        "adjacent": []
+      }
+    },
+    "heat_source_sink": {
+      "sintering_process": {
+        "core": [],
+        "frontier": [
+          "CN113941247A"
+        ],
+        "adjacent": []
+      },
+      "Combustão, Gás de Escape": {
+        "core": [],
+        "frontier": [
+          "JP6833123B1"
+        ],
+        "adjacent": []
+      },
+      "forno (calor da reação)": {
+        "core": [],
+        "frontier": [
+          "US3930787A"
+        ],
+        "adjacent": []
+      },
+      "CO2 atmosphere": {
+        "core": [],
+        "frontier": [
+          "910517"
+        ],
+        "adjacent": []
+      }
+    },
+    "claim_focus": {
+      "system_architecture": {
+        "core": [],
+        "frontier": [
+          "CN113941247A"
+        ],
+        "adjacent": []
+      },
+      "Método de Fabricação e Composição do Corpo de Adsorção Sinterizado": {
+        "core": [],
+        "frontier": [
+          "JP6833123B1"
+        ],
+        "adjacent": []
+      },
+      "utilização de atmosfera reativa para sinterização": {
+        "core": [],
+        "frontier": [
+          "US3930787A"
+        ],
+        "adjacent": []
+      },
+      "component_or_operation": {
+        "core": [],
+        "frontier": [
+          "910517"
+        ],
+        "adjacent": []
+      }
+    },
+    "exclusion_category": {
+      "capture_process": {
+        "core": [],
+        "frontier": [
+          "CN113941247A"
+        ],
+        "adjacent": []
+      },
+      "industrial_heat_adjacent": {
+        "core": [],
+        "frontier": [
+          "JP6833123B1",
+          "US3930787A",
+          "910517"
+        ],
+        "adjacent": []
+      }
+    }
+  },
+  "whitespace_candidates": [],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: 910517, CN113941247A, JP6833123B1, US3930787A]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN113941247A, JP6833123B1, US3930787A, 910517]"
+}

@@ -1,0 +1,2730 @@
+{
+  "query": "carbon dioxide",
+  "max_results": 20,
+  "model": "gemma3:4b",
+  "output_dir": "/app/output",
+  "feature_flags": {
+    "require_evidence": true,
+    "enable_thematic_clusters": true,
+    "enable_structural_roles": true,
+    "enable_screening_rerank": true,
+    "enable_prisma": true,
+    "enable_snapshot": true,
+    "enable_comparative_analysis": true,
+    "enable_whitespace_analysis": true,
+    "enable_manual_review_queue": true
+  },
+  "config_snapshot": {
+    "pipeline_version": "1.1",
+    "timestamp": "2026-06-23T16:52:38",
+    "query": "carbon dioxide",
+    "max_results": 20,
+    "model": "gemma3:4b",
+    "output_dir": "/app/output",
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "thresholds": {
+      "include": 0.0,
+      "review": 0.0,
+      "manual_review_limit": 20
+    },
+    "runtime": {
+      "ollama_base_url": "http://ollama:11434",
+      "ollama_timeout": 600
+    },
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ]
+  },
+  "snapshot_hash": "668ba56d86c7470153ee00f09c9d9b4998f46c6ce547c94dde20e5ab3fbb9e70",
+  "protocol": {
+    "version": "1.0",
+    "query": "carbon dioxide",
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ],
+    "stages": [
+      "identification",
+      "deduplication",
+      "screening",
+      "manual_review",
+      "full_extraction",
+      "synthesis"
+    ],
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 0.0,
+      "review_score": 0.0,
+      "max_items_for_manual_review": 20
+    },
+    "limits": {
+      "max_results": 20
+    },
+    "model": "gemma3:4b"
+  },
+  "writing_context": {
+    "protocol": {
+      "version": "1.0",
+      "query": "carbon dioxide",
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ],
+      "stages": [
+        "identification",
+        "deduplication",
+        "screening",
+        "manual_review",
+        "full_extraction",
+        "synthesis"
+      ],
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 0.0,
+        "review_score": 0.0,
+        "max_items_for_manual_review": 20
+      },
+      "limits": {
+        "max_results": 20
+      },
+      "model": "gemma3:4b"
+    },
+    "coverage_metrics": {
+      "raw_scraped": 10,
+      "unique_patents": 10,
+      "duplicates_removed": 0,
+      "screened": 10,
+      "included": 3,
+      "review": 4,
+      "excluded": 3,
+      "manual_review_required": 4,
+      "manual_review_deferred": 0,
+      "full_extractions": 7,
+      "missing_abstract": 2,
+      "missing_id": 0,
+      "records_with_content_identity": 0,
+      "records_with_fallback_identity": 0,
+      "family_duplicates_removed": 0,
+      "llm_screening_failures": 0,
+      "llm_total_failures": 0
+    },
+    "top_patents": [
+      {
+        "record_id": "rec_ac70b55246a7",
+        "family_id": "family:3f972b46ef17e254342d437e7f00703e93f74852",
+        "patent_id": "US10854906B2",
+        "title": "Redox flow battery with carbon dioxide based redox couple",
+        "score": 8.7,
+        "screening_decision": "include",
+        "thematic_cluster": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+        "route": "deep_extraction",
+        "evidence_snippets": [
+          "AbstractA redox flow battery where the negative electrode uses carbon dioxide based redox couples.",
+          "The negative electrode contains a bifunctional catalyst that allows for the reduction of carbon dioxide to carbonaceous species..."
+        ]
+      },
+      {
+        "record_id": "rec_c8f3d0ca0801",
+        "family_id": "family:d03c62e1c776df8c1a3ebc106793eccc99c034c5",
+        "patent_id": "US10988847B2",
+        "title": "Apparatus and method of preparing carbonate and/or formate from carbon dioxide",
+        "score": 8.4,
+        "screening_decision": "include",
+        "thematic_cluster": "Química Industrial",
+        "route": "deep_extraction",
+        "evidence_snippets": [
+          "The apparatus of preparing carbonate and/or formate from carbon dioxide...",
+          "carbon dioxide or a mixer comprising carbon dioxide and water vapor to the cathode"
+        ]
+      },
+      {
+        "record_id": "rec_f8e29bfa3bcb",
+        "family_id": "family:febc0ac2097488fa99452a34f4128f2cee7ce4c0",
+        "patent_id": "CN115628062B",
+        "title": "Deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide",
+        "score": 8.4,
+        "screening_decision": "include",
+        "thematic_cluster": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+        "route": "deep_extraction",
+        "evidence_snippets": [
+          "AbstractThe invention utilizes liquid carbon dioxide to realize rapid sedimentation of plume, avoid overflow and diffusion...",
+          "The hydraulic collecting mechanism comprises a collecting housing and a jet nozzle, the bottom of the collecting housing is open..."
+        ]
+      }
+    ],
+    "thematic_clusters": {
+      "clusters": [
+        {
+          "cluster": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+          "count": 1,
+          "patent_ids": [
+            "US10854906B2"
+          ],
+          "titles": [
+            "Redox flow battery with carbon dioxide based redox couple"
+          ],
+          "average_score": 8.7,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": "",
+          "record_ids": [
+            "rec_ac70b55246a7"
+          ]
+        },
+        {
+          "cluster": "Química Industrial",
+          "count": 1,
+          "patent_ids": [
+            "US10988847B2"
+          ],
+          "titles": [
+            "Apparatus and method of preparing carbonate and/or formate from carbon dioxide"
+          ],
+          "average_score": 8.4,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": "",
+          "record_ids": [
+            "rec_c8f3d0ca0801"
+          ]
+        },
+        {
+          "cluster": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+          "count": 1,
+          "patent_ids": [
+            "CN115628062B"
+          ],
+          "titles": [
+            "Deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide"
+          ],
+          "average_score": 8.4,
+          "average_confidence": 0.95,
+          "evidence_count": 2,
+          "top_patents": [],
+          "summary": "",
+          "record_ids": [
+            "rec_f8e29bfa3bcb"
+          ]
+        }
+      ],
+      "total_clusters": 3
+    },
+    "route_summary": {
+      "manual_review": 4,
+      "deep_extraction": 3,
+      "screen_only": 3
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "snapshot_hash": "668ba56d86c7470153ee00f09c9d9b4998f46c6ce547c94dde20e5ab3fbb9e70"
+  },
+  "memory_sidecar": {
+    "run_id": "20260623_165238",
+    "max_items_per_slot": 5,
+    "slots": {
+      "review": [
+        {
+          "record_id": "rec_d91e3bc4d439",
+          "patent_id": "US9816035B2",
+          "title": "Conversion of biomass, organic waste and carbon dioxide into synthetic hydrocarbons",
+          "route": "manual_review",
+          "score": 7.2
+        },
+        {
+          "record_id": "rec_da779df08884",
+          "patent_id": "US11034619B2",
+          "title": "Intrinsic CO2 capture process for the production of metal oxides, cement, CO2 air capture or a combination thereof",
+          "route": "manual_review",
+          "score": 6.2
+        },
+        {
+          "record_id": "rec_eb7647876d8e",
+          "patent_id": "US20240383835A1",
+          "title": "Sodium Bicarbonate or Sodium Carbonate or Sodium Hydroxide or Calcium Oxide or Calcium Hydroxide or Calcium Carbonate Production with Carbon",
+          "route": "manual_review",
+          "score": 6.0
+        },
+        {
+          "record_id": "rec_52834b95ac68",
+          "patent_id": "JP6956665B2",
+          "title": "Method of methaneization of carbon dioxide in combustion exhaust gas and methane production equipment",
+          "route": "manual_review",
+          "score": 5.7
+        }
+      ],
+      "writer": [
+        {
+          "top_patents": [
+            {
+              "record_id": "rec_ac70b55246a7",
+              "family_id": "family:3f972b46ef17e254342d437e7f00703e93f74852",
+              "patent_id": "US10854906B2",
+              "title": "Redox flow battery with carbon dioxide based redox couple",
+              "score": 8.7,
+              "screening_decision": "include",
+              "thematic_cluster": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+              "route": "deep_extraction",
+              "evidence_snippets": [
+                "AbstractA redox flow battery where the negative electrode uses carbon dioxide based redox couples.",
+                "The negative electrode contains a bifunctional catalyst that allows for the reduction of carbon dioxide to carbonaceous species..."
+              ]
+            },
+            {
+              "record_id": "rec_c8f3d0ca0801",
+              "family_id": "family:d03c62e1c776df8c1a3ebc106793eccc99c034c5",
+              "patent_id": "US10988847B2",
+              "title": "Apparatus and method of preparing carbonate and/or formate from carbon dioxide",
+              "score": 8.4,
+              "screening_decision": "include",
+              "thematic_cluster": "Química Industrial",
+              "route": "deep_extraction",
+              "evidence_snippets": [
+                "The apparatus of preparing carbonate and/or formate from carbon dioxide...",
+                "carbon dioxide or a mixer comprising carbon dioxide and water vapor to the cathode"
+              ]
+            },
+            {
+              "record_id": "rec_f8e29bfa3bcb",
+              "family_id": "family:febc0ac2097488fa99452a34f4128f2cee7ce4c0",
+              "patent_id": "CN115628062B",
+              "title": "Deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide",
+              "score": 8.4,
+              "screening_decision": "include",
+              "thematic_cluster": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+              "route": "deep_extraction",
+              "evidence_snippets": [
+                "AbstractThe invention utilizes liquid carbon dioxide to realize rapid sedimentation of plume, avoid overflow and diffusion...",
+                "The hydraulic collecting mechanism comprises a collecting housing and a jet nozzle, the bottom of the collecting housing is open..."
+              ]
+            }
+          ],
+          "route_summary": {
+            "manual_review": 4,
+            "deep_extraction": 3,
+            "screen_only": 3
+          }
+        }
+      ],
+      "screening": [
+        {
+          "record_id": "rec_d4f8894924bd",
+          "patent_id": "JP6068523B2",
+          "title": "Thermostable carbonic anhydrase and its use",
+          "route": "screen_only",
+          "score": 3.4
+        },
+        {
+          "record_id": "rec_11c243145014",
+          "patent_id": "US12018594B2",
+          "title": "Pericritical fluid systems for turbine engines",
+          "route": "screen_only",
+          "score": 3.5
+        },
+        {
+          "record_id": "rec_5092c0170119",
+          "patent_id": "US10655441B2",
+          "title": "Stimulation of light tight shale oil formations",
+          "route": "screen_only",
+          "score": 3.5
+        }
+      ]
+    },
+    "journal": [
+      {
+        "timestamp": "2026-06-23T16:52:42",
+        "stage": "setup",
+        "event": "llm_check",
+        "detail": "Verificação de disponibilidade do Ollama concluída.",
+        "payload": {
+          "llm_available": true,
+          "model": "gemma3:4b"
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:53:13",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "GooglePatents retornou patentes.",
+        "payload": {
+          "source": "GooglePatents",
+          "count": 10,
+          "diagnostics": [
+            {
+              "kind": "discovery_empty",
+              "detail": "DuckDuckGo não retornou links para Google Patents.",
+              "url": "https://html.duckduckgo.com/html/"
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:53:19",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "Patentscope retornou patentes.",
+        "payload": {
+          "source": "Patentscope",
+          "count": 0,
+          "diagnostics": [
+            {
+              "kind": "blocked_or_captcha",
+              "detail": "Sinal de bloqueio/CAPTCHA detectado no Patentscope.",
+              "url": "https://patentscope.wipo.int/search/en/result.jsf?queryString=carbon+dioxide&pageSize=20"
+            },
+            {
+              "kind": "jsf_empty_results",
+              "detail": "Nenhum resultado em result.jsf para query: carbon dioxide",
+              "url": "https://patentscope.wipo.int/search/en/result.jsf"
+            },
+            {
+              "kind": "discovery_empty",
+              "detail": "DuckDuckGo não retornou links para Patentscope.",
+              "url": "https://html.duckduckgo.com/html/"
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:53:19",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "EPO retornou patentes.",
+        "payload": {
+          "source": "EPO",
+          "count": 0,
+          "diagnostics": [
+            {
+              "kind": "config_missing",
+              "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+              "url": ""
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:54:23",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US9816035B2 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_d91e3bc4d439",
+          "patent_id": "US9816035B2",
+          "decision": "review",
+          "score": 7.2,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:54:53",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US10854906B2 roteada para deep_extraction.",
+        "payload": {
+          "record_id": "rec_ac70b55246a7",
+          "patent_id": "US10854906B2",
+          "decision": "include",
+          "score": 9.2,
+          "route": {
+            "route": "deep_extraction",
+            "reason": "Há evidência suficiente para extração detalhada.",
+            "slot": "writer"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:55:25",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US10988847B2 roteada para deep_extraction.",
+        "payload": {
+          "record_id": "rec_c8f3d0ca0801",
+          "patent_id": "US10988847B2",
+          "decision": "include",
+          "score": 9.2,
+          "route": {
+            "route": "deep_extraction",
+            "reason": "Há evidência suficiente para extração detalhada.",
+            "slot": "writer"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:55:58",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN115628062B roteada para deep_extraction.",
+        "payload": {
+          "record_id": "rec_f8e29bfa3bcb",
+          "patent_id": "CN115628062B",
+          "decision": "include",
+          "score": 9.2,
+          "route": {
+            "route": "deep_extraction",
+            "reason": "Há evidência suficiente para extração detalhada.",
+            "slot": "writer"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:57:00",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US11034619B2 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_da779df08884",
+          "patent_id": "US11034619B2",
+          "decision": "review",
+          "score": 6.2,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:57:28",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "JP6068523B2 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_d4f8894924bd",
+          "patent_id": "JP6068523B2",
+          "decision": "exclude",
+          "score": 3.4,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:58:02",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US12018594B2 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_11c243145014",
+          "patent_id": "US12018594B2",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:58:33",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US10655441B2 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_5092c0170119",
+          "patent_id": "US10655441B2",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T16:59:34",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US20240383835A1 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_eb7647876d8e",
+          "patent_id": "US20240383835A1",
+          "decision": "review",
+          "score": 6.0,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:00:31",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "JP6956665B2 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_52834b95ac68",
+          "patent_id": "JP6956665B2",
+          "decision": "review",
+          "score": 5.7,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:01:38",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US9816035B2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_d91e3bc4d439",
+          "patent_id": "US9816035B2",
+          "route": "manual_review",
+          "confidence": 0.8
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:02:45",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US10854906B2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_ac70b55246a7",
+          "patent_id": "US10854906B2",
+          "route": "deep_extraction",
+          "confidence": 0.95
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:04:00",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US10988847B2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_c8f3d0ca0801",
+          "patent_id": "US10988847B2",
+          "route": "deep_extraction",
+          "confidence": 0.95
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:05:05",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN115628062B recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_f8e29bfa3bcb",
+          "patent_id": "CN115628062B",
+          "route": "deep_extraction",
+          "confidence": 0.95
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:06:05",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US11034619B2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_da779df08884",
+          "patent_id": "US11034619B2",
+          "route": "manual_review",
+          "confidence": 0.75
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:06:05",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "JP6068523B2 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_d4f8894924bd",
+          "patent_id": "JP6068523B2",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:06:05",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "US12018594B2 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_11c243145014",
+          "patent_id": "US12018594B2",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:06:05",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "US10655441B2 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_5092c0170119",
+          "patent_id": "US10655441B2",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:07:07",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US20240383835A1 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_eb7647876d8e",
+          "patent_id": "US20240383835A1",
+          "route": "manual_review",
+          "confidence": 0.75
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:08:01",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "JP6956665B2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_52834b95ac68",
+          "patent_id": "JP6956665B2",
+          "route": "manual_review",
+          "confidence": 0.75
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:08:01",
+        "stage": "synthesis",
+        "event": "coverage_computed",
+        "detail": "Cobertura e seleção consolidadas após triagem.",
+        "payload": {
+          "raw_scraped": 10,
+          "unique_patents": 10,
+          "duplicates_removed": 0,
+          "screened": 10,
+          "included": 3,
+          "review": 4,
+          "excluded": 3,
+          "manual_review_required": 4,
+          "manual_review_deferred": 0,
+          "full_extractions": 7,
+          "missing_abstract": 2,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 0,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:10:20",
+        "stage": "synthesis",
+        "event": "comparative_analysis_completed",
+        "detail": "Síntese comparativa gerada via Ollama.",
+        "payload": {
+          "patents_compared": 10
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:10:20",
+        "stage": "synthesis",
+        "event": "whitespace_analysis_completed",
+        "detail": "Matriz estruturada de whitespace gerada.",
+        "payload": {
+          "selected_patents": 7,
+          "candidates": 1
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:10:20",
+        "stage": "writer",
+        "event": "context_prepared",
+        "detail": "Contexto compartilhado preparado para o writer.",
+        "payload": {
+          "top_patents": 3,
+          "route_summary": {
+            "manual_review": 4,
+            "deep_extraction": 3,
+            "screen_only": 3
+          }
+        }
+      },
+      {
+        "timestamp": "2026-06-23T17:10:20",
+        "stage": "finalization",
+        "event": "report_generated",
+        "detail": "Relatórios finais gerados com sucesso.",
+        "payload": {
+          "markdown": "/app/output/patentes_carbon_dioxide_20260623_171020.md",
+          "json": "/app/output/patentes_carbon_dioxide_20260623_171020.json"
+        }
+      }
+    ]
+  },
+  "memory_journal": [
+    {
+      "timestamp": "2026-06-23T16:52:42",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": true,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:53:13",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 10,
+        "diagnostics": [
+          {
+            "kind": "discovery_empty",
+            "detail": "DuckDuckGo não retornou links para Google Patents.",
+            "url": "https://html.duckduckgo.com/html/"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:53:19",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "blocked_or_captcha",
+            "detail": "Sinal de bloqueio/CAPTCHA detectado no Patentscope.",
+            "url": "https://patentscope.wipo.int/search/en/result.jsf?queryString=carbon+dioxide&pageSize=20"
+          },
+          {
+            "kind": "jsf_empty_results",
+            "detail": "Nenhum resultado em result.jsf para query: carbon dioxide",
+            "url": "https://patentscope.wipo.int/search/en/result.jsf"
+          },
+          {
+            "kind": "discovery_empty",
+            "detail": "DuckDuckGo não retornou links para Patentscope.",
+            "url": "https://html.duckduckgo.com/html/"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:53:19",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "EPO retornou patentes.",
+      "payload": {
+        "source": "EPO",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:54:23",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US9816035B2 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_d91e3bc4d439",
+        "patent_id": "US9816035B2",
+        "decision": "review",
+        "score": 7.2,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:54:53",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US10854906B2 roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_ac70b55246a7",
+        "patent_id": "US10854906B2",
+        "decision": "include",
+        "score": 9.2,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:55:25",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US10988847B2 roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_c8f3d0ca0801",
+        "patent_id": "US10988847B2",
+        "decision": "include",
+        "score": 9.2,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:55:58",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN115628062B roteada para deep_extraction.",
+      "payload": {
+        "record_id": "rec_f8e29bfa3bcb",
+        "patent_id": "CN115628062B",
+        "decision": "include",
+        "score": 9.2,
+        "route": {
+          "route": "deep_extraction",
+          "reason": "Há evidência suficiente para extração detalhada.",
+          "slot": "writer"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:57:00",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US11034619B2 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_da779df08884",
+        "patent_id": "US11034619B2",
+        "decision": "review",
+        "score": 6.2,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:57:28",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "JP6068523B2 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_d4f8894924bd",
+        "patent_id": "JP6068523B2",
+        "decision": "exclude",
+        "score": 3.4,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:58:02",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US12018594B2 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_11c243145014",
+        "patent_id": "US12018594B2",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:58:33",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US10655441B2 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_5092c0170119",
+        "patent_id": "US10655441B2",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T16:59:34",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20240383835A1 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_eb7647876d8e",
+        "patent_id": "US20240383835A1",
+        "decision": "review",
+        "score": 6.0,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:00:31",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "JP6956665B2 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_52834b95ac68",
+        "patent_id": "JP6956665B2",
+        "decision": "review",
+        "score": 5.7,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:01:38",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US9816035B2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_d91e3bc4d439",
+        "patent_id": "US9816035B2",
+        "route": "manual_review",
+        "confidence": 0.8
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:02:45",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US10854906B2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_ac70b55246a7",
+        "patent_id": "US10854906B2",
+        "route": "deep_extraction",
+        "confidence": 0.95
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:04:00",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US10988847B2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_c8f3d0ca0801",
+        "patent_id": "US10988847B2",
+        "route": "deep_extraction",
+        "confidence": 0.95
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:05:05",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN115628062B recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_f8e29bfa3bcb",
+        "patent_id": "CN115628062B",
+        "route": "deep_extraction",
+        "confidence": 0.95
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:06:05",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US11034619B2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_da779df08884",
+        "patent_id": "US11034619B2",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:06:05",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "JP6068523B2 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_d4f8894924bd",
+        "patent_id": "JP6068523B2",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:06:05",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US12018594B2 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_11c243145014",
+        "patent_id": "US12018594B2",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:06:05",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US10655441B2 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_5092c0170119",
+        "patent_id": "US10655441B2",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:07:07",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US20240383835A1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_eb7647876d8e",
+        "patent_id": "US20240383835A1",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:08:01",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "JP6956665B2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_52834b95ac68",
+        "patent_id": "JP6956665B2",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:08:01",
+      "stage": "synthesis",
+      "event": "coverage_computed",
+      "detail": "Cobertura e seleção consolidadas após triagem.",
+      "payload": {
+        "raw_scraped": 10,
+        "unique_patents": 10,
+        "duplicates_removed": 0,
+        "screened": 10,
+        "included": 3,
+        "review": 4,
+        "excluded": 3,
+        "manual_review_required": 4,
+        "manual_review_deferred": 0,
+        "full_extractions": 7,
+        "missing_abstract": 2,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:10:20",
+      "stage": "synthesis",
+      "event": "comparative_analysis_completed",
+      "detail": "Síntese comparativa gerada via Ollama.",
+      "payload": {
+        "patents_compared": 10
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:10:20",
+      "stage": "synthesis",
+      "event": "whitespace_analysis_completed",
+      "detail": "Matriz estruturada de whitespace gerada.",
+      "payload": {
+        "selected_patents": 7,
+        "candidates": 1
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:10:20",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 3,
+        "route_summary": {
+          "manual_review": 4,
+          "deep_extraction": 3,
+          "screen_only": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2026-06-23T17:10:20",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "/app/output/patentes_carbon_dioxide_20260623_171020.md",
+        "json": "/app/output/patentes_carbon_dioxide_20260623_171020.json"
+      }
+    }
+  ],
+  "stage_metrics": [
+    {
+      "stage": "setup",
+      "status": "ok",
+      "duration_seconds": 4.123,
+      "items_processed": 1,
+      "detail": "Verificação do modelo Ollama"
+    },
+    {
+      "stage": "search",
+      "status": "ok",
+      "duration_seconds": 37.007,
+      "items_processed": 10,
+      "detail": "10 patentes únicas após dedupe"
+    },
+    {
+      "stage": "screening",
+      "status": "ok",
+      "duration_seconds": 882.416,
+      "items_processed": 10,
+      "detail": "3 incluídas, 4 revisão"
+    },
+    {
+      "stage": "comparative_analysis",
+      "status": "ok",
+      "duration_seconds": 139.259,
+      "items_processed": 10,
+      "detail": "Síntese comparativa gerada"
+    },
+    {
+      "stage": "whitespace_analysis",
+      "status": "ok",
+      "duration_seconds": 0.001,
+      "items_processed": 7,
+      "detail": "Whitespace analysis estruturada gerada"
+    },
+    {
+      "stage": "reporting",
+      "status": "ok",
+      "duration_seconds": 0.003,
+      "items_processed": 10,
+      "detail": "Relatórios Markdown e JSON"
+    },
+    {
+      "stage": "finalization",
+      "status": "ok",
+      "duration_seconds": 0.001,
+      "items_processed": 8,
+      "detail": "Persistência de artefatos e estado"
+    }
+  ],
+  "llm_cache_stats": {
+    "hits": 0,
+    "misses": 22,
+    "entries": 72
+  },
+  "llm_telemetry": {
+    "degraded": false,
+    "total_failures": 0,
+    "consecutive_failures": 0,
+    "recent_errors": [],
+    "operations": {
+      "healthcheck": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 35,
+        "response_chars": 15,
+        "total_duration_seconds": 4.121,
+        "max_duration_seconds": 4.121,
+        "average_duration_seconds": 4.121
+      },
+      "screening": {
+        "calls": 10,
+        "successes": 10,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 31949,
+        "response_chars": 10558,
+        "total_duration_seconds": 311.043,
+        "max_duration_seconds": 33.467,
+        "average_duration_seconds": 31.104
+      },
+      "rerank": {
+        "calls": 4,
+        "successes": 4,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 13552,
+        "response_chars": 4177,
+        "total_duration_seconds": 121.14,
+        "max_duration_seconds": 31.36,
+        "average_duration_seconds": 30.285
+      },
+      "evaluation": {
+        "calls": 7,
+        "successes": 7,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 26510,
+        "response_chars": 19700,
+        "total_duration_seconds": 450.226,
+        "max_duration_seconds": 75.06,
+        "average_duration_seconds": 64.318
+      },
+      "comparative": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 10764,
+        "response_chars": 4032,
+        "total_duration_seconds": 139.257,
+        "max_duration_seconds": 139.257,
+        "average_duration_seconds": 139.257
+      }
+    }
+  },
+  "observability_metrics": {
+    "routes": {
+      "manual_review": {
+        "count": 4,
+        "include": 0,
+        "review": 4,
+        "exclude": 0,
+        "llm_errors": 0
+      },
+      "deep_extraction": {
+        "count": 3,
+        "include": 3,
+        "review": 0,
+        "exclude": 0,
+        "llm_errors": 0
+      },
+      "screen_only": {
+        "count": 3,
+        "include": 0,
+        "review": 0,
+        "exclude": 3,
+        "llm_errors": 0
+      }
+    },
+    "sources": {
+      "EPO": {
+        "raw_results": 0,
+        "duration_seconds": 0.0,
+        "diagnostic_counts": {
+          "config_missing": 1
+        }
+      },
+      "GooglePatents": {
+        "raw_results": 10,
+        "duration_seconds": 31.388,
+        "diagnostic_counts": {
+          "discovery_empty": 1
+        }
+      },
+      "Patentscope": {
+        "raw_results": 0,
+        "duration_seconds": 5.612,
+        "diagnostic_counts": {
+          "blocked_or_captcha": 1,
+          "jsf_empty_results": 1,
+          "discovery_empty": 1
+        }
+      }
+    },
+    "failures": {
+      "run_errors": 0,
+      "records_with_llm_error": 0,
+      "llm_total_failures": 0,
+      "llm_by_operation": {
+        "healthcheck": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "screening": {
+          "calls": 10,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "rerank": {
+          "calls": 4,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "evaluation": {
+          "calls": 7,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "comparative": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        }
+      },
+      "scraper_diagnostics_by_kind": {
+        "discovery_empty": 2,
+        "blocked_or_captcha": 1,
+        "jsf_empty_results": 1,
+        "config_missing": 1
+      }
+    }
+  },
+  "run_id": "20260623_165238",
+  "started_at": "2026-06-23T16:52:38",
+  "finished_at": "2026-06-23T17:10:20",
+  "status": "completed",
+  "current_stage": "reporting",
+  "screened_count": 10,
+  "llm_available": true,
+  "patents": [
+    {
+      "record_id": "rec_d91e3bc4d439",
+      "family_id": "family:90f78bc2e11587dfd9d6164ef0c925eb4dd16133",
+      "title": "Conversion of biomass, organic waste and carbon dioxide into synthetic hydrocarbons",
+      "patent_id": "US9816035B2",
+      "abstract": "AbstractA process and system for producing a synthetic hydrocarbon having a desired H/C ratio is disclosed. Organic material is biochemically digested in a two stage biodigester for separately producing a hydrogen containing biogas substantially free of methane in a first stage and a methane containing biogas in a second stage. The methane containing biogas is reformed in a first reformer to generate hydrogen gas and carbon monoxide gas, which are then combined in a mixer with the hydrogen containing biogas into a syngas in amounts to achieve in the syngas an overall H/C ratio substantially equal to the desired H/C ratio. The syngas is reacted with a catalyst in a second reformer, a Fischer-Tropsch (FT) reactor, to produce the hydrocarbon. Using a two stage biodigester allows for the generation of separate hydrogen and methane streams, a more economical generation of the FT syngas and reduced fouling of the FT catalyst.",
+      "inventors": [
+        "Richard Romeo LEHOUX",
+        "Hisham Mohamed Hafez",
+        "Ranjit SEHDEV",
+        "Dave SALT"
+      ],
+      "assignee": "Greenfield Specialty Alcohols Inc",
+      "filing_date": "2015-12-22",
+      "publication_date": "2017-11-14",
+      "url": "https://patents.google.com/patent/US9816035B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_ac70b55246a7",
+      "family_id": "family:3f972b46ef17e254342d437e7f00703e93f74852",
+      "title": "Redox flow battery with carbon dioxide based redox couple",
+      "patent_id": "US10854906B2",
+      "abstract": "AbstractA redox flow battery where the negative electrode uses carbon dioxide based redox couples. The negative electrode contains a bifunctional catalyst that allows for the reduction of carbon dioxide to carbonaceous species (e.g., formic acid, oxalic acid or their salts) in the battery charge (i.e., energy storage) mode, and for the oxidation of the above-mentioned carbonaceous species in the battery discharge (i.e., energy generation) mode. The positive electrode of the battery can utilize a variety of redox couples including but not restricted to bromine-bromide, chlorine-chloride, vanadium (IV)-vanadium (V), chromium (III)-dichromate (VII), cerium (III)-cerium (IV), oxygen-water (or hydroxide).",
+      "inventors": [
+        "Elod Lajos Gyenge"
+      ],
+      "assignee": "Agora Energy Technologies Ltd",
+      "filing_date": "2016-06-30",
+      "publication_date": "2020-12-01",
+      "url": "https://patents.google.com/patent/US10854906B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_c8f3d0ca0801",
+      "family_id": "family:d03c62e1c776df8c1a3ebc106793eccc99c034c5",
+      "title": "Apparatus and method of preparing carbonate and/or formate from carbon dioxide",
+      "patent_id": "US10988847B2",
+      "abstract": "AbstractThe present invention relates to an apparatus and method of preparing carbonate and/or formate from carbon dioxide. The apparatus of preparing carbonate and/or formate from carbon dioxide (CO2), comprising: an electrolysis reactor comprising (i) an anode which contains an aqueous solution of a Group I metal salt as an electrolytic solution, (ii) an ion-exchange membrane through which metal cations derived from the Group I metal salt and water flow from an anode to a cathode, (iii) a cathode, and (iv) a gas diffusion layer which supplies a carbon dioxide-containing gas to the cathode; a power supply unit of applying a voltage between the anode and the cathode; a first gas-liquid separator of recovering the electrolytic solution from the products formed in the anode; a second gas-liquid separator of recovering carbonate and/or formate from the products formed in the cathode; a pH meter of measuring the pH of the electrolytic solution recovered from the first gas-liquid separator; a first reactant supply unit of supplying (a) the electrolytic solution recovered from the first gas-liquid separator and (b) the aqueous solution of the Group I metal salt with which the recovered electrolytic solution is replenished according to the pH of the electrolytic solution, to the anode; and a second reactant supply unit of supplying carbon dioxide or a mixer comprising carbon dioxide and water vapor to the cathode; wherein, when a voltage is applied between the anode and the cathode, in the anode, water undergoes electrolysis to generate hydrogen ions, oxygen, and electrons, and metal cations in the Group I metal salt are substituted with the hydrogen ions, while the generated metal cations move to the cathode through the ion-exchange membrane and the electrons move to the cathode through an external electric line; and in the cathode, carbon dioxide, water, metal cations, and electrons are reacted and produce carbonate and/or formate.",
+      "inventors": [
+        "Ki Tae Park",
+        "Soon Kwan Jeong",
+        "Seong Pil KANG",
+        "Hak Joo KIM",
+        "Min Hye YOUN"
+      ],
+      "assignee": "Korea Institute of Energy Research KIER",
+      "filing_date": "2017-11-06",
+      "publication_date": "2021-04-27",
+      "url": "https://patents.google.com/patent/US10988847B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_f8e29bfa3bcb",
+      "family_id": "family:febc0ac2097488fa99452a34f4128f2cee7ce4c0",
+      "title": "Deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide",
+      "patent_id": "CN115628062B",
+      "abstract": "AbstractThe invention discloses a deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide, which comprises a mining car, a hydraulic collecting mechanism, a relay pressurizing bin and a side spraying device, wherein the hydraulic collecting mechanism comprises a collecting housing and a jet nozzle, the bottom of the collecting housing is open, two guide plates are arranged on the inner side of the collecting housing, and the inner part of the collecting housing is divided into a flushing and collecting suction cavity positioned in the middle and solidifying and precipitating cavities on two sides. The top of the collecting housing is provided with a pumping pipeline, two groups of jet flow nozzles are arranged at the lower ends of the two guide plates in a relative way. The inner wall of each solidification and precipitation cavity is provided with a first spray pipe which is connected and communicated with the relay pressurizing bin. The two side spraying devices are symmetrically arranged above the track on the left side and the right side of the mining vehicle and are connected with the relay pressurizing bin. The invention utilizes liquid carbon dioxide to realize rapid sedimentation of plume, avoid overflow and diffusion, and the flap plume inhibits diffusion, thereby realizing deep sea sealing of carbon dioxide and protecting marine ecological environment.",
+      "inventors": [
+        "éæ­å",
+        "é©¬å®",
+        "åå­¦éº",
+        "å¼ å¼¦",
+        "å¼ å¤é¹"
+      ],
+      "assignee": "Ocean University of China",
+      "filing_date": "2022-11-09",
+      "publication_date": "2023-12-29",
+      "url": "https://patents.google.com/patent/CN115628062B/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_da779df08884",
+      "family_id": "family:1856cef8b1fdb567e57208ed1c2f8e2c446ff5c1",
+      "title": "Intrinsic CO2 capture process for the production of metal oxides, cement, CO2 air capture or a combination thereof",
+      "patent_id": "US11034619B2",
+      "abstract": "AbstractThe present invention pertains to a process for producing captured carbon dioxide. Calcium carbonate may be reacted with sulfur dioxide to produce calcium sulfite and gaseous carbon dioxide. Calcium sulfite may be thermally decomposed to produce gaseous sulfur dioxide. The processes may be used in conjunction with combusting various fuels such as a carbonaceous fuel, or a sulfurous fuel, or a nitrogenous fuel, or a hydrogen fuel, or a combination thereof.",
+      "inventors": [
+        "Ethan J. Novek"
+      ],
+      "assignee": "Innovator Energy LLC",
+      "filing_date": "2020-07-31",
+      "publication_date": "2021-06-15",
+      "url": "https://patents.google.com/patent/US11034619B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_d4f8894924bd",
+      "family_id": "family:c14cfdeb684ff7baedb8643e28118d65255c5c26",
+      "title": "Thermostable carbonic anhydrase and its use",
+      "patent_id": "JP6068523B2",
+      "abstract": "",
+      "inventors": [
+        "ãã«ãã«ãï¼ãã«ãã£ã³",
+        "ãµã¼ã³ãã¼ãºï¼ããªã¢"
+      ],
+      "assignee": "ããã¶ã¤ã ã¹ ã¢ã¯ãã£ã¼ã¼ã«ã¹ã«ã",
+      "filing_date": "2015-02-02",
+      "publication_date": "2017-01-25",
+      "url": "https://patents.google.com/patent/JP6068523B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_11c243145014",
+      "family_id": "family:3df22c1d3975557ac875c51fd552ddf8d95c0e0b",
+      "title": "Pericritical fluid systems for turbine engines",
+      "patent_id": "US12018594B2",
+      "abstract": "AbstractA pericritical fluid system for a thermal management system associated with a turbine engine may include one or more sensors configured to generate sensor outputs corresponding to one or more phase properties of a pericritical fluid flowing through a cooling circuit of the thermal management system, and a controller configured to generate control commands configured to control one or more controllable components of the thermal management system based at least in part on the sensor outputs. The one or more sensors may include one or more phase detection sensors, such as an acoustic sensor.",
+      "inventors": [
+        "Arthur William Sibbach",
+        "Aaron Michael Dziech",
+        "Scott Alan Schimmels",
+        "Robert R. Rachedi",
+        "Jeffrey Douglas Rambo",
+        "Brandon Wayne Miller"
+      ],
+      "assignee": "General Electric Co",
+      "filing_date": "2023-09-06",
+      "publication_date": "2024-06-25",
+      "url": "https://patents.google.com/patent/US12018594B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_5092c0170119",
+      "family_id": "family:ffa4c9ae9566e60422c58ce8da9d563d8798f0d4",
+      "title": "Stimulation of light tight shale oil formations",
+      "patent_id": "US10655441B2",
+      "abstract": "AbstractMethods and systems for stimulating light tight shale oil formations to recover hydrocarbons from the formations. One embodiment includes positioning a downhole burner in a first well, supplying a fuel, oxidizer, and water to the burner to form steam, injecting the steam and surplus oxygen into the shale reservoir to form a heated zone within the shale reservoir, wherein the surplus oxygen reacts with hydrocarbons in the reservoir to generate heat; wherein the heat from the reactions with the hydrocarbons and the steam increases permeability in a kerogen-rich portion of the shale reservoir, and producing hydrocarbons from the shale reservoir.",
+      "inventors": [
+        "Myron I. Kuhlman"
+      ],
+      "assignee": "World Energy Systems Inc",
+      "filing_date": "2016-02-05",
+      "publication_date": "2020-05-19",
+      "url": "https://patents.google.com/patent/US10655441B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_eb7647876d8e",
+      "family_id": "family:ac30efd8b6a4963fec07814530e7f98a1c579899",
+      "title": "Sodium Bicarbonate or Sodium Carbonate or Sodium Hydroxide or Calcium Oxide or Calcium Hydroxide or Calcium Carbonate Production with Carbon",
+      "patent_id": "US20240383835A1",
+      "abstract": "AbstractThe present application pertains to processes producing oxides using a weak acid intermediate. In one embodiment a material comprising calcium carbonate is reacted with a solution comprising aqueous carboxylic acid to form a gas comprising carbon dioxide and a solution comprising aqueous calcium carboxylate. The solution comprising aqueous calcium carboxylate is reacted with sodium sulfate to form a solution comprising aqueous sodium carboxylate and a solid comprising calcium sulfate. The solution comprising aqueous sodium carboxylate is reacted with sulfur dioxide to form sodium sulfite and an aqueous carboxylic acid. The sodium sulfite is separated from said aqueous carboxylic acid and reacted to form a solid comprising calcium sulfite which is decomposed to form calcium oxide and sulfur dioxide.",
+      "inventors": [
+        "Ethan Novek"
+      ],
+      "assignee": "Innovator Energy LLC",
+      "filing_date": "2024-05-23",
+      "publication_date": "2024-11-21",
+      "url": "https://patents.google.com/patent/US20240383835A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_52834b95ac68",
+      "family_id": "family:ac6b13752f40bc692724a0c040d837e4dce3e246",
+      "title": "Method of methaneization of carbon dioxide in combustion exhaust gas and methane production equipment",
+      "patent_id": "JP6956665B2",
+      "abstract": "",
+      "inventors": [
+        "å¤§å¡ãæµ©æ"
+      ],
+      "assignee": "Osaka Gas Co Ltd",
+      "filing_date": "2018-03-27",
+      "publication_date": "2021-11-02",
+      "url": "https://patents.google.com/patent/JP6956665B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    }
+  ],
+  "evaluations": [
+    {
+      "record_id": "rec_d91e3bc4d439",
+      "patent_id": "US9816035B2",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 7.2,
+      "screening_decision": "review",
+      "screening_reason": "While the patent discusses CO2 conversion, the core process involves a two-stage biodigester and Fischer-Tropsch reaction – the role of CO2 is primarily as a reactant within a broader process stream rather than being a c",
+      "evidence_snippets": [
+        "“Using a two stage biodigester allows for the generation of separate hydrogen and methane streams…”"
+      ],
+      "thematic_cluster": "CO2 Conversion and Utilization",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um processo para a conversão de biomassa e resíduos orgânicos em hidrocarbonetos sintéticos utilizando CO2 como reagente. O sistema emprega um biodigestor de duas etapas para gerar biogás e um reator Fischer-Tropsch (FT) para converter o syngas resultante em hidrocarbonetos, buscando otimizar a relação H/C.",
+      "key_findings": [
+        "O uso de um biodigestor de duas etapas permite a separação dos fluxos de hidrogênio e metano, otimizando a produção de syngas para o reator FT.",
+        "A reação com catalisador em um segundo reformador (Fischer-Tropsch) transforma o syngas em hidrocarbonetos."
+      ],
+      "potential_applications": [
+        "Produção de combustíveis sintéticos",
+        "Síntese química a partir de fontes renováveis"
+      ],
+      "technical_domain": "Chemical Engineering, Biotechnology",
+      "innovation_level": "Incremental",
+      "co2_role": "reactant_within_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "biogas_syngas",
+      "claim_focus": "Fischer-Tropsch reaction using a two-stage biodigester and CO2-derived syngas.",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "O problema abordado é a necessidade de uma produção mais econômica e eficiente de hidrocarbonetos sintéticos, minimizando o entupimento do catalisador FT e otimizando a geração do syngas.",
+      "solution_summary": "A solução proposta consiste em um sistema que utiliza um biodigestor de duas etapas para produzir biogás com componentes distintos (metano e hidrogênio) que são então combinados e reagidos em um reator FT para formar hidrocarbonetos, aproveitando o CO2 como componente chave do syngas.",
+      "claimed_advantages": [
+        "Geração econômica de syngas",
+        "Redução do entupimento do catalisador FT"
+      ],
+      "limitations": [
+        "A eficiência do processo depende da qualidade e composição dos materiais de partida (biomassa, resíduos orgânicos).",
+        "O sistema é complexo e pode ter custos iniciais elevados."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.8,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_ac70b55246a7",
+      "patent_id": "US10854906B2",
+      "analysis_route": "deep_extraction",
+      "route_reason": "Há evidência suficiente para extração detalhada.",
+      "screening_score": 9.2,
+      "screening_decision": "include",
+      "screening_reason": "A patente descreve explicitamente uma bateria de fluxo eletroquímico que utiliza um par redox baseado em dióxido de carbono para a redução e oxidação, o que se alinha diretamente com a busca por 'carbon dioxide'.",
+      "evidence_snippets": [
+        "AbstractA redox flow battery where the negative electrode uses carbon dioxide based redox couples.",
+        "The negative electrode contains a bifunctional catalyst that allows for the reduction of carbon dioxide to carbonaceous species..."
+      ],
+      "thematic_cluster": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+      "relevance_score": 8.7,
+      "summary": "Esta patente descreve uma bateria de fluxo eletroquímico que utiliza dióxido de carbono como componente chave em um par redox para armazenamento de energia. A patente foca na utilização do CO2 como eletrólito e catalisador para redução e oxidação, explorando a conversão do CO2 em espécies carbonáceas durante o carregamento e vice-versa no descarregamento.",
+      "key_findings": [
+        "Utilização de dióxido de carbono (CO2) como componente do par redox negativo, permitindo a redução e oxidação do CO2.",
+        "O uso de um catalisador bifuncional na eletrodo negativo para facilitar a conversão do CO2 em espécies carbonáceas."
+      ],
+      "potential_applications": [
+        "Armazenamento de energia em sistemas renováveis (solar, eólica).",
+        "Veículos elétricos com fontes de energia alternativas.",
+        "Sistemas de armazenamento de energia estacionários."
+      ],
+      "technical_domain": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+      "innovation_level": "Significativa",
+      "co2_role": "working_fluid e catalisador",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "Não especificado no resumo, mas implica utilização de calor para a conversão do CO2.",
+      "claim_focus": "Par redox baseado em dióxido de carbono e seu uso em uma bateria de fluxo eletroquímico.",
+      "exclusion_category": "",
+      "problem_statement": "A necessidade de desenvolver sistemas de armazenamento de energia mais sustentáveis e eficientes, utilizando fontes de carbono como o dióxido de carbono.",
+      "solution_summary": "A solução proposta é uma bateria de fluxo eletroquímico que emprega um par redox baseado em dióxido de carbono, onde o CO2 atua como eletrólito e catalisador para a conversão de energia.",
+      "claimed_advantages": [
+        "Utilização de dióxido de carbono como fonte de energia renovável.",
+        "Potencial para alta densidade de energia e eficiência no armazenamento."
+      ],
+      "limitations": [
+        "A viabilidade econômica da produção e utilização do catalisador ainda precisa ser avaliada.",
+        "A estabilidade a longo prazo do sistema de fluxo eletroquímico pode ser um desafio."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.95,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_c8f3d0ca0801",
+      "patent_id": "US10988847B2",
+      "analysis_route": "deep_extraction",
+      "route_reason": "Há evidência suficiente para extração detalhada.",
+      "screening_score": 9.2,
+      "screening_decision": "include",
+      "screening_reason": "A patente descreve um dispositivo e método para preparar carbonato e/ou formiato a partir de dióxido de carbono, o que corresponde diretamente à busca por 'carbon dioxide'. O resumo detalha componentes específicos e o processo de reação.",
+      "evidence_snippets": [
+        "The apparatus of preparing carbonate and/or formate from carbon dioxide...",
+        "carbon dioxide or a mixer comprising carbon dioxide and water vapor to the cathode"
+      ],
+      "thematic_cluster": "Química Industrial",
+      "relevance_score": 8.4,
+      "summary": "Esta patente descreve um dispositivo e método para a produção de carbonato e/ou formiato a partir de dióxido de carbono através da eletrólise, utilizando uma solução de sal de metal do grupo I. O sistema emprega separadores gasosos e unidades de fornecimento de reagentes para otimizar a reação e a recuperação dos produtos. A patente foca na conversão eletroquímica de CO2 em compostos valiosos.",
+      "key_findings": [
+        "A patente detalha um processo eletroquímico específico utilizando um eletrólito de sal de metal do grupo I para a conversão de CO2 em carbonato e/ou formiato.",
+        "O sistema incorpora componentes como separadores gasosos e unidades de fornecimento de reagentes para otimizar a produção e recuperação dos produtos."
+      ],
+      "potential_applications": [
+        "Produção de produtos químicos finos a partir de CO2.",
+        "Desenvolvimento de tecnologias de captura e utilização de carbono (CCU)."
+      ],
+      "technical_domain": "Química Industrial",
+      "innovation_level": "Significativa",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "Eletrólise (energia elétrica)",
+      "claim_focus": "process_integration",
+      "exclusion_category": "",
+      "problem_statement": "O desafio central é encontrar um método eficiente e controlado para converter dióxido de carbono em carbonato ou formiato, explorando potenciais processos eletroquímicos.",
+      "solution_summary": "A solução proposta utiliza uma célula eletrolítica com um ânodo contendo um eletrólito de sal de metal do grupo I e um cátodo, alimentada por uma fonte de energia externa. A eletrólise divide a água, gerando íons hidrogênio, oxigênio e elétrons, que são utilizados para transformar o dióxido de carbono na presença de água em carbonato ou formiato.",
+      "claimed_advantages": [
+        "Produção de carbonato e/ou formiato a partir de dióxido de carbono através de um processo eletroquímico.",
+        "Potencial para integração em sistemas de processamento industrial, aproveitando o CO2 como matéria-prima."
+      ],
+      "limitations": [
+        "A eficiência do processo pode ser dependente da escolha do eletrólito e das condições operacionais (tensão, temperatura).",
+        "O sistema pode requerer um consumo significativo de energia para a eletrólise."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.95,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_f8e29bfa3bcb",
+      "patent_id": "CN115628062B",
+      "analysis_route": "deep_extraction",
+      "route_reason": "Há evidência suficiente para extração detalhada.",
+      "screening_score": 9.2,
+      "screening_decision": "include",
+      "screening_reason": "A patente descreve um dispositivo de coleta de minas submarinas que utiliza dióxido de carbono para inibir a névoa, o que se alinha diretamente com os termos de busca 'carbon dioxide' e seu uso específico como meio de supressão da névoa.",
+      "evidence_snippets": [
+        "AbstractThe invention utilizes liquid carbon dioxide to realize rapid sedimentation of plume, avoid overflow and diffusion...",
+        "The hydraulic collecting mechanism comprises a collecting housing and a jet nozzle, the bottom of the collecting housing is open..."
+      ],
+      "thematic_cluster": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+      "relevance_score": 8.4,
+      "summary": "Esta patente descreve um dispositivo de coleta para mineração submarina que utiliza dióxido de carbono (CO2) para inibir a formação de plumas, evitando o transbordamento e a dispersão. O sistema incorpora um coletor hidráulico com jatos de CO2 e dispositivos de pulverização laterais, projetados para sedimentar rapidamente as plumas e proteger o ambiente marinho.",
+      "key_findings": [
+        "Utiliza CO2 líquido para rápida sedimentação das plumas.",
+        "Incorpora um coletor hidráulico com jatos de CO2 e dispositivos de pulverização laterais para evitar o transbordamento e a dispersão."
+      ],
+      "potential_applications": [
+        "Mineração submarina",
+        "Remediação ambiental em áreas costeiras",
+        "Controle de emissões em processos industriais subaquáticos"
+      ],
+      "technical_domain": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+      "innovation_level": "Significativa",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "Não especificado no resumo, mas implica um sistema de resfriamento.",
+      "claim_focus": "Dispositivo de coleta e inibição de plumas utilizando CO2 líquido.",
+      "exclusion_category": "",
+      "problem_statement": "O problema abordado é a formação de plumas durante a mineração submarina, que causam transbordamentos e dispersão de materiais, representando um risco ambiental.",
+      "solution_summary": "A solução proposta é um dispositivo de coleta que utiliza CO2 líquido para sedimentar rapidamente as plumas, minimizando o impacto ambiental da mineração submarina. O sistema inclui componentes como um coletor hidráulico com jatos direcionados e dispositivos de pulverização laterais.",
+      "claimed_advantages": [
+        "Inibição da formação de plumas",
+        "Prevenção de transbordamentos e dispersão de materiais",
+        "Proteção do ambiente marinho"
+      ],
+      "limitations": [
+        "A patente não detalha a escala ou profundidade das operações de mineração submarina.",
+        "A eficácia do sistema pode depender das condições específicas do local da mineração."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.95,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_da779df08884",
+      "patent_id": "US11034619B2",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 6.2,
+      "screening_decision": "review",
+      "screening_reason": "While the patent describes CO2 capture as a byproduct of chemical reactions, the primary focus is on producing metal oxides and cement, with the CO2 role being unclear. The mention of 'combustion' suggests potential ther",
+      "evidence_snippets": [
+        "“Calcium carbonate may be reacted with sulfur dioxide to produce calcium sulfite and gaseous carbon dioxide.”",
+        "The processes may be used in conjunction with combusting various fuels..."
+      ],
+      "thematic_cluster": "CO2 Capture and Utilization in Industrial Processes",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um processo para capturar CO2 como subproduto da reação de carbonatos com gases combustíveis, incluindo sulfeto de hidrogênio ou outros combustíveis. O processo envolve a produção de óxidos metálicos e cimento, utilizando o CO2 gerado como parte do ciclo de combustão. A captura é apresentada como uma opção para diferentes fontes de combustível.",
+      "key_findings": [
+        "A patente utiliza a reação de carbonatos com sulfeto de hidrogênio para produzir CO2.",
+        "O CO2 é gerado como subproduto da combustão de diversos combustíveis."
+      ],
+      "potential_applications": [
+        "Indústria química para produção de óxidos metálicos.",
+        "Setor de construção civil para produção de cimento.",
+        "Captura de CO2 em processos de combustão industrial."
+      ],
+      "technical_domain": "Chemical Processing, Carbon Capture",
+      "innovation_level": "Incremental",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "combustion_cycle",
+      "heat_source_sink": "combustível (carbonáceo, sulfuroso, nitrogenoso ou hidrogênio)",
+      "claim_focus": "process_integration",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "O problema abordado é a necessidade de capturar CO2 em processos industriais, particularmente na produção de materiais como óxidos metálicos e cimento.",
+      "solution_summary": "A solução proposta envolve a reação de carbonatos com gases combustíveis para gerar CO2, que pode ser então capturado. A patente não detalha um método específico de captura, mas sugere o uso da CO2 como subproduto do processo de combustão.",
+      "claimed_advantages": [
+        "Produção de óxidos metálicos e cimento, capturando simultaneamente o CO2.",
+        "Flexibilidade na escolha de fontes de combustível para a combustão."
+      ],
+      "limitations": [
+        "O processo não detalha um método específico de captura ou armazenamento do CO2.",
+        "A eficácia da captura depende das condições específicas da reação e da fonte de combustível utilizada."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.75,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_d4f8894924bd",
+      "patent_id": "JP6068523B2",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.4,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente se concentra em 'carbonic anhydrase' que é uma enzima relacionada ao dióxido de carbono (CO2), mas o resumo não detalha explicitamente o uso do CO2 como um meio térmico ou fluido de trabalho. A relevância precisa ser avaliada na leitura completa. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "Thermostable carbonic anhydrase"
+      ],
+      "thematic_cluster": "Catalisadores enzimáticos e aplicações industriais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Bioquímica, Enzimas",
+      "innovation_level": "",
+      "co2_role": "co2_present_unclear_role",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.52,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_11c243145014",
+      "patent_id": "US12018594B2",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente trata de sistemas de fluidos pericríticos associados a turbinas, que utilizam dióxido de carbono (CO2) como fluido de trabalho. Embora o resumo não mencione explicitamente CO2 como um meio de armazenamento térmico, sua utilização em um sistema de gerenciamento térmico para uma turbina sugere um papel central no ciclo, necessitando avaliação mais detalhada. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "AbstractA pericritical fluid system for a thermal management system associated with a turbine engine may include one or more sensors configured to generate sensor outputs corresponding to one or more phase properties of a pericritical fluid flowing through a cooling circuit...",
+        "acoustic sensor"
+      ],
+      "thematic_cluster": "Gerenciamento Térmico de Turbinas",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Engenharia Aeronáutica / Termodinâmica",
+      "innovation_level": "",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "supercritical_or_transcritical_co2",
+      "heat_source_sink": "power_generation",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.59,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_5092c0170119",
+      "patent_id": "US10655441B2",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve a estimulação de formações de shale de óleo denso usando um queimador no poço e injetando vapor e oxigênio em excesso para aumentar a permeabilidade. O CO2 é um subproduto da reação com hidrocarbonetos, mas não é o foco principal do processo. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "“injecting the steam and surplus oxygen into the shale reservoir to form a heated zone within the shale reservoir, wherein the heat from the reactions with the hydrocarbons and the steam increases permeability…”"
+      ],
+      "thematic_cluster": "Recuperação Aprimorada de Petróleo (EOR)",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Petróleo e Gás; Engenharia de Reservatórios",
+      "innovation_level": "",
+      "co2_role": "co2_present_unclear_role",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.59,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_eb7647876d8e",
+      "patent_id": "US20240383835A1",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 6.0,
+      "screening_decision": "review",
+      "screening_reason": "While the patent utilizes carbon dioxide as an intermediate, the process is complex and involves multiple reaction steps with calcium carbonate, sodium sulfate, sulfur dioxide, and subsequent decomposition. The central r",
+      "evidence_snippets": [
+        "“In one embodiment a material comprising calcium carbonate is reacted with a solution comprising aqueous carboxylic acid to form a gas comprising carbon dioxide …”"
+      ],
+      "thematic_cluster": "Carbon Dioxide Utilization in Chemical Synthesis",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um processo para a produção de óxidos utilizando dióxido de carbono como intermediário, envolvendo reações complexas com carbonato de cálcio e outros compostos químicos. O processo resulta na formação de carbonato de sódio ou hidróxido de sódio, que são posteriormente decompostos para gerar óxido de cálcio. A patente foca no uso do CO2 em um fluxo de processo.",
+      "key_findings": [
+        "O processo envolve múltiplas etapas reacionais, incluindo a reação do carbonato de cálcio com ácido carboxílico para gerar dióxido de carbono e um sal de cálcio.",
+        "A utilização de sulfito de sódio e dióxido de enxofre permite a conversão subsequente em óxido de cálcio e dióxido de enxofre."
+      ],
+      "potential_applications": [
+        "Produção de materiais cerâmicos (óxido de cálcio).",
+        "Processos químicos industriais que requerem a produção de óxidos."
+      ],
+      "technical_domain": "Chemical Process Engineering",
+      "innovation_level": "Incremental",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "não especificado no resumo",
+      "claim_focus": "Produção de óxidos através de reações envolvendo dióxido de carbono.",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "O problema abordado é a produção de óxidos utilizando processos mais eficientes e com menor impacto ambiental, explorando o potencial do dióxido de carbono como intermediário.",
+      "solution_summary": "A solução proposta consiste em uma sequência de reações que utilizam dióxido de carbono para converter carbonato de cálcio em produtos como óxido de cálcio e dióxido de enxofre, através da adição de ácidos carboxílicos, sulfito de sódio e outros reagentes.",
+      "claimed_advantages": [
+        "Produção de óxidos a partir de um intermediário gasoso (CO2).",
+        "Utilização de reagentes relativamente baratos e acessíveis."
+      ],
+      "limitations": [
+        "O processo é complexo, envolvendo várias etapas reacionais.",
+        "A eficiência do processo pode ser afetada pela necessidade de separar e purificar os intermediários."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.75,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_52834b95ac68",
+      "patent_id": "JP6956665B2",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.7,
+      "screening_decision": "review",
+      "screening_reason": "While the title references methaneization of CO2 from combustion exhaust, the lack of a summary and the focus on 'methanization' suggests a process integration approach rather than explicit CO2 storage or capture. The te",
+      "evidence_snippets": [
+        "‘methanização’ suggests a conversion process, not storage’",
+        "The title emphasizes ‘combustion exhaust gas’ indicating a process stream rather than dedicated storage."
+      ],
+      "thematic_cluster": "Carbon Dioxide Conversion & Utilization",
+      "relevance_score": 6.4,
+      "summary": "Esta patente descreve um método para a metanização de dióxido de carbono (CO2) proveniente dos gases de escape da combustão, utilizando equipamentos específicos para a produção de metano. A abordagem central é a conversão do CO2 em metano, sugerindo uma integração de processos e não necessariamente o armazenamento direto ou captura do CO2.",
+      "key_findings": [
+        "A patente se concentra na metanização de CO2 proveniente de gases de escape da combustão.",
+        "Utiliza equipamentos específicos para a produção de metano, indicando uma abordagem de integração de processos."
+      ],
+      "potential_applications": [
+        "Geração de energia com captura e utilização de CO2.",
+        "Produção de biometano a partir de fontes de carbono."
+      ],
+      "technical_domain": "Chemical Engineering / Combustion",
+      "innovation_level": "Incremental",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "Combustion Exhaust Gases",
+      "claim_focus": "Metanization of CO2 from Combustion Exhaust",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "O problema abordado é a utilização de gases de escape da combustão, que contêm dióxido de carbono, como matéria-prima para a produção de metano.",
+      "solution_summary": "A patente propõe um método e equipamentos para realizar a metanização do CO2 presente nos gases de escape, convertendo-o em metano.  O processo envolve a utilização de tecnologias específicas para essa conversão.",
+      "claimed_advantages": [
+        "Produção de metano a partir de fontes de CO2.",
+        "Potencial utilização de gases de escape como matéria-prima."
+      ],
+      "limitations": [
+        "A falta de um resumo detalhado impede a avaliação completa das limitações do processo.",
+        "O foco na metanização sugere que o armazenamento direto de CO2 não é o objetivo principal."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.75,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    }
+  ],
+  "patents_by_source": {
+    "GooglePatents": 10,
+    "Patentscope": 0,
+    "EPO": 0
+  },
+  "scraper_diagnostics": {
+    "GooglePatents": [
+      {
+        "kind": "discovery_empty",
+        "detail": "DuckDuckGo não retornou links para Google Patents.",
+        "url": "https://html.duckduckgo.com/html/"
+      }
+    ],
+    "Patentscope": [
+      {
+        "kind": "blocked_or_captcha",
+        "detail": "Sinal de bloqueio/CAPTCHA detectado no Patentscope.",
+        "url": "https://patentscope.wipo.int/search/en/result.jsf?queryString=carbon+dioxide&pageSize=20"
+      },
+      {
+        "kind": "jsf_empty_results",
+        "detail": "Nenhum resultado em result.jsf para query: carbon dioxide",
+        "url": "https://patentscope.wipo.int/search/en/result.jsf"
+      },
+      {
+        "kind": "discovery_empty",
+        "detail": "DuckDuckGo não retornou links para Patentscope.",
+        "url": "https://html.duckduckgo.com/html/"
+      }
+    ],
+    "EPO": [
+      {
+        "kind": "config_missing",
+        "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+        "url": ""
+      }
+    ]
+  },
+  "coverage_metrics": {
+    "raw_scraped": 10,
+    "unique_patents": 10,
+    "duplicates_removed": 0,
+    "screened": 10,
+    "included": 3,
+    "review": 4,
+    "excluded": 3,
+    "manual_review_required": 4,
+    "manual_review_deferred": 0,
+    "full_extractions": 7,
+    "missing_abstract": 2,
+    "missing_id": 0,
+    "records_with_content_identity": 0,
+    "records_with_fallback_identity": 0,
+    "family_duplicates_removed": 0,
+    "llm_screening_failures": 0,
+    "llm_total_failures": 0
+  },
+  "manual_review_queue": [
+    {
+      "record_id": "rec_d91e3bc4d439",
+      "patent_id": "US9816035B2",
+      "family_id": "family:90f78bc2e11587dfd9d6164ef0c925eb4dd16133",
+      "title": "Conversion of biomass, organic waste and carbon dioxide into synthetic hydrocarbons",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 7.2,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_da779df08884",
+      "patent_id": "US11034619B2",
+      "family_id": "family:1856cef8b1fdb567e57208ed1c2f8e2c446ff5c1",
+      "title": "Intrinsic CO2 capture process for the production of metal oxides, cement, CO2 air capture or a combination thereof",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 6.2,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_eb7647876d8e",
+      "patent_id": "US20240383835A1",
+      "family_id": "family:ac30efd8b6a4963fec07814530e7f98a1c579899",
+      "title": "Sodium Bicarbonate or Sodium Carbonate or Sodium Hydroxide or Calcium Oxide or Calcium Hydroxide or Calcium Carbonate Production with Carbon",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 6.0,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_52834b95ac68",
+      "patent_id": "JP6956665B2",
+      "family_id": "family:ac6b13752f40bc692724a0c040d837e4dce3e246",
+      "title": "Method of methaneization of carbon dioxide in combustion exhaust gas and methane production equipment",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.7,
+      "screening_decision": "review",
+      "llm_error": ""
+    }
+  ],
+  "prisma_flow": {
+    "flow": {
+      "identification": {
+        "raw_records": 10,
+        "unique_records": 10,
+        "duplicates_removed": 0
+      },
+      "screening": {
+        "screened": 10,
+        "included": 3,
+        "review": 4,
+        "excluded": 3
+      },
+      "eligibility": {
+        "full_extractions": 7,
+        "manual_review_required": 4,
+        "manual_review_deferred": 0
+      },
+      "coverage": {
+        "missing_abstract": 2,
+        "missing_id": 0
+      },
+      "synthesis": {
+        "analyzed_records": 7,
+        "comparative_analysis_generated": true
+      }
+    },
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 0.0,
+      "review_score": 0.0,
+      "max_items_for_manual_review": 20
+    },
+    "version": "1.0"
+  },
+  "thematic_clusters": {
+    "clusters": [
+      {
+        "cluster": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+        "count": 1,
+        "patent_ids": [
+          "US10854906B2"
+        ],
+        "titles": [
+          "Redox flow battery with carbon dioxide based redox couple"
+        ],
+        "average_score": 8.7,
+        "average_confidence": 0.95,
+        "evidence_count": 2,
+        "top_patents": [],
+        "summary": "",
+        "record_ids": [
+          "rec_ac70b55246a7"
+        ]
+      },
+      {
+        "cluster": "Química Industrial",
+        "count": 1,
+        "patent_ids": [
+          "US10988847B2"
+        ],
+        "titles": [
+          "Apparatus and method of preparing carbonate and/or formate from carbon dioxide"
+        ],
+        "average_score": 8.4,
+        "average_confidence": 0.95,
+        "evidence_count": 2,
+        "top_patents": [],
+        "summary": "",
+        "record_ids": [
+          "rec_c8f3d0ca0801"
+        ]
+      },
+      {
+        "cluster": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+        "count": 1,
+        "patent_ids": [
+          "CN115628062B"
+        ],
+        "titles": [
+          "Deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide"
+        ],
+        "average_score": 8.4,
+        "average_confidence": 0.95,
+        "evidence_count": 2,
+        "top_patents": [],
+        "summary": "",
+        "record_ids": [
+          "rec_f8e29bfa3bcb"
+        ]
+      }
+    ],
+    "total_clusters": 3
+  },
+  "whitespace_analysis": {
+    "status": "ok",
+    "query": "carbon dioxide",
+    "corpus_summary": {
+      "considered_patents": 10,
+      "selected_patents": 7,
+      "core": 3,
+      "frontier": 4,
+      "adjacent": 0
+    },
+    "coverage_matrix": [
+      {
+        "patent_id": "US10854906B2",
+        "record_id": "rec_ac70b55246a7",
+        "title": "Redox flow battery with carbon dioxide based redox couple",
+        "screening_decision": "include",
+        "screening_score": 9.2,
+        "relevance_score": 8.7,
+        "bucket": "core",
+        "technical_domain": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+        "thematic_cluster": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+        "co2_role": "working_fluid e catalisador",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "dedicated_storage_system",
+        "cycle_type": "power_or_work_cycle",
+        "heat_source_sink": "Não especificado no resumo, mas implica utilização de calor para a conversão do CO2.",
+        "claim_focus": "Par redox baseado em dióxido de carbono e seu uso em uma bateria de fluxo eletroquímico.",
+        "exclusion_category": ""
+      },
+      {
+        "patent_id": "CN115628062B",
+        "record_id": "rec_f8e29bfa3bcb",
+        "title": "Deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide",
+        "screening_decision": "include",
+        "screening_score": 9.2,
+        "relevance_score": 8.4,
+        "bucket": "core",
+        "technical_domain": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+        "thematic_cluster": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+        "co2_role": "capture_process_stream",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "dedicated_storage_system",
+        "cycle_type": "refrigeration_cycle",
+        "heat_source_sink": "Não especificado no resumo, mas implica um sistema de resfriamento.",
+        "claim_focus": "Dispositivo de coleta e inibição de plumas utilizando CO2 líquido.",
+        "exclusion_category": ""
+      },
+      {
+        "patent_id": "US10988847B2",
+        "record_id": "rec_c8f3d0ca0801",
+        "title": "Apparatus and method of preparing carbonate and/or formate from carbon dioxide",
+        "screening_decision": "include",
+        "screening_score": 9.2,
+        "relevance_score": 8.4,
+        "bucket": "core",
+        "technical_domain": "Química Industrial",
+        "thematic_cluster": "Química Industrial",
+        "co2_role": "capture_process_stream",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "refrigeration_cycle",
+        "heat_source_sink": "Eletrólise (energia elétrica)",
+        "claim_focus": "process_integration",
+        "exclusion_category": ""
+      },
+      {
+        "patent_id": "US11034619B2",
+        "record_id": "rec_da779df08884",
+        "title": "Intrinsic CO2 capture process for the production of metal oxides, cement, CO2 air capture or a combination thereof",
+        "screening_decision": "review",
+        "screening_score": 6.2,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Chemical Processing, Carbon Capture",
+        "thematic_cluster": "CO2 Capture and Utilization in Industrial Processes",
+        "co2_role": "capture_process_stream",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "combustion_cycle",
+        "heat_source_sink": "combustível (carbonáceo, sulfuroso, nitrogenoso ou hidrogênio)",
+        "claim_focus": "process_integration",
+        "exclusion_category": "industrial_heat_adjacent"
+      },
+      {
+        "patent_id": "US20240383835A1",
+        "record_id": "rec_eb7647876d8e",
+        "title": "Sodium Bicarbonate or Sodium Carbonate or Sodium Hydroxide or Calcium Oxide or Calcium Hydroxide or Calcium Carbonate Production with Carbon",
+        "screening_decision": "review",
+        "screening_score": 6.0,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Chemical Process Engineering",
+        "thematic_cluster": "Carbon Dioxide Utilization in Chemical Synthesis",
+        "co2_role": "capture_process_stream",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "não especificado no resumo",
+        "claim_focus": "Produção de óxidos através de reações envolvendo dióxido de carbono.",
+        "exclusion_category": "industrial_heat_adjacent"
+      },
+      {
+        "patent_id": "US9816035B2",
+        "record_id": "rec_d91e3bc4d439",
+        "title": "Conversion of biomass, organic waste and carbon dioxide into synthetic hydrocarbons",
+        "screening_decision": "review",
+        "screening_score": 7.2,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Chemical Engineering, Biotechnology",
+        "thematic_cluster": "CO2 Conversion and Utilization",
+        "co2_role": "reactant_within_process_stream",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "power_or_work_cycle",
+        "heat_source_sink": "biogas_syngas",
+        "claim_focus": "Fischer-Tropsch reaction using a two-stage biodigester and CO2-derived syngas.",
+        "exclusion_category": "industrial_heat_adjacent"
+      },
+      {
+        "patent_id": "JP6956665B2",
+        "record_id": "rec_52834b95ac68",
+        "title": "Method of methaneization of carbon dioxide in combustion exhaust gas and methane production equipment",
+        "screening_decision": "review",
+        "screening_score": 5.7,
+        "relevance_score": 6.4,
+        "bucket": "frontier",
+        "technical_domain": "Chemical Engineering / Combustion",
+        "thematic_cluster": "Carbon Dioxide Conversion & Utilization",
+        "co2_role": "capture_process_stream",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "power_or_work_cycle",
+        "heat_source_sink": "Combustion Exhaust Gases",
+        "claim_focus": "Metanization of CO2 from Combustion Exhaust",
+        "exclusion_category": "industrial_heat_adjacent"
+      }
+    ],
+    "axes": {
+      "co2_role": {
+        "working_fluid e catalisador": {
+          "core": [
+            "US10854906B2"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "capture_process_stream": {
+          "core": [
+            "CN115628062B",
+            "US10988847B2"
+          ],
+          "frontier": [
+            "US11034619B2",
+            "US20240383835A1",
+            "JP6956665B2"
+          ],
+          "adjacent": []
+        },
+        "reactant_within_process_stream": {
+          "core": [],
+          "frontier": [
+            "US9816035B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "storage_role": {
+        "explicit_thermal_storage": {
+          "core": [
+            "US10854906B2",
+            "CN115628062B",
+            "US10988847B2"
+          ],
+          "frontier": [
+            "US20240383835A1",
+            "US9816035B2"
+          ],
+          "adjacent": []
+        },
+        "implicit_or_support_storage": {
+          "core": [],
+          "frontier": [
+            "US11034619B2",
+            "JP6956665B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "system_boundary": {
+        "dedicated_storage_system": {
+          "core": [
+            "US10854906B2",
+            "CN115628062B"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "process_integration": {
+          "core": [
+            "US10988847B2"
+          ],
+          "frontier": [
+            "US11034619B2",
+            "US20240383835A1",
+            "US9816035B2",
+            "JP6956665B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "cycle_type": {
+        "power_or_work_cycle": {
+          "core": [
+            "US10854906B2"
+          ],
+          "frontier": [
+            "US9816035B2",
+            "JP6956665B2"
+          ],
+          "adjacent": []
+        },
+        "refrigeration_cycle": {
+          "core": [
+            "CN115628062B",
+            "US10988847B2"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "combustion_cycle": {
+          "core": [],
+          "frontier": [
+            "US11034619B2"
+          ],
+          "adjacent": []
+        },
+        "not_clear": {
+          "core": [],
+          "frontier": [
+            "US20240383835A1"
+          ],
+          "adjacent": []
+        }
+      },
+      "heat_source_sink": {
+        "Não especificado no resumo, mas implica utilização de calor para a conversão do CO2.": {
+          "core": [
+            "US10854906B2"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "Não especificado no resumo, mas implica um sistema de resfriamento.": {
+          "core": [
+            "CN115628062B"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "Eletrólise (energia elétrica)": {
+          "core": [
+            "US10988847B2"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "combustível (carbonáceo, sulfuroso, nitrogenoso ou hidrogênio)": {
+          "core": [],
+          "frontier": [
+            "US11034619B2"
+          ],
+          "adjacent": []
+        },
+        "não especificado no resumo": {
+          "core": [],
+          "frontier": [
+            "US20240383835A1"
+          ],
+          "adjacent": []
+        },
+        "biogas_syngas": {
+          "core": [],
+          "frontier": [
+            "US9816035B2"
+          ],
+          "adjacent": []
+        },
+        "Combustion Exhaust Gases": {
+          "core": [],
+          "frontier": [
+            "JP6956665B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "claim_focus": {
+        "Par redox baseado em dióxido de carbono e seu uso em uma bateria de fluxo eletroquímico.": {
+          "core": [
+            "US10854906B2"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "Dispositivo de coleta e inibição de plumas utilizando CO2 líquido.": {
+          "core": [
+            "CN115628062B"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "process_integration": {
+          "core": [
+            "US10988847B2"
+          ],
+          "frontier": [
+            "US11034619B2"
+          ],
+          "adjacent": []
+        },
+        "Produção de óxidos através de reações envolvendo dióxido de carbono.": {
+          "core": [],
+          "frontier": [
+            "US20240383835A1"
+          ],
+          "adjacent": []
+        },
+        "Fischer-Tropsch reaction using a two-stage biodigester and CO2-derived syngas.": {
+          "core": [],
+          "frontier": [
+            "US9816035B2"
+          ],
+          "adjacent": []
+        },
+        "Metanization of CO2 from Combustion Exhaust": {
+          "core": [],
+          "frontier": [
+            "JP6956665B2"
+          ],
+          "adjacent": []
+        }
+      },
+      "exclusion_category": {
+        "not_clear": {
+          "core": [
+            "US10854906B2",
+            "CN115628062B",
+            "US10988847B2"
+          ],
+          "frontier": [],
+          "adjacent": []
+        },
+        "industrial_heat_adjacent": {
+          "core": [],
+          "frontier": [
+            "US11034619B2",
+            "US20240383835A1",
+            "US9816035B2",
+            "JP6956665B2"
+          ],
+          "adjacent": []
+        }
+      }
+    },
+    "whitespace_candidates": [
+      {
+        "opportunity": "hybrid_cycle_storage_architecture",
+        "confidence": "medium",
+        "rationale": "Combinar ciclos/transferencia com CO2 e armazenamento termico explicitamente reivindicado ainda aparece fragmentado entre nucleo e borda tecnica.",
+        "core_ids": [
+          "US10854906B2",
+          "CN115628062B",
+          "US10988847B2"
+        ],
+        "frontier_ids": [
+          "US11034619B2",
+          "US20240383835A1",
+          "US9816035B2"
+        ],
+        "adjacent_ids": []
+      }
+    ],
+    "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- O whitespace mais promissor esta na combinacao entre arquiteturas de ciclo/transferencia termica com CO2 e armazenamento explicito do inventario termico, porque esses elementos ainda aparecem fragmentados entre nucleo, fronteira e adjacencia [IDs: US10854906B2, CN115628062B, US10988847B2, US11034619B2]\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]"
+  },
+  "scraper_durations": {
+    "GooglePatents": 31.388,
+    "Patentscope": 5.612,
+    "EPO": 0.0
+  },
+  "evaluation_duration_seconds": 450.229,
+  "rerank_duration_seconds": 121.14,
+  "comparative_analysis_duration_seconds": 139.259,
+  "total_duration_seconds": 1062.812,
+  "comparative_analysis": "### 1. Panorama Geral\n\n- O conjunto comparativo agrega 7 patente(s) e nao deve ser tratado como bloco homogeneo: ha um nucleo direto, fronteiras tecnicas em revisao e adjacencias uteis apenas para delimitar whitespace [IDs: US10854906B2, CN115628062B, US10988847B2, US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]\n- O subgrupo mais diretamente alinhado ao núcleo da query é US10854906B2, com foco em armazenamento de CO2, compressão/expansão e controle termodinâmico do meio armazenado [IDs: US10854906B2]\n- US11034619B2, US20240383835A1, US9816035B2, JP6956665B2 formam a fronteira tecnica: sao casos proximos do problema, mas ainda ambiguos quanto ao papel exato do CO2 no armazenamento ou na funcao arquitetural central [IDs: US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]\n- CN115628062B, US10988847B2 entram como adjacencia exploratoria: tratam CO2 principalmente como fluido de trabalho em transferencia termica ou distribuicao de energia, de modo que ajudam a delimitar combinacoes pouco cobertas sem virar evidencia de cobertura consolidada [IDs: CN115628062B, US10988847B2]\n\n## Análise Comparativa de Patentes Relacionadas a \"Carbon Dioxide\"\n\n### 2. Tendências Identificadas\n\nAs principais tendências tecnológicas observadas nas patentes incluem:\n\n*   **Armazenamento de Energia com CO2:** US10854906B2 destaca a utilização do CO2 como eletrólito e catalisador em baterias de fluxo eletroquímico, um caminho promissor para o armazenamento de energia.\n*   **Captura e Utilização de CO2 Industrial:** CN115628062B e US10988847B2 exploram a captura do CO2 como subproduto industrial (plumas submarinas, produção de carbonatos) e sua utilização em processos químicos.\n*   **Conversão de CO2 em Produtos Químicos:** US9816035B2 e JP6956665B2 investigam a conversão do CO2 em produtos de valor agregado, como hidrocarbonetos sintéticos (Fischer-Tropsch), utilizando processos biológicos ou combustão.\n*   **Produção de Materiais com CO2:** US20240383835A1 explora a utilização do CO2 como intermediário na produção de óxidos e outros materiais, demonstrando um uso mais amplo do composto.\n\n[IDs: US10854906B2, CN115628062B, US10988847B2, US9816035B2, JP6956665B2, US20240383835A1]\n\n### 3. Whitespaces e Oportunidades\n\n- O whitespace mais promissor esta na combinacao entre arquiteturas de ciclo/transferencia termica com CO2 e armazenamento explicito do inventario termico, porque esses elementos ainda aparecem fragmentados entre nucleo, fronteira e adjacencia [IDs: US10854906B2, CN115628062B, US10988847B2, US11034619B2]\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]\n\n### 4. Recomendações\n\n- Priorizar arquiteturas centradas em armazenamento explícito de CO2 e controle termodinâmico rigoroso [IDs: US10854906B2]\n\n### 5. Ranking Final\n\n1. **US10854906B2** — armazenamento termico explicito como parte central; score 8.7/10 [IDs: US10854906B2]\n2. **CN115628062B** — armazenamento termico explicito como parte central; score 8.4/10 [IDs: CN115628062B]\n3. **US10988847B2** — armazenamento termico explicito como parte central; score 8.4/10 [IDs: US10988847B2]\n4. **US11034619B2** — armazenamento aparece mais como subsistema de apoio; score 6.5/10 [IDs: US11034619B2]\n5. **US20240383835A1** — armazenamento termico explicito como parte central; score 6.5/10 [IDs: US20240383835A1]\n6. **US9816035B2** — armazenamento termico explicito como parte central; score 6.5/10 [IDs: US9816035B2]\n7. **JP6956665B2** — armazenamento aparece mais como subsistema de apoio; score 6.4/10 [IDs: JP6956665B2]\n\n### 6. Mapa de Evidências por ID\n\n- **Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2** [IDs: US10854906B2]\n- **CO2 Capture and Utilization in Industrial Processes** [IDs: US11034619B2]\n- **CO2 Conversion and Utilization** [IDs: US9816035B2]\n- **Carbon Dioxide Conversion & Utilization** [IDs: JP6956665B2]\n- **Carbon Dioxide Utilization in Chemical Synthesis** [IDs: US20240383835A1]\n- **Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha** [IDs: CN115628062B]\n- **Química Industrial** [IDs: US10988847B2]\n\n### 7. Ranking por ID\n\n1. **US10854906B2** — score 8.7/10 [IDs: US10854906B2]\n2. **CN115628062B** — score 8.4/10 [IDs: CN115628062B]\n3. **US10988847B2** — score 8.4/10 [IDs: US10988847B2]\n4. **US11034619B2** — score 6.5/10 [IDs: US11034619B2]\n5. **US20240383835A1** — score 6.5/10 [IDs: US20240383835A1]\n6. **US9816035B2** — score 6.5/10 [IDs: US9816035B2]\n7. **JP6956665B2** — score 6.4/10 [IDs: JP6956665B2]",
+  "output_paths": {
+    "markdown": "/app/output/patentes_carbon_dioxide_20260623_171020.md",
+    "json": "/app/output/patentes_carbon_dioxide_20260623_171020.json",
+    "state": "/app/output/run_state_20260623_165238.json",
+    "prisma": "/app/output/prisma_flow_20260623_165238.json",
+    "snapshot": "/app/output/config_snapshot_20260623_165238.json",
+    "whitespace_json": "/app/output/whitespace_analysis_20260623_165238.json",
+    "memory_journal": "/app/output/memory_journal_20260623_165238.json",
+    "memory_sidecar": "/app/output/memory_sidecar_20260623_165238.json"
+  },
+  "errors": []
+}

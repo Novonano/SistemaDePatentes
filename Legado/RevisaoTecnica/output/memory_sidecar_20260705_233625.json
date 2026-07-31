@@ -1,0 +1,293 @@
+{
+  "run_id": "20260705_233625",
+  "max_items_per_slot": 5,
+  "slots": {
+    "screening": [
+      {
+        "record_id": "rec_cf7740d73e52",
+        "patent_id": "",
+        "title": "mÃ©todo de granulaÃ§Ã£o de material de sinterizaÃ§Ã£o para a fabricaÃ§Ã£o de ferro",
+        "route": "screen_only",
+        "score": 3.5
+      },
+      {
+        "record_id": "rec_0b3f39205925",
+        "patent_id": "",
+        "title": "Method for pretreatment of sintering material",
+        "route": "screen_only",
+        "score": 3.5
+      },
+      {
+        "record_id": "rec_f967a6d0dd68",
+        "patent_id": "BR112015015064B1",
+        "title": "MÃ©todo e sistema para controlar a quantidade de ar da caixa-de-ar do carrinho de sinterizaÃ§Ã£o.",
+        "route": "screen_only",
+        "score": 3.5
+      },
+      {
+        "record_id": "rec_c4b2c01f455e",
+        "patent_id": "WO2023035050A1",
+        "title": "QUEIMADOR DE BAIXA EMISSÃO DE NOx E MÃTODO OPERACIONAL PARA REDUÃÃO DE FORMAÃÃO DE NOx APLICADO EM PROCESSO DE SINTERIZAÃÃO E/OU ENDURECIMENTO DE PELOTAS DE MINÃRIO DE FERRO",
+        "route": "screen_only",
+        "score": 3.5
+      }
+    ],
+    "writer": [
+      {
+        "top_patents": [],
+        "route_summary": {
+          "screen_only": 4
+        }
+      }
+    ]
+  },
+  "journal": [
+    {
+      "timestamp": "2026-07-05T23:36:28",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": true,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:36:39",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 4,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:37:03",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "jsf_empty_results",
+            "detail": "Nenhum resultado em result.jsf para query: sinterização",
+            "url": "https://patentscope.wipo.int/search/en/result.jsf"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/WO2025010416"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/WO2025227477"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/search.jsf"
+          },
+          {
+            "kind": "detail_session_expired",
+            "detail": "Página de detalhe sem campos biblio — sessão/cid pode ter expirado.",
+            "url": "https://patentscope.wipo.int/search/en/WO2025094690"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:37:03",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "EPO retornou patentes.",
+      "payload": {
+        "source": "EPO",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:37:43",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "rec_cf7740d73e52 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_cf7740d73e52",
+        "patent_id": "",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:38:17",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "rec_0b3f39205925 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_0b3f39205925",
+        "patent_id": "",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:38:53",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "BR112015015064B1 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_f967a6d0dd68",
+        "patent_id": "BR112015015064B1",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO2023035050A1 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_c4b2c01f455e",
+        "patent_id": "WO2023035050A1",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "rec_cf7740d73e52 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_cf7740d73e52",
+        "patent_id": "",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "rec_0b3f39205925 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_0b3f39205925",
+        "patent_id": "",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "BR112015015064B1 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_f967a6d0dd68",
+        "patent_id": "BR112015015064B1",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO2023035050A1 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_c4b2c01f455e",
+        "patent_id": "WO2023035050A1",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "synthesis",
+      "event": "coverage_computed",
+      "detail": "Cobertura e seleção consolidadas após triagem.",
+      "payload": {
+        "raw_scraped": 4,
+        "unique_patents": 4,
+        "duplicates_removed": 0,
+        "screened": 4,
+        "included": 0,
+        "review": 0,
+        "excluded": 4,
+        "manual_review_required": 0,
+        "manual_review_deferred": 0,
+        "full_extractions": 0,
+        "missing_abstract": 0,
+        "missing_id": 2,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 0,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "synthesis",
+      "event": "comparative_analysis_skipped",
+      "detail": "Síntese comparativa pulada por falta de patentes elegíveis.",
+      "payload": {
+        "patents_compared": 0
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 0,
+        "route_summary": {
+          "screen_only": 4
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-05T23:39:36",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "/app/output/patentes_sinterização_20260705_233936.md",
+        "json": "/app/output/patentes_sinterização_20260705_233936.json"
+      }
+    }
+  ]
+}

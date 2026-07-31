@@ -7,6 +7,7 @@ from datetime import datetime
 from typing import Dict, List
 
 from models.patent import Patent, PatentEvaluation
+from pipeline.state_machine import PipelineStateMachine, Stage, Status
 
 
 @dataclass
@@ -54,6 +55,69 @@ class RunState:
     comparative_analysis: str = ""
     output_paths: Dict[str, str] = field(default_factory=dict)
     errors: List[str] = field(default_factory=list)
+    
+    # Máquina de estados (privada, não serializada diretamente)
+    _state_machine: PipelineStateMachine = field(
+        default_factory=PipelineStateMachine,
+        repr=False,
+        compare=False,
+    )
+    
+    def __post_init__(self):
+        """Sincroniza máquina de estados com valores iniciais."""
+        # Se current_stage foi fornecido, tenta sincronizar com a máquina
+        if self.current_stage:
+            try:
+                stage_enum = Stage(self.current_stage)
+                # Navega a máquina até o estágio fornecido
+                # (assumindo caminho linear para simplificar)
+                self._state_machine = PipelineStateMachine()
+                if stage_enum != Stage.IDLE:
+                    # Tenta navegar até o estágio (caminho linear)
+                    path = self._build_path_to(stage_enum)
+                    for stage in path:
+                        self._state_machine.transition_to(stage)
+            except (ValueError, Exception):
+                # Se falhar, mantém a máquina em IDLE
+                pass
+        
+        # Sempre sincroniza status e current_stage com a máquina
+        # Isso garante consistência mesmo quando current_stage está vazio
+        self.status = self._state_machine.status.value
+        self.current_stage = self._state_machine.stage.value
+    
+    def _build_path_to(self, target: Stage) -> List[Stage]:
+        """Constrói caminho linear até o estágio alvo."""
+        # Caminho linear do pipeline principal
+        linear_path = [
+            Stage.SETUP,
+            Stage.SEARCH,
+            Stage.SCREENING,
+            Stage.COMPARATIVE_ANALYSIS,
+            Stage.WHITESPACE_ANALYSIS,
+            Stage.REPORTING,
+            Stage.DONE,
+        ]
+        
+        if target in linear_path:
+            idx = linear_path.index(target)
+            return linear_path[:idx + 1]
+        
+        # Para outros estágios, retorna lista vazia
+        return []
+    
+    def transition_to(self, stage: Stage) -> None:
+        """Transiciona para um novo estágio, validando e sincronizando.
+        
+        Args:
+            stage: estágio de destino
+            
+        Raises:
+            InvalidTransitionError: se a transição não é válida
+        """
+        self._state_machine.transition_to(stage)
+        self.current_stage = self._state_machine.stage.value
+        self.status = self._state_machine.status.value
 
     def to_dict(self) -> dict:
         """Converte o estado para JSON serializável."""
@@ -97,4 +161,5 @@ class RunState:
             "comparative_analysis": self.comparative_analysis,
             "output_paths": self.output_paths,
             "errors": self.errors,
+            "state_machine": self._state_machine.to_dict(),
         }

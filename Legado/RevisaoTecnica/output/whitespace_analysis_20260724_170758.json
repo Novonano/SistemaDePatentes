@@ -1,0 +1,438 @@
+{
+  "status": "ok",
+  "query": "carbon dots laser",
+  "corpus_summary": {
+    "considered_patents": 18,
+    "selected_patents": 7,
+    "core": 1,
+    "frontier": 6,
+    "adjacent": 0
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "118308100",
+      "record_id": "rec_911a5aef211e",
+      "title": "Ultralow-threshold red light FP\nlaser\nbased on\ncarbon\nquantum\ndots\n(ZH)\n一种基于碳量子点的超低阈值红光FP激光器",
+      "screening_decision": "include",
+      "screening_score": 8.0,
+      "relevance_score": 7.0,
+      "bucket": "core",
+      "technical_domain": "Laser Technology & Nanomaterials, Carbon Quantum Dots",
+      "thematic_cluster": "Laser Technology & Nanomaterials, Carbon Quantum Dots",
+      "co2_role": "heat_source",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "laser_device",
+      "cycle_type": "thermoelectric",
+      "heat_source_sink": "high_temperature_environment",
+      "claim_focus": "ultra-low threshold red light FP laser based on carbon quantum dots",
+      "exclusion_category": ""
+    },
+    {
+      "patent_id": "109998671",
+      "record_id": "rec_e0ff9d6655f3",
+      "title": "Carbon\ndioxide\ndot\nmatrix\nlaser\ndevice\n(ZH)\n一种二氧化碳点阵激光装置",
+      "screening_decision": "review",
+      "screening_score": 6.2,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Sistemas de Laser Médicos",
+      "thematic_cluster": "Dispositivos de Remoção de Fumaça para Sistemas de Laser",
+      "co2_role": "working_fluid",
+      "storage_role": "armazenamento térmico explícito",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "laser a pontos de carbono dióxido",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "generic_tes"
+    },
+    {
+      "patent_id": "113336218",
+      "record_id": "rec_5748a2501b92",
+      "title": "Method for preparing\ncarbon\ndots\nby\nlaser\nablation and application of compound of\ncarbon\ndots\nand silver nanoparticles in SERS\n(ZH)\n激光烧蚀制备碳点的方法及该碳点与银纳米颗粒的复合物在SERS的应用",
+      "screening_decision": "review",
+      "screening_score": 7.4,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Nanomateriais, Carbon Dots, Espectroscopia Raman, SERS (Surface-Enhanced Raman Spectroscopy)",
+      "thematic_cluster": "Preparação e Aplicação de Carbon Dots em Espectroscopia Raman para Detecção de Moléculas Traço",
+      "co2_role": "não_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "laser",
+      "claim_focus": "Preparação e aplicação de carbon dots com nanopartículas de prata em SERS.",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "116784974",
+      "record_id": "rec_aca2fc359791",
+      "title": "Ultra-pulse\ncarbon\ndioxide\ndot\nmatrix\nlaser\noutput device\n(ZH)\n超脉冲二氧化碳点阵激光输出装置",
+      "screening_decision": "review",
+      "screening_score": 7.4,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Laser Therapy",
+      "thematic_cluster": "Carbon Dots Laser Systems for Targeted Treatment",
+      "co2_role": "working_fluid",
+      "storage_role": "dedicated_storage_system",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "não especificado no resumo",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "low_alignment"
+    },
+    {
+      "patent_id": "212996713",
+      "record_id": "rec_694274fb70fb",
+      "title": "Carbon\ndioxide\ndot\nmatrix\nlaser\ntherapeutic instrument with adjustable treatment area\n(ZH)\n一种治疗区域可调的二氧化碳点阵激光治疗仪",
+      "screening_decision": "review",
+      "screening_score": 6.2,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Medical Laser Therapy, Carbon Dot Technology",
+      "thematic_cluster": "Laser Therapeutic Instruments with Adjustable Treatment Areas",
+      "co2_role": "Fonte de Laser (Carbon Dots)",
+      "storage_role": "N/A - Não há armazenamento explícito no sistema descrito.",
+      "system_boundary": "Instrumento Laser com Mecanismo de Ajuste da Área de Tratamento",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "Espelhos Côncavo e Convexo (interação termodinâmica para foco do feixe)",
+      "claim_focus": "Ajuste dinâmico da área de tratamento do feixe laser.",
+      "exclusion_category": "low_alignment"
+    },
+    {
+      "patent_id": "215018860",
+      "record_id": "rec_b25703b829b7",
+      "title": "Laser\nprobe for treating hypertrophic scars based on\ncarbon\ndioxide\ndot\nmatrix\nlaser\n(ZH)\n一种基于二氧化碳点阵激光治疗增生性瘢痕的激光探头",
+      "screening_decision": "review",
+      "screening_score": 5.3,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Engenharia de Dispositivos Médicos, Termo-Gerenciamento, Laser Therapy",
+      "thematic_cluster": "Dispositivos Laser para Tratamentos Dermatológicos",
+      "co2_role": "refrigerant_loop",
+      "storage_role": "Implícito - O sistema de conexão de dióxido de carbono sugere um papel no armazenamento e transferência de energia.",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "Laser (fonte de calor) / Sistema de Conexão de Dióxido de Carbono (sumidouro de calor)",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "cooling_only"
+    },
+    {
+      "patent_id": "212997983",
+      "record_id": "rec_5254eb9e0524",
+      "title": "Carbon\ndioxide\ndot\nmatrix\nlaser\ninstrument rotation support\n(ZH)\n一种二氧化碳点阵激光仪回转支架",
+      "screening_decision": "review",
+      "screening_score": 6.2,
+      "relevance_score": 5.6,
+      "bucket": "frontier",
+      "technical_domain": "Laser Systems & Thermal Management",
+      "thematic_cluster": "Suportes Rotativos e Mecanismos de Amortecimento para Sistemas Ópticos",
+      "co2_role": "working_fluid",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "Não especificado no documento, mas presumivelmente o laser de carbon dots.",
+      "claim_focus": "Design e construção mecânica do suporte rotativo para um laser de pontos de carbono.",
+      "exclusion_category": "generic_tes"
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "heat_source": {
+        "core": [
+          "118308100"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "working_fluid": {
+        "core": [],
+        "frontier": [
+          "109998671",
+          "116784974",
+          "212997983"
+        ],
+        "adjacent": []
+      },
+      "não_central": {
+        "core": [],
+        "frontier": [
+          "113336218"
+        ],
+        "adjacent": []
+      },
+      "Fonte de Laser (Carbon Dots)": {
+        "core": [],
+        "frontier": [
+          "212996713"
+        ],
+        "adjacent": []
+      },
+      "refrigerant_loop": {
+        "core": [],
+        "frontier": [
+          "215018860"
+        ],
+        "adjacent": []
+      }
+    },
+    "storage_role": {
+      "explicit_thermal_storage": {
+        "core": [
+          "118308100"
+        ],
+        "frontier": [
+          "113336218",
+          "212997983"
+        ],
+        "adjacent": []
+      },
+      "armazenamento térmico explícito": {
+        "core": [],
+        "frontier": [
+          "109998671"
+        ],
+        "adjacent": []
+      },
+      "dedicated_storage_system": {
+        "core": [],
+        "frontier": [
+          "116784974"
+        ],
+        "adjacent": []
+      },
+      "N/A - Não há armazenamento explícito no sistema descrito.": {
+        "core": [],
+        "frontier": [
+          "212996713"
+        ],
+        "adjacent": []
+      },
+      "Implícito - O sistema de conexão de dióxido de carbono sugere um papel no armazenamento e transferência de energia.": {
+        "core": [],
+        "frontier": [
+          "215018860"
+        ],
+        "adjacent": []
+      }
+    },
+    "system_boundary": {
+      "laser_device": {
+        "core": [
+          "118308100"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "cycle_or_transfer_subsystem": {
+        "core": [],
+        "frontier": [
+          "109998671",
+          "215018860",
+          "212997983"
+        ],
+        "adjacent": []
+      },
+      "process_integration": {
+        "core": [],
+        "frontier": [
+          "113336218"
+        ],
+        "adjacent": []
+      },
+      "dedicated_storage_system": {
+        "core": [],
+        "frontier": [
+          "116784974"
+        ],
+        "adjacent": []
+      },
+      "Instrumento Laser com Mecanismo de Ajuste da Área de Tratamento": {
+        "core": [],
+        "frontier": [
+          "212996713"
+        ],
+        "adjacent": []
+      }
+    },
+    "cycle_type": {
+      "thermoelectric": {
+        "core": [
+          "118308100"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "refrigeration_cycle": {
+        "core": [],
+        "frontier": [
+          "109998671",
+          "212996713",
+          "215018860",
+          "212997983"
+        ],
+        "adjacent": []
+      },
+      "not_clear": {
+        "core": [],
+        "frontier": [
+          "113336218",
+          "116784974"
+        ],
+        "adjacent": []
+      }
+    },
+    "heat_source_sink": {
+      "high_temperature_environment": {
+        "core": [
+          "118308100"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "laser a pontos de carbono dióxido": {
+        "core": [],
+        "frontier": [
+          "109998671"
+        ],
+        "adjacent": []
+      },
+      "laser": {
+        "core": [],
+        "frontier": [
+          "113336218"
+        ],
+        "adjacent": []
+      },
+      "não especificado no resumo": {
+        "core": [],
+        "frontier": [
+          "116784974"
+        ],
+        "adjacent": []
+      },
+      "Espelhos Côncavo e Convexo (interação termodinâmica para foco do feixe)": {
+        "core": [],
+        "frontier": [
+          "212996713"
+        ],
+        "adjacent": []
+      },
+      "Laser (fonte de calor) / Sistema de Conexão de Dióxido de Carbono (sumidouro de calor)": {
+        "core": [],
+        "frontier": [
+          "215018860"
+        ],
+        "adjacent": []
+      },
+      "Não especificado no documento, mas presumivelmente o laser de carbon dots.": {
+        "core": [],
+        "frontier": [
+          "212997983"
+        ],
+        "adjacent": []
+      }
+    },
+    "claim_focus": {
+      "ultra-low threshold red light FP laser based on carbon quantum dots": {
+        "core": [
+          "118308100"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "system_architecture": {
+        "core": [],
+        "frontier": [
+          "109998671"
+        ],
+        "adjacent": []
+      },
+      "Preparação e aplicação de carbon dots com nanopartículas de prata em SERS.": {
+        "core": [],
+        "frontier": [
+          "113336218"
+        ],
+        "adjacent": []
+      },
+      "component_or_operation": {
+        "core": [],
+        "frontier": [
+          "116784974",
+          "215018860"
+        ],
+        "adjacent": []
+      },
+      "Ajuste dinâmico da área de tratamento do feixe laser.": {
+        "core": [],
+        "frontier": [
+          "212996713"
+        ],
+        "adjacent": []
+      },
+      "Design e construção mecânica do suporte rotativo para um laser de pontos de carbono.": {
+        "core": [],
+        "frontier": [
+          "212997983"
+        ],
+        "adjacent": []
+      }
+    },
+    "exclusion_category": {
+      "not_clear": {
+        "core": [
+          "118308100"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "generic_tes": {
+        "core": [],
+        "frontier": [
+          "109998671",
+          "212997983"
+        ],
+        "adjacent": []
+      },
+      "industrial_heat_adjacent": {
+        "core": [],
+        "frontier": [
+          "113336218"
+        ],
+        "adjacent": []
+      },
+      "low_alignment": {
+        "core": [],
+        "frontier": [
+          "116784974",
+          "212996713"
+        ],
+        "adjacent": []
+      },
+      "cooling_only": {
+        "core": [],
+        "frontier": [
+          "215018860"
+        ],
+        "adjacent": []
+      }
+    }
+  },
+  "whitespace_candidates": [
+    {
+      "opportunity": "hybrid_cycle_storage_architecture",
+      "confidence": "medium",
+      "rationale": "Combinar ciclos/transferencia com CO2 e armazenamento termico explicitamente reivindicado ainda aparece fragmentado entre nucleo e borda tecnica.",
+      "core_ids": [
+        "118308100"
+      ],
+      "frontier_ids": [
+        "109998671",
+        "113336218",
+        "116784974"
+      ],
+      "adjacent_ids": []
+    }
+  ],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- O whitespace mais promissor esta na combinacao entre arquiteturas de ciclo/transferencia termica com CO2 e armazenamento explicito do inventario termico, porque esses elementos ainda aparecem fragmentados entre nucleo, fronteira e adjacencia [IDs: 118308100, 109998671, 113336218, 116784974]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: 109998671, 113336218, 116784974, 212996713]"
+}

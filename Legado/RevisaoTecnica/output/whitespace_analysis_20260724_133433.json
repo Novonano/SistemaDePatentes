@@ -1,0 +1,385 @@
+{
+  "status": "ok",
+  "query": "carbon dots CO2 laser",
+  "corpus_summary": {
+    "considered_patents": 18,
+    "selected_patents": 7,
+    "core": 0,
+    "frontier": 7,
+    "adjacent": 0
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "CN119742647A",
+      "record_id": "rec_b3ff7b05cb8e",
+      "title": "A 10,000-watt radio frequency fast axial flow carbon dioxide laser",
+      "screening_decision": "review",
+      "screening_score": 7.7,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Laser Technology, Termodinâmica, Sistemas de Resfriamento",
+      "thematic_cluster": "Lasers de Alta Potência e Resfriamento",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "cooling_or_refrigeration",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "cooling_only"
+    },
+    {
+      "patent_id": "CN205569064U",
+      "record_id": "rec_b11edeb58983",
+      "title": "Super pulse carbon dioxide dot matrix laser therapy apparatus",
+      "screening_decision": "review",
+      "screening_score": 6.4,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Laser Therapy & Biomedical Engineering",
+      "thematic_cluster": "Laser-Based Surface Treatment Systems",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "Laser Beam",
+      "claim_focus": "Escaneamento e foco do laser em aplicações terapêuticas",
+      "exclusion_category": "cooling_only"
+    },
+    {
+      "patent_id": "US20240075453A1",
+      "record_id": "rec_dd866e6d7249",
+      "title": "Selective carbon binding on carbon quantum dots",
+      "screening_decision": "review",
+      "screening_score": 7.1,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Materiais Avançados / Química de Carbonos",
+      "thematic_cluster": "Adsorção Seletiva de Gases / Carbon Dots",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "CO2",
+      "claim_focus": "Preparação e uso de carbon dots para adsorção seletiva de CO2.",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "US7453918B2",
+      "record_id": "rec_978529d55152",
+      "title": "Pulsed RF high pressure CO2 lasers",
+      "screening_decision": "review",
+      "screening_score": 6.4,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Laser Technology",
+      "thematic_cluster": "High-Pressure CO2 Lasers",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "RF Excitation",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "co2_working_fluid_only"
+    },
+    {
+      "patent_id": "US20240132362A1",
+      "record_id": "rec_48b16c3d81aa",
+      "title": "Quantum dot sensitized photoreduction of carbon dioxide",
+      "screening_decision": "review",
+      "screening_score": 5.5,
+      "relevance_score": 6.3,
+      "bucket": "frontier",
+      "technical_domain": "Fotocatalise, Química de Materiais",
+      "thematic_cluster": "Fotoredutção de CO2 com QDs",
+      "co2_role": "substrato_de_reação",
+      "storage_role": "implícito_ou_suporte_ao_armazenamento",
+      "system_boundary": "process_integration",
+      "cycle_type": "não_claro",
+      "heat_source_sink": "não_especificado",
+      "claim_focus": "sensibilização fotocatalítica com QDs para redução de CO2",
+      "exclusion_category": "generic_tes"
+    },
+    {
+      "patent_id": "US20210349011A1",
+      "record_id": "rec_2a9fec0406cd",
+      "title": "Laser radar system apparatus for multi-wavelength measurement of atmospheric carbon dioxide concentration and vertical aerosol profile",
+      "screening_decision": "review",
+      "screening_score": 5.5,
+      "relevance_score": 4.9,
+      "bucket": "frontier",
+      "technical_domain": "Remote Sensing & Atmospheric Monitoring",
+      "thematic_cluster": "Laser-based atmospheric sensing and aerosol profiling",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "não especificado",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "co2_working_fluid_only"
+    },
+    {
+      "patent_id": "WO2013154949A2",
+      "record_id": "rec_58aec1c9302f",
+      "title": "Pulsed co2 laser output-pulse shape and power control",
+      "screening_decision": "review",
+      "screening_score": 5.0,
+      "relevance_score": 4.0,
+      "bucket": "frontier",
+      "technical_domain": "Laser Technology & Thermal Management",
+      "thematic_cluster": "Controle de Potência em Sistemas Laser",
+      "co2_role": "working_fluid",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "laser CO2",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "co2_working_fluid_only"
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "working_fluid": {
+        "core": [],
+        "frontier": [
+          "CN119742647A",
+          "CN205569064U",
+          "US7453918B2",
+          "WO2013154949A2"
+        ],
+        "adjacent": []
+      },
+      "stored_thermodynamic_medium": {
+        "core": [],
+        "frontier": [
+          "US20240075453A1"
+        ],
+        "adjacent": []
+      },
+      "substrato_de_reação": {
+        "core": [],
+        "frontier": [
+          "US20240132362A1"
+        ],
+        "adjacent": []
+      },
+      "capture_process_stream": {
+        "core": [],
+        "frontier": [
+          "US20210349011A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "storage_role": {
+      "implicit_or_support_storage": {
+        "core": [],
+        "frontier": [
+          "CN119742647A",
+          "CN205569064U",
+          "US7453918B2"
+        ],
+        "adjacent": []
+      },
+      "explicit_thermal_storage": {
+        "core": [],
+        "frontier": [
+          "US20240075453A1",
+          "US20210349011A1",
+          "WO2013154949A2"
+        ],
+        "adjacent": []
+      },
+      "implícito_ou_suporte_ao_armazenamento": {
+        "core": [],
+        "frontier": [
+          "US20240132362A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "system_boundary": {
+      "cycle_or_transfer_subsystem": {
+        "core": [],
+        "frontier": [
+          "CN119742647A",
+          "CN205569064U",
+          "US7453918B2",
+          "WO2013154949A2"
+        ],
+        "adjacent": []
+      },
+      "process_integration": {
+        "core": [],
+        "frontier": [
+          "US20240075453A1",
+          "US20240132362A1",
+          "US20210349011A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "cycle_type": {
+      "power_or_work_cycle": {
+        "core": [],
+        "frontier": [
+          "CN119742647A",
+          "US7453918B2",
+          "WO2013154949A2"
+        ],
+        "adjacent": []
+      },
+      "not_clear": {
+        "core": [],
+        "frontier": [
+          "CN205569064U",
+          "US20240075453A1",
+          "US20210349011A1"
+        ],
+        "adjacent": []
+      },
+      "não_claro": {
+        "core": [],
+        "frontier": [
+          "US20240132362A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "heat_source_sink": {
+      "cooling_or_refrigeration": {
+        "core": [],
+        "frontier": [
+          "CN119742647A"
+        ],
+        "adjacent": []
+      },
+      "Laser Beam": {
+        "core": [],
+        "frontier": [
+          "CN205569064U"
+        ],
+        "adjacent": []
+      },
+      "CO2": {
+        "core": [],
+        "frontier": [
+          "US20240075453A1"
+        ],
+        "adjacent": []
+      },
+      "RF Excitation": {
+        "core": [],
+        "frontier": [
+          "US7453918B2"
+        ],
+        "adjacent": []
+      },
+      "não_especificado": {
+        "core": [],
+        "frontier": [
+          "US20240132362A1"
+        ],
+        "adjacent": []
+      },
+      "não especificado": {
+        "core": [],
+        "frontier": [
+          "US20210349011A1"
+        ],
+        "adjacent": []
+      },
+      "laser CO2": {
+        "core": [],
+        "frontier": [
+          "WO2013154949A2"
+        ],
+        "adjacent": []
+      }
+    },
+    "claim_focus": {
+      "component_or_operation": {
+        "core": [],
+        "frontier": [
+          "CN119742647A",
+          "WO2013154949A2"
+        ],
+        "adjacent": []
+      },
+      "Escaneamento e foco do laser em aplicações terapêuticas": {
+        "core": [],
+        "frontier": [
+          "CN205569064U"
+        ],
+        "adjacent": []
+      },
+      "Preparação e uso de carbon dots para adsorção seletiva de CO2.": {
+        "core": [],
+        "frontier": [
+          "US20240075453A1"
+        ],
+        "adjacent": []
+      },
+      "system_architecture": {
+        "core": [],
+        "frontier": [
+          "US7453918B2",
+          "US20210349011A1"
+        ],
+        "adjacent": []
+      },
+      "sensibilização fotocatalítica com QDs para redução de CO2": {
+        "core": [],
+        "frontier": [
+          "US20240132362A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "exclusion_category": {
+      "cooling_only": {
+        "core": [],
+        "frontier": [
+          "CN119742647A",
+          "CN205569064U"
+        ],
+        "adjacent": []
+      },
+      "industrial_heat_adjacent": {
+        "core": [],
+        "frontier": [
+          "US20240075453A1"
+        ],
+        "adjacent": []
+      },
+      "co2_working_fluid_only": {
+        "core": [],
+        "frontier": [
+          "US7453918B2",
+          "US20210349011A1",
+          "WO2013154949A2"
+        ],
+        "adjacent": []
+      },
+      "generic_tes": {
+        "core": [],
+        "frontier": [
+          "US20240132362A1"
+        ],
+        "adjacent": []
+      }
+    }
+  },
+  "whitespace_candidates": [
+    {
+      "opportunity": "control_and_operability_claims",
+      "confidence": "medium",
+      "rationale": "Ha espaco para claims de controle, operacao transiente e integracao de processo onde o papel do CO2 e do armazenamento ainda esta ambiguo.",
+      "core_ids": [],
+      "frontier_ids": [
+        "CN119742647A"
+      ],
+      "adjacent_ids": []
+    }
+  ],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: CN119742647A, US20240075453A1, US20210349011A1, CN205569064U]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN119742647A, CN205569064U, US20240075453A1, US7453918B2]"
+}

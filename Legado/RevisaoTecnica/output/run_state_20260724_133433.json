@@ -1,0 +1,3429 @@
+{
+  "query": "carbon dots CO2 laser",
+  "max_results": 10,
+  "model": "gemma3:4b",
+  "output_dir": "/app/output",
+  "feature_flags": {
+    "require_evidence": true,
+    "enable_thematic_clusters": true,
+    "enable_structural_roles": true,
+    "enable_screening_rerank": true,
+    "enable_prisma": true,
+    "enable_snapshot": true,
+    "enable_comparative_analysis": true,
+    "enable_whitespace_analysis": true,
+    "enable_manual_review_queue": true
+  },
+  "config_snapshot": {
+    "pipeline_version": "1.1",
+    "timestamp": "2026-07-24T13:34:33",
+    "query": "carbon dots CO2 laser",
+    "max_results": 10,
+    "model": "gemma3:4b",
+    "output_dir": "/app/output",
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "thresholds": {
+      "include": 7.0,
+      "review": 4.5,
+      "manual_review_limit": 20
+    },
+    "runtime": {
+      "ollama_base_url": "http://ollama:11434",
+      "ollama_timeout": 600
+    },
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ]
+  },
+  "snapshot_hash": "c0ce3ca3756dce924ad1ec3b95077e1231518006cc235667be35c7c8c002f9c3",
+  "protocol": {
+    "version": "1.0",
+    "query": "carbon dots CO2 laser",
+    "sources": [
+      "Google Patents",
+      "Patentscope"
+    ],
+    "stages": [
+      "identification",
+      "deduplication",
+      "screening",
+      "manual_review",
+      "full_extraction",
+      "synthesis"
+    ],
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "limits": {
+      "max_results": 10
+    },
+    "model": "gemma3:4b"
+  },
+  "writing_context": {
+    "protocol": {
+      "version": "1.0",
+      "query": "carbon dots CO2 laser",
+      "sources": [
+        "Google Patents",
+        "Patentscope"
+      ],
+      "stages": [
+        "identification",
+        "deduplication",
+        "screening",
+        "manual_review",
+        "full_extraction",
+        "synthesis"
+      ],
+      "criteria": {
+        "include": [
+          "Alinhamento claro com a query ou seus sinônimos técnicos.",
+          "Documento com título, resumo ou snippet suficientes para análise.",
+          "Potencial técnico relevante para o domínio pesquisado."
+        ],
+        "exclude": [
+          "Documentos sem relação técnica com a query.",
+          "Duplicatas de outra fonte ou publicação equivalente.",
+          "Registro sem metadados mínimos para avaliação."
+        ]
+      },
+      "thresholds": {
+        "include_score": 7.0,
+        "review_score": 4.5,
+        "max_items_for_manual_review": 20
+      },
+      "limits": {
+        "max_results": 10
+      },
+      "model": "gemma3:4b"
+    },
+    "coverage_metrics": {
+      "raw_scraped": 19,
+      "unique_patents": 18,
+      "duplicates_removed": 1,
+      "screened": 18,
+      "included": 0,
+      "review": 7,
+      "excluded": 11,
+      "manual_review_required": 7,
+      "manual_review_deferred": 0,
+      "full_extractions": 7,
+      "missing_abstract": 1,
+      "missing_id": 0,
+      "records_with_content_identity": 0,
+      "records_with_fallback_identity": 0,
+      "family_duplicates_removed": 1,
+      "llm_screening_failures": 0,
+      "llm_total_failures": 0
+    },
+    "top_patents": [],
+    "thematic_clusters": {
+      "clusters": [],
+      "total_clusters": 0
+    },
+    "route_summary": {
+      "manual_review": 7,
+      "screen_only": 11
+    },
+    "feature_flags": {
+      "require_evidence": true,
+      "enable_thematic_clusters": true,
+      "enable_structural_roles": true,
+      "enable_screening_rerank": true,
+      "enable_prisma": true,
+      "enable_snapshot": true,
+      "enable_comparative_analysis": true,
+      "enable_whitespace_analysis": true,
+      "enable_manual_review_queue": true
+    },
+    "snapshot_hash": "c0ce3ca3756dce924ad1ec3b95077e1231518006cc235667be35c7c8c002f9c3"
+  },
+  "memory_sidecar": {
+    "run_id": "20260724_133433",
+    "max_items_per_slot": 5,
+    "slots": {
+      "review": [
+        {
+          "record_id": "rec_58aec1c9302f",
+          "patent_id": "WO2013154949A2",
+          "title": "Pulsed co2 laser output-pulse shape and power control",
+          "route": "manual_review",
+          "score": 5.0
+        },
+        {
+          "record_id": "rec_48b16c3d81aa",
+          "patent_id": "US20240132362A1",
+          "title": "Quantum dot sensitized photoreduction of carbon dioxide",
+          "route": "manual_review",
+          "score": 5.5
+        },
+        {
+          "record_id": "rec_978529d55152",
+          "patent_id": "US7453918B2",
+          "title": "Pulsed RF high pressure CO2 lasers",
+          "route": "manual_review",
+          "score": 6.4
+        },
+        {
+          "record_id": "rec_2a9fec0406cd",
+          "patent_id": "US20210349011A1",
+          "title": "Laser radar system apparatus for multi-wavelength measurement of atmospheric carbon dioxide concentration and vertical aerosol profile",
+          "route": "manual_review",
+          "score": 5.5
+        },
+        {
+          "record_id": "rec_b3ff7b05cb8e",
+          "patent_id": "CN119742647A",
+          "title": "A 10,000-watt radio frequency fast axial flow carbon dioxide laser",
+          "route": "manual_review",
+          "score": 7.7
+        }
+      ],
+      "screening": [
+        {
+          "record_id": "rec_03338d832e80",
+          "patent_id": "20180003565",
+          "title": "Advanced multi-element consumable-disposable products",
+          "route": "screen_only",
+          "score": 1.7
+        },
+        {
+          "record_id": "rec_7b0001c43bfd",
+          "patent_id": "20140221528",
+          "title": "Advanced multi-element consumable-disposable products",
+          "route": "screen_only",
+          "score": 1.7
+        },
+        {
+          "record_id": "rec_e34e165b0c23",
+          "patent_id": "WO/2022/069664",
+          "title": "eTPE\nLASER\nMARKING\n(FR)\nMARQUAGE LASER ETPE",
+          "route": "screen_only",
+          "score": 3.5
+        },
+        {
+          "record_id": "rec_50d42a982380",
+          "patent_id": "6556273",
+          "title": "System for providing pre-processing machine readable encoded information markings in a motion picture film",
+          "route": "screen_only",
+          "score": 3.3
+        },
+        {
+          "record_id": "rec_52765fd5808d",
+          "patent_id": "WO/2001/035163",
+          "title": "A SYSTEM FOR PROVIDING PRE-PROCESSING MACHINE READABLE ENCODED INFORMATION MARKINGS IN A MOTION PICTURE FILM\n(FR)\nSYSTEME PERMETTANT DE PRODUIRE DES INSCRIPTIONS DE DONNEES DE PRETRAITEMENT CODEES LISIBLES PAR MACHINE SUR UN FILM CINEMATOGRAPHIQUE",
+          "route": "screen_only",
+          "score": 3.3
+        }
+      ],
+      "writer": [
+        {
+          "top_patents": [],
+          "route_summary": {
+            "manual_review": 7,
+            "screen_only": 11
+          }
+        }
+      ]
+    },
+    "journal": [
+      {
+        "timestamp": "2026-07-24T13:34:37",
+        "stage": "setup",
+        "event": "llm_check",
+        "detail": "Verificação de disponibilidade do Ollama concluída.",
+        "payload": {
+          "llm_available": true,
+          "model": "gemma3:4b"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:35:03",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "GooglePatents retornou patentes.",
+        "payload": {
+          "source": "GooglePatents",
+          "count": 9,
+          "diagnostics": []
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "Patentscope retornou patentes.",
+        "payload": {
+          "source": "Patentscope",
+          "count": 10,
+          "diagnostics": []
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "identification",
+        "event": "scrape_completed",
+        "detail": "EPO retornou patentes.",
+        "payload": {
+          "source": "EPO",
+          "count": 0,
+          "diagnostics": [
+            {
+              "kind": "config_missing",
+              "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+              "url": ""
+            }
+          ]
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN205569064U roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_b11edeb58983",
+          "patent_id": "CN205569064U",
+          "decision": "review",
+          "score": 6.4,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US20240075453A1 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_dd866e6d7249",
+          "patent_id": "US20240075453A1",
+          "decision": "review",
+          "score": 7.1,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO2013154949A2 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_58aec1c9302f",
+          "patent_id": "WO2013154949A2",
+          "decision": "review",
+          "score": 5.0,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US20240132362A1 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_48b16c3d81aa",
+          "patent_id": "US20240132362A1",
+          "decision": "review",
+          "score": 5.5,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US7453918B2 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_978529d55152",
+          "patent_id": "US7453918B2",
+          "decision": "review",
+          "score": 6.4,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US20210349011A1 roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_2a9fec0406cd",
+          "patent_id": "US20210349011A1",
+          "decision": "review",
+          "score": 5.5,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN119742647A roteada para manual_review.",
+        "payload": {
+          "record_id": "rec_b3ff7b05cb8e",
+          "patent_id": "CN119742647A",
+          "decision": "review",
+          "score": 7.7,
+          "route": {
+            "route": "manual_review",
+            "reason": "Triagem indicou revisão humana.",
+            "slot": "review"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "US12384680B2 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_088645a041e0",
+          "patent_id": "US12384680B2",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "CN109705627A roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_cdb57d537407",
+          "patent_id": "CN109705627A",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20010048797 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_ada95ec7d9a9",
+          "patent_id": "20010048797",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2001/068776 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_16365a279915",
+          "patent_id": "WO/2001/068776",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2006/067380 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_a16fbb141ab9",
+          "patent_id": "WO/2006/067380",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20240002621 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_10b20ac8d2a9",
+          "patent_id": "20240002621",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20180003565 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_03338d832e80",
+          "patent_id": "20180003565",
+          "decision": "exclude",
+          "score": 1.7,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "20140221528 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_7b0001c43bfd",
+          "patent_id": "20140221528",
+          "decision": "exclude",
+          "score": 1.7,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2022/069664 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_e34e165b0c23",
+          "patent_id": "WO/2022/069664",
+          "decision": "exclude",
+          "score": 3.5,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "6556273 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_50d42a982380",
+          "patent_id": "6556273",
+          "decision": "exclude",
+          "score": 3.3,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "screening",
+        "event": "screening_completed",
+        "detail": "WO/2001/035163 roteada para screen_only.",
+        "payload": {
+          "record_id": "rec_52765fd5808d",
+          "patent_id": "WO/2001/035163",
+          "decision": "exclude",
+          "score": 3.3,
+          "route": {
+            "route": "screen_only",
+            "reason": "Patente excluída na triagem.",
+            "slot": "screening"
+          },
+          "llm_error": ""
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN205569064U recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_b11edeb58983",
+          "patent_id": "CN205569064U",
+          "route": "manual_review",
+          "confidence": 0.75
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US20240075453A1 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_dd866e6d7249",
+          "patent_id": "US20240075453A1",
+          "route": "manual_review",
+          "confidence": 0.75
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "WO2013154949A2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_58aec1c9302f",
+          "patent_id": "WO2013154949A2",
+          "route": "manual_review",
+          "confidence": 0.66
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US20240132362A1 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_48b16c3d81aa",
+          "patent_id": "US20240132362A1",
+          "route": "manual_review",
+          "confidence": 0.66
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US7453918B2 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_978529d55152",
+          "patent_id": "US7453918B2",
+          "route": "manual_review",
+          "confidence": 0.75
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "US20210349011A1 recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_2a9fec0406cd",
+          "patent_id": "US20210349011A1",
+          "route": "manual_review",
+          "confidence": 0.66
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "detailed_evaluation_completed",
+        "detail": "CN119742647A recebeu extração detalhada.",
+        "payload": {
+          "record_id": "rec_b3ff7b05cb8e",
+          "patent_id": "CN119742647A",
+          "route": "manual_review",
+          "confidence": 0.79
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "US12384680B2 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_088645a041e0",
+          "patent_id": "US12384680B2",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "CN109705627A permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_cdb57d537407",
+          "patent_id": "CN109705627A",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20010048797 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_ada95ec7d9a9",
+          "patent_id": "20010048797",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2001/068776 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_16365a279915",
+          "patent_id": "WO/2001/068776",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2006/067380 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_a16fbb141ab9",
+          "patent_id": "WO/2006/067380",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20240002621 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_10b20ac8d2a9",
+          "patent_id": "20240002621",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20180003565 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_03338d832e80",
+          "patent_id": "20180003565",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "20140221528 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_7b0001c43bfd",
+          "patent_id": "20140221528",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2022/069664 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_e34e165b0c23",
+          "patent_id": "WO/2022/069664",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "6556273 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_50d42a982380",
+          "patent_id": "6556273",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "extraction",
+        "event": "screening_only",
+        "detail": "WO/2001/035163 permaneceu apenas na triagem.",
+        "payload": {
+          "record_id": "rec_52765fd5808d",
+          "patent_id": "WO/2001/035163",
+          "route": "screen_only"
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "synthesis",
+        "event": "coverage_computed",
+        "detail": "Cobertura e seleção consolidadas após triagem.",
+        "payload": {
+          "raw_scraped": 19,
+          "unique_patents": 18,
+          "duplicates_removed": 1,
+          "screened": 18,
+          "included": 0,
+          "review": 7,
+          "excluded": 11,
+          "manual_review_required": 7,
+          "manual_review_deferred": 0,
+          "full_extractions": 7,
+          "missing_abstract": 1,
+          "missing_id": 0,
+          "records_with_content_identity": 0,
+          "records_with_fallback_identity": 0,
+          "family_duplicates_removed": 1,
+          "llm_screening_failures": 0,
+          "llm_total_failures": 0
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "synthesis",
+        "event": "comparative_analysis_completed",
+        "detail": "Síntese comparativa gerada via Ollama.",
+        "payload": {
+          "patents_compared": 18
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "synthesis",
+        "event": "whitespace_analysis_completed",
+        "detail": "Matriz estruturada de whitespace gerada.",
+        "payload": {
+          "selected_patents": 7,
+          "candidates": 1
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "writer",
+        "event": "context_prepared",
+        "detail": "Contexto compartilhado preparado para o writer.",
+        "payload": {
+          "top_patents": 0,
+          "route_summary": {
+            "manual_review": 7,
+            "screen_only": 11
+          }
+        }
+      },
+      {
+        "timestamp": "2026-07-24T13:36:10",
+        "stage": "finalization",
+        "event": "report_generated",
+        "detail": "Relatórios finais gerados com sucesso.",
+        "payload": {
+          "markdown": "/app/output/patentes_carbon_dots_CO2_laser_20260724_133610.md",
+          "json": "/app/output/patentes_carbon_dots_CO2_laser_20260724_133610.json"
+        }
+      }
+    ]
+  },
+  "memory_journal": [
+    {
+      "timestamp": "2026-07-24T13:34:37",
+      "stage": "setup",
+      "event": "llm_check",
+      "detail": "Verificação de disponibilidade do Ollama concluída.",
+      "payload": {
+        "llm_available": true,
+        "model": "gemma3:4b"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:35:03",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "GooglePatents retornou patentes.",
+      "payload": {
+        "source": "GooglePatents",
+        "count": 9,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "Patentscope retornou patentes.",
+      "payload": {
+        "source": "Patentscope",
+        "count": 10,
+        "diagnostics": []
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "identification",
+      "event": "scrape_completed",
+      "detail": "EPO retornou patentes.",
+      "payload": {
+        "source": "EPO",
+        "count": 0,
+        "diagnostics": [
+          {
+            "kind": "config_missing",
+            "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+            "url": ""
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN205569064U roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_b11edeb58983",
+        "patent_id": "CN205569064U",
+        "decision": "review",
+        "score": 6.4,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20240075453A1 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_dd866e6d7249",
+        "patent_id": "US20240075453A1",
+        "decision": "review",
+        "score": 7.1,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO2013154949A2 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_58aec1c9302f",
+        "patent_id": "WO2013154949A2",
+        "decision": "review",
+        "score": 5.0,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20240132362A1 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_48b16c3d81aa",
+        "patent_id": "US20240132362A1",
+        "decision": "review",
+        "score": 5.5,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US7453918B2 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_978529d55152",
+        "patent_id": "US7453918B2",
+        "decision": "review",
+        "score": 6.4,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US20210349011A1 roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_2a9fec0406cd",
+        "patent_id": "US20210349011A1",
+        "decision": "review",
+        "score": 5.5,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN119742647A roteada para manual_review.",
+      "payload": {
+        "record_id": "rec_b3ff7b05cb8e",
+        "patent_id": "CN119742647A",
+        "decision": "review",
+        "score": 7.7,
+        "route": {
+          "route": "manual_review",
+          "reason": "Triagem indicou revisão humana.",
+          "slot": "review"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "US12384680B2 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_088645a041e0",
+        "patent_id": "US12384680B2",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "CN109705627A roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_cdb57d537407",
+        "patent_id": "CN109705627A",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20010048797 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_ada95ec7d9a9",
+        "patent_id": "20010048797",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2001/068776 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_16365a279915",
+        "patent_id": "WO/2001/068776",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2006/067380 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_a16fbb141ab9",
+        "patent_id": "WO/2006/067380",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20240002621 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_10b20ac8d2a9",
+        "patent_id": "20240002621",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20180003565 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_03338d832e80",
+        "patent_id": "20180003565",
+        "decision": "exclude",
+        "score": 1.7,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "20140221528 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_7b0001c43bfd",
+        "patent_id": "20140221528",
+        "decision": "exclude",
+        "score": 1.7,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2022/069664 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_e34e165b0c23",
+        "patent_id": "WO/2022/069664",
+        "decision": "exclude",
+        "score": 3.5,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "6556273 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_50d42a982380",
+        "patent_id": "6556273",
+        "decision": "exclude",
+        "score": 3.3,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "screening",
+      "event": "screening_completed",
+      "detail": "WO/2001/035163 roteada para screen_only.",
+      "payload": {
+        "record_id": "rec_52765fd5808d",
+        "patent_id": "WO/2001/035163",
+        "decision": "exclude",
+        "score": 3.3,
+        "route": {
+          "route": "screen_only",
+          "reason": "Patente excluída na triagem.",
+          "slot": "screening"
+        },
+        "llm_error": ""
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN205569064U recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_b11edeb58983",
+        "patent_id": "CN205569064U",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US20240075453A1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_dd866e6d7249",
+        "patent_id": "US20240075453A1",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "WO2013154949A2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_58aec1c9302f",
+        "patent_id": "WO2013154949A2",
+        "route": "manual_review",
+        "confidence": 0.66
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US20240132362A1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_48b16c3d81aa",
+        "patent_id": "US20240132362A1",
+        "route": "manual_review",
+        "confidence": 0.66
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US7453918B2 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_978529d55152",
+        "patent_id": "US7453918B2",
+        "route": "manual_review",
+        "confidence": 0.75
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "US20210349011A1 recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_2a9fec0406cd",
+        "patent_id": "US20210349011A1",
+        "route": "manual_review",
+        "confidence": 0.66
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "detailed_evaluation_completed",
+      "detail": "CN119742647A recebeu extração detalhada.",
+      "payload": {
+        "record_id": "rec_b3ff7b05cb8e",
+        "patent_id": "CN119742647A",
+        "route": "manual_review",
+        "confidence": 0.79
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "US12384680B2 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_088645a041e0",
+        "patent_id": "US12384680B2",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "CN109705627A permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_cdb57d537407",
+        "patent_id": "CN109705627A",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20010048797 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_ada95ec7d9a9",
+        "patent_id": "20010048797",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2001/068776 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_16365a279915",
+        "patent_id": "WO/2001/068776",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2006/067380 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_a16fbb141ab9",
+        "patent_id": "WO/2006/067380",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20240002621 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_10b20ac8d2a9",
+        "patent_id": "20240002621",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20180003565 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_03338d832e80",
+        "patent_id": "20180003565",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "20140221528 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_7b0001c43bfd",
+        "patent_id": "20140221528",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2022/069664 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_e34e165b0c23",
+        "patent_id": "WO/2022/069664",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "6556273 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_50d42a982380",
+        "patent_id": "6556273",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "extraction",
+      "event": "screening_only",
+      "detail": "WO/2001/035163 permaneceu apenas na triagem.",
+      "payload": {
+        "record_id": "rec_52765fd5808d",
+        "patent_id": "WO/2001/035163",
+        "route": "screen_only"
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "synthesis",
+      "event": "coverage_computed",
+      "detail": "Cobertura e seleção consolidadas após triagem.",
+      "payload": {
+        "raw_scraped": 19,
+        "unique_patents": 18,
+        "duplicates_removed": 1,
+        "screened": 18,
+        "included": 0,
+        "review": 7,
+        "excluded": 11,
+        "manual_review_required": 7,
+        "manual_review_deferred": 0,
+        "full_extractions": 7,
+        "missing_abstract": 1,
+        "missing_id": 0,
+        "records_with_content_identity": 0,
+        "records_with_fallback_identity": 0,
+        "family_duplicates_removed": 1,
+        "llm_screening_failures": 0,
+        "llm_total_failures": 0
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "synthesis",
+      "event": "comparative_analysis_completed",
+      "detail": "Síntese comparativa gerada via Ollama.",
+      "payload": {
+        "patents_compared": 18
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "synthesis",
+      "event": "whitespace_analysis_completed",
+      "detail": "Matriz estruturada de whitespace gerada.",
+      "payload": {
+        "selected_patents": 7,
+        "candidates": 1
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "writer",
+      "event": "context_prepared",
+      "detail": "Contexto compartilhado preparado para o writer.",
+      "payload": {
+        "top_patents": 0,
+        "route_summary": {
+          "manual_review": 7,
+          "screen_only": 11
+        }
+      }
+    },
+    {
+      "timestamp": "2026-07-24T13:36:10",
+      "stage": "finalization",
+      "event": "report_generated",
+      "detail": "Relatórios finais gerados com sucesso.",
+      "payload": {
+        "markdown": "/app/output/patentes_carbon_dots_CO2_laser_20260724_133610.md",
+        "json": "/app/output/patentes_carbon_dots_CO2_laser_20260724_133610.json"
+      }
+    }
+  ],
+  "stage_metrics": [
+    {
+      "stage": "setup",
+      "status": "ok",
+      "duration_seconds": 3.721,
+      "items_processed": 1,
+      "detail": "Verificação do modelo Ollama"
+    },
+    {
+      "stage": "search",
+      "status": "ok",
+      "duration_seconds": 92.894,
+      "items_processed": 19,
+      "detail": "18 patentes únicas após dedupe"
+    },
+    {
+      "stage": "screening",
+      "status": "ok",
+      "duration_seconds": 0.008,
+      "items_processed": 18,
+      "detail": "0 incluídas, 7 revisão"
+    },
+    {
+      "stage": "comparative_analysis",
+      "status": "ok",
+      "duration_seconds": 0.003,
+      "items_processed": 18,
+      "detail": "Síntese comparativa gerada"
+    },
+    {
+      "stage": "whitespace_analysis",
+      "status": "ok",
+      "duration_seconds": 0.002,
+      "items_processed": 7,
+      "detail": "Whitespace analysis estruturada gerada"
+    },
+    {
+      "stage": "reporting",
+      "status": "ok",
+      "duration_seconds": 0.005,
+      "items_processed": 18,
+      "detail": "Relatórios Markdown e JSON"
+    },
+    {
+      "stage": "finalization",
+      "status": "ok",
+      "duration_seconds": 0.001,
+      "items_processed": 8,
+      "detail": "Persistência de artefatos e estado"
+    }
+  ],
+  "llm_cache_stats": {
+    "hits": 33,
+    "misses": 0,
+    "entries": 192
+  },
+  "llm_telemetry": {
+    "degraded": false,
+    "total_failures": 0,
+    "consecutive_failures": 0,
+    "recent_errors": [],
+    "operations": {
+      "healthcheck": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 0,
+        "degraded_skips": 0,
+        "prompt_chars": 35,
+        "response_chars": 15,
+        "total_duration_seconds": 3.719,
+        "max_duration_seconds": 3.719,
+        "average_duration_seconds": 3.719
+      },
+      "screening": {
+        "calls": 18,
+        "successes": 18,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 18,
+        "degraded_skips": 0,
+        "prompt_chars": 61022,
+        "response_chars": 19611,
+        "total_duration_seconds": 0.0,
+        "max_duration_seconds": 0.0,
+        "average_duration_seconds": 0.0
+      },
+      "rerank": {
+        "calls": 7,
+        "successes": 7,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 7,
+        "degraded_skips": 0,
+        "prompt_chars": 25870,
+        "response_chars": 7859,
+        "total_duration_seconds": 0.0,
+        "max_duration_seconds": 0.0,
+        "average_duration_seconds": 0.0
+      },
+      "evaluation": {
+        "calls": 7,
+        "successes": 7,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 7,
+        "degraded_skips": 0,
+        "prompt_chars": 26426,
+        "response_chars": 18220,
+        "total_duration_seconds": 0.0,
+        "max_duration_seconds": 0.0,
+        "average_duration_seconds": 0.0
+      },
+      "comparative": {
+        "calls": 1,
+        "successes": 1,
+        "failures": 0,
+        "retries": 0,
+        "cache_hits": 1,
+        "degraded_skips": 0,
+        "prompt_chars": 10545,
+        "response_chars": 4498,
+        "total_duration_seconds": 0.0,
+        "max_duration_seconds": 0.0,
+        "average_duration_seconds": 0.0
+      }
+    }
+  },
+  "observability_metrics": {
+    "routes": {
+      "screen_only": {
+        "count": 11,
+        "include": 0,
+        "review": 0,
+        "exclude": 11,
+        "llm_errors": 0
+      },
+      "manual_review": {
+        "count": 7,
+        "include": 0,
+        "review": 7,
+        "exclude": 0,
+        "llm_errors": 0
+      }
+    },
+    "sources": {
+      "EPO": {
+        "raw_results": 0,
+        "duration_seconds": 0.0,
+        "diagnostic_counts": {
+          "config_missing": 1
+        }
+      },
+      "GooglePatents": {
+        "raw_results": 9,
+        "duration_seconds": 26.314,
+        "diagnostic_counts": {}
+      },
+      "Patentscope": {
+        "raw_results": 10,
+        "duration_seconds": 66.574,
+        "diagnostic_counts": {}
+      }
+    },
+    "failures": {
+      "run_errors": 0,
+      "records_with_llm_error": 0,
+      "llm_total_failures": 0,
+      "llm_by_operation": {
+        "healthcheck": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "screening": {
+          "calls": 18,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "rerank": {
+          "calls": 7,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "evaluation": {
+          "calls": 7,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        },
+        "comparative": {
+          "calls": 1,
+          "failures": 0,
+          "retries": 0,
+          "degraded_skips": 0
+        }
+      },
+      "scraper_diagnostics_by_kind": {
+        "config_missing": 1
+      }
+    }
+  },
+  "run_id": "20260724_133433",
+  "started_at": "2026-07-24T13:34:33",
+  "finished_at": "2026-07-24T13:36:10",
+  "status": "completed",
+  "current_stage": "reporting",
+  "screened_count": 18,
+  "llm_available": true,
+  "patents": [
+    {
+      "record_id": "rec_b11edeb58983",
+      "family_id": "family:370c91b915a68a56fbd9c7397b9d93cfdff09fc6",
+      "title": "Super pulse carbon dioxide dot matrix laser therapy apparatus",
+      "patent_id": "CN205569064U",
+      "abstract": "AbstractThe utility model relates to a super pulse carbon dioxide dot matrix laser therapy apparatus, including laser high voltage power supply, laser pipe, focus module, X axle galvanometer scanning system, Y axle galvanometer scanning system, CPU the main control panel, image sensor, laser pipe are connected with laser high voltage power supply, arrival work plane after laser beam line focus module in proper order that the laser pipe sent, X axle galvanometer scanning system, the Y axle galvanometer scanning system, CPU the main control panel respectively with laser high voltage power supply, focus on module, image sensor, X axle and Y axle galvanometer scanning galvanometer scanning 2. Through X axle and Y axle galvanometer scanning system, laser therapy apparatus can carry out flat scanning treatment on a large scale in the XY plane, through the focus module, can adjust the laser focusing plane to treatment skin depths or exceed the symptom of epidermis, through setting up image sensor, can and plan the X axle in advance and Y axle route according to image colour and shape selection laser intensity, avoided human error unnecessarily shining healthy skin.",
+      "inventors": [
+        "éå»ºè´¢"
+      ],
+      "assignee": "Shanghai Muorange Medical Devices Co Ltd",
+      "filing_date": "2016-03-01",
+      "publication_date": "2016-09-14",
+      "url": "https://patents.google.com/patent/CN205569064U/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_dd866e6d7249",
+      "family_id": "family:b2d64eee6e72c39e1a0ee50e6a5c49eb66a6af26",
+      "title": "Selective carbon binding on carbon quantum dots",
+      "patent_id": "US20240075453A1",
+      "abstract": "AbstractCarbon quantum dots having selected adsorption of carbon dioxide over nitrogen and oxygen can be prepared by amine modification or nitrogen doping of hydrocarbon-based carbon quantum dots. The carbon quantum dots can be used in various applications for the adsorption of carbon dioxide from the atmosphere and for treating industrial processes that generate carbon dioxide. The carbon quantum dots can be synthesized from lignin and can be paired with a porous activated carbon surface to create a renewable composite material with increased selective adsorption of carbon dioxide.",
+      "inventors": [
+        "Michael Broud",
+        "David P. Harper",
+        "David Keffer"
+      ],
+      "assignee": "University of Tennessee Research Foundation",
+      "filing_date": "2023-09-07",
+      "publication_date": "2024-03-07",
+      "url": "https://patents.google.com/patent/US20240075453A1/en",
+      "snippet": "",
+      "source": "Google Patents; Patentscope"
+    },
+    {
+      "record_id": "rec_58aec1c9302f",
+      "family_id": "family:672607679694fa88e4989a41bac5e04683254ffd",
+      "title": "Pulsed co2 laser output-pulse shape and power control",
+      "patent_id": "WO2013154949A2",
+      "abstract": "",
+      "inventors": [
+        "Peter Rosenthal",
+        "John Kennedy",
+        "Vern SEGUIN",
+        "David ALLIE"
+      ],
+      "assignee": "Coherent Inc",
+      "filing_date": "2013-04-05",
+      "publication_date": "2013-10-17",
+      "url": "https://patents.google.com/patent/WO2013154949A2/eng",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_48b16c3d81aa",
+      "family_id": "family:d428beb9e925d697f23205d1a217bd43d92b5cdc",
+      "title": "Quantum dot sensitized photoreduction of carbon dioxide",
+      "patent_id": "US20240132362A1",
+      "abstract": "AbstractDisclosed herein are compositions and methods that can achieve photoreduction of CO2to CO in pure water at pH 6-7 with excellent performance parameters. In embodiments, the compositions and methods use CuInS2colloidal quantum dots (QDs) as photosensitizers, and a Co-porphyrin catalyst.",
+      "inventors": [
+        "Francesca Arcudi",
+        "Luka Dordevic",
+        "Emily A. Weiss",
+        "Benjamin Nagasing",
+        "Samuel l. Stupp"
+      ],
+      "assignee": "Northwestern University",
+      "filing_date": "2022-02-28",
+      "publication_date": "2024-04-25",
+      "url": "https://patents.google.com/patent/US20240132362A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_978529d55152",
+      "family_id": "family:a49e267de9891215778efb749cab6df29c810577",
+      "title": "Pulsed RF high pressure CO2 lasers",
+      "patent_id": "US7453918B2",
+      "abstract": "AbstractAn improved laser system includes a sealed-off, RF excited, diffusion cooled, high pressure, short pulsed, high peak power waveguide and slab CO2laser that avoids problems typically associated with obtaining a diffused discharge at high gas pressures, without arcing and without corona, while maintaining the unsaturated gain and gas temperature experienced at low pressures and scaling to higher pressures. Such a system has a long operating life-time, and is capable of operation at high gas pressures to obtain relative fast rise and fall time pulses. The system emits relatively short pulse widths, with pulse energies up to and exceeding 30 mJ, with reasonably high pulse repetition rates. The system also has a low pulsed RF power duty cycle, thereby enabling the generation of high peak power pulses, as well as reasonable average power and reasonably high peak powers.",
+      "inventors": [
+        "Lanny Laughman",
+        "Vernon Seguin",
+        "Peter P. Chenausky",
+        "Robert Henschke",
+        "Eric R. Mueller"
+      ],
+      "assignee": "Coherent Inc",
+      "filing_date": "2006-07-12",
+      "publication_date": "2008-11-18",
+      "url": "https://patents.google.com/patent/US7453918B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_2a9fec0406cd",
+      "family_id": "family:570d526d3333197c7b7dc2ae3224623a0f145141",
+      "title": "Laser radar system apparatus for multi-wavelength measurement of atmospheric carbon dioxide concentration and vertical aerosol profile",
+      "patent_id": "US20210349011A1",
+      "abstract": "AbstractA laser radar system apparatus for the multi-wavelength measurement of the atmospheric carbon dioxide concentration and a vertical aerosol profile, including: a laser transmitting unit; a dual-pulse laser capable of simultaneously transmitting laser having three wavelengths, i.e., 1572 nm, 1064 nm, and 532 nm; a transmitting beam expander; a receiving telescope system; a visual axis monitoring module; a photoelectric detection unit; and a data acquisition and processing unit. The laser that simultaneously outputs laser having three wavelengths is used in a laser radar system, and an optical differential absorption method and a high spectral resolution detection method are used, such that the atmospheric carbon dioxide concentration and the vertical aerosol profile can be measured simultaneously and high-precision aerosol monitoring is implemented during the high-precision obtaining of the concentration of the greenhouse gas carbon dioxide.",
+      "inventors": [
+        "Weibiao CHEN",
+        "Yadan Zhu",
+        "Jiqiao LIU",
+        "Xia Hou",
+        "Xiaolei Zhu",
+        "Xiuhua MA",
+        "Huaguo ZANG",
+        "Rui Li"
+      ],
+      "assignee": "Shanghai Institute of Optics and Fine Mechanics of CAS",
+      "filing_date": "2019-07-23",
+      "publication_date": "2021-11-11",
+      "url": "https://patents.google.com/patent/US20210349011A1/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_b3ff7b05cb8e",
+      "family_id": "family:fc6cd731745f7fc53ba3a7d50dba19c027b59844",
+      "title": "A 10,000-watt radio frequency fast axial flow carbon dioxide laser",
+      "patent_id": "CN119742647A",
+      "abstract": "AbstractTranslated fromChineseæ¬åæå¬å¼äºä¸ç§ä¸ç¦çº§çå°é¢å¿«è½´æµäºæ°§åç¢³æ¿åå¨ï¼åæ¬ï¼æ¾çµçµæåå·æä¸­ç©ºç®¡å£çæ¾çµç»çç®¡ï¼æ¾çµçµæè®¾ç½®å¨æ¾çµç»çç®¡çå¤å£ï¼æ¾çµç»çç®¡ï¼åæ¬ï¼è¿æ°´å­ååºæ°´å­ï¼è¿æ°´å­ååºæ°´å­ä¸ä¸­ç©ºç®¡å£è¿éå½¢æå·å´æ°´è·¯ï¼è¿æ°´å­è®¾ç½®å¨å°é¢å¿«è½´æµäºæ°§åç¢³æ¿åå¨çææ°ç«¯ï¼åºæ°´å­è®¾ç½®å¨å°é¢å¿«è½´æµäºæ°§åç¢³æ¿åå¨è¿æ°ç«¯ï¼å°é¢çµæºï¼å°é¢ééå¨ï¼è¿æ¥å°é¢çµæºåæ¾çµæ¨¡åï¼ç¨äºè°èå°é¢å¿«è½´æµäºæ°§åç¢³æ¿åå¨çææ°ç«¯çæ¸©åº¦ãæ¬åæéè¿è®¾ç½®å°é¢ééå¨ï¼ä½¿ä¸ç¦çº§çå°é¢å¿«è½´æµäºæ°§åç¢³æ¿åå¨è½å¤éè¿æ°´å·çæ¹å¼éä½æ¾çµç®¡ææ°ç«¯åºæ¥çé«æ¸©æ°ä½çæ¸©åº¦ï¼ä¿è¯æ¾çµç®¡è¿æ°ç«¯åææ°ç«¯çæ¸©åº¦ç»´æç¨³å®ï¼ä½¿æ¿åè½å¤è·å¾æ´é«çå¢çï¼æé«æ¿åå¨çè¾åºåçãThe present invention discloses a 10,000-watt radio frequency fast axial flow carbon dioxide laser, comprising: a discharge electrode and a discharge glass tube with a hollow tube wall; the discharge electrode is arranged on the outer wall of the discharge glass tube; the discharge glass tube comprises: a water inlet and a water outlet, the water inlet and the water outlet are connected with the hollow tube wall to form a cooling water path; the water inlet is arranged at the exhaust end of the radio frequency fast axial flow carbon dioxide laser, and the water outlet is arranged at the air inlet end of the radio frequency fast axial flow carbon dioxide laser; a radio frequency power supply, a radio frequency adapter, connecting the radio frequency power supply and the discharge module, and used to adjust the temperature of the exhaust end of the radio frequency fast axial flow carbon dioxide laser. The present invention sets a radio frequency adapter, so that the 10,000-watt radio frequency fast axial flow carbon dioxide laser can reduce the temperature of the high-temperature gas coming out of the exhaust end of the discharge tube by water cooling, ensure that the temperature of the air inlet and exhaust ends of the discharge tube is maintained stable, so that the laser can obtain a higher gain and improve the output power of the laser.",
+      "inventors": [
+        "èµµå´é",
+        "æ½å¶å¤",
+        "é»ç¼",
+        "å¯è²æ³½",
+        "å¼ åå"
+      ],
+      "assignee": "Changchun Institute of Optics Fine Mechanics and Physics of CAS",
+      "filing_date": "2024-12-30",
+      "publication_date": "2025-04-01",
+      "url": "https://patents.google.com/patent/CN119742647A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_088645a041e0",
+      "family_id": "family:b42cc9020a3831b52f7625a0c8c0a480895e45b7",
+      "title": "Laser-induced carbon nanostructures",
+      "patent_id": "US12384680B2",
+      "abstract": "AbstractA method of manufacturing a carbon nanostructure, such as a carbon foam material, is disclosed. The method comprises the steps of: (a) using a first laser beam to irradiate an encapsulated or sub-surface region of a carbon pre-cursor material below a surface of the material, to create carbon foam in that sub-surface region, and a disorganised, amorphous non-graphene material above the carbon foam, and then (b) using a second laser beam to remove or ablate the disorganised, amorphous non-graphene material sitting above the carbon foam, to expose at least some of the carbon foam. The resultant carbon foam material shows a significant D peak; the 2D peak is significantly less than the G peak; and the peak D: peak G ratio is significantly above zero. In appearance and Raman signature, it appears similar to a carbon nano-onion material. It can be used in biosensors, supercapacitors and pseudo-capacitors.",
+      "inventors": [
+        "Marco Caffio",
+        "Gabriel Casano CARNICER"
+      ],
+      "assignee": "Integrated Graphene Holding Ltd",
+      "filing_date": "2024-12-03",
+      "publication_date": "2025-08-12",
+      "url": "https://patents.google.com/patent/US12384680B2/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_cdb57d537407",
+      "family_id": "family:c0f6e1bfbd50bcb1ae7a8a2883a1444a791278fa",
+      "title": "A method of mesoporous silicon dioxide modified carbon dots are prepared to be calcined method",
+      "patent_id": "CN109705627A",
+      "abstract": "AbstractTranslated fromChineseæ¬åææ¶åä¸ç§ä»¥é»ç§æ³å¶å¤ä»å­äºæ°§åç¡ä¿®é¥°ç¢³ç¹çæ¹æ³ãè¯¥æ¹æ³ä»¥ä»å­äºæ°§åç¡ä¸ºè½½ä½ï¼ä½¿ç¨é»ç§æ³è®©æ æª¬é¸ãè²å¨ä»å­äºæ°§åç¡éå¶ççº³ç±³ç©ºé´ååçç¢³åååºãè¯¥ä»å­äºæ°§åç¡ä¿®é¥°çç¢³ç¹å·æè¯å¥½çåæ£æ§ï¼åºè²çåç¨³å®æ§åè¾å¥½çè§åææï¼ä¸å¶è§ååçäºçº¢ç§»ç°è±¡ãThe invention relates to a method for preparing mesoporous silica modified carbon dots by a calcination method. The method uses mesoporous silica as a carrier, and uses a calcination method to make citric acid and urea carbonize in the nano-space confined by mesoporous silica. The mesoporous silica-modified carbon dots have good dispersibility, excellent photostability and good fluorescence effect, and their fluorescence undergoes a red-shift phenomenon.",
+      "inventors": [
+        "å¨å´å¹³",
+        "å°¹è¶è"
+      ],
+      "assignee": "Donghua University",
+      "filing_date": "2019-01-30",
+      "publication_date": "2019-05-03",
+      "url": "https://patents.google.com/patent/CN109705627A/en",
+      "snippet": "",
+      "source": "Google Patents"
+    },
+    {
+      "record_id": "rec_ada95ec7d9a9",
+      "family_id": "family:ea1b3254783389da88be337959fb335b104ebc6d",
+      "title": "Fully indentifiable optical fiber assemblies",
+      "patent_id": "20010048797",
+      "abstract": "(EN)The present invention relates to a radiation-curable composition comprising, in the uncured state, at least one monomer or oligomer having a radiation-curable functional group which can form free radicals in the presence of actinic radiation, a photoinitiator for said monomer or oligomer present in an amount sufficient to effect radiation cure of said monomer or oligomers and a contrasting agent which causes an observable change in the cured composition upon exposure to energy from a high energy tunable light source.The invention further relates to an optical fiber ribbon assembly comprising said radiation curable composition and including energy-induced indicia, and to a process for importing indicia to an optical fiber ribbon assembly.",
+      "inventors": [
+        "Van Dijk Saskia I.",
+        "Dias Aylvin J.",
+        "De Haas Jacob L.",
+        "Tilley Mark G.",
+        "Reichert Timothy P."
+      ],
+      "assignee": "VAN DIJK SASKIA I.\nDIAS AYLVIN J.\nDE HAAS JACOB L.\nTILLEY MARK G.\nREICHERT TIMOTHY P.",
+      "filing_date": "13.03.2001",
+      "publication_date": "06.12.2001",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US39333852&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_16365a279915",
+      "family_id": "family:97bd3f251269b1eba54152eace62a343481d49ac",
+      "title": "FULLY IDENTIFIABLE OPTICAL FIBER ASSEMBLIES\n(FR)\nENSEMBLES DE FIBRE OPTIQUE ENTIEREMENT IDENTIFIABLES",
+      "patent_id": "WO/2001/068776",
+      "abstract": "(EN)The present invention relates to a radiation-curable composition comprising, in the uncured state, at least one monomer or oligomer having a radiation-curable functional group which can form free radicals in the presence of actinic radiation, a photoinitiator for said monomer or oligomer present in an amount sufficient to effect radiation cure of said monomer or oligomers and a contrasting agent which causes an observable change in the cured composition upon exposure to energy from a high energy tunable light source. The invention further relates to an optical fiber ribbon assembly comprising said radiation curable composition and including energy-induced indicia, and to a process for importing indicia to an optical fiber ribbon assembly.(FR)L'invention concerne une composition durcissable par rayonnement comprenant, à l'état non durci : au moins un monomère ou un oligomère doté d'un groupe fonctionnel durcissable par rayonnement, qui peut former des radicaux libres en présence d'un rayonnement actinique ; un photoamorceur en quantité suffisante pour provoquer le durcissement par rayonnement dudit monomère ou oligomère ; un agent de contraste qui crée un changement observable dans la composition durcie, sous l'effet de l'exposition à l'énergie d'une source lumineuse modulable à haute énergie. Ladite invention concerne également un ensemble ruban de fibre optique comportant ladite composition durcissable par rayonnement et une marque induite par énergie. Cette invention porte aussi sur un procédé pour importer une marque vers un ensemble ruban de fibre optique.",
+      "inventors": [
+        "VAN DIJK, Saskia, Ingeborg",
+        "DIAS, Aylvin, Jorge, Angelo, Athanasius",
+        "DE HAAS, Jacob, Leendert",
+        "REICHERT, Timothy, Paul",
+        "TILLEY, Mark, Gerard"
+      ],
+      "assignee": "DSM N.V.\n[NL]/[NL]\n(AllExceptUS)\nVAN DIJK, Saskia, Ingeborg\n[NL]/[NL](UsOnly)\nDIAS, Aylvin, Jorge, Angelo, Athanasius\n[GB]/[NL](UsOnly)\nDE HAAS, Jacob, Leendert\n[NL]/[NL](UsOnly)\nREICHERT, Timothy, Paul\n[US]/[US](UsOnly)\nTILLEY, Mark, Gerard\n[GB]/[US](UsOnly)",
+      "filing_date": "12.03.2001",
+      "publication_date": "20.09.2001",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2001068776&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_a16fbb141ab9",
+      "family_id": "family:fcd297b1ff56cd08bfccfcd1e0f1706cbe458ec9",
+      "title": "MARKING OF PIPES\n(FR)\nMARQUAGE DE TUYAUX",
+      "patent_id": "WO/2006/067380",
+      "abstract": "(EN)A method for the production of a machine readable marking on a plastics pipe, which comprises directing alaseronto a surface of the pipe whereby a machine readable marking is produced.(FR)La présente invention concerne un procédé pour produire des marques pouvant être lues par une machine sur des tuyaux en plastique. Le procédé implique de diriger un laser sur la surface du tuyau, permettant ainsi de produire une marque pouvant être lue par une machine.",
+      "inventors": [
+        "BOWMAN, Jeremy"
+      ],
+      "assignee": "UPONOR INNOVATION AB\n[SE]/[SE]\n(AllExceptUS)\nBOWMAN, Jeremy\n[GB]/[GB](UsOnly)",
+      "filing_date": "14.12.2005",
+      "publication_date": "29.06.2006",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2006067380&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_10b20ac8d2a9",
+      "family_id": "family:70e832209d591bcb76ff153d345c9896bab98253",
+      "title": "eTPE\nLaser\nMarking",
+      "patent_id": "20240002621",
+      "abstract": "(EN)Laser-markable foamed pellets contain a composition (MI), containing a thermoplastic elastomer (TPE-1) and a color component as component (c1) selected fromlasermarking additives. A process can be used for producing saidlaser-markable foamed pellets. Thelaser-markable foamed pellets according to the present invention can be used for preparing alaser-markable molded body. A process for preparing alaser-markable molded body involves providing and fusing thelaser-markable foal led pellets.",
+      "inventors": [
+        "Frank THIELBEER",
+        "Lisa Marie Schmidt",
+        "Theresa Huelsmann",
+        "Elmar Poeselt",
+        "Peter Gutmann",
+        "Uwe Keppeler",
+        "Amir Doroodian",
+        "Florian Tobias Rapp"
+      ],
+      "assignee": "BASF SE",
+      "filing_date": "30.09.2021",
+      "publication_date": "04.01.2024",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US418579840&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_03338d832e80",
+      "family_id": "family:b654f118753e11f75ebac66f7683e08ed2c459bf",
+      "title": "Advanced multi-element consumable-disposable products",
+      "patent_id": "20180003565",
+      "abstract": "(EN)The invention involves the incorporation and enablement of multiple interactive elements into high-volume consumables products to increase utility, function and features of the consumable product at minimal incremental cost and adjustment to production and manufacturing processes. The invention further reports processes and compositions that enable consumable products with differentiating features which product would otherwise be deficient for their intended use and application.",
+      "inventors": [
+        "Hans O. Ribi"
+      ],
+      "assignee": "Segan Industries, Inc.",
+      "filing_date": "21.07.2017",
+      "publication_date": "04.01.2018",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US209523108&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_7b0001c43bfd",
+      "family_id": "family:1c3e80b7bcb5e7ef632faca8bdf71e231c5b1e87",
+      "title": "Advanced multi-element consumable-disposable products",
+      "patent_id": "20140221528",
+      "abstract": "(EN)The invention involves the incorporation and enablement of multiple interactive elements into high-volume consumables products to increase utility, function and features of the consumable product at minimal incremental cost and adjustment to production and manufacturing processes. The invention further reports processes and compositions that enable consumable products with differentiating features which product would otherwise be deficient for their intended use and application.",
+      "inventors": [
+        "Hans O. Ribi"
+      ],
+      "assignee": "Segan Industries, Inc.",
+      "filing_date": "28.09.2012",
+      "publication_date": "07.08.2014",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US106950238&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_e34e165b0c23",
+      "family_id": "family:ecb2beaa3fbbb082fef153440867368082d34d13",
+      "title": "eTPE\nLASER\nMARKING\n(FR)\nMARQUAGE LASER ETPE",
+      "patent_id": "WO/2022/069664",
+      "abstract": "(EN)The present invention relates tolaser-markable foamed pellets comprising a composition (M1) comprising a thermoplastic elastomer (TPE-1) and a color component as component (c1) selected from the group consisting oflasermarking additives as well as a process for producing saidlaser-markable foamed pellets. The present invention further relates to the Use of thelaser-markable foamed pellets according to the present invention for preparing alaser-markable molded body and a process for preparing alaser-markable molded body from the lasermarkable foamed pellets(FR)La présente invention concerne des pastilles expansées pouvant être marquées au laser comportant une composition (M1) comprenant un élastomère thermoplastique (TPE-1) et une composante de couleur en tant que composante (c1) choisie dans le groupe constitué par des additifs de marquage au laser, ainsi qu'un procédé de production desdites pastilles expansées pouvant être marquées au laser. La présente invention concerne en outre l'utilisation des pastilles expansées pouvant être marquées au laser selon la présente invention pour préparer un corps moulé pouvant être marqué au laser et un procédé de préparation d'un corps moulé pouvant être marqué au laser à partir des pastilles expansées pouvant être marquées au laser.",
+      "inventors": [
+        "THIELBEER, Frank",
+        "SCHMIDT, Lisa Marie",
+        "HUELSMANN, Theresa",
+        "POESELT, Elmar",
+        "GUTMANN, Peter",
+        "KEPPELER, Uwe",
+        "DOROODIAN, Amir",
+        "RAPP, Florian Tobias"
+      ],
+      "assignee": "BASF SE\n[DE]/[DE]",
+      "filing_date": "30.09.2021",
+      "publication_date": "07.04.2022",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2022069664&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_50d42a982380",
+      "family_id": "family:fe5875a70a08025e7fb54b08ba6dcab87bbdc53e",
+      "title": "System for providing pre-processing machine readable encoded information markings in a motion picture film",
+      "patent_id": "6556273",
+      "abstract": "(EN)A system for providing motion picture photographic film with encoded information, such as unique film footage and frame identification, which can be machine read prior to film processing. This system provides machine readable encoded information markings on the raw stock film which may be read in a camera or other photoprocessing device with a reader prior to or concurrent with the film image capture process. The machine readable encoded information markings may be easily converted into a “video image” for display in a real time video from a CCD imager in the film camera or other device. Furthermore this pre-processing machine readable encoded information may be used in conjunction with optical latent image recorded information which becomes machine or human readable after processing as presently provided by film manufacturer's according to industry standards.",
+      "inventors": [
+        "Wheeler, Christopher E.",
+        "Ahlquist, Gary W.",
+        "Shaffer, Wayne K.",
+        "Morton, Roger A."
+      ],
+      "assignee": "Eastman Kodak Company",
+      "filing_date": "10.11.2000",
+      "publication_date": "29.04.2003",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=US40134930&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    },
+    {
+      "record_id": "rec_52765fd5808d",
+      "family_id": "family:8dcf545af8adcff67fceda9ba98c0df9c4b1ffbb",
+      "title": "A SYSTEM FOR PROVIDING PRE-PROCESSING MACHINE READABLE ENCODED INFORMATION MARKINGS IN A MOTION PICTURE FILM\n(FR)\nSYSTEME PERMETTANT DE PRODUIRE DES INSCRIPTIONS DE DONNEES DE PRETRAITEMENT CODEES LISIBLES PAR MACHINE SUR UN FILM CINEMATOGRAPHIQUE",
+      "patent_id": "WO/2001/035163",
+      "abstract": "(EN)A system for providing motion picture photographic film (20) with encoded information, such as unique film footage and frame identification, which can be machine read prior to film processing. This system provides machine readable encoded information markings (B) on the raw stock film which may be read in a camera or other photoprocessing device with a reader prior to or concurrent with the film image capture process. The machine readable encoded information markings may be easily converted into a 'video image' for display in a real time video from a CCD imager in the film camera or other device. Furthermore this pre-processing machine readable encoded information may be used in conjunction with optical latent image recorded information which becomes machine or human readable after processing as presently provided by film manufacturer's according to industry standards.(FR)L'invention concerne un système permettant de produire un film (201) cinématographique comprenant une information codée, telle que le métrage spécifique du film et une identification des images, pouvant être lue par une machine avant le traitement du film. Ce système permet de produire des inscriptions d'information codée (B) lisibles par machine sur la pellicule vierge, ces inscriptions pouvant être lues dans une caméra, ou dans un autre dispositif de traitement photographique équipé d'un lecteur, avant le processus de saisie d'image cinématographique ou simultanément à ce dernier. Ces inscriptions d'information codée lisible par machine peuvent être facilement converties en une « image vidéo » pouvant être affichée dans une vidéo en temps réel, au moyen de l'imageur CCD d'une caméra cinématographique ou d'un autre dispositif. En outre cette information codée lisible par machine peut être utilisée conjointement à une information enregistrée sous forme d'image optique latente qui devient lisible par une machine ou par l'homme après avoir subi un traitement conforme aux normes industrielles, tel que celui qu'utilisent actuellement les fabricants de film.",
+      "inventors": [
+        "WHEELER, Christopher, E.",
+        "AHLQUIST, Gary, Wayne",
+        "SHAFFER, Wayne, Kenneth",
+        "MORTON, Roger, A."
+      ],
+      "assignee": "EASTMAN KODAK COMPANY\n[US]/[US]",
+      "filing_date": "11.11.2000",
+      "publication_date": "17.05.2001",
+      "url": "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2001035163&_cid=P22-MRYZFR-15194-1",
+      "snippet": "",
+      "source": "Patentscope"
+    }
+  ],
+  "evaluations": [
+    {
+      "record_id": "rec_b11edeb58983",
+      "patent_id": "CN205569064U",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 6.4,
+      "screening_decision": "review",
+      "screening_reason": "A patente descreve um dispositivo de terapia a laser com pontos de CO2 e sistemas de varredura galvânica, mas o papel do CO2 como gás ou componente central para o processo de laser é ambíguo. A descrição se concentra na ",
+      "evidence_snippets": [
+        "The utility model relates to a super pulse carbon dioxide dot matrix laser therapy apparatus...",
+        "X axle galvanometer scanning system, the Y axle galvanometer scanning system..."
+      ],
+      "thematic_cluster": "Laser-Based Surface Treatment Systems",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um dispositivo de terapia a laser que utiliza pontos de carboneto de CO2 e um sistema de varredura galvânica para tratamento de superfície. O sistema permite o escaneamento plano em grande escala e ajuste do foco do laser para diferentes profundidades de penetração na pele. A imagem sensor é utilizada para otimizar a intensidade do laser, evitando danos à pele saudável.",
+      "key_findings": [
+        "Utilização de pontos de carboneto de CO2 para foco do laser.",
+        "Sistema de varredura galvânica para escaneamento plano em grande escala.",
+        "Sensor de imagem integrado para controle da intensidade do laser."
+      ],
+      "potential_applications": [
+        "Tratamento dermatológico superficial",
+        "Terapia a laser para rejuvenescimento da pele",
+        "Aplicações em medicina estética"
+      ],
+      "technical_domain": "Laser Therapy & Biomedical Engineering",
+      "innovation_level": "Incremental",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "Laser Beam",
+      "claim_focus": "Escaneamento e foco do laser em aplicações terapêuticas",
+      "exclusion_category": "cooling_only",
+      "problem_statement": "O problema abordado é a necessidade de um dispositivo de terapia a laser que possa realizar escaneamento preciso e controlado em áreas extensas da pele, minimizando o risco de dano aos tecidos saudáveis.",
+      "solution_summary": "A solução proposta é um aparelho de terapia a laser com pontos de carboneto de CO2 e um sistema de varredura galvânica que permite o escaneamento plano em grande escala e ajuste do foco do laser, utilizando um sensor de imagem para otimizar a intensidade.",
+      "claimed_advantages": [
+        "Escaneamento plano em grande escala no XY plane",
+        "Ajuste do foco do laser para diferentes profundidades de tratamento",
+        "Minimização de danos à pele saudável através do sensor de imagem"
+      ],
+      "limitations": [
+        "A descrição não detalha o mecanismo exato da super pulsação ou a otimização do ciclo de laser.",
+        "O papel do CO2 como gás ou componente central para o processo de laser é ambíguo."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.75,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_dd866e6d7249",
+      "patent_id": "US20240075453A1",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 7.1,
+      "screening_decision": "review",
+      "screening_reason": "A patente foca na adsorção seletiva de CO2 por carbon dots, utilizando lignin e um suporte de carbono poroso, o que está relacionado à busca original. No entanto, a aplicação específica em lasers não é explicitamente abo",
+      "evidence_snippets": [
+        "The carbon quantum dots can be used in various applications for the adsorption of carbon dioxide from the atmosphere...",
+        "The carbon quantum dots can be paired with a porous activated carbon surface to create a renewable composite material with increased selective adsorption of carbon dioxide."
+      ],
+      "thematic_cluster": "Adsorção Seletiva de Gases / Carbon Dots",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve a preparação de carbon dots utilizando lignin e um suporte de carbono poroso para adsorver seletivamente CO2, com foco em aplicações ambientais como tratamento de processos industriais que geram CO2. A patente explora a modificação química dos carbon dots para aumentar a capacidade de absorção de CO2, mas não aborda diretamente a aplicação em lasers.",
+      "key_findings": [
+        "Carbon quantum dots podem ser preparados através da modificação com aminas ou dopagem com nitrogênio de carbonos baseados em hidrocarbonetos.",
+        "A combinação de carbon dots sintetizados a partir de lignin com um suporte de carbono poroso resulta em um material composto com aumento na adsorção seletiva de CO2."
+      ],
+      "potential_applications": [
+        "Tratamento de processos industriais que geram CO2.",
+        "Adsorção de CO2 da atmosfera."
+      ],
+      "technical_domain": "Materiais Avançados / Química de Carbonos",
+      "innovation_level": "Incremental",
+      "co2_role": "stored_thermodynamic_medium",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "CO2",
+      "claim_focus": "Preparação e uso de carbon dots para adsorção seletiva de CO2.",
+      "exclusion_category": "industrial_heat_adjacent",
+      "problem_statement": "A necessidade de materiais eficientes para a adsorção seletiva de CO2, especialmente em ambientes industriais.",
+      "solution_summary": "A solução proposta é a síntese de carbon dots utilizando lignin e um suporte de carbono poroso, com modificação química para melhorar a capacidade de adsorção de CO2.",
+      "claimed_advantages": [
+        "Adsorção seletiva de CO2 sobre nitrogênio e oxigênio.",
+        "Utilização de materiais renováveis (lignina)."
+      ],
+      "limitations": [
+        "A patente não aborda explicitamente a aplicação dos carbon dots em lasers.",
+        "O impacto da combinação com um suporte de carbono poroso na eficiência do laser não é detalhado."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.75,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_58aec1c9302f",
+      "patent_id": "WO2013154949A2",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.0,
+      "screening_decision": "review",
+      "screening_reason": "The patent describes a pulsed CO2 laser system with power control, but lacks explicit mention of carbon dots. While the CO2 is used as a working fluid within a cycle-or-transfer subsystem, the connection to 'carbon dots ",
+      "evidence_snippets": [
+        "'Pulsed CO2 laser output-pulse shape and power control'",
+        "'Cycle or transfer subsystem'"
+      ],
+      "thematic_cluster": "Controle de Potência em Sistemas Laser",
+      "relevance_score": 4.0,
+      "summary": "Esta patente descreve um laser CO2 pulsado com controle de potência, utilizando CO2 como fluido de trabalho. Embora não mencione explicitamente carbon dots, o documento aborda sistemas de controle de potência e ciclagem de fluidos, que podem ser relevantes para aplicações envolvendo emissão de luz por carbon dots.",
+      "key_findings": [
+        "O documento descreve um sistema de laser CO2 com controle de potência.",
+        "Utiliza o CO2 como fluido de trabalho dentro de um subconjunto de ciclo ou transferência."
+      ],
+      "potential_applications": [
+        "Laser CO2 para corte, soldagem ou gravação"
+      ],
+      "technical_domain": "Laser Technology & Thermal Management",
+      "innovation_level": "Incremental",
+      "co2_role": "working_fluid",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "laser CO2",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "co2_working_fluid_only",
+      "problem_statement": "O problema técnico abordado é otimizar a forma da pulsação e o controle de potência em um laser CO2 pulsado.",
+      "solution_summary": "A patente propõe um sistema que controla a forma da pulsação e a potência do laser CO2, permitindo ajustes precisos na saída do laser.",
+      "claimed_advantages": [
+        "Controle preciso da forma da pulsação",
+        "Ajuste da potência do laser"
+      ],
+      "limitations": [
+        "Não menciona explicitamente o uso de carbon dots.",
+        "Foco no controle de potência e ciclagem de fluidos."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.66,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_48b16c3d81aa",
+      "patent_id": "US20240132362A1",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.5,
+      "screening_decision": "review",
+      "screening_reason": "While the patent discusses CO2 photoreduction, the core focus on 'carbon dots' and the specific use of CuInS2 QDs introduces ambiguity regarding the central role of CO2 and storage. The claim focuses on a component/opera",
+      "evidence_snippets": [
+        "AbstractDisclosed herein are compositions and methods that can achieve photoreduction of CO2to CO in pure water...",
+        "In embodiments, the compositions and methods use CuInS2colloidal quantum dots (QDs) as photosensitizers..."
+      ],
+      "thematic_cluster": "Fotoredutção de CO2 com QDs",
+      "relevance_score": 6.3,
+      "summary": "Esta patente descreve um método para a fotoredutção de CO2 em CO utilizando quantum dots (QDs) contendo CuInS2 como sensibilizadores e um catalisador Co-porphyrin. A reação ocorre em água pura com pH entre 6 e 7, buscando alcançar parâmetros de desempenho excelentes.",
+      "key_findings": [
+        "Utilização de CuInS2 QDs como fotosensibilizador.",
+        "Reação de fotoredutção de CO2 em água pura com pH 6-7.",
+        "Obtenção de parâmetros de desempenho excelentes."
+      ],
+      "potential_applications": [
+        "Captura e conversão de carbono.",
+        "Produção de CO como matéria-prima química.",
+        "Desenvolvimento de tecnologias de armazenamento de carbono."
+      ],
+      "technical_domain": "Fotocatalise, Química de Materiais",
+      "innovation_level": "Incremental",
+      "co2_role": "substrato_de_reação",
+      "storage_role": "implícito_ou_suporte_ao_armazenamento",
+      "system_boundary": "process_integration",
+      "cycle_type": "não_claro",
+      "heat_source_sink": "não_especificado",
+      "claim_focus": "sensibilização fotocatalítica com QDs para redução de CO2",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "A patente aborda a necessidade de um método eficiente para a fotoredutção de CO2, potencialmente visando o armazenamento do produto CO.",
+      "solution_summary": "A solução proposta envolve o uso de QDs de CuInS2 como sensibilizadores fotoquímicos em conjunto com um catalisador Co-porphyrin para promover a redução de CO2 em CO em condições específicas de pH e temperatura.",
+      "claimed_advantages": [
+        "Excelente desempenho na fotoredutção de CO2.",
+        "Utilização de materiais abundantes (CuInS2 QDs).",
+        "Reação em condições brandas (água pura, pH 6-7)."
+      ],
+      "limitations": [
+        "A patente não detalha a escala ou viabilidade da reação para produção em larga escala.",
+        "O impacto ambiental do uso de CuInS2 QDs pode ser uma consideração."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.66,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:include->review",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_978529d55152",
+      "patent_id": "US7453918B2",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 6.4,
+      "screening_decision": "review",
+      "screening_reason": "A patente descreve um sistema de laser a CO2 de alta pressão com pulsos curtos e resfriamento RF, que compartilha elementos relevantes com a busca original. No entanto, a ausência de menção direta a 'carbon dots' e o foc",
+      "evidence_snippets": [
+        "\"The system emits relatively short pulse widths, with pulse energies up to and exceeding 30 mJ...\"",
+        "\"The system also has a low pulsed RF power duty cycle, thereby enabling the generation of high peak power pulses\""
+      ],
+      "thematic_cluster": "High-Pressure CO2 Lasers",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um laser a CO2 de alta pressão que utiliza resfriamento RF e pulsos curtos para evitar problemas comuns associados a altas pressões gasosas, como arcos elétricos e corona. O sistema permite operar em altas pressões para obter tempos de subida e descida dos pulsos rápidos, com energias de pulso até 30 mJ e altas taxas de repetição de pulso. A patente foca na otimização da potência de pico e média do laser.",
+      "key_findings": [
+        "O sistema opera em alta pressão para obter tempos de subida e descida dos pulsos rápidos.",
+        "A patente detalha a emissão de pulsos curtos com energias de até 30 mJ e taxas de repetição de pulso razoavelmente altas.",
+        "Utiliza um ciclo de potência RF de baixa carga, permitindo a geração de alta potência de pico."
+      ],
+      "potential_applications": [
+        "Processamento de materiais com lasers de alta potência",
+        "Aplicações médicas que requerem pulsos curtos e intensos"
+      ],
+      "technical_domain": "Laser Technology",
+      "innovation_level": "Incremental",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "RF Excitation",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "co2_working_fluid_only",
+      "problem_statement": "O problema abordado é a dificuldade em obter um difusão de descarga confiável e eficiente em lasers a CO2 de alta pressão, que frequentemente levam a arcos elétricos e corona, limitando o desempenho e a vida útil do sistema.",
+      "solution_summary": "A solução proposta é um laser a CO2 com resfriamento RF, pulsos curtos e resfriamento por difusão em alta pressão, que elimina esses problemas, permitindo operação em altas pressões para tempos de pulso rápidos e maior potência.",
+      "claimed_advantages": [
+        "Longa vida útil do sistema",
+        "Capacidade de operar em altas pressões para tempos de pulso rápidos",
+        "Alta potência de pico e média"
+      ],
+      "limitations": [
+        "A patente não menciona explicitamente o uso de 'carbon dots'.",
+        "O foco principal é no laser a CO2 de alta pressão, sem detalhamento sobre aplicações específicas de carbon dots."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.75,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_2a9fec0406cd",
+      "patent_id": "US20210349011A1",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 5.5,
+      "screening_decision": "review",
+      "screening_reason": "While the patent describes a laser radar system for CO2 measurement and aerosol profiling, it primarily focuses on system architecture and optical methods rather than explicitly detailing carbon dots or their use in lase",
+      "evidence_snippets": [
+        "The laser that simultaneously outputs laser having three wavelengths is used in a laser radar system…"
+      ],
+      "thematic_cluster": "Laser-based atmospheric sensing and aerosol profiling",
+      "relevance_score": 4.9,
+      "summary": "Esta patente descreve um sistema de radar laser para medição de CO2 atmosférico e perfil aerosol, utilizando múltiplos comprimentos de onda. O sistema emprega uma técnica de absorção diferencial óptica e alta resolução espectral para obter dados precisos de concentração de CO2 e perfil aerosol. A patente foca na arquitetura do sistema e nos métodos ópticos, sem detalhar explicitamente o uso de carbon dots.",
+      "key_findings": [
+        "Utilização de laser com três comprimentos de onda (1572 nm, 1064 nm, e 532 nm).",
+        "Emprego de uma técnica de absorção diferencial óptica e alta resolução espectral para medições precisas."
+      ],
+      "potential_applications": [
+        "Monitoramento ambiental",
+        "Estudos atmosféricos",
+        "Controlo de emissões"
+      ],
+      "technical_domain": "Remote Sensing & Atmospheric Monitoring",
+      "innovation_level": "Incremental",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "não especificado",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "co2_working_fluid_only",
+      "problem_statement": "Medir com precisão a concentração de CO2 atmosférico e o perfil vertical de aerossóis simultaneamente, utilizando um sistema de detecção eficiente.",
+      "solution_summary": "O sistema utiliza um laser transmitindo múltipla frequência para medir a concentração de CO2 e o perfil aerosol através da análise da absorção diferencial óptica e alta resolução espectral.",
+      "claimed_advantages": [
+        "Medição simultânea de concentração de CO2 e perfil aerosol.",
+        "Alta precisão na monitorização de aerossóis."
+      ],
+      "limitations": [
+        "Não menciona explicitamente o uso de carbon dots.",
+        "Foco principal em arquitetura do sistema e métodos ópticos, sem detalhamento da tecnologia central."
+      ],
+      "maturity_level": "Intermediária",
+      "confidence": 0.66,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_b3ff7b05cb8e",
+      "patent_id": "CN119742647A",
+      "analysis_route": "manual_review",
+      "route_reason": "Triagem indicou revisão humana.",
+      "screening_score": 7.7,
+      "screening_decision": "review",
+      "screening_reason": "A patente descreve um laser a CO2 de alta potência com um sistema de resfriamento por água, que é relevante para o termo 'carbon dots CO2 laser'. A descrição detalhada do sistema de resfriamento e sua integração com o la",
+      "evidence_snippets": [
+        "\"a discharge glass tube with a hollow tube wall; the water inlet and the water outlet are connected with the hollow tube wall to form a cooling water path\"",
+        "\"the water inlet is arranged at the exhaust end of the radio frequency fast axial flow carbon dioxide laser, and the water outlet is arranged at the air inlet end of the radio frequency fast axial flow carbon dioxide laser\""
+      ],
+      "thematic_cluster": "Lasers de Alta Potência e Resfriamento",
+      "relevance_score": 6.5,
+      "summary": "Esta patente descreve um laser a CO2 de alta potência (10.000 watts) utilizando um sistema de fluxo axial rápido e radiofrequência, com foco na otimização do resfriamento através de um circuito de água. O design incorpora um tubo de descarga com um caminho de água para dissipar o calor, visando aumentar a potência de saída do laser. A patente detalha a integração do sistema de resfriamento com o laser CO2.",
+      "key_findings": [
+        "O laser utiliza um tubo de descarga com uma parede tubular interna e um caminho de água para resfriamento.",
+        "Um circuito de água é usado para remover o calor do extremo de exaustão do laser de fluxo axial rápido, garantindo a estabilidade da temperatura."
+      ],
+      "potential_applications": [
+        "Sistemas de corte e soldagem a laser",
+        "Pesquisa científica em lasers de alta potência"
+      ],
+      "technical_domain": "Laser Technology, Termodinâmica, Sistemas de Resfriamento",
+      "innovation_level": "Incremental",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "cycle_or_transfer_subsystem",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "cooling_or_refrigeration",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "cooling_only",
+      "problem_statement": "O principal problema abordado é a superaquecimento de lasers a CO2 de alta potência durante operação, limitando sua eficiência e potência de saída.",
+      "solution_summary": "A solução proposta é um laser a CO2 que utiliza um sistema de resfriamento por água integrado ao tubo de descarga para controlar a temperatura e manter uma operação estável, permitindo maior potência de saída.",
+      "claimed_advantages": [
+        "Aumento da potência de saída do laser devido ao controle térmico eficiente.",
+        "Operação mais estável e confiável do laser através do sistema de resfriamento por água."
+      ],
+      "limitations": [
+        "A patente se concentra especificamente em um design de 10.000 watts, a escalabilidade para outras potências pode exigir ajustes.",
+        "A dependência de um sistema de resfriamento por água pode adicionar complexidade e custo ao sistema."
+      ],
+      "maturity_level": "Inicial",
+      "confidence": 0.79,
+      "rerank_applied": true,
+      "rerank_reason": "reranked:decision_confirmed",
+      "manual_review_required": true,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_088645a041e0",
+      "patent_id": "US12384680B2",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve a fabricação de carbon dots usando lasers e apresenta características Raman específicas (D peak, G peak, D:G ratio). Embora não mencione diretamente 'CO2 laser', o uso de lasers para criar estruturas de carbono é relevante para a busca original, necessitando de avaliação mais detalhada. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "(a) using a first laser beam to irradiate an encapsulated or sub-surface region of a carbon pre-cursor material below a surface of the material, to create carbon foam in that sub-surface region"
+      ],
+      "thematic_cluster": "Fabricação de Nanomateriais com Laser",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Ciência dos Materiais, Nanotecnologia",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.62,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_cdb57d537407",
+      "patent_id": "CN109705627A",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve a preparação de carbon dots modificados por sílica mesoporosa através de calcinação, utilizando ácido cítrico e ureia para carbonização em espaços confinados. Embora mencione 'carbon dots' e 'calcination', o foco principal parece ser na preparação e propriedades dos carbon dots, com uma menção à mudança no deslocamento vermelho da fluorescência. A relação com lasers CO2 não é explicitamente detalhada. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "The invention relates to a method for preparing mesoporous silica modified carbon dots by a calcination method.",
+        "The method uses mesoporous silica as a carrier, and uses a calcination method to make citric acid and urea carbonize in the nano-space confined by mesoporous silica."
+      ],
+      "thematic_cluster": "Preparação de Carbon Dots e Modificação de Materiais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Ciência dos Materiais, Nanotecnologia",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.66,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_ada95ec7d9a9",
+      "patent_id": "20010048797",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sistema de laser CO2 e um composto curável por radiação contendo um agente contrastante, mas a conexão direta com 'carbon dots' e o uso específico em lasers CO2 não é totalmente clara. Requer revisão para determinar a relevância. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "The present invention relates to a radiation-curable composition comprising, in the uncured state, at least one monomer or oligomer having a radiation-curable functional group...",
+        "The invention further relates to an optical fiber ribbon assembly comprising said radiation curable composition..."
+      ],
+      "thematic_cluster": "Radiação Curável e Agentes Contrastantes",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Engenharia de Materiais, Óptica",
+      "innovation_level": "",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "process_integration",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.59,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_16365a279915",
+      "patent_id": "WO/2001/068776",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve uma composição curável por radiação com um agente de contraste que causa uma mudança observável após exposição à luz. Embora mencione 'high energy tunable light source', a relação direta com 'carbon dots CO2 laser' não está explícita, necessitando de análise mais detalhada para determinar relevância. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "The invention further relates to an optical fiber ribbon assembly comprising said radiation curable composition and including energy-induced indicia"
+      ],
+      "thematic_cluster": "Composições Curáveis por Radiação e Indicadores Ópticos",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Materiais e Composição",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.52,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_a16fbb141ab9",
+      "patent_id": "WO/2006/067380",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um laser CO2 para marcar tubos de plástico, mas a conexão com 'carbon dots' e o uso específico do laser em relação a eles não são explícitos. A relevância depende da análise detalhada da aplicação. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "A method for the production of a machine readable marking on a plastics pipe, which comprises directing alaseronto a surface of the pipe whereby a machine readable marking is produced.",
+        "La présente invention concerne un procédé pour produire des marques pouvant être lues par une machine sur des tuyaux en plastique. Le procédé implique de diriger un laser sur la surface du tuyau, permettant ainsi de produire une marque pouvant être lue par une machine."
+      ],
+      "thematic_cluster": "Marcação por Laser, Carbon Dots",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Engenharia de Materiais, Processamento Industrial",
+      "innovation_level": "",
+      "co2_role": "working_fluid",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.66,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_10b20ac8d2a9",
+      "patent_id": "20240002621",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve pellets de elastômero termoplástico marcáveis com um componente de cor, que são usados para laser marking. Embora mencione lasers e componentes de marcação, a relação direta com 'carbon dots' e 'CO2 laser' é implícita e requer análise mais profunda. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "Laser-markable foamed pellets contain a composition (MI), containing a thermoplastic elastomer (TPE-1) and a color component as component (c1) selected from lasermarking additives."
+      ],
+      "thematic_cluster": "Marcação por Laser e Materiais Funcionais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Materiais Poliméricos e Processamento",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.58,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_03338d832e80",
+      "patent_id": "20180003565",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 1.7,
+      "screening_decision": "exclude",
+      "screening_reason": "O resumo menciona 'consumíveis' e 'diferenciando features', mas não há menção direta a carbon dots ou lasers CO2. A patente parece ser sobre produtos de consumo com funcionalidades adicionais, o que torna sua relevância para a busca inicial incerta. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "The invention further reports processes and compositions that enable consumable products with differentiating features which product would otherwise be deficient for their intended use and application."
+      ],
+      "thematic_cluster": "Funcionalidades Adicionais em Produtos",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Produtos de Consumo",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.42,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_7b0001c43bfd",
+      "patent_id": "20140221528",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 1.7,
+      "screening_decision": "exclude",
+      "screening_reason": "O resumo menciona 'consumíveis' e 'diferenciando features', mas não há menção direta a carbon dots ou lasers CO2. A patente parece ser sobre produtos de consumo com funcionalidades adicionais, o que requer uma análise mais profunda para determinar sua relevância. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "The invention further reports processes and compositions that enable consumable products with differentiating features which product would otherwise be deficient for their intended use and application."
+      ],
+      "thematic_cluster": "Desenvolvimento de Consumíveis e Funcionalidades Adicionais",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Engenharia de Produtos",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "general_thermal_management",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.42,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_e34e165b0c23",
+      "patent_id": "WO/2022/069664",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.5,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve pastilhas expandidas marcáveis a laser que incluem um componente de cor e aditivos de marcação a laser. Embora mencione 'laser marking additives', o foco principal é em pellets para moldagem com capacidades de marcação a laser, não diretamente em carbon dots ou CO2 lasers. Guardrail de alinhamento: o alinhamento textual com a query é baixo.",
+      "evidence_snippets": [
+        "The present invention relates tolaser-markable foamed pellets comprising a composition (M1) comprising a thermoplastic elastomer (TPE-1) and a color component as component (c1) chosen from the group consisting oflasermarking additives"
+      ],
+      "thematic_cluster": "Marcagem Laser e Aditivos Coloridos",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Materiais Poliméricos e Processamento",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "industrial_heat",
+      "claim_focus": "component_or_operation",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.62,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_50d42a982380",
+      "patent_id": "6556273",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.3,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente descreve um sistema para codificar informações em filme fotográfico, mas não menciona explicitamente carbon dots ou lasers CO2. A relevância é limitada à codificação de dados e leitura por máquinas, sem a tecnologia central da busca. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "A system for providing motion picture photographic film with encoded information...",
+        "The machine readable encoded information markings may be easily converted into a “video image”"
+      ],
+      "thematic_cluster": "Sistemas de Codificação e Leitura de Imagens",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Fotografia, Codificação de Dados",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.52,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_52765fd5808d",
+      "patent_id": "WO/2001/035163",
+      "analysis_route": "screen_only",
+      "route_reason": "Patente excluída na triagem.",
+      "screening_score": 3.3,
+      "screening_decision": "exclude",
+      "screening_reason": "A patente trata de marcações de informação codificadas em filme cinematográfico, não diretamente de carbon dots ou lasers CO2. A menção a 'machine readable encoded information markings' e a conversão para 'video image' sugere um sistema de pré-processamento de imagem, mas não aborda especificamente o uso de carbon dots com lasers CO2. Guardrail de alinhamento: faltam termos distintivos da query no título e no resumo.",
+      "evidence_snippets": [
+        "\"Este système permet de produire des inscriptions d'information codée (B) lisibles par machine sur la pellicule vierge...\"",
+        "\"Ces inscriptions d'information codée lisible par machine peuvent être facilement converties en une « image vidéo »\""
+      ],
+      "thematic_cluster": "Sistemas de Marcação e Identificação em Filmes Cinematográficos",
+      "relevance_score": 0.0,
+      "summary": "",
+      "key_findings": [],
+      "potential_applications": [],
+      "technical_domain": "Processamento de Imagem Cinematográfica",
+      "innovation_level": "",
+      "co2_role": "co2_not_central",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "not_clear",
+      "claim_focus": "system_architecture",
+      "exclusion_category": "generic_tes",
+      "problem_statement": "",
+      "solution_summary": "",
+      "claimed_advantages": [],
+      "limitations": [],
+      "maturity_level": "",
+      "confidence": 0.49,
+      "rerank_applied": false,
+      "rerank_reason": "",
+      "manual_review_required": false,
+      "llm_error": ""
+    }
+  ],
+  "patents_by_source": {
+    "GooglePatents": 9,
+    "Patentscope": 10,
+    "EPO": 0
+  },
+  "scraper_diagnostics": {
+    "GooglePatents": [],
+    "Patentscope": [],
+    "EPO": [
+      {
+        "kind": "config_missing",
+        "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+        "url": ""
+      }
+    ]
+  },
+  "coverage_metrics": {
+    "raw_scraped": 19,
+    "unique_patents": 18,
+    "duplicates_removed": 1,
+    "screened": 18,
+    "included": 0,
+    "review": 7,
+    "excluded": 11,
+    "manual_review_required": 7,
+    "manual_review_deferred": 0,
+    "full_extractions": 7,
+    "missing_abstract": 1,
+    "missing_id": 0,
+    "records_with_content_identity": 0,
+    "records_with_fallback_identity": 0,
+    "family_duplicates_removed": 1,
+    "llm_screening_failures": 0,
+    "llm_total_failures": 0
+  },
+  "manual_review_queue": [
+    {
+      "record_id": "rec_b3ff7b05cb8e",
+      "patent_id": "CN119742647A",
+      "family_id": "family:fc6cd731745f7fc53ba3a7d50dba19c027b59844",
+      "title": "A 10,000-watt radio frequency fast axial flow carbon dioxide laser",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 7.7,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_dd866e6d7249",
+      "patent_id": "US20240075453A1",
+      "family_id": "family:b2d64eee6e72c39e1a0ee50e6a5c49eb66a6af26",
+      "title": "Selective carbon binding on carbon quantum dots",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 7.1,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_978529d55152",
+      "patent_id": "US7453918B2",
+      "family_id": "family:a49e267de9891215778efb749cab6df29c810577",
+      "title": "Pulsed RF high pressure CO2 lasers",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 6.4,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_b11edeb58983",
+      "patent_id": "CN205569064U",
+      "family_id": "family:370c91b915a68a56fbd9c7397b9d93cfdff09fc6",
+      "title": "Super pulse carbon dioxide dot matrix laser therapy apparatus",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 6.4,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_2a9fec0406cd",
+      "patent_id": "US20210349011A1",
+      "family_id": "family:570d526d3333197c7b7dc2ae3224623a0f145141",
+      "title": "Laser radar system apparatus for multi-wavelength measurement of atmospheric carbon dioxide concentration and vertical aerosol profile",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.5,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_48b16c3d81aa",
+      "patent_id": "US20240132362A1",
+      "family_id": "family:d428beb9e925d697f23205d1a217bd43d92b5cdc",
+      "title": "Quantum dot sensitized photoreduction of carbon dioxide",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.5,
+      "screening_decision": "review",
+      "llm_error": ""
+    },
+    {
+      "record_id": "rec_58aec1c9302f",
+      "patent_id": "WO2013154949A2",
+      "family_id": "family:672607679694fa88e4989a41bac5e04683254ffd",
+      "title": "Pulsed co2 laser output-pulse shape and power control",
+      "reason": "Triagem indicou revisão humana.",
+      "route": "manual_review",
+      "screening_score": 5.0,
+      "screening_decision": "review",
+      "llm_error": ""
+    }
+  ],
+  "prisma_flow": {
+    "flow": {
+      "identification": {
+        "raw_records": 19,
+        "unique_records": 18,
+        "duplicates_removed": 1
+      },
+      "screening": {
+        "screened": 18,
+        "included": 0,
+        "review": 7,
+        "excluded": 11
+      },
+      "eligibility": {
+        "full_extractions": 7,
+        "manual_review_required": 7,
+        "manual_review_deferred": 0
+      },
+      "coverage": {
+        "missing_abstract": 1,
+        "missing_id": 0
+      },
+      "synthesis": {
+        "analyzed_records": 7,
+        "comparative_analysis_generated": true
+      }
+    },
+    "criteria": {
+      "include": [
+        "Alinhamento claro com a query ou seus sinônimos técnicos.",
+        "Documento com título, resumo ou snippet suficientes para análise.",
+        "Potencial técnico relevante para o domínio pesquisado."
+      ],
+      "exclude": [
+        "Documentos sem relação técnica com a query.",
+        "Duplicatas de outra fonte ou publicação equivalente.",
+        "Registro sem metadados mínimos para avaliação."
+      ]
+    },
+    "thresholds": {
+      "include_score": 7.0,
+      "review_score": 4.5,
+      "max_items_for_manual_review": 20
+    },
+    "version": "1.0"
+  },
+  "thematic_clusters": {
+    "clusters": [],
+    "total_clusters": 0
+  },
+  "whitespace_analysis": {
+    "status": "ok",
+    "query": "carbon dots CO2 laser",
+    "corpus_summary": {
+      "considered_patents": 18,
+      "selected_patents": 7,
+      "core": 0,
+      "frontier": 7,
+      "adjacent": 0
+    },
+    "coverage_matrix": [
+      {
+        "patent_id": "CN119742647A",
+        "record_id": "rec_b3ff7b05cb8e",
+        "title": "A 10,000-watt radio frequency fast axial flow carbon dioxide laser",
+        "screening_decision": "review",
+        "screening_score": 7.7,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Laser Technology, Termodinâmica, Sistemas de Resfriamento",
+        "thematic_cluster": "Lasers de Alta Potência e Resfriamento",
+        "co2_role": "working_fluid",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "cycle_or_transfer_subsystem",
+        "cycle_type": "power_or_work_cycle",
+        "heat_source_sink": "cooling_or_refrigeration",
+        "claim_focus": "component_or_operation",
+        "exclusion_category": "cooling_only"
+      },
+      {
+        "patent_id": "CN205569064U",
+        "record_id": "rec_b11edeb58983",
+        "title": "Super pulse carbon dioxide dot matrix laser therapy apparatus",
+        "screening_decision": "review",
+        "screening_score": 6.4,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Laser Therapy & Biomedical Engineering",
+        "thematic_cluster": "Laser-Based Surface Treatment Systems",
+        "co2_role": "working_fluid",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "cycle_or_transfer_subsystem",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "Laser Beam",
+        "claim_focus": "Escaneamento e foco do laser em aplicações terapêuticas",
+        "exclusion_category": "cooling_only"
+      },
+      {
+        "patent_id": "US20240075453A1",
+        "record_id": "rec_dd866e6d7249",
+        "title": "Selective carbon binding on carbon quantum dots",
+        "screening_decision": "review",
+        "screening_score": 7.1,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Materiais Avançados / Química de Carbonos",
+        "thematic_cluster": "Adsorção Seletiva de Gases / Carbon Dots",
+        "co2_role": "stored_thermodynamic_medium",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "CO2",
+        "claim_focus": "Preparação e uso de carbon dots para adsorção seletiva de CO2.",
+        "exclusion_category": "industrial_heat_adjacent"
+      },
+      {
+        "patent_id": "US7453918B2",
+        "record_id": "rec_978529d55152",
+        "title": "Pulsed RF high pressure CO2 lasers",
+        "screening_decision": "review",
+        "screening_score": 6.4,
+        "relevance_score": 6.5,
+        "bucket": "frontier",
+        "technical_domain": "Laser Technology",
+        "thematic_cluster": "High-Pressure CO2 Lasers",
+        "co2_role": "working_fluid",
+        "storage_role": "implicit_or_support_storage",
+        "system_boundary": "cycle_or_transfer_subsystem",
+        "cycle_type": "power_or_work_cycle",
+        "heat_source_sink": "RF Excitation",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "co2_working_fluid_only"
+      },
+      {
+        "patent_id": "US20240132362A1",
+        "record_id": "rec_48b16c3d81aa",
+        "title": "Quantum dot sensitized photoreduction of carbon dioxide",
+        "screening_decision": "review",
+        "screening_score": 5.5,
+        "relevance_score": 6.3,
+        "bucket": "frontier",
+        "technical_domain": "Fotocatalise, Química de Materiais",
+        "thematic_cluster": "Fotoredutção de CO2 com QDs",
+        "co2_role": "substrato_de_reação",
+        "storage_role": "implícito_ou_suporte_ao_armazenamento",
+        "system_boundary": "process_integration",
+        "cycle_type": "não_claro",
+        "heat_source_sink": "não_especificado",
+        "claim_focus": "sensibilização fotocatalítica com QDs para redução de CO2",
+        "exclusion_category": "generic_tes"
+      },
+      {
+        "patent_id": "US20210349011A1",
+        "record_id": "rec_2a9fec0406cd",
+        "title": "Laser radar system apparatus for multi-wavelength measurement of atmospheric carbon dioxide concentration and vertical aerosol profile",
+        "screening_decision": "review",
+        "screening_score": 5.5,
+        "relevance_score": 4.9,
+        "bucket": "frontier",
+        "technical_domain": "Remote Sensing & Atmospheric Monitoring",
+        "thematic_cluster": "Laser-based atmospheric sensing and aerosol profiling",
+        "co2_role": "capture_process_stream",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "process_integration",
+        "cycle_type": "not_clear",
+        "heat_source_sink": "não especificado",
+        "claim_focus": "system_architecture",
+        "exclusion_category": "co2_working_fluid_only"
+      },
+      {
+        "patent_id": "WO2013154949A2",
+        "record_id": "rec_58aec1c9302f",
+        "title": "Pulsed co2 laser output-pulse shape and power control",
+        "screening_decision": "review",
+        "screening_score": 5.0,
+        "relevance_score": 4.0,
+        "bucket": "frontier",
+        "technical_domain": "Laser Technology & Thermal Management",
+        "thematic_cluster": "Controle de Potência em Sistemas Laser",
+        "co2_role": "working_fluid",
+        "storage_role": "explicit_thermal_storage",
+        "system_boundary": "cycle_or_transfer_subsystem",
+        "cycle_type": "power_or_work_cycle",
+        "heat_source_sink": "laser CO2",
+        "claim_focus": "component_or_operation",
+        "exclusion_category": "co2_working_fluid_only"
+      }
+    ],
+    "axes": {
+      "co2_role": {
+        "working_fluid": {
+          "core": [],
+          "frontier": [
+            "CN119742647A",
+            "CN205569064U",
+            "US7453918B2",
+            "WO2013154949A2"
+          ],
+          "adjacent": []
+        },
+        "stored_thermodynamic_medium": {
+          "core": [],
+          "frontier": [
+            "US20240075453A1"
+          ],
+          "adjacent": []
+        },
+        "substrato_de_reação": {
+          "core": [],
+          "frontier": [
+            "US20240132362A1"
+          ],
+          "adjacent": []
+        },
+        "capture_process_stream": {
+          "core": [],
+          "frontier": [
+            "US20210349011A1"
+          ],
+          "adjacent": []
+        }
+      },
+      "storage_role": {
+        "implicit_or_support_storage": {
+          "core": [],
+          "frontier": [
+            "CN119742647A",
+            "CN205569064U",
+            "US7453918B2"
+          ],
+          "adjacent": []
+        },
+        "explicit_thermal_storage": {
+          "core": [],
+          "frontier": [
+            "US20240075453A1",
+            "US20210349011A1",
+            "WO2013154949A2"
+          ],
+          "adjacent": []
+        },
+        "implícito_ou_suporte_ao_armazenamento": {
+          "core": [],
+          "frontier": [
+            "US20240132362A1"
+          ],
+          "adjacent": []
+        }
+      },
+      "system_boundary": {
+        "cycle_or_transfer_subsystem": {
+          "core": [],
+          "frontier": [
+            "CN119742647A",
+            "CN205569064U",
+            "US7453918B2",
+            "WO2013154949A2"
+          ],
+          "adjacent": []
+        },
+        "process_integration": {
+          "core": [],
+          "frontier": [
+            "US20240075453A1",
+            "US20240132362A1",
+            "US20210349011A1"
+          ],
+          "adjacent": []
+        }
+      },
+      "cycle_type": {
+        "power_or_work_cycle": {
+          "core": [],
+          "frontier": [
+            "CN119742647A",
+            "US7453918B2",
+            "WO2013154949A2"
+          ],
+          "adjacent": []
+        },
+        "not_clear": {
+          "core": [],
+          "frontier": [
+            "CN205569064U",
+            "US20240075453A1",
+            "US20210349011A1"
+          ],
+          "adjacent": []
+        },
+        "não_claro": {
+          "core": [],
+          "frontier": [
+            "US20240132362A1"
+          ],
+          "adjacent": []
+        }
+      },
+      "heat_source_sink": {
+        "cooling_or_refrigeration": {
+          "core": [],
+          "frontier": [
+            "CN119742647A"
+          ],
+          "adjacent": []
+        },
+        "Laser Beam": {
+          "core": [],
+          "frontier": [
+            "CN205569064U"
+          ],
+          "adjacent": []
+        },
+        "CO2": {
+          "core": [],
+          "frontier": [
+            "US20240075453A1"
+          ],
+          "adjacent": []
+        },
+        "RF Excitation": {
+          "core": [],
+          "frontier": [
+            "US7453918B2"
+          ],
+          "adjacent": []
+        },
+        "não_especificado": {
+          "core": [],
+          "frontier": [
+            "US20240132362A1"
+          ],
+          "adjacent": []
+        },
+        "não especificado": {
+          "core": [],
+          "frontier": [
+            "US20210349011A1"
+          ],
+          "adjacent": []
+        },
+        "laser CO2": {
+          "core": [],
+          "frontier": [
+            "WO2013154949A2"
+          ],
+          "adjacent": []
+        }
+      },
+      "claim_focus": {
+        "component_or_operation": {
+          "core": [],
+          "frontier": [
+            "CN119742647A",
+            "WO2013154949A2"
+          ],
+          "adjacent": []
+        },
+        "Escaneamento e foco do laser em aplicações terapêuticas": {
+          "core": [],
+          "frontier": [
+            "CN205569064U"
+          ],
+          "adjacent": []
+        },
+        "Preparação e uso de carbon dots para adsorção seletiva de CO2.": {
+          "core": [],
+          "frontier": [
+            "US20240075453A1"
+          ],
+          "adjacent": []
+        },
+        "system_architecture": {
+          "core": [],
+          "frontier": [
+            "US7453918B2",
+            "US20210349011A1"
+          ],
+          "adjacent": []
+        },
+        "sensibilização fotocatalítica com QDs para redução de CO2": {
+          "core": [],
+          "frontier": [
+            "US20240132362A1"
+          ],
+          "adjacent": []
+        }
+      },
+      "exclusion_category": {
+        "cooling_only": {
+          "core": [],
+          "frontier": [
+            "CN119742647A",
+            "CN205569064U"
+          ],
+          "adjacent": []
+        },
+        "industrial_heat_adjacent": {
+          "core": [],
+          "frontier": [
+            "US20240075453A1"
+          ],
+          "adjacent": []
+        },
+        "co2_working_fluid_only": {
+          "core": [],
+          "frontier": [
+            "US7453918B2",
+            "US20210349011A1",
+            "WO2013154949A2"
+          ],
+          "adjacent": []
+        },
+        "generic_tes": {
+          "core": [],
+          "frontier": [
+            "US20240132362A1"
+          ],
+          "adjacent": []
+        }
+      }
+    },
+    "whitespace_candidates": [
+      {
+        "opportunity": "control_and_operability_claims",
+        "confidence": "medium",
+        "rationale": "Ha espaco para claims de controle, operacao transiente e integracao de processo onde o papel do CO2 e do armazenamento ainda esta ambiguo.",
+        "core_ids": [],
+        "frontier_ids": [
+          "CN119742647A"
+        ],
+        "adjacent_ids": []
+      }
+    ],
+    "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: CN119742647A, US20240075453A1, US20210349011A1, CN205569064U]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN119742647A, CN205569064U, US20240075453A1, US7453918B2]"
+  },
+  "scraper_durations": {
+    "GooglePatents": 26.314,
+    "Patentscope": 66.574,
+    "EPO": 0.0
+  },
+  "evaluation_duration_seconds": 0.002,
+  "rerank_duration_seconds": 0.0,
+  "comparative_analysis_duration_seconds": 0.003,
+  "total_duration_seconds": 96.636,
+  "comparative_analysis": "### 1. Panorama Geral\n\n- O conjunto comparativo agrega 7 patente(s) e nao deve ser tratado como bloco homogeneo: ha um nucleo direto, fronteiras tecnicas em revisao e adjacencias uteis apenas para delimitar whitespace [IDs: CN119742647A, CN205569064U, US20240075453A1, US7453918B2, US20240132362A1, US20210349011A1, WO2013154949A2]\n- O subgrupo mais diretamente alinhado ao núcleo da query é CN119742647A, com foco em armazenamento de CO2, compressão/expansão e controle termodinâmico do meio armazenado [IDs: CN119742647A]\n- CN119742647A, CN205569064U, US20240075453A1, US7453918B2, US20240132362A1, US20210349011A1, WO2013154949A2 formam a fronteira tecnica: sao casos proximos do problema, mas ainda ambiguos quanto ao papel exato do CO2 no armazenamento ou na funcao arquitetural central [IDs: CN119742647A, CN205569064U, US20240075453A1, US7453918B2, US20240132362A1, US20210349011A1, WO2013154949A2]\n- CN119742647A entram como adjacencia exploratoria: tratam CO2 principalmente como fluido de trabalho em transferencia termica ou distribuicao de energia, de modo que ajudam a delimitar combinacoes pouco cobertas sem virar evidencia de cobertura consolidada [IDs: CN119742647A]\n\n## Análise Comparativa de Patentes – “carbon dots CO2 laser”\n\n### 2. Tendências Identificadas\n\n*   **Otimização de Resfriamento:** A busca por métodos mais eficientes para resfriar lasers a CO2, utilizando água ou RF, continua sendo uma tendência central (CN119742647A, US7453918B2, WO2013154949A2).\n*   **Aplicações Terapêuticas:** A utilização de lasers a CO2 com pontos de carboneto para tratamento de superfície emerge como uma área de interesse (CN205569064U).\n*   **Adsorção Seletiva de CO2:** O uso de carbon dots em conjunto com materiais porosos para adsorção seletiva de CO2 demonstra um potencial significativo para aplicações ambientais (US20210349011A1, US20240132362A1).\n*   **Fotoredutção de CO2:** A exploração da fotoredutção de CO2 utilizando carbon dots como sensibilizadores representa uma fronteira tecnológica promissora (US20240132362A1).\n*   **Controle Avançado do Laser:** O controle preciso da forma do pulso e potência para otimizar o desempenho do laser a CO2 é um foco constante (WO2013154949A2).\n\n### 3. Whitespaces e Oportunidades\n\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: CN119742647A, US20240075453A1, US20210349011A1, CN205569064U]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: CN119742647A, CN205569064U, US20240075453A1, US7453918B2]\n\n### 4. Recomendações\n\n- Priorizar arquiteturas centradas em armazenamento explícito de CO2 e controle termodinâmico rigoroso [IDs: CN119742647A]\n\n### 5. Ranking Final\n\n1. **CN119742647A** — CO2 aparece principalmente como fluido de trabalho; armazenamento aparece mais como subsistema de apoio; score 6.5/10 [IDs: CN119742647A]\n2. **CN205569064U** — CO2 aparece principalmente como fluido de trabalho; armazenamento aparece mais como subsistema de apoio; score 6.5/10 [IDs: CN205569064U]\n3. **US20240075453A1** — CO2 aparece como meio termodinamico armazenado; armazenamento termico explicito como parte central; score 6.5/10 [IDs: US20240075453A1]\n4. **US7453918B2** — CO2 aparece principalmente como fluido de trabalho; armazenamento aparece mais como subsistema de apoio; score 6.5/10 [IDs: US7453918B2]\n5. **US20240132362A1** — alinhamento técnico sustentado pelas evidências extraídas; score 6.3/10 [IDs: US20240132362A1]\n6. **US20210349011A1** — armazenamento termico explicito como parte central; score 4.9/10 [IDs: US20210349011A1]\n7. **WO2013154949A2** — CO2 aparece principalmente como fluido de trabalho; armazenamento termico explicito como parte central; score 4.0/10 [IDs: WO2013154949A2]\n\n### 6. Mapa de Evidências por ID\n\n- **Adsorção Seletiva de Gases / Carbon Dots** [IDs: US20240075453A1]\n- **Controle de Potência em Sistemas Laser** [IDs: WO2013154949A2]\n- **Fotoredutção de CO2 com QDs** [IDs: US20240132362A1]\n- **High-Pressure CO2 Lasers** [IDs: US7453918B2]\n- **Laser-Based Surface Treatment Systems** [IDs: CN205569064U]\n- **Laser-based atmospheric sensing and aerosol profiling** [IDs: US20210349011A1]\n- **Lasers de Alta Potência e Resfriamento** [IDs: CN119742647A]\n\n### 7. Ranking por ID\n\n1. **CN119742647A** — score 6.5/10 [IDs: CN119742647A]\n2. **CN205569064U** — score 6.5/10 [IDs: CN205569064U]\n3. **US20240075453A1** — score 6.5/10 [IDs: US20240075453A1]\n4. **US7453918B2** — score 6.5/10 [IDs: US7453918B2]\n5. **US20240132362A1** — score 6.3/10 [IDs: US20240132362A1]\n6. **US20210349011A1** — score 4.9/10 [IDs: US20210349011A1]\n7. **WO2013154949A2** — score 4.0/10 [IDs: WO2013154949A2]",
+  "output_paths": {
+    "markdown": "/app/output/patentes_carbon_dots_CO2_laser_20260724_133610.md",
+    "json": "/app/output/patentes_carbon_dots_CO2_laser_20260724_133610.json",
+    "state": "/app/output/run_state_20260724_133433.json",
+    "prisma": "/app/output/prisma_flow_20260724_133433.json",
+    "snapshot": "/app/output/config_snapshot_20260724_133433.json",
+    "whitespace_json": "/app/output/whitespace_analysis_20260724_133433.json",
+    "memory_journal": "/app/output/memory_journal_20260724_133433.json",
+    "memory_sidecar": "/app/output/memory_sidecar_20260724_133433.json"
+  },
+  "errors": []
+}

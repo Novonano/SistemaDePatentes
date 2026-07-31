@@ -1,0 +1,710 @@
+[
+  {
+    "timestamp": "2026-07-23T12:32:46",
+    "stage": "setup",
+    "event": "llm_check",
+    "detail": "Verificação de disponibilidade do Ollama concluída.",
+    "payload": {
+      "llm_available": true,
+      "model": "gemma3:4b"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:33:19",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "GooglePatents retornou patentes.",
+    "payload": {
+      "source": "GooglePatents",
+      "count": 10,
+      "diagnostics": [
+        {
+          "kind": "blocked_or_captcha",
+          "detail": "Sinal de bloqueio/CAPTCHA detectado na resposta.",
+          "url": "https://patents.google.com/patent/US20170173262A1/en"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:34:29",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "Patentscope retornou patentes.",
+    "payload": {
+      "source": "Patentscope",
+      "count": 10,
+      "diagnostics": []
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:34:29",
+    "stage": "identification",
+    "event": "scrape_completed",
+    "detail": "EPO retornou patentes.",
+    "payload": {
+      "source": "EPO",
+      "count": 0,
+      "diagnostics": [
+        {
+          "kind": "config_missing",
+          "detail": "EPO_CONSUMER_KEY ou EPO_CONSUMER_SECRET não configurados.",
+          "url": ""
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:36:41",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "CN116448850A roteada para manual_review.",
+    "payload": {
+      "record_id": "rec_245e60bec916",
+      "patent_id": "CN116448850A",
+      "decision": "review",
+      "score": 7.4,
+      "route": {
+        "route": "manual_review",
+        "reason": "Triagem indicou revisão humana.",
+        "slot": "review"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:37:08",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "US7658119B2 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_1ae1a8298b15",
+      "patent_id": "US7658119B2",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:38:11",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "CN108872343A roteada para manual_review.",
+    "payload": {
+      "record_id": "rec_fde35625d301",
+      "patent_id": "CN108872343A",
+      "decision": "review",
+      "score": 5.3,
+      "route": {
+        "route": "manual_review",
+        "reason": "Triagem indicou revisão humana.",
+        "slot": "review"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:39:30",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "CN1395094A roteada para manual_review.",
+    "payload": {
+      "record_id": "rec_bc447a4191dd",
+      "patent_id": "CN1395094A",
+      "decision": "review",
+      "score": 5.3,
+      "route": {
+        "route": "manual_review",
+        "reason": "Triagem indicou revisão humana.",
+        "slot": "review"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:40:35",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "CN112578011A roteada para manual_review.",
+    "payload": {
+      "record_id": "rec_2056c5d6639a",
+      "patent_id": "CN112578011A",
+      "decision": "review",
+      "score": 5.3,
+      "route": {
+        "route": "manual_review",
+        "reason": "Triagem indicou revisão humana.",
+        "slot": "review"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:42:04",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "CN105241868A roteada para manual_review.",
+    "payload": {
+      "record_id": "rec_d461537cff92",
+      "patent_id": "CN105241868A",
+      "decision": "review",
+      "score": 5.3,
+      "route": {
+        "route": "manual_review",
+        "reason": "Triagem indicou revisão humana.",
+        "slot": "review"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:42:33",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "US20170173262A1 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_9bf5a8b7dc60",
+      "patent_id": "US20170173262A1",
+      "decision": "exclude",
+      "score": 3.3,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:43:28",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "JP5390399B2 roteada para manual_review.",
+    "payload": {
+      "record_id": "rec_f7a5c817a31a",
+      "patent_id": "JP5390399B2",
+      "decision": "review",
+      "score": 4.8,
+      "route": {
+        "route": "manual_review",
+        "reason": "Triagem indicou revisão humana.",
+        "slot": "review"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:44:01",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "US20220273907A1 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_0ffcc4a2aadd",
+      "patent_id": "US20220273907A1",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:44:31",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "US8265725B2 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_23898b43a5bc",
+      "patent_id": "US8265725B2",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:45:05",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "WO/2021/188084 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_059270d33d03",
+      "patent_id": "WO/2021/188084",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:45:34",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "20150201837 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_f4a64eff2003",
+      "patent_id": "20150201837",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:46:08",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "20180289326 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_016a4eafc1bc",
+      "patent_id": "20180289326",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:46:45",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "WO/2018/187693 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_bb170214473f",
+      "patent_id": "WO/2018/187693",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:47:23",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "WO/2012/009322 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_5792a83d7226",
+      "patent_id": "WO/2012/009322",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:47:55",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "20130183243 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_5987972a3b34",
+      "patent_id": "20130183243",
+      "decision": "exclude",
+      "score": 3.3,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:48:28",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "20240049994 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_6e979406ac26",
+      "patent_id": "20240049994",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:49:05",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "3210742 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_8698c1280543",
+      "patent_id": "3210742",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:50:22",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "WO/2022/170361 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_1f9d24476e0b",
+      "patent_id": "WO/2022/170361",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:50:58",
+    "stage": "screening",
+    "event": "screening_completed",
+    "detail": "2022216341 roteada para screen_only.",
+    "payload": {
+      "record_id": "rec_f1b878a245ec",
+      "patent_id": "2022216341",
+      "decision": "exclude",
+      "score": 3.5,
+      "route": {
+        "route": "screen_only",
+        "reason": "Patente excluída na triagem.",
+        "slot": "screening"
+      },
+      "llm_error": ""
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:53:49",
+    "stage": "extraction",
+    "event": "detailed_evaluation_completed",
+    "detail": "CN116448850A recebeu extração detalhada.",
+    "payload": {
+      "record_id": "rec_245e60bec916",
+      "patent_id": "CN116448850A",
+      "route": "manual_review",
+      "confidence": 0.71
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:53:49",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "US7658119B2 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_1ae1a8298b15",
+      "patent_id": "US7658119B2",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:54:55",
+    "stage": "extraction",
+    "event": "detailed_evaluation_completed",
+    "detail": "CN108872343A recebeu extração detalhada.",
+    "payload": {
+      "record_id": "rec_fde35625d301",
+      "patent_id": "CN108872343A",
+      "route": "manual_review",
+      "confidence": 0.63
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:56:11",
+    "stage": "extraction",
+    "event": "detailed_evaluation_completed",
+    "detail": "CN1395094A recebeu extração detalhada.",
+    "payload": {
+      "record_id": "rec_bc447a4191dd",
+      "patent_id": "CN1395094A",
+      "route": "manual_review",
+      "confidence": 0.63
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:57:18",
+    "stage": "extraction",
+    "event": "detailed_evaluation_completed",
+    "detail": "CN112578011A recebeu extração detalhada.",
+    "payload": {
+      "record_id": "rec_2056c5d6639a",
+      "patent_id": "CN112578011A",
+      "route": "manual_review",
+      "confidence": 0.63
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:58:40",
+    "stage": "extraction",
+    "event": "detailed_evaluation_completed",
+    "detail": "CN105241868A recebeu extração detalhada.",
+    "payload": {
+      "record_id": "rec_d461537cff92",
+      "patent_id": "CN105241868A",
+      "route": "manual_review",
+      "confidence": 0.59
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:58:40",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "US20170173262A1 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_9bf5a8b7dc60",
+      "patent_id": "US20170173262A1",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "detailed_evaluation_completed",
+    "detail": "JP5390399B2 recebeu extração detalhada.",
+    "payload": {
+      "record_id": "rec_f7a5c817a31a",
+      "patent_id": "JP5390399B2",
+      "route": "manual_review",
+      "confidence": 0.63
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "US20220273907A1 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_0ffcc4a2aadd",
+      "patent_id": "US20220273907A1",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "US8265725B2 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_23898b43a5bc",
+      "patent_id": "US8265725B2",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "WO/2021/188084 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_059270d33d03",
+      "patent_id": "WO/2021/188084",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "20150201837 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_f4a64eff2003",
+      "patent_id": "20150201837",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "20180289326 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_016a4eafc1bc",
+      "patent_id": "20180289326",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "WO/2018/187693 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_bb170214473f",
+      "patent_id": "WO/2018/187693",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "WO/2012/009322 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_5792a83d7226",
+      "patent_id": "WO/2012/009322",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "20130183243 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_5987972a3b34",
+      "patent_id": "20130183243",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "20240049994 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_6e979406ac26",
+      "patent_id": "20240049994",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "3210742 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_8698c1280543",
+      "patent_id": "3210742",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "WO/2022/170361 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_1f9d24476e0b",
+      "patent_id": "WO/2022/170361",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "extraction",
+    "event": "screening_only",
+    "detail": "2022216341 permaneceu apenas na triagem.",
+    "payload": {
+      "record_id": "rec_f1b878a245ec",
+      "patent_id": "2022216341",
+      "route": "screen_only"
+    }
+  },
+  {
+    "timestamp": "2026-07-23T12:59:35",
+    "stage": "synthesis",
+    "event": "coverage_computed",
+    "detail": "Cobertura e seleção consolidadas após triagem.",
+    "payload": {
+      "raw_scraped": 20,
+      "unique_patents": 20,
+      "duplicates_removed": 0,
+      "screened": 20,
+      "included": 0,
+      "review": 6,
+      "excluded": 14,
+      "manual_review_required": 6,
+      "manual_review_deferred": 0,
+      "full_extractions": 6,
+      "missing_abstract": 2,
+      "missing_id": 0,
+      "records_with_content_identity": 0,
+      "records_with_fallback_identity": 0,
+      "family_duplicates_removed": 0,
+      "llm_screening_failures": 0,
+      "llm_total_failures": 0
+    }
+  },
+  {
+    "timestamp": "2026-07-23T13:02:10",
+    "stage": "synthesis",
+    "event": "comparative_analysis_completed",
+    "detail": "Síntese comparativa gerada via Ollama.",
+    "payload": {
+      "patents_compared": 20
+    }
+  },
+  {
+    "timestamp": "2026-07-23T13:02:10",
+    "stage": "synthesis",
+    "event": "whitespace_analysis_completed",
+    "detail": "Matriz estruturada de whitespace gerada.",
+    "payload": {
+      "selected_patents": 6,
+      "candidates": 0
+    }
+  },
+  {
+    "timestamp": "2026-07-23T13:02:10",
+    "stage": "writer",
+    "event": "context_prepared",
+    "detail": "Contexto compartilhado preparado para o writer.",
+    "payload": {
+      "top_patents": 0,
+      "route_summary": {
+        "manual_review": 6,
+        "screen_only": 14
+      }
+    }
+  },
+  {
+    "timestamp": "2026-07-23T13:02:10",
+    "stage": "finalization",
+    "event": "report_generated",
+    "detail": "Relatórios finais gerados com sucesso.",
+    "payload": {
+      "markdown": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.md",
+      "json": "/app/output/patentes_dopamine_tears_sensor_20260723_130210.json"
+    }
+  }
+]

@@ -1,0 +1,384 @@
+{
+  "status": "ok",
+  "query": "carbon dioxide",
+  "corpus_summary": {
+    "considered_patents": 10,
+    "selected_patents": 7,
+    "core": 3,
+    "frontier": 4,
+    "adjacent": 0
+  },
+  "coverage_matrix": [
+    {
+      "patent_id": "US10854906B2",
+      "record_id": "rec_ac70b55246a7",
+      "title": "Redox flow battery with carbon dioxide based redox couple",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 8.7,
+      "bucket": "core",
+      "technical_domain": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+      "thematic_cluster": "Baterias de Fluxo Eletroquímico, Química de Redox, Armazenamento de CO2",
+      "co2_role": "working_fluid e catalisador",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "Não especificado no resumo, mas implica utilização de calor para a conversão do CO2.",
+      "claim_focus": "Par redox baseado em dióxido de carbono e seu uso em uma bateria de fluxo eletroquímico.",
+      "exclusion_category": ""
+    },
+    {
+      "patent_id": "CN115628062B",
+      "record_id": "rec_f8e29bfa3bcb",
+      "title": "Deep sea mine car collecting device for inhibiting plume by utilizing carbon dioxide",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 8.4,
+      "bucket": "core",
+      "technical_domain": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+      "thematic_cluster": "Engenharia Naval, Processamento de Materiais, Proteção Ambiental Marinha",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "dedicated_storage_system",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "Não especificado no resumo, mas implica um sistema de resfriamento.",
+      "claim_focus": "Dispositivo de coleta e inibição de plumas utilizando CO2 líquido.",
+      "exclusion_category": ""
+    },
+    {
+      "patent_id": "US10988847B2",
+      "record_id": "rec_c8f3d0ca0801",
+      "title": "Apparatus and method of preparing carbonate and/or formate from carbon dioxide",
+      "screening_decision": "include",
+      "screening_score": 9.2,
+      "relevance_score": 8.4,
+      "bucket": "core",
+      "technical_domain": "Química Industrial",
+      "thematic_cluster": "Química Industrial",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "refrigeration_cycle",
+      "heat_source_sink": "Eletrólise (energia elétrica)",
+      "claim_focus": "process_integration",
+      "exclusion_category": ""
+    },
+    {
+      "patent_id": "US11034619B2",
+      "record_id": "rec_da779df08884",
+      "title": "Intrinsic CO2 capture process for the production of metal oxides, cement, CO2 air capture or a combination thereof",
+      "screening_decision": "review",
+      "screening_score": 6.2,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Chemical Processing, Carbon Capture",
+      "thematic_cluster": "CO2 Capture and Utilization in Industrial Processes",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "combustion_cycle",
+      "heat_source_sink": "combustível (carbonáceo, sulfuroso, nitrogenoso ou hidrogênio)",
+      "claim_focus": "process_integration",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "US20240383835A1",
+      "record_id": "rec_eb7647876d8e",
+      "title": "Sodium Bicarbonate or Sodium Carbonate or Sodium Hydroxide or Calcium Oxide or Calcium Hydroxide or Calcium Carbonate Production with Carbon",
+      "screening_decision": "review",
+      "screening_score": 6.0,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Chemical Process Engineering",
+      "thematic_cluster": "Carbon Dioxide Utilization in Chemical Synthesis",
+      "co2_role": "capture_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "not_clear",
+      "heat_source_sink": "não especificado no resumo",
+      "claim_focus": "Produção de óxidos através de reações envolvendo dióxido de carbono.",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "US9816035B2",
+      "record_id": "rec_d91e3bc4d439",
+      "title": "Conversion of biomass, organic waste and carbon dioxide into synthetic hydrocarbons",
+      "screening_decision": "review",
+      "screening_score": 7.2,
+      "relevance_score": 6.5,
+      "bucket": "frontier",
+      "technical_domain": "Chemical Engineering, Biotechnology",
+      "thematic_cluster": "CO2 Conversion and Utilization",
+      "co2_role": "reactant_within_process_stream",
+      "storage_role": "explicit_thermal_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "biogas_syngas",
+      "claim_focus": "Fischer-Tropsch reaction using a two-stage biodigester and CO2-derived syngas.",
+      "exclusion_category": "industrial_heat_adjacent"
+    },
+    {
+      "patent_id": "JP6956665B2",
+      "record_id": "rec_52834b95ac68",
+      "title": "Method of methaneization of carbon dioxide in combustion exhaust gas and methane production equipment",
+      "screening_decision": "review",
+      "screening_score": 5.7,
+      "relevance_score": 6.4,
+      "bucket": "frontier",
+      "technical_domain": "Chemical Engineering / Combustion",
+      "thematic_cluster": "Carbon Dioxide Conversion & Utilization",
+      "co2_role": "capture_process_stream",
+      "storage_role": "implicit_or_support_storage",
+      "system_boundary": "process_integration",
+      "cycle_type": "power_or_work_cycle",
+      "heat_source_sink": "Combustion Exhaust Gases",
+      "claim_focus": "Metanization of CO2 from Combustion Exhaust",
+      "exclusion_category": "industrial_heat_adjacent"
+    }
+  ],
+  "axes": {
+    "co2_role": {
+      "working_fluid e catalisador": {
+        "core": [
+          "US10854906B2"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "capture_process_stream": {
+        "core": [
+          "CN115628062B",
+          "US10988847B2"
+        ],
+        "frontier": [
+          "US11034619B2",
+          "US20240383835A1",
+          "JP6956665B2"
+        ],
+        "adjacent": []
+      },
+      "reactant_within_process_stream": {
+        "core": [],
+        "frontier": [
+          "US9816035B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "storage_role": {
+      "explicit_thermal_storage": {
+        "core": [
+          "US10854906B2",
+          "CN115628062B",
+          "US10988847B2"
+        ],
+        "frontier": [
+          "US20240383835A1",
+          "US9816035B2"
+        ],
+        "adjacent": []
+      },
+      "implicit_or_support_storage": {
+        "core": [],
+        "frontier": [
+          "US11034619B2",
+          "JP6956665B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "system_boundary": {
+      "dedicated_storage_system": {
+        "core": [
+          "US10854906B2",
+          "CN115628062B"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "process_integration": {
+        "core": [
+          "US10988847B2"
+        ],
+        "frontier": [
+          "US11034619B2",
+          "US20240383835A1",
+          "US9816035B2",
+          "JP6956665B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "cycle_type": {
+      "power_or_work_cycle": {
+        "core": [
+          "US10854906B2"
+        ],
+        "frontier": [
+          "US9816035B2",
+          "JP6956665B2"
+        ],
+        "adjacent": []
+      },
+      "refrigeration_cycle": {
+        "core": [
+          "CN115628062B",
+          "US10988847B2"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "combustion_cycle": {
+        "core": [],
+        "frontier": [
+          "US11034619B2"
+        ],
+        "adjacent": []
+      },
+      "not_clear": {
+        "core": [],
+        "frontier": [
+          "US20240383835A1"
+        ],
+        "adjacent": []
+      }
+    },
+    "heat_source_sink": {
+      "Não especificado no resumo, mas implica utilização de calor para a conversão do CO2.": {
+        "core": [
+          "US10854906B2"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "Não especificado no resumo, mas implica um sistema de resfriamento.": {
+        "core": [
+          "CN115628062B"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "Eletrólise (energia elétrica)": {
+        "core": [
+          "US10988847B2"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "combustível (carbonáceo, sulfuroso, nitrogenoso ou hidrogênio)": {
+        "core": [],
+        "frontier": [
+          "US11034619B2"
+        ],
+        "adjacent": []
+      },
+      "não especificado no resumo": {
+        "core": [],
+        "frontier": [
+          "US20240383835A1"
+        ],
+        "adjacent": []
+      },
+      "biogas_syngas": {
+        "core": [],
+        "frontier": [
+          "US9816035B2"
+        ],
+        "adjacent": []
+      },
+      "Combustion Exhaust Gases": {
+        "core": [],
+        "frontier": [
+          "JP6956665B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "claim_focus": {
+      "Par redox baseado em dióxido de carbono e seu uso em uma bateria de fluxo eletroquímico.": {
+        "core": [
+          "US10854906B2"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "Dispositivo de coleta e inibição de plumas utilizando CO2 líquido.": {
+        "core": [
+          "CN115628062B"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "process_integration": {
+        "core": [
+          "US10988847B2"
+        ],
+        "frontier": [
+          "US11034619B2"
+        ],
+        "adjacent": []
+      },
+      "Produção de óxidos através de reações envolvendo dióxido de carbono.": {
+        "core": [],
+        "frontier": [
+          "US20240383835A1"
+        ],
+        "adjacent": []
+      },
+      "Fischer-Tropsch reaction using a two-stage biodigester and CO2-derived syngas.": {
+        "core": [],
+        "frontier": [
+          "US9816035B2"
+        ],
+        "adjacent": []
+      },
+      "Metanization of CO2 from Combustion Exhaust": {
+        "core": [],
+        "frontier": [
+          "JP6956665B2"
+        ],
+        "adjacent": []
+      }
+    },
+    "exclusion_category": {
+      "not_clear": {
+        "core": [
+          "US10854906B2",
+          "CN115628062B",
+          "US10988847B2"
+        ],
+        "frontier": [],
+        "adjacent": []
+      },
+      "industrial_heat_adjacent": {
+        "core": [],
+        "frontier": [
+          "US11034619B2",
+          "US20240383835A1",
+          "US9816035B2",
+          "JP6956665B2"
+        ],
+        "adjacent": []
+      }
+    }
+  },
+  "whitespace_candidates": [
+    {
+      "opportunity": "hybrid_cycle_storage_architecture",
+      "confidence": "medium",
+      "rationale": "Combinar ciclos/transferencia com CO2 e armazenamento termico explicitamente reivindicado ainda aparece fragmentado entre nucleo e borda tecnica.",
+      "core_ids": [
+        "US10854906B2",
+        "CN115628062B",
+        "US10988847B2"
+      ],
+      "frontier_ids": [
+        "US11034619B2",
+        "US20240383835A1",
+        "US9816035B2"
+      ],
+      "adjacent_ids": []
+    }
+  ],
+  "markdown_summary": "### 3. Whitespaces e Oportunidades\n\n- O whitespace mais promissor esta na combinacao entre arquiteturas de ciclo/transferencia termica com CO2 e armazenamento explicito do inventario termico, porque esses elementos ainda aparecem fragmentados entre nucleo, fronteira e adjacencia [IDs: US10854906B2, CN115628062B, US10988847B2, US11034619B2]\n- Gestao termica transiente, subresfriamento e acoplamentos com captura/reatores aparecem de forma lateral; isso sugere oportunidade em claims de controle, operacao multi-regime e integracao de processo ainda pouco amarradas ao armazenamento central [IDs: US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]\n- As patentes em review delimitam fronteiras tecnicas onde o papel do CO2 ainda esta ambiguo entre meio armazenado, fluido de trabalho e interface de troca termica; esse tipo de ambiguidade costuma ser um bom proxy para whitespace exploravel com recorte arquitetural mais especifico [IDs: US11034619B2, US20240383835A1, US9816035B2, JP6956665B2]"
+}
