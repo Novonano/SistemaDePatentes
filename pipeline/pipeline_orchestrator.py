@@ -1,5 +1,5 @@
 """
-Orquestrador orientado a estagios (Fase 3 da migracao para Observer).
+Orquestrador orientado a estagios.
 
 A classe ``PipelineOrchestrator`` decompoe o antigo monolito ``run_agent`` em
 metodos por estagio (setup, search, screening, comparative, whitespace,
@@ -8,7 +8,7 @@ instancia. O comportamento e identico ao legado; apenas a estrutura muda.
 
 A fachada ``run_agent`` em ``pipeline/orchestrator.py`` instancia esta classe.
 
-Fase 5 (inversao de dependencia): a classe nao construi observers internamente.
+A classe nao construi observers internamente.
 Ela recebe observers "prontos" de duas formas:
   * ``observers``: lista ja instanciada (substitui completamente o conjunto).
   * ``observers_builder``: callable ``(state, store, memory) -> List[Observer]``
